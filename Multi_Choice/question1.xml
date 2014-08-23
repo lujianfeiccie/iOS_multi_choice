@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <question title="1+1=?" answer="2">
+        <choice>1</choice>
+        <choice>2</choice>
+    </question>
+    <question title="2+3=?" answer="5">
+         <choice>4</choice>
+         <choice>5</choice>
+    </question>
+    <question title="4+5=?" answer="9">
+        <choice>8</choice>
+        <choice>9</choice>
+    </question>
+    <question title="6+7=?" answer="13">
+        <choice>12</choice>
+        <choice>13</choice>
+    </question>
+</root>
