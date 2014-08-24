@@ -15,4 +15,6 @@
 @property (nonatomic,strong) NSString *m_choice;
 @property (nonatomic,strong) NSMutableArray *m_subElements;
 @property (nonatomic,strong) XMLElement *m_parent;
+@property (nonatomic) NSInteger m_selected;
+-(void) setSelectExt:(NSInteger) selected;
 @end

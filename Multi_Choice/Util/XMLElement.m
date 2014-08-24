@@ -15,12 +15,22 @@
 @synthesize m_choice;
 @synthesize m_parent;
 @synthesize m_subElements;
+@synthesize m_selected;
 
-
+-(id)init{
+   self = [super init];
+    if (self) {
+        m_selected = -1;
+    }
+    return self;
+}
 -(NSMutableArray*) m_subElements{
     if(m_subElements == nil){
         m_subElements = [[NSMutableArray alloc]init];
     }
     return m_subElements;
+}
+-(void) setSelectExt:(NSInteger) selected{
+    m_selected = selected;
 }
 @end

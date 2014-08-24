@@ -7,12 +7,26 @@
 //
 
 #import "AppDelegate.h"
-
+#import "RootViewController.h"
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    storyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    
+    
+    //[self MyLog:[NSString stringWithFormat:@"%f",[[[UIDevice currentDevice] systemVersion] floatValue]]];
+    
+    RootViewController *rootView =  [storyBoard instantiateViewControllerWithIdentifier:@"rootview"];
+    self.navController = [[UINavigationController alloc] init];
+    [self.navController pushViewController:rootView animated:YES];
+    [self.navController setToolbarHidden:YES];//底部隐藏
+    
+    [self.window addSubview:self.navController.view];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 							

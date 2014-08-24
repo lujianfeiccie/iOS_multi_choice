@@ -1,0 +1,72 @@
+//
+//  UILabelExt.m
+//  Multi_Choice
+//
+//  Created by Apple on 14-8-24.
+//  Copyright (c) 2014年 Apple. All rights reserved.
+//
+
+#import "UILabelExt.h"
+#import "NSLogExt.h"
+@implementation UILabelExt
+@synthesize m_prefix;
+@synthesize delegateExt;
+
+-(id)initWithCoder:(NSCoder *)aDecoder{
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        // Initialization code
+        m_prefix=@"";
+        m_text = @"";
+        NSLogExt(@"initWithCoder");
+    }
+    return self;
+}
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        // Initialization code
+        m_prefix = @"";
+        m_text =@"";
+        NSLogExt(@"initWithFrame");
+    }
+    return self;
+}
+
+/*
+// Only override drawRect: if you perform custom drawing.
+// An empty implementation adversely affects performance during animation.
+- (void)drawRect:(CGRect)rect
+{
+    // Drawing code
+}
+*/
+-(NSString*) getTextExt{
+    NSLogExt(@"getText");
+
+    return m_text;
+}
+-(void) setTextExt:(NSString*) str{
+    m_text = str;
+    self.text = [NSString stringWithFormat:@"%@%@",m_prefix,m_text];
+}
+
+-(void) setNormal{
+    self.backgroundColor = [UIColor clearColor];
+}
+-(void) setRight{
+    self.backgroundColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:1];
+}
+-(void) setWrong{
+    self.backgroundColor = [UIColor colorWithRed:1 green:0 blue:0 alpha:1];
+}
+
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+//   NSLogExt(@"myLabel touch");
+  // [self.nextResponder touchesBegan:touches withEvent:event];  // 接受到事件后继续向上传递事件
+    if (delegateExt!=nil) {
+        [delegateExt onLabelExtClick:self];
+    }
+}
+@end

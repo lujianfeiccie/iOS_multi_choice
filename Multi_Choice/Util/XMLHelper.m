@@ -28,17 +28,17 @@
     
     if([self.parser parse]){
         
-        NSLogExt(@"The XML is Parsed");
+      //  NSLogExt(@"The XML is Parsed");
         
         if (self.m_random == YES) {
             //srandom(time(NULL));
-                    NSLogExt(@"The data is randomed");
+                   // NSLogExt(@"The data is randomed");
             NSMutableArray *questions = self.rootElement.m_subElements;
 
             int count_questions = [questions count];
             for (int i_q=0; i_q<count_questions; i_q++) {
                 int j_q = arc4random() % (count_questions);
-                NSLogExt(@"i=%i,j=%i",i_q,j_q);
+            //    NSLogExt(@"i=%i,j=%i",i_q,j_q);
                 [questions exchangeObjectAtIndex:i_q withObjectAtIndex:j_q];
                 
                 NSMutableArray *choices = [[questions objectAtIndex:i_q] m_subElements];
@@ -52,34 +52,7 @@
         }
        
         
-        /*
-        NSMutableString *str = [[NSMutableString alloc]init];
-        
-        [str appendFormat:@"%@\n",self.rootElement.m_title];
-        
-        NSMutableArray *subs = self.rootElement.m_subElements;
-        
-        for(int i = 0;i < [subs count];i++){
-            
-            XMLElement *personElement = [subs objectAtIndex:i];
-            
-            [str appendFormat:@"\ttitle:%@",personElement.m_title];
-            
-            [str appendFormat:@",answer:%@\n",personElement.m_answer];
-            
-            
-            NSArray *subPersonElements = personElement.m_subElements;
-            
-            for(int j = 0;j < [subPersonElements count];j++){
-                
-                XMLElement *subElement = [subPersonElements objectAtIndex:j];
-                
-                [str appendFormat:@"\t\tchoice:%@\n",subElement.m_choice];
-                
-            }
-            
-        }
-        NSLogExt(@"======解析结果：%@" ,str);*/
+       
     }else{
         
         NSLogExt(@"Failed to parse the XML");
@@ -135,7 +108,7 @@
     
     self.currentElementPointer.m_title = [attributeDict objectForKey:@"title"];
     self.currentElementPointer.m_answer = [attributeDict objectForKey:@"answer"];
-    NSLogExt(@"name:%@" , elementName);
+ //   NSLogExt(@"name:%@" , elementName);
     
 }
 
@@ -147,7 +120,7 @@
     
     self.currentElementPointer = self.currentElementPointer.m_parent;
     
-    NSLogExt(@"end name:%@" , elementName);
+ //   NSLogExt(@"end name:%@" , elementName);
     
 }
 
@@ -163,6 +136,6 @@
         self.currentElementPointer.m_title = string;
     
     
-    NSLogExt(@"string:%@" , string);
+ //   NSLogExt(@"string:%@" , string);
 }
 @end

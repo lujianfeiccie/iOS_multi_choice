@@ -8,17 +8,24 @@
 
 #import <UIKit/UIKit.h>
 #import "XMLHelper.h"
-@interface ViewController : UIViewController
+#import "UILabelExt.h"
+#import "AppDelegate.h"
+@interface ViewController : UIViewController<UILabelExtDelegate>
 {
     __weak IBOutlet UILabel *m_lbl_title;
-    __weak IBOutlet UILabel *m_lbl_choice1;
-    __weak IBOutlet UILabel *m_lbl_choice2;
+     UILabelExt *m_lbl_choice1;
+     UILabelExt *m_lbl_choice2;
+     UILabelExt *m_lbl_choice3;
+     UILabelExt *m_lbl_choice4;
     XMLHelper* m_xmlHelper;
     NSInteger m_count;
     NSMutableArray* m_questions;
     NSInteger m_currentIndex;
+    NSString* m_str_answer;
+    AppDelegate *app;
 }
 - (IBAction)btnNextClick:(id)sender;
 - (IBAction)btnPrevClick:(id)sender;
 - (void) updateQuestionView;
+
 @end
