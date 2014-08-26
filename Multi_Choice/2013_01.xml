@@ -4,7 +4,7 @@
         <choice>普通年金现值</choice>
         <choice>先付年金终值</choice>
         <choice>递延年金现值</choice>
-        <choice>"永续年金终值</choice>
+        <choice>永续年金终值</choice>
     </question>
     <question title="已知甲方案投资收益率的期望值为16％，乙方案投资收益率的期望值为18％，比较甲、乙两个方案风险大小应采用的指标是" answer="标准离差率">
         <choice>标准离差</choice>
@@ -24,7 +24,7 @@
         <choice>企业自留资金</choice>
         <choice>其他企业资金</choice>
     </question>
-    <question title="理论上讲，下列筹资方式中资本成本最低的是 " answer="发行债券">
+    <question title="理论上讲，下列筹资方式中资本成本最低的是 " answer="发行债券">
         <choice>发行普通股</choice>
         <choice>留用利润</choice>
         <choice>发行债券</choice>
@@ -61,10 +61,10 @@
         <choice>１０年</choice>
     </question>
     <question title="每股收益的计算表达式是" answer="（企业净利润-优先股股利）／普通股股数">
-        <choice>企业营业利润/普通股股数</choice>
+        <choice>企业营业利润／普通股股数</choice>
         <choice>（企业净利润-优先股股利）／普通股股数</choice>
-        <choice>企业营业利润/(普通股股数+优先股股数)</choice>
-        <choice>(企业净利润-优先股股利)/(普通股股数+优先股股数)</choice>
+        <choice>企业营业利润／（普通股股数+优先股股数）</choice>
+        <choice>（企业净利润-优先股股利）／（普通股股数+优先股股数）</choice>
     </question>
     <question title="某公司股票上年每股现金股利为2元，股利年增长率为5％，投资者预期的投资收益率为10％，该股票的内在价值是" answer="４２元">
         <choice>２０元</choice>

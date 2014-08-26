@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "ViewController.h"
+#import "PlatformUtil.h"
 @interface RootViewController ()
 
 @end
@@ -29,8 +30,18 @@
     // Do any additional setup after loading the view.
     app = [[UIApplication sharedApplication]delegate];
     
+    self.navigationItem.title = @"财务管理学";
+    
     m_datalist = [[NSMutableArray alloc]init];
-    [m_datalist addObject:@"2014_01"];
+    [m_datalist addObject:@"2014_04"];
+    [m_datalist addObject:@"2013_01"];
+    [m_datalist addObject:@"2012_10"];
+    [m_datalist addObject:@"2011_10"];
+
+    [m_tableview_list setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height)];
+    
+    [PlatformUtil ResizeUI:m_tableview_list];
+    
     
     m_tableview_list.delegate = self;
     m_tableview_list.dataSource = self;

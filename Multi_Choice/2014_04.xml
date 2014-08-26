@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <question title="下列各项业务中，能够形成本企业与债务人之间财务关系的是" answer="企业购买其他公司发行的债券">
+        <choice>企业赊购产品</choice>
+        <choice>企业归还所欠货款</choice>
+        <choice>企业支付银行利息</choice>
+        <choice>企业购买其他公司发行的债券</choice>
+    </question>
+    <question title="张先生2010年1月1日存入银行20000元，存期两年，单利计息，年利率为4％，则到期所得利息额为" answer="１６００元">
+        <choice>４００元</choice>
+        <choice>８００元</choice>
+        <choice>１６００元</choice>
+        <choice>２０００元</choice>
+    </question>
+    <question title="优先股有固定的股利收入，该收入作为年金来看是" answer="永续年金">
+        <choice>预付年金</choice>
+        <choice>递延年金</choice>
+        <choice>先付年金</choice>
+        <choice>永续年金</choice>
+    </question>
+    <question title="从风险角度看，下列更接近于确定性投资的是" answer="购买国债">
+        <choice>投资办厂</choice>
+        <choice>购买国债</choice>
+        <choice>购买公司股票</choice>
+        <choice>开发某地的金矿</choice>
+    </question>
+    <question title="下列各项中，导致长期借款资本成本低于普通股的主要原因是" answer="借款利息可在税前扣除">
+        <choice>借款数额有限</choice>
+        <choice>借款筹资费用低</choice>
+        <choice>借款限制条件少</choice>
+        <choice>借款利息可在税前扣除</choice>
+    </question>
+    <question title="将企业抵押债券分为不动产抵押债券、动产抵押债券和证券抵押债券的依据是" answer="担保品的不同">
+        <choice>有无担保</choice>
+        <choice>担保品的不同</choice>
+        <choice>抵押金额的大小</choice>
+        <choice>抵押品的担保顺序不同</choice>
+    </question>
+    <question title="假设某企业以“1／10，n／30”的信用条件购进一批材料，下列表述正确的是" answer="企业在１０天内付款可享受１％的现金折扣">
+        <choice>企业在１０天内付款可享受１％的现金折扣</choice>
+        <choice>企业在３０天后付款可享受１％的现金折扣</choice>
+        <choice>企业在１０至２０天内付款可享受１％的现金折扣</choice>
+        <choice>企业在２０至３０天内付款可享受１％的现金折扣</choice>
+    </question>
+    <question title="企业为正常生产经营需要购买原材料而持有现金的动机属于" answer="支付动机">
+        <choice>支付动机</choice>
+        <choice>投机动机</choice>
+        <choice>预防动机</choice>
+        <choice>保险动机</choice>
+    </question>
+    <question title="下列各项中，不属于企业应收账款成本内容的是" answer="短缺成本">
+        <choice>机会成本</choice>
+        <choice>管理成本</choice>
+        <choice>短缺成本</choice>
+        <choice>坏账成本</choice>
+    </question>
+    <question title="甲企业以控股为目的购买乙企业的股票，该投资属于" answer="间接投资">
+        <choice>债权投资</choice>
+        <choice>直接投资</choice>
+        <choice>间接投资</choice>
+        <choice>短期投资</choice>
+    </question>
+    <question title="固定资产原始价值减去已提折旧后的净额称为" answer="固定资产的折余价值">
+        <choice>固定资产的重置价值</choice>
+        <choice>固定资产的清算价值</choice>
+        <choice>固定资产的折余价值</choice>
+        <choice>固定资产的折旧价值</choice>
+    </question>
+    <question title="净现值与获利指数的共同之处是" answer="都必须按预定的贴现率计算现金流量的现值">
+        <choice>都是绝对数指标</choice>
+        <choice>都没有考虑资金的时间价值因素</choice>
+        <choice>都能反映单位投入与产出之间的关系</choice>
+        <choice>都必须按预定的贴现率计算现金流量的现值</choice>
+    </question>
+    <question title="使用“5C”评估法评价客户信用时，需要考虑的首要因素是" answer="品质">
+        <choice>品质</choice>
+        <choice>能力</choice>
+        <choice>资本</choice>
+        <choice>行情</choice>
+    </question>
+    <question title="与股票投资相比，下列属于债券投资特点的是" answer="投资收益相对稳定">
+        <choice>投资风险较大</choice>
+        <choice>投资收益相对稳定</choice>
+        <choice>投资收益率比较高</choice>
+        <choice>无法事先预知投资收益水平</choice>
+    </question>
+    <question title="上市公司采用固定股利支付率政策的主要优点是" answer="股利支付与公司盈利密切相关">
+        <choice>有利于公司股票价格的稳定</choice>
+        <choice>股利支付与公司盈利密切相关</choice>
+        <choice>有利于树立公司的良好形象</choice>
+        <choice>有利于投资者安排收入与支出</choice>
+    </question>
+    <question title="下列关于本量利关系的表达式，正确的是" answer="利润=销售收入×边际贡献率—固定成本">
+        <choice>利润=销售收入—变动成本</choice>
+        <choice>利润=边际贡献—变动成本</choice>
+        <choice>利润=销售收入×边际贡献率—固定成本</choice>
+        <choice>利润=销售收入×单位边际贡献—变动成本</choice>
+    </question>
+    <question title="下列各项中，属于制定股利政策时应考虑的法律因素是" answer="资本保全约束">
+        <choice>资本保全约束</choice>
+        <choice>现金流量约束</choice>
+        <choice>资本成本约束</choice>
+        <choice>投资机会约束</choice>
+    </question>
+    <question title="企业保持较高的现金比率，会带来的不利影响是" answer="机会成本的增加">
+        <choice>应收账款的增加</choice>
+        <choice>坏账损失的增加</choice>
+        <choice>存货购进的增加</choice>
+        <choice>机会成本的增加</choice>
+    </question>
+    <question title="已获利息倍数计算公式的分子是" answer="息税前利润">
+        <choice>净利润</choice>
+        <choice>利润总额</choice>
+        <choice>利息费用</choice>
+        <choice>息税前利润</choice>
+    </question>
+    <question title="某企业本年销售收入净额为20000元，应收账款周转次数为4次，则本年度应收账款平均余额为" answer="５０００元">
+        <choice>５０００元</choice>
+        <choice>１００００元</choice>
+        <choice>２００００元</choice>
+        <choice>８００００元</choice>
+    </question>
+</root>

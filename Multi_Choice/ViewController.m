@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "NSLogExt.h"
 #import "Util.h"
+#import "PlatformUtil.h"
 @interface ViewController ()
 
 @end
@@ -22,9 +23,10 @@
 	// Do any additional setup after loading the view, typically from a nib.
     app = [[UIApplication sharedApplication]delegate];
     
+    self.navigationItem.title = m_filename;
     
     m_xmlHelper = [[XMLHelper alloc]init];
-   // m_xmlHelper.m_random = YES;
+    m_xmlHelper.m_random = YES;
     [m_xmlHelper load:m_filename];
     
     m_currentIndex = 0;
@@ -90,11 +92,16 @@
     [self.view addSubview:m_lbl_choice3];
     [self.view addSubview:m_lbl_choice4];
     
-    [self updateQuestionView];
+    
     
  //   NSLogExt(@"text=%@",[m_lbl_choice1 getText]);
 }
-
+- (void)viewDidLayoutSubviews{
+    [super viewDidLayoutSubviews];
+    [PlatformUtil ResizeUIToBottom:m_btn_next parentView:self.view];
+    [PlatformUtil ResizeUIToBottom:m_btn_prev parentView:self.view];
+    [self updateQuestionView];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -184,7 +191,7 @@
 }
 - (void) updateQuestionView{
     NSString* title =[[m_questions objectAtIndex:m_currentIndex] m_title];
-    m_lbl_title.text = title;
+    m_lbl_title.text =[NSString stringWithFormat:@"%@(%i/%i)",title,m_currentIndex+1,m_count];
     
     [Util setLabelToAutoSize:m_lbl_title];
     

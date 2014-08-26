@@ -23,6 +23,8 @@
     NSInteger m_currentIndex;
     NSString* m_str_answer;
     AppDelegate *app;
+    __weak IBOutlet UIButton *m_btn_prev;
+    __weak IBOutlet UIButton *m_btn_next;
 }
 @property(nonatomic,strong) NSString* m_filename;
 - (IBAction)btnNextClick:(id)sender;
