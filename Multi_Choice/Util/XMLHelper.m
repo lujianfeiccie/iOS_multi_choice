@@ -18,8 +18,9 @@
     return self;
 }
 
--(void) load{
-    NSString* result = [[NSBundle mainBundle] pathForResource:@"question1" ofType:@"xml"];
+-(void) load:(NSString*) fileName
+{
+    NSString* result = [[NSBundle mainBundle] pathForResource:fileName ofType:@"xml"];
     NSData *data = [[NSData alloc]initWithContentsOfFile:result];
     
     self.parser = [[NSXMLParser alloc]initWithData:data];
@@ -136,6 +137,6 @@
         self.currentElementPointer.m_title = string;
     
     
- //   NSLogExt(@"string:%@" , string);
+    NSLogExt(@"string:%@" , string);
 }
 @end

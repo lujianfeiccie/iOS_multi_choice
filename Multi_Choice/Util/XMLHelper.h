@@ -20,7 +20,7 @@
 
 @property (nonatomic) BOOL m_random;
 
--(void) load;
+-(void) load:(NSString*) fileName;
 
 
 @end

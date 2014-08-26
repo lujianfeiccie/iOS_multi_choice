@@ -7,7 +7,7 @@
 //
 
 #import "RootViewController.h"
-
+#import "ViewController.h"
 @interface RootViewController ()
 
 @end
@@ -28,6 +28,12 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     app = [[UIApplication sharedApplication]delegate];
+    
+    m_datalist = [[NSMutableArray alloc]init];
+    [m_datalist addObject:@"2014_01"];
+    
+    m_tableview_list.delegate = self;
+    m_tableview_list.dataSource = self;
 }
 
 - (void)didReceiveMemoryWarning
@@ -36,6 +42,37 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    //  [self MyLog:[NSString stringWithFormat:@"didReceiveMemoryWarning count=%d",[self.datalist count]]];
+    return [m_datalist count];
+}
+
+-(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *TableSampleIdentifier = @"TableSampleIdentifier";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:
+                             TableSampleIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]
+                initWithStyle:UITableViewCellStyleDefault
+                reuseIdentifier:TableSampleIdentifier];
+    }
+    
+    NSUInteger row = [indexPath row];
+    cell.textLabel.text = [m_datalist objectAtIndex:row];
+    return cell;
+}
+-(GLfloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 40;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSUInteger row = [indexPath row];
+    
+   ViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"question_view"];
+   next.m_filename = [m_datalist objectAtIndex:row];
+   [[app navController] pushViewController:next animated:YES];
+}
 /*
 #pragma mark - Navigation
 
@@ -47,8 +84,8 @@
 }
 */
 
-- (IBAction)btn_FirstClick:(id)sender {
+/*- (IBAction)btn_FirstClick:(id)sender {
     UIViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"question_view"];
     [[app navController] pushViewController:next animated:YES];
-}
+}*/
 @end

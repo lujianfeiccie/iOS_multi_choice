@@ -24,6 +24,7 @@
     NSString* m_str_answer;
     AppDelegate *app;
 }
+@property(nonatomic,strong) NSString* m_filename;
 - (IBAction)btnNextClick:(id)sender;
 - (IBAction)btnPrevClick:(id)sender;
 - (void) updateQuestionView;

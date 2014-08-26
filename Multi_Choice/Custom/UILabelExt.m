@@ -43,12 +43,13 @@
 }
 */
 -(NSString*) getTextExt{
-    NSLogExt(@"getText");
+   // NSLogExt(@"getText");
 
     return m_text;
 }
 -(void) setTextExt:(NSString*) str{
     m_text = str;
+   // NSLogExt(@"%@",str);
     self.text = [NSString stringWithFormat:@"%@%@",m_prefix,m_text];
 }
 

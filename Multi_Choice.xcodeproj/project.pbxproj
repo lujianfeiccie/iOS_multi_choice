@@ -24,9 +24,10 @@
 		18E7B04919A7770300092469 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18E7B04719A7770300092469 /* InfoPlist.strings */; };
 		18E7B04B19A7770300092469 /* Multi_ChoiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7B04A19A7770300092469 /* Multi_ChoiceTests.m */; };
 		18E7B05719A7794600092469 /* XMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7B05619A7794600092469 /* XMLElement.m */; };
-		18E7B05E19A78E6E00092469 /* question1.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18E7B05D19A78E6E00092469 /* question1.xml */; };
+		18E7B05E19A78E6E00092469 /* 2014_01.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18E7B05D19A78E6E00092469 /* 2014_01.xml */; };
 		18F701DC19AA1133005E0361 /* UILabelExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F701DB19AA1133005E0361 /* UILabelExt.m */; };
 		18F701E019AA406E005E0361 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F701DF19AA406E005E0361 /* RootViewController.m */; };
+		18F7744319AB8C2100D5F3FD /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7744219AB8C2100D5F3FD /* Util.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,11 +66,13 @@
 		18E7B04A19A7770300092469 /* Multi_ChoiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Multi_ChoiceTests.m; sourceTree = "<group>"; };
 		18E7B05519A7794600092469 /* XMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLElement.h; sourceTree = "<group>"; };
 		18E7B05619A7794600092469 /* XMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLElement.m; sourceTree = "<group>"; };
-		18E7B05D19A78E6E00092469 /* question1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = question1.xml; path = Multi_Choice/question1.xml; sourceTree = "<group>"; };
+		18E7B05D19A78E6E00092469 /* 2014_01.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = 2014_01.xml; path = Multi_Choice/2014_01.xml; sourceTree = "<group>"; };
 		18F701DA19AA1133005E0361 /* UILabelExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelExt.h; sourceTree = "<group>"; };
 		18F701DB19AA1133005E0361 /* UILabelExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelExt.m; sourceTree = "<group>"; };
 		18F701DE19AA406E005E0361 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = UI/RootViewController.h; sourceTree = "<group>"; };
 		18F701DF19AA406E005E0361 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = UI/RootViewController.m; sourceTree = "<group>"; };
+		18F7744119AB8C2100D5F3FD /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		18F7744219AB8C2100D5F3FD /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +104,7 @@
 			children = (
 				18F701DD19AA403B005E0361 /* UI */,
 				18F701D919AA1106005E0361 /* Custom */,
-				18E7B05D19A78E6E00092469 /* question1.xml */,
+				18E7B05D19A78E6E00092469 /* 2014_01.xml */,
 				18E7B05419A778A300092469 /* Util */,
 				18E7B02519A7770300092469 /* Multi_Choice */,
 				18E7B04419A7770300092469 /* Multi_ChoiceTests */,
@@ -184,6 +187,8 @@
 				18E7B05619A7794600092469 /* XMLElement.m */,
 				18E1138619A80C1A008F8EFC /* XMLHelper.h */,
 				18E1138719A80C1A008F8EFC /* XMLHelper.m */,
+				18F7744119AB8C2100D5F3FD /* Util.h */,
+				18F7744219AB8C2100D5F3FD /* Util.m */,
 			);
 			name = Util;
 			path = Multi_Choice/Util;
@@ -284,7 +289,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18E7B03819A7770300092469 /* Images.xcassets in Resources */,
-				18E7B05E19A78E6E00092469 /* question1.xml in Resources */,
+				18E7B05E19A78E6E00092469 /* 2014_01.xml in Resources */,
 				18E7B02A19A7770300092469 /* InfoPlist.strings in Resources */,
 				18E7B03319A7770300092469 /* Main.storyboard in Resources */,
 			);
@@ -313,6 +318,7 @@
 				18E1138819A80C1A008F8EFC /* XMLHelper.m in Sources */,
 				18F701DC19AA1133005E0361 /* UILabelExt.m in Sources */,
 				18E1138B19A80E68008F8EFC /* NSLogExt.m in Sources */,
+				18F7744319AB8C2100D5F3FD /* Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

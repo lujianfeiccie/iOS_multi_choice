@@ -8,10 +8,15 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-@interface RootViewController : UIViewController
+
+@interface RootViewController : UIViewController<UITableViewDelegate,
+UITableViewDataSource>
+
 {
     AppDelegate* app;
+    __weak IBOutlet UITableView *m_tableview_list;
+    NSMutableArray* m_datalist;
 }
-- (IBAction)btn_FirstClick:(id)sender;
+
 
 @end

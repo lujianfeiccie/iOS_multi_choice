@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <question title="下列各项资金时间价值指标中，无法计算出确切结果的是" answer="永续年金终值">
+        <choice>普通年金现值</choice>
+        <choice>先付年金终值</choice>
+        <choice>递延年金现值</choice>
+        <choice>"永续年金终值</choice>
+    </question>
+    <question title="已知甲方案投资收益率的期望值为16％，乙方案投资收益率的期望值为18％，比较甲、乙两个方案风险大小应采用的指标是" answer="标准离差率">
+        <choice>标准离差</choice>
+        <choice>期望值</choice>
+        <choice>净现值</choice>
+        <choice>标准离差率</choice>
+    </question>
+    <question title="在利率为10％的条件下，1至3年期的复利现值系数分别为0.909、0.826、0.751，则3年期的年金现值系数是" answer="2.486">
+        <choice>0.751</choice>
+        <choice>1.735</choice>
+        <choice>2.486</choice>
+        <choice>2.735</choice>
+    </question>
+    <question title="企业通过商业信用筹资时，其资金来源是" answer="其他企业资金">
+        <choice>政府财政资金</choice>
+        <choice>银行信贷资金</choice>
+        <choice>企业自留资金</choice>
+        <choice>其他企业资金</choice>
+    </question>
+    <question title="理论上讲，下列筹资方式中资本成本最低的是 " answer="发行债券">
+        <choice>发行普通股</choice>
+        <choice>留用利润</choice>
+        <choice>发行债券</choice>
+        <choice>发行优先股</choice>
+    </question>
+    <question title="与权益资金筹资方式相比，银行借款筹资的缺点是" answer="财务风险大">
+        <choice>资本成本高</choice>
+        <choice>财务风险大</choice>
+        <choice>筹资的弹性差</choice>
+        <choice>分散企业控制权</choice>
+    </question>
+    <question title="企业因预防动机而确定持有的现金余额时，一般不需要考虑的因素是" answer="企业销售水平">
+        <choice>企业销售水平</choice>
+        <choice>企业临时举债能力的强弱</choice>
+        <choice>企业愿意承担风险的程度</choice>
+        <choice>企业对现金收支预测的可靠程度</choice>
+    </question>
+    <question title="在材料分类管理中，需要重点加强控制的是" answer="耗用金额很大、品种数量少的材料">
+        <choice>耗用金额很大、品种数量少的材料</choice>
+        <choice>耗用金额很小、耗用数量少的材料</choice>
+        <choice>耗用金额很小、品种数量少的材料</choice>
+        <choice>耗用金额很小、耗用数量多的材料</choice>
+    </question>
+    <question title="下列各项中，不属于信用政策构成内容的是" answer="商业折扣">
+        <choice>收账政策</choice>
+        <choice>信用期限</choice>
+        <choice>商业折扣</choice>
+        <choice>信用标准</choice>
+    </question>
+    <question title="某投资项目的初始投资额为100万元，年折旧额为10万元，无其它非付现成本，每年可实现净利润为30万元，则该项目的投资回收期是" answer="２.５年">
+        <choice>２.５年</choice>
+        <choice>３.３年</choice>
+        <choice>５年</choice>
+        <choice>１０年</choice>
+    </question>
+    <question title="每股收益的计算表达式是" answer="（企业净利润-优先股股利）／普通股股数">
+        <choice>企业营业利润/普通股股数</choice>
+        <choice>（企业净利润-优先股股利）／普通股股数</choice>
+        <choice>企业营业利润/(普通股股数+优先股股数)</choice>
+        <choice>(企业净利润-优先股股利)/(普通股股数+优先股股数)</choice>
+    </question>
+    <question title="某公司股票上年每股现金股利为2元，股利年增长率为5％，投资者预期的投资收益率为10％，该股票的内在价值是" answer="４２元">
+        <choice>２０元</choice>
+        <choice>２１元</choice>
+        <choice>４０元</choice>
+        <choice>４２元</choice>
+    </question>
+    <question title="企业新购一台机器设备，设备原值为20000元，采用年数总和法提取折旧，预计使用年限为5年，预计残值为2000元，则第一年的折旧额为" answer="６０００元">
+        <choice>３６００元</choice>
+        <choice>４８００元</choice>
+        <choice>６０００元</choice>
+        <choice>８０００元</choice>
+    </question>
+    <question title="由于物价上涨使投资者的实际收益相对下降带来损失的风险是" answer="通货膨胀风险">
+        <choice>利率风险</choice>
+        <choice>市场风险</choice>
+        <choice>外汇风险</choice>
+        <choice>通货膨胀风险</choice>
+    </question>
+    <question title="利用相关比率法进行利润预测的计算方法是" answer="预计销售收入×销售收入利润率">
+        <choice>预计销售量×资金利润率</choice>
+        <choice>预计销售收入×销售收入利润率</choice>
+        <choice>预计销售收入×资金利润率</choice>
+        <choice>预计销售量×销售收入利润率</choice>
+    </question>
+    <question title="某产品的变动成本率为60％，则该产品的边际贡献率是" answer="４０％">
+        <choice>３０％</choice>
+        <choice>４０％</choice>
+        <choice>５０％</choice>
+        <choice>６０％</choice>
+    </question>
+    <question title="如果公司的产权比率下降，则其资产负债率发生的变化是" answer="降低">
+        <choice>提高</choice>
+        <choice>降低</choice>
+        <choice>不变</choice>
+        <choice>不确定</choice>
+    </question>
+    <question title="优先满足公司项目投资所需权益资金的股利政策是" answer="剩余股利政策">
+        <choice>剩余股利政策</choice>
+        <choice>固定股利政策</choice>
+        <choice>固定股利支付率政策</choice>
+        <choice>低正常股利加额外股利政策</choice>
+    </question>
+    <question title="在杜邦财务分析体系中，综合性最强的核心财务指标是" answer="净资产收益率">
+        <choice>销售净利率</choice>
+        <choice>总资产周转率</choice>
+        <choice>权益乘数</choice>
+        <choice>净资产收益率</choice>
+    </question>
+    <question title="ABC公司某年末资产总额为1500万元，所有者权益为900万元，则该企业年末资产负债率是" answer="４０％">
+        <choice>４０％</choice>
+        <choice>５５％</choice>
+        <choice>６０％</choice>
+        <choice>６６％</choice>
+    </question>
+</root>
