@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <question title="企业与投资者和受资者之间的财务关系，在性质上是" answer="所有权关系">
+        <choice>债权债务关系</choice>
+        <choice>所有权关系</choice>
+        <choice>资金结算关系</choice>
+        <choice>税收法律关系</choice>
+    </question>
+    <question title="按照委托代理理论，所有者普遍关注的财务管理目标是" answer="股东财富最大化">
+        <choice>经济效益最大化</choice>
+        <choice>利润最大化</choice>
+        <choice>企业价值最大化</choice>
+        <choice>股东财富最大化</choice>
+    </question>
+    <question title="已知甲方案投资收益率的期望值为14%，乙方案投资收益率的期望值为15%，两个方案都存在投资风险，则比较两个方案风险大小的指标是" answer="标准离差率">
+        <choice>期望值</choice>
+        <choice>标准离差</choice>
+        <choice>标准离差率</choice>
+        <choice>方差</choice>
+    </question>
+    <question title="在利率和计息期相同的条件下，下列表达式正确的是" answer="普通年金终值系数×偿债基金系数=1">
+        <choice>普通年金终值系数×普通年金现值系数=1</choice>
+        <choice>普通年金终值系数×偿债基金系数=1</choice>
+        <choice>普通年金终值系数×资本回收系数=1</choice>
+        <choice>普通年金终值系数×先付年金现值系数=1</choice>
+    </question>
+    <question title="银行借款筹资方式的优点是" answer="筹资成本低">
+        <choice>筹资成本低</choice>
+        <choice>限制条件少</choice>
+        <choice>财务风险低</choice>
+        <choice>能提高公司信誉</choice>
+    </question>
+    <question title="一般情况下，采用销售百分比法预测资金需要量时，假定不随销售收入变动的项目是" answer="公司债券">
+        <choice>现金</choice>
+        <choice>存货</choice>
+        <choice>应付账款</choice>
+        <choice>公司债券</choice>
+    </question>
+    <question title="在其他因素不变的情况下，企业采取积极的收账政策可能导致的后果是" answer="收账费用增加">
+        <choice>坏账损失增加</choice>
+        <choice>收账费用增加</choice>
+        <choice>平均付款期延长</choice>
+        <choice>应收账款平均余额增加</choice>
+    </question>
+    <question title="一般情况下，企业持有货币资金的机会成本与相关因素的关系是" answer="与有价证券利率成正比">
+        <choice>与货币资金持有量成反比</choice>
+        <choice>与货币资金持有时间成反比</choice>
+        <choice>与有价证券利率成正比</choice>
+        <choice>与货币资金持有量无关</choice>
+    </question>
+    <question title="如果甲项目的获利指数为1.06，则下列说法正确的是" answer="甲项目的净现值大于零">
+        <choice>甲项目的净现值大于零</choice>
+        <choice>甲项目不具备财务可行性</choice>
+        <choice>甲项目投资回收期小于要求的项目回收期</choice>
+        <choice>甲项目投资回收期大于要求的项目回收期</choice>
+    </question>
+    <question title="某投资项目年营业收入180万元，年付现成本60万元，所得税20万元，则该项目年营业净现金流量是" answer="１００万元">
+        <choice>６０万元</choice>
+        <choice>８０万元</choice>
+        <choice>１００万元</choice>
+        <choice>１２０万元</choice>
+    </question>
+    <question title="按企业对外投资的方式划分，企业购买其他企业少量股票并短期持有属于" answer="间接投资">
+        <choice>股权投资</choice>
+        <choice>间接投资</choice>
+        <choice>直接投资</choice>
+        <choice>短期投资</choice>
+    </question>
+    <question title="与股票投资相比，下列属于企业债券投资特点的是" answer="投资者的权利小">
+        <choice>投资风险大</choice>
+        <choice>投资者的权利小</choice>
+        <choice>收益不稳定</choice>
+        <choice>无固定偿还期限</choice>
+    </question>
+    <question title="按费用与产品产量之间的关系，企业生产产品直接耗费的原材料成本属于" answer="变动费用">
+        <choice>变动费用</choice>
+        <choice>生产成本</choice>
+        <choice>可控费用</choice>
+        <choice>直接费用</choice>
+    </question>
+    <question title="计算保本点销售量的正确公式是" answer="销售量＝固定成本／单位边际贡献">
+        <choice>销售量＝固定成本／单位变动成本</choice>
+        <choice>销售量＝（固定成本+利润）／（单价-单位变动成本）</choice>
+        <choice>销售量＝利润／单位边际贡献</choice>
+        <choice>销售量＝固定成本／单位边际贡献</choice>
+    </question>
+    <question title="假设某企业1-3月份的销售收入分别为1000万元、1200万元、1100万元，规定的权数分别为0.2、0.3、0.5，用加权移动平均法预测的4月份销售收入是" answer="１１１０万元">
+        <choice>１０００万元</choice>
+        <choice>１１００万元</choice>
+        <choice>１１１０万元</choice>
+        <choice>１２００万元</choice>
+    </question>
+    <question title="下列各种产品价格中属于按调节方式进行分类的是" answer="国家指导价格">
+        <choice>出厂价格</choice>
+        <choice>批发价格</choice>
+        <choice>零售价格</choice>
+        <choice>国家指导价格</choice>
+    </question>
+    <question title="下列关于股份有限公司特点的表述正确的是" answer="易于筹资">
+        <choice>公司是自然人企业</choice>
+        <choice>易于筹资</choice>
+        <choice>公司承担无限责任</choice>
+        <choice>不存在双重纳税问题</choice>
+    </question>
+    <question title="企业并购中对被并购企业资产进行评估时不适用的方法是" answer="清算价格法">
+        <choice>重置成本法</choice>
+        <choice>清算价格法</choice>
+        <choice>市场法</choice>
+        <choice>收益法</choice>
+    </question>
+    <question title="下列指标中，企业短期贷款的提供者最关心的是" answer="速动率">
+        <choice>速动率</choice>
+        <choice>资产净利润率</choice>
+        <choice>市盈率</choice>
+        <choice>总资产周转率</choice>
+    </question>
+    <question title="企业发放现金股利，对其产权比率的影响是" answer="增大">
+        <choice>增大</choice>
+        <choice>减小</choice>
+        <choice>不变</choice>
+        <choice>变化不确定</choice>
+    </question>
+</root>

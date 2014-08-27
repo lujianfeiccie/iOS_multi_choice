@@ -53,25 +53,8 @@
     m_lbl_choice2.m_prefix = @"B.";
     m_lbl_choice3.m_prefix = @"C.";
     m_lbl_choice4.m_prefix = @"D.";
-    [m_lbl_choice1 setFrame:CGRectMake(m_lbl_title.frame.origin.x,
-                                       m_lbl_title.frame.origin.y+100,
-                                       m_lbl_title.frame.size.width,
-                                      20)];
-
-    [m_lbl_choice2 setFrame:CGRectMake(m_lbl_title.frame.origin.x,
-                                       m_lbl_choice1.frame.origin.y+50,
-                                       m_lbl_title.frame.size.width,
-                                       m_lbl_choice1.frame.size.height)];
-
-    [m_lbl_choice3 setFrame:CGRectMake(m_lbl_title.frame.origin.x,
-                                       m_lbl_choice2.frame.origin.y+50,
-                                       m_lbl_title.frame.size.width,
-                                       m_lbl_choice1.frame.size.height)];
-
-    [m_lbl_choice4 setFrame:CGRectMake(m_lbl_title.frame.origin.x,
-                                       m_lbl_choice3.frame.origin.y+50,
-                                       m_lbl_title.frame.size.width,
-                                       m_lbl_choice1.frame.size.height)];
+    
+    
 
    
     
@@ -190,17 +173,22 @@
     }
 }
 - (void) updateQuestionView{
+    
     NSString* title =[[m_questions objectAtIndex:m_currentIndex] m_title];
     m_lbl_title.text =[NSString stringWithFormat:@"%@(%i/%i)",title,m_currentIndex+1,m_count];
     
     [Util setLabelToAutoSize:m_lbl_title];
+    
     
     NSArray *choices = [[m_questions objectAtIndex:m_currentIndex] m_subElements];
     m_str_answer = [[m_questions objectAtIndex:m_currentIndex] m_answer];
     NSInteger selected =[[m_questions objectAtIndex:m_currentIndex] m_selected];
     int count = [choices count];
 //    NSLogExt(@"count=%i",count);
-    for (NSInteger i=0; i< count; ++i) {
+    
+    
+    for (NSInteger i=0; i< count; ++i)
+    {
        
         if (i==0) {
             [m_lbl_choice1 setTextExt:[[choices objectAtIndex:i] m_choice]];
@@ -221,6 +209,30 @@
         
        
     }
+  
+    [m_lbl_choice1 setFrame:CGRectMake(m_lbl_title.frame.origin.x,
+                                       m_lbl_title.frame.origin.y+
+                                       m_lbl_title.frame.size.height+20,
+                                       m_lbl_choice1.frame.size.width,
+                                       m_lbl_choice1.frame.size.height)];
+    
+    [m_lbl_choice2 setFrame:CGRectMake(m_lbl_choice1.frame.origin.x,
+                                       m_lbl_choice1.frame.origin.y+                                  m_lbl_choice1.frame.size.height+30,
+                                       m_lbl_choice2.frame.size.width,
+                                       m_lbl_choice2.frame.size.height)];
+    
+    [m_lbl_choice3 setFrame:CGRectMake(m_lbl_choice2.frame.origin.x,
+                                       m_lbl_choice2.frame.origin.y+                                   m_lbl_choice2.frame.size.height+30,
+                                       m_lbl_choice3.frame.size.width,
+                                       m_lbl_choice3.frame.size.height)];
+    
+    [m_lbl_choice4 setFrame:CGRectMake(m_lbl_choice3.frame.origin.x,
+                                       m_lbl_choice3.frame.origin.y+
+                                       m_lbl_choice3.frame.size.height+30,
+                                       m_lbl_choice4.frame.size.width,
+                                       m_lbl_choice4.frame.size.height)];
+    
+    
     [m_lbl_choice1 setNormal];
     [m_lbl_choice2 setNormal];
     [m_lbl_choice3 setNormal];
@@ -237,5 +249,7 @@
         [self onLabelExtClick: m_lbl_choice4];
     }
 
+    
+  
 }
 @end

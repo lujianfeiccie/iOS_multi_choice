@@ -102,7 +102,7 @@
         <choice>利润分配表</choice>
         <choice>现金流量表</choice>
     </question>
-    <question title="负债总额与所有者权益的比率所表述的企业偿债能力指标是" answer="速动比率">
+    <question title="负债总额与所有者权益的比率所表述的企业偿债能力指标是" answer="产权比率">
         <choice>资产负债率</choice>
         <choice>产权比率</choice>
         <choice>流动比率</choice>
