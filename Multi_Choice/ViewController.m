@@ -35,15 +35,17 @@
     m_count = [m_questions count];
 
  
-
+    m_lbl_title   = [[UILabel alloc]init];
+    m_lbl_note = [[UILabelExt alloc]init];
+    [m_lbl_note setHidden:YES];
     //自动折行设置
-    [m_lbl_title setFrame:CGRectMake(0, m_lbl_title.frame.origin.y,
+    [m_lbl_title setFrame:CGRectMake(0, 80,
                                          [UIScreen mainScreen].applicationFrame.size.width-10, 100)];
     
     
 
 
-    
+
     m_lbl_choice1 = [[UILabelExt alloc]init];
     m_lbl_choice2 = [[UILabelExt alloc]init];
     m_lbl_choice3 = [[UILabelExt alloc]init];
@@ -53,7 +55,7 @@
     m_lbl_choice2.m_prefix = @"B.";
     m_lbl_choice3.m_prefix = @"C.";
     m_lbl_choice4.m_prefix = @"D.";
-    
+    m_lbl_note.m_prefix = @"注解：\r\n\r\n";
     
 
    
@@ -67,13 +69,36 @@
     m_lbl_choice2.delegateExt = self;
     m_lbl_choice3.delegateExt = self;
     m_lbl_choice4.delegateExt = self;
-    
-    
 
-    [self.view addSubview:m_lbl_choice1];
-    [self.view addSubview:m_lbl_choice2];
+   
+    
+    m_scrollview = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-m_btn_next.frame.size.height-20)];
+
+
+    m_scrollview.scrollEnabled = YES;
+    m_scrollview.bounces = YES;
+    m_scrollview.showsVerticalScrollIndicator = NO;
+    
+    m_scrollview.showsHorizontalScrollIndicator = NO;
+    
+    m_scrollview.delegate = self;
+    
+    m_scrollview.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height-m_btn_next.frame.size.height-20);
+    
+   // m_scrollview.backgroundColor = [UIColor blueColor];
+  
+
+    
+    [m_scrollview addSubview:m_lbl_title];
+    [m_scrollview addSubview:m_lbl_choice1];
+    [m_scrollview addSubview:m_lbl_choice2];
+    [m_scrollview addSubview:m_lbl_choice3];
+    [m_scrollview addSubview:m_lbl_choice4];
+    [m_scrollview addSubview:m_lbl_note];
+    [self.view addSubview:m_scrollview];
+/*    [self.view addSubview:m_lbl_choice2];
     [self.view addSubview:m_lbl_choice3];
-    [self.view addSubview:m_lbl_choice4];
+    [self.view addSubview:m_lbl_choice4];*/
     
     
     
@@ -110,7 +135,11 @@
 
 -(void) onLabelExtClick:(id)sender
 {
-    if ([sender isEqual:m_lbl_choice1]) {
+   
+    if (m_lbl_choice2.m_IsSelected == NO &&
+        m_lbl_choice3.m_IsSelected == NO &&
+        m_lbl_choice4.m_IsSelected == NO &&
+        [sender isEqual:m_lbl_choice1]) {
         NSLogExt(@"choice1");
         [[m_questions objectAtIndex:m_currentIndex]setSelectExt:0];
         if ([[m_lbl_choice1 getTextExt] isEqualToString:m_str_answer])
@@ -122,7 +151,10 @@
             [m_lbl_choice1 setWrong];
         }
     }
-    else if ([sender isEqual:m_lbl_choice2]) {
+    else if (m_lbl_choice1.m_IsSelected == NO &&
+             m_lbl_choice3.m_IsSelected == NO &&
+             m_lbl_choice4.m_IsSelected == NO &&
+             [sender isEqual:m_lbl_choice2]) {
         NSLogExt(@"choice2");
         [[m_questions objectAtIndex:m_currentIndex]setSelectExt:1];
         if ([[m_lbl_choice2 getTextExt] isEqualToString:m_str_answer])
@@ -134,7 +166,10 @@
             [m_lbl_choice2 setWrong];
         }
     }
-    else if ([sender isEqual:m_lbl_choice3]) {
+    else if (m_lbl_choice1.m_IsSelected == NO &&
+             m_lbl_choice2.m_IsSelected == NO &&
+             m_lbl_choice4.m_IsSelected == NO &&
+             [sender isEqual:m_lbl_choice3]) {
         NSLogExt(@"choice3");
         [[m_questions objectAtIndex:m_currentIndex]setSelectExt:2];
         if ([[m_lbl_choice3 getTextExt] isEqualToString:m_str_answer])
@@ -146,7 +181,10 @@
             [m_lbl_choice3 setWrong];
         }
     }
-    else if ([sender isEqual:m_lbl_choice4]) {
+    else if (m_lbl_choice1.m_IsSelected == NO &&
+             m_lbl_choice2.m_IsSelected == NO &&
+             m_lbl_choice3.m_IsSelected == NO &&
+             [sender isEqual:m_lbl_choice4]) {
         NSLogExt(@"choice4");
         [[m_questions objectAtIndex:m_currentIndex]setSelectExt:3];
         if ([[m_lbl_choice4 getTextExt] isEqualToString:m_str_answer])
@@ -171,8 +209,16 @@
     else if ([[m_lbl_choice4 getTextExt]isEqualToString:m_str_answer]) {
         [m_lbl_choice4 setRight];
     }
+    
+    if([[m_questions objectAtIndex:m_currentIndex] m_selected]!=-1){
+        //Have selected
+        [m_lbl_note setHidden:NO];
+        m_scrollview.contentSize = CGSizeMake(self.view.frame.size.width, m_lbl_note.frame.origin.y+m_lbl_note.frame.size.height);
+
+    }
 }
 - (void) updateQuestionView{
+    [m_scrollview scrollsToTop];
     
     NSString* title =[[m_questions objectAtIndex:m_currentIndex] m_title];
     m_lbl_title.text =[NSString stringWithFormat:@"%@(%i/%i)",title,m_currentIndex+1,m_count];
@@ -209,6 +255,8 @@
         
        
     }
+    [m_lbl_note setTextExt:[[m_questions objectAtIndex:m_currentIndex] m_note]];
+    [Util setLabelToAutoSize:m_lbl_note];
   
     [m_lbl_choice1 setFrame:CGRectMake(m_lbl_title.frame.origin.x,
                                        m_lbl_title.frame.origin.y+
@@ -232,13 +280,20 @@
                                        m_lbl_choice4.frame.size.width,
                                        m_lbl_choice4.frame.size.height)];
     
+    [m_lbl_note setFrame:CGRectMake(m_lbl_choice4.frame.origin.x,
+                                    m_lbl_choice4.frame.origin.y+
+                                    m_lbl_choice4.frame.size.height+30,
+                                    m_lbl_note.frame.size.width,
+                                    m_lbl_note.frame.size.height)];
+    
     
     [m_lbl_choice1 setNormal];
     [m_lbl_choice2 setNormal];
     [m_lbl_choice3 setNormal];
     [m_lbl_choice4 setNormal];
+    
     if (selected==-1) {
-      
+        [m_lbl_note setHidden:YES];
     }else if(selected==0){
         [self onLabelExtClick: m_lbl_choice1];
     }else if(selected==1){
@@ -251,5 +306,9 @@
 
     
   
+}
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView
+{
+    
 }
 @end

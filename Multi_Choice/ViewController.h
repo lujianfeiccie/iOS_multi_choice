@@ -10,13 +10,15 @@
 #import "XMLHelper.h"
 #import "UILabelExt.h"
 #import "AppDelegate.h"
-@interface ViewController : UIViewController<UILabelExtDelegate>
+@interface ViewController : UIViewController<UILabelExtDelegate,UIScrollViewDelegate>
 {
-    __weak IBOutlet UILabel *m_lbl_title;
+    UIScrollView *m_scrollview;
+     UILabel *m_lbl_title;
      UILabelExt *m_lbl_choice1;
      UILabelExt *m_lbl_choice2;
      UILabelExt *m_lbl_choice3;
      UILabelExt *m_lbl_choice4;
+     UILabelExt *m_lbl_note;
     XMLHelper* m_xmlHelper;
     NSInteger m_count;
     NSMutableArray* m_questions;

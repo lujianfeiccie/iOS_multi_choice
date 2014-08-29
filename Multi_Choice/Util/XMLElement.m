@@ -13,6 +13,7 @@
 @synthesize m_title;
 @synthesize m_answer;
 @synthesize m_choice;
+@synthesize m_note;
 @synthesize m_parent;
 @synthesize m_subElements;
 @synthesize m_selected;

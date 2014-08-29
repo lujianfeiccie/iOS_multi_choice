@@ -1,123 +1,124 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <root>
-    <question title="预测投资风险收益时，不需要考虑的因素是" answer="补偿性余额">
+    <question title="预测投资风险收益时，不需要考虑的因素是" answer="补偿性余额" note="补偿性余额是银行要求借款人在银行中保持按贷款限额或实际借用额一定百分比（一般为10%至20%）计算的最低存款余额">
         <choice>际准离差</choice>
         <choice>标准离差率</choice>
         <choice>补偿性余额</choice>
         <choice>风险价值系数</choice>
     </question>
-    <question title="下列关于现值系数与终值系数之间关系的表述中，正确的是" answer="复利终值系数与复利现值系数互为倒数">
+    <question title="下列关于现值系数与终值系数之间关系的表述中，正确的是" answer="复利终值系数与复利现值系数互为倒数" note="">
         <choice>复利终值系数与复利现值系数互为倒数</choice>
         <choice>复利终值系数与普通年金现值系数互为倒数</choice>
         <choice>复利终值系数与普通年金终值系数互为倒数</choice>
         <choice>年金终值系数与普通年金现值系数互为倒数</choice>
     </question>
-    <question title="关于资金时间价值的正确表述是" answer="资金时间价值是资金在不同时点上的价值">
+    <question title="关于资金时间价值的正确表述是" answer="资金时间价值是资金在不同时点上的价值" note="">
         <choice>资金时间价值是若干时间后的增值额</choice>
         <choice>资金时间价值是投入生产使用的资金额</choice>
         <choice>资金时间价值是资金在不同时点上的价值</choice>
         <choice>资金时间价值是资金在周转使用中由于时间因素形成的增值额</choice>
     </question>
-    <question title="在预期收益相同情况下，收益概率分布与风险程度的关系是" answer="收益概率分布越集中，风险程度越低">
+    <question title="在预期收益相同情况下，收益概率分布与风险程度的关系是" answer="收益概率分布越集中，风险程度越低" note="">
         <choice>收益概率分布越集中，风险程度越低</choice>
         <choice>收益概率分布越分散，风险程度越低</choice>
         <choice>收益概率分布的峰度越高，风险程度越高</choice>
         <choice>收益概率分布的峰度越低，分布越集中，风险程度越高</choice>
     </question>
-    <question title="某项永久性奖学金，计划每年末颁发50000元，如果年复利率为8%，则该项奖学金的现值是" answer="６２５０００元">
+    <question title="某项永久性奖学金，计划每年末颁发50000元，如果年复利率为8%，则该项奖学金的现值是" answer="６２５０００元" note="">
         <choice>１２５０００元</choice>
         <choice>４０００００元</choice>
         <choice>５２５０００元</choice>
         <choice>６２５０００元</choice>
     </question>
-    <question title="下列各项中，属于吸收投入资本筹资方式优点的是" answer="可降低企业的资本成本">
+    <question title="下列各项中，属于吸收投入资本筹资方式优点的是" answer="可降低企业的资本成本" note="">
         <choice>可保持企业的控制权</choice>
         <choice>可降低企业的资本成本</choice>
         <choice>可享受财务杠杆的作用</choice>
         <choice>可提高企业的资信和借款能力</choice>
     </question>
-    <question title="当市场利率低于债券票面利率时，分期付息到期还本债券的发行方式是" answer="溢价发行">
+    <question title="当市场利率低于债券票面利率时，分期付息到期还本债券的发行方式是" answer="溢价发行" note="">
         <choice>溢价发行</choice>
         <choice>折价发行</choice>
         <choice>面值发行</choice>
         <choice>等价发行</choice>
     </question>
-    <question title="根据资金交易性质，可将资金市场分为" answer="一级市场和二级市场">
+    <question title="根据资金交易性质，可将资金市场分为" answer="一级市场和二级市场" note="">
         <choice>一级市场和二级市场</choice>
         <choice>资金市场和外汇市场</choice>
         <choice>证券市场和借贷市场</choice>
         <choice>货币市场与资本市场</choice>
     </question>
-    <question title="在企业成立时，需一次筹足资本金的制度是" answer="实收资本制">
+    <question title="在企业成立时，需一次筹足资本金的制度是" answer="实收资本制" note="">
         <choice>折衷资本制</choice>
         <choice>授权资本制</choice>
         <choice>实收资本制</choice>
         <choice>递延资本制</choice>
     </question>
-    <question title="企业为满足支付动机所持有现金余额的决定因素是" answer="企业的销售水平">
+    <question title="企业为满足支付动机所持有现金余额的决定因素是" answer="企业的销售水平" note="">
         <choice>企业的研发水平</choice>
         <choice>企业的投资机会</choice>
         <choice>企业的偿债能力</choice>
         <choice>企业的销售水平</choice>
     </question>
-    <question title="某企业每月货币资金需用量为250000元，每天货币资金支出量基本稳定，每次转换成本为200元，该企业最佳货币资金持有量为50000元，则每月总的转换成本是" answer="１０００元">
+    <question title="某企业每月货币资金需用量为250000元，每天货币资金支出量基本稳定，每次转换成本为200元，该企业最佳货币资金持有量为50000元，则每月总的转换成本是" answer="１０００元" note="">
         <choice>８００元</choice>
         <choice>１０００元</choice>
         <choice>２５００元</choice>
         <choice>３０００元</choice>
     </question>
-    <question title="下列项目投资决策指标中，属于贴现现金流量指标的是" answer="净现值">
+    <question title="下列项目投资决策指标中，属于贴现现金流量指标的是" answer="净现值" note="">
         <choice>净现值</choice>
         <choice>投资回收期</choice>
         <choice>平均报酬率</choice>
         <choice>会计收益率</choice>
     </question>
-    <question title="不能离开企业而独立存在的无形资产是" answer="商誉">
+    <question title="不能离开企业而独立存在的无形资产是" answer="商誉" note="">
         <choice>商誉</choice>
         <choice>专利权</choice>
         <choice>商标权</choice>
         <choice>非专利技术</choice>
     </question>
-    <question title="2011年3月份我国消费物价指数由2月份的4.9%上升为5.4%，这种变化可能给企业带来的投资风险是" answer="通货膨胀风险">
+    <question title="2011年3月份我国消费物价指数由2月份的4.9%上升为5.4%，这种变化可能给企业带来的投资风险是" answer="通货膨胀风险" note="">
         <choice>市场风险</choice>
         <choice>决策风险</choice>
         <choice>外汇风险</choice>
         <choice>通货膨胀风险</choice>
     </question>
-    <question title="净资产收益率的计算表达式是" answer="利润总额除以所有者权益年末数">
+    <question title="净资产收益率的计算表达式是" answer="利润总额除以所有者权益年末数" note="">
         <choice>营业利润除以平均所有者权益</choice>
         <choice>净利润除以平均所有者权益</choice>
         <choice>利润总额除以所有者权益年末数</choice>
         <choice>息税前利润除以所有者权益年末数</choice>
     </question>
-    <question title="企业向客户交付商品后，因商品的品种、规格或质量等不符合合同的条款，在价格上给予客户一定优惠的做法是" answer="销售折让">
+    <question title="企业向客户交付商品后，因商品的品种、规格或质量等不符合合同的条款，在价格上给予客户一定优惠的做法是" answer="销售折让" note="">
         <choice>销售退回</choice>
         <choice>销售折让</choice>
         <choice>商业折扣</choice>
         <choice>现金折扣</choice>
     </question>
-    <question title="本量利分析法中的“利”是指" answer="毛利润">
+    <question title="本量利分析法中的“利”是指" answer="毛利润" note="">
         <choice>毛利润</choice>
         <choice>税后利润</choice>
         <choice>边际贡献</choice>
         <choice>息税前利润</choice>
     </question>
-    <question title="在不考虑增值税前提下，企业以现金购入材料的经济业务将影响的财务比率是" answer="速动比率">
+    <question title="在不考虑增值税前提下，企业以现金购入材料的经济业务将影响的财务比率是" answer="速动比率" note="">
         <choice>流动比率</choice>
         <choice>速动比率</choice>
         <choice>产权比率</choice>
         <choice>资产负债率</choice>
     </question>
-    <question title="企业年应收账款周转次数为4.5次，若一年按360天计算，则应收账款周转天数是" answer="８０天">
+    <question title="企业年应收账款周转次数为4.5次，若一年按360天计算，则应收账款周转天数是" answer="８０天" note="">
         <choice>３０天</choice>
         <choice>６０天</choice>
         <choice>８０天</choice>
         <choice>９０天</choice>
     </question>
-    <question title="某企业库存现金13万元，银行存款67万元，流动负债200万元。该企业现金比率是" answer="0.4">
+    <question title="某企业库存现金13万元，银行存款67万元，流动负债200万元。该企业现金比率是" answer="0.4" note="现金比率=(货币资金+交易性金融资产)/流动负债&#x000A;=(13+67)/200&#x000A;=0.4">
         <choice>0.4</choice>
         <choice>0.6</choice>
         <choice>0.87</choice>
         <choice>1.15</choice>
     </question>
 </root>
+

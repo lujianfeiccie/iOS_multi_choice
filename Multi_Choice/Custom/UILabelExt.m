@@ -11,6 +11,7 @@
 @implementation UILabelExt
 @synthesize m_prefix;
 @synthesize delegateExt;
+@synthesize m_IsSelected;
 
 -(id)initWithCoder:(NSCoder *)aDecoder{
     self = [super initWithCoder:aDecoder];
@@ -18,6 +19,7 @@
         // Initialization code
         m_prefix=@"";
         m_text = @"";
+        m_IsSelected = NO;
         NSLogExt(@"initWithCoder");
     }
     return self;
@@ -29,6 +31,7 @@
         // Initialization code
         m_prefix = @"";
         m_text =@"";
+        m_IsSelected = NO;
         NSLogExt(@"initWithFrame");
     }
     return self;
@@ -50,17 +53,23 @@
 -(void) setTextExt:(NSString*) str{
     m_text = str;
    // NSLogExt(@"%@",str);
+    if(m_text == nil || [m_text isEqualToString:@""]){
+        m_text = @"无";
+    }
     self.text = [NSString stringWithFormat:@"%@%@",m_prefix,m_text];
 }
 
 -(void) setNormal{
     self.backgroundColor = [UIColor clearColor];
+    m_IsSelected = NO;
 }
 -(void) setRight{
     self.backgroundColor = [UIColor colorWithRed:0 green:1 blue:0 alpha:1];
+    m_IsSelected = YES;
 }
 -(void) setWrong{
     self.backgroundColor = [UIColor colorWithRed:1 green:0 blue:0 alpha:1];
+    m_IsSelected = YES;
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{

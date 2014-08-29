@@ -19,6 +19,7 @@
 }
 @property(nonatomic,strong) NSString *m_prefix;
 @property(nonatomic,strong) id<UILabelExtDelegate> delegateExt;
+@property(nonatomic) BOOL  m_IsSelected;
 -(NSString*) getTextExt;
 -(void) setTextExt:(NSString*) str;
 -(void) setNormal;

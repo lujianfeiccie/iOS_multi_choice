@@ -13,6 +13,7 @@
 @property (nonatomic,strong) NSString *m_title;
 @property (nonatomic,strong) NSString *m_answer;
 @property (nonatomic,strong) NSString *m_choice;
+@property (nonatomic,strong) NSString *m_note;
 @property (nonatomic,strong) NSMutableArray *m_subElements;
 @property (nonatomic,strong) XMLElement *m_parent;
 @property (nonatomic) NSInteger m_selected;

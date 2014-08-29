@@ -109,6 +109,7 @@
     
     self.currentElementPointer.m_title = [attributeDict objectForKey:@"title"];
     self.currentElementPointer.m_answer = [attributeDict objectForKey:@"answer"];
+    self.currentElementPointer.m_note =[attributeDict objectForKey:@"note"];
  //   NSLogExt(@"name:%@" , elementName);
     
 }
