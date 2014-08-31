@@ -18,7 +18,7 @@
         <choice>标准离差率</choice>
         <choice>方差</choice>
     </question>
-    <question title="在利率和计息期相同的条件下，下列表达式正确的是" answer="普通年金终值系数×偿债基金系数=1" note="">
+    <question title="在利率和计息期相同的条件下，下列表达式正确的是" answer="普通年金终值系数×偿债基金系数=1" note="年金终值系数(S/A, i, n)&#x000A;S=A+Ax(1+i)+...+Ax(1+i)^(n-1)&#x000A;等式两边同乘以(1+i)&#x000A;S(1+i)=A(1+i)+A(1+i)^2+...+A(1+i)^n&#x000A;上式两边相减可得：&#x000A;S(1+i)-S=A(1+i)^n-A&#x000A;S[(1+i)-1]=A[(1+i)^n-1]&#x000A;Sxi=A[(1+i)^n-1]&#x000A;S=A[(1+i)^n-1]/i">
         <choice>普通年金终值系数×普通年金现值系数=1</choice>
         <choice>普通年金终值系数×偿债基金系数=1</choice>
         <choice>普通年金终值系数×资本回收系数=1</choice>
@@ -78,7 +78,7 @@
         <choice>可控费用</choice>
         <choice>直接费用</choice>
     </question>
-    <question title="计算保本点销售量的正确公式是" answer="销售量＝固定成本／单位边际贡献" note="">
+    <question title="计算保本点销售量的正确公式是" answer="销售量＝固定成本／单位边际贡献" note="就是刚好回本">
         <choice>销售量＝固定成本／单位变动成本</choice>
         <choice>销售量＝（固定成本+利润）／（单价-单位变动成本）</choice>
         <choice>销售量＝利润／单位边际贡献</choice>
@@ -122,4 +122,3 @@
         <choice>变化不确定</choice>
     </question>
 </root>
-

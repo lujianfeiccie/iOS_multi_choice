@@ -216,9 +216,12 @@
         m_scrollview.contentSize = CGSizeMake(self.view.frame.size.width, m_lbl_note.frame.origin.y+m_lbl_note.frame.size.height);
 
     }
+    
+
+    
 }
 - (void) updateQuestionView{
-    [m_scrollview scrollsToTop];
+    m_scrollview.contentSize = CGSizeMake(self.view.frame.size.width, m_lbl_choice4.frame.origin.y+m_lbl_choice4.frame.size.height);
     
     NSString* title =[[m_questions objectAtIndex:m_currentIndex] m_title];
     m_lbl_title.text =[NSString stringWithFormat:@"%@(%i/%i)",title,m_currentIndex+1,m_count];

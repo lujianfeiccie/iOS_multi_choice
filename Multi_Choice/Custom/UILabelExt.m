@@ -73,10 +73,26 @@
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-//   NSLogExt(@"myLabel touch");
+    [super touchesBegan:touches withEvent:event];
+    
+   NSLogExt(@"touchesBegan");
   // [self.nextResponder touchesBegan:touches withEvent:event];  // 接受到事件后继续向上传递事件
+    
+}
+-(void)touchesCancelled:(NSSet *)touches withEvent:(UIEvent *)event{
+    [super touchesCancelled:touches withEvent:event];
+    
+   NSLogExt(@"touchesCancelled");
+}
+-(void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event{
+    [super touchesEnded:touches withEvent:event];
+    
+       NSLogExt(@"touchesEnded");
     if (delegateExt!=nil) {
         [delegateExt onLabelExtClick:self];
     }
+}
+-(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
+    NSLogExt(@"touchesMoved");
 }
 @end
