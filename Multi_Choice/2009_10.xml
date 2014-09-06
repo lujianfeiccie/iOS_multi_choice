@@ -6,7 +6,7 @@
         <choice>购买丙公司发行的债券</choice>
         <choice>归还所欠丁公司的货款</choice>
     </question>
-    <question title="理论上讲，既能够考虑资金的时间价值和投资风险，又有利于克服管理上的片面性 和短期行为的企业财务管理目标是" answer="企业价值最大化" note="">
+    <question title="理论上讲，既能够考虑资金的时间价值和投资风险，又有利于克服管理上的片面性 和短期行为的企业财务管理目标是" answer="企业价值最大化" note="企业价值最大化是指通过企业财务上的合理经营，采用最优的财务政策，充分考虑资金的时间价值和风险与报酬的关系，在保证企业长期稳定发展的基础上，使企业总价值达到最大。其基本思想是将企业长期稳定发展摆在首位、强调在企业价值增长中满足各方利益关系。">
         <choice>利润最大化</choice>
         <choice>企业价值最大化</choice>
         <choice>每股收益最大化</choice>
@@ -24,7 +24,7 @@
         <choice>递延年金</choice>
         <choice>永续年金</choice>
     </question>
-    <question title="在下列各项资金时间价值系数中，与资本回收系数互为倒数关系的是" answer="年金现值系数" note="">
+    <question title="在下列各项资金时间价值系数中，与资本回收系数互为倒数关系的是" answer="年金现值系数" note="年金现值系数＝1／资本回收系数">
         <choice>复利终值系数</choice>
         <choice>复利现值系数</choice>
         <choice>年金终值系数</choice>
@@ -60,7 +60,7 @@
         <choice>单位材料储存保管费用</choice>
         <choice>年均现金流量大于原始投资额</choice>
     </question>
-    <question title="如果某一投资方案的净现值为正数，则能够得出的确定性结论是" answer="获利指数大于l" note="">
+    <question title="如果某一投资方案的净现值为正数，则能够得出的确定性结论是" answer="获利指数大于l" note="净现值是指一个项目预期实现的现金流入的现值与实施该项计划的现金支出的差额。净现值为正值的项目可以为股东创造价值，净现值为负值的项目会损害股东价值。&#x000A;获利指数（Pl ）＝投产后各年现金流入量的现值合计／原始投资的现值合计">
         <choice>获利指数大于l</choice>
         <choice>投资回收期在一年以内</choice>
         <choice>平均报酬率高于100％</choice>
@@ -122,3 +122,4 @@
         <choice>净资产收益率</choice>
     </question>
 </root>
+

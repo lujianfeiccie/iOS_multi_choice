@@ -12,7 +12,7 @@
         <choice>企业价值最大化</choice>
         <choice>股东财富最大化</choice>
     </question>
-    <question title="已知甲方案投资收益率的期望值为14%，乙方案投资收益率的期望值为15%，两个方案都存在投资风险，则比较两个方案风险大小的指标是" answer="标准离差率" note="">
+    <question title="已知甲方案投资收益率的期望值为14%，乙方案投资收益率的期望值为15%，两个方案都存在投资风险，则比较两个方案风险大小的指标是" answer="标准离差率" note="标准离差率＝标准离差／期望值&#x000A;标准差是方差的算术平方根&#x000A;方差=1／n［（x1-x）^2+（x2-x）^2+...（xn-x）^2］">
         <choice>期望值</choice>
         <choice>标准离差</choice>
         <choice>标准离差率</choice>
@@ -24,7 +24,7 @@
         <choice>普通年金终值系数×资本回收系数=1</choice>
         <choice>普通年金终值系数×先付年金现值系数=1</choice>
     </question>
-    <question title="银行借款筹资方式的优点是" answer="筹资成本低" note="">
+    <question title="银行借款筹资方式的优点是" answer="筹资成本低" note="银行借款的筹资特点包括：筹资速度快、资本成本较低、筹资弹性较大、限制条款多、筹资数额有限。">
         <choice>筹资成本低</choice>
         <choice>限制条件少</choice>
         <choice>财务风险低</choice>
@@ -42,13 +42,14 @@
         <choice>平均付款期延长</choice>
         <choice>应收账款平均余额增加</choice>
     </question>
-    <question title="一般情况下，企业持有货币资金的机会成本与相关因素的关系是" answer="与有价证券利率成正比" note="">
+    <question title="一般情况下，企业持有货币资金的机会成本与相关因素的关系是" answer="与有价证券利率成正比" note="年货币资金持有成本=最佳资金持有量X有价证券的年利率&#x000A;最佳资金持有量=年货币资金持有成本／有价证券的年利率
+        ">
         <choice>与货币资金持有量成反比</choice>
         <choice>与货币资金持有时间成反比</choice>
         <choice>与有价证券利率成正比</choice>
         <choice>与货币资金持有量无关</choice>
     </question>
-    <question title="如果甲项目的获利指数为1.06，则下列说法正确的是" answer="甲项目的净现值大于零" note="">
+    <question title="如果甲项目的获利指数为1.06，则下列说法正确的是" answer="甲项目的净现值大于零" note="净现值是指一个项目预期实现的现金流入的现值与实施该项计划的现金支出的差额。净现值为正值的项目可以为股东创造价值，净现值为负值的项目会损害股东价值。">
         <choice>甲项目的净现值大于零</choice>
         <choice>甲项目不具备财务可行性</choice>
         <choice>甲项目投资回收期小于要求的项目回收期</choice>
@@ -109,16 +110,17 @@
         <choice>市场法</choice>
         <choice>收益法</choice>
     </question>
-    <question title="下列指标中，企业短期贷款的提供者最关心的是" answer="速动率" note="">
+    <question title="下列指标中，企业短期贷款的提供者最关心的是" answer="速动率" note="速动比率=速动资产/流动负债&#x000A;其中：速动资产=流动资产-存货&#x000A;或：速动资产=流动资产-存货-预付账款-待摊费用">
         <choice>速动率</choice>
         <choice>资产净利润率</choice>
         <choice>市盈率</choice>
         <choice>总资产周转率</choice>
     </question>
-    <question title="企业发放现金股利，对其产权比率的影响是" answer="增大" note="">
+    <question title="企业发放现金股利，对其产权比率的影响是" answer="增大" note="支付现金股利会减少所有者权益，&#x000A;产权比率＝负债/所有者权益，&#x000A;分母小了，产权比率这个指标就更大了(即使分子和分母等量减少，结果也是增大)，结论：支付现金股利会提高产权比率">
         <choice>增大</choice>
         <choice>减小</choice>
         <choice>不变</choice>
         <choice>变化不确定</choice>
     </question>
 </root>
+

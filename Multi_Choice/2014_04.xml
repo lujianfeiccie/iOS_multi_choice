@@ -6,7 +6,7 @@
         <choice>企业支付银行利息</choice>
         <choice>企业购买其他公司发行的债券</choice>
     </question>
-    <question title="张先生2010年1月1日存入银行20000元，存期两年，单利计息，年利率为4％，则到期所得利息额为" answer="１６００元" note="f(A,i,n) = f(20000,4%,2)&#x000D;= (20000 x 4% ) x 2">
+    <question title="张先生2010年1月1日存入银行20000元，存期两年，单利计息，年利率为4％，则到期所得利息额为" answer="１６００元" note="f(A,i,n) = f(20000,4%,2) = (20000 x 4% ) x 2">
         <choice>４００元</choice>
         <choice>８００元</choice>
         <choice>１６００元</choice>
@@ -36,7 +36,7 @@
         <choice>抵押金额的大小</choice>
         <choice>抵押品的担保顺序不同</choice>
     </question>
-    <question title="假设某企业以“1／10，n／30”的信用条件购进一批材料，下列表述正确的是" answer="企业在１０天内付款可享受１％的现金折扣" note="">
+    <question title="假设某企业以“1／10，n／30”的信用条件购进一批材料，下列表述正确的是" answer="企业在10天内付款可享受１％的现金折扣" note="">
         <choice>企业在１０天内付款可享受１％的现金折扣</choice>
         <choice>企业在３０天后付款可享受１％的现金折扣</choice>
         <choice>企业在１０至２０天内付款可享受１％的现金折扣</choice>
@@ -48,7 +48,7 @@
         <choice>预防动机</choice>
         <choice>保险动机</choice>
     </question>
-    <question title="下列各项中，不属于企业应收账款成本内容的是" answer="短缺成本" note="">
+    <question title="下列各项中，不属于企业应收账款成本内容的是" answer="短缺成本" note="应收账款的成本包括机会成本、管理成本和坏账成本。">
         <choice>机会成本</choice>
         <choice>管理成本</choice>
         <choice>短缺成本</choice>
@@ -109,7 +109,7 @@
         <choice>存货购进的增加</choice>
         <choice>机会成本的增加</choice>
     </question>
-    <question title="已获利息倍数计算公式的分子是" answer="息税前利润" note="">
+    <question title="已获利息倍数计算公式的分子是" answer="息税前利润" note="已获利息倍数，指上市公司息税前利润相对于所需支付债务利息的倍数，可用来分析公司在一定盈利水平下支付债务利息的能力。&#x000A;已获利息倍数＝息税前利润／所需支付债务利息">
         <choice>净利润</choice>
         <choice>利润总额</choice>
         <choice>利息费用</choice>

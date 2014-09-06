@@ -24,13 +24,13 @@
         <choice>企业自留资金</choice>
         <choice>其他企业资金</choice>
     </question>
-    <question title="理论上讲，下列筹资方式中资本成本最低的是 " answer="发行债券" note="">
+    <question title="理论上讲，下列筹资方式中资本成本最低的是 " answer="发行债券" note="债券成本的计算&#x000A;由于利息费用计入税前的成本费用，可以起到抵减所得税的作用。因此按一次还本、分期付息的借款或券成本的计算公式分别为：&#x000A;Kb=Ib(1-T)/B(1-Fb)&#x000A;式中：Kb----债券资本成本；&#x000A;Ib----债券年利息；&#x000A;T----所得税率；&#x000A;B----债券筹资额;(或称债务本金）&#x000A;Fb----债券筹资费用率(=筹资费用/筹资总额)。&#x000A;或&#x000A;Kb=Rb(1-T)/(1-Fb) (Rb-债券利率)&#x000A;&#x000A;例如，某企业通过发行债券筹集100万元，债券年利率8%，每年付息一次，到期一次还本。筹资费用率为5%，该企业所得税税率为33%。所发行债券的资本成本计算如下：&#x000A;债券资本成本=[100*8%*(1-33%)]/[100*（1-5%）]=5.64%&#x000A;或:&#x000A;债券资本成本=[8%*(1-33%)]/（1-5%）=5.64%&#x000A;">
         <choice>发行普通股</choice>
         <choice>留用利润</choice>
         <choice>发行债券</choice>
         <choice>发行优先股</choice>
     </question>
-    <question title="与权益资金筹资方式相比，银行借款筹资的缺点是" answer="财务风险大" note="">
+    <question title="与权益资金筹资方式相比，银行借款筹资的缺点是" answer="财务风险大" note="银行借款必须承担还本付息的义务，股票筹资没有还本付息的压力，赚钱就分红，所以说银行借款的缺点是 财务风险大">
         <choice>资本成本高</choice>
         <choice>财务风险大</choice>
         <choice>筹资的弹性差</choice>
@@ -48,7 +48,7 @@
         <choice>耗用金额很小、品种数量少的材料</choice>
         <choice>耗用金额很小、耗用数量多的材料</choice>
     </question>
-    <question title="下列各项中，不属于信用政策构成内容的是" answer="商业折扣" note="">
+    <question title="下列各项中，不属于信用政策构成内容的是" answer="商业折扣" note="信用政策主要包括信用标准,信用条件,收账政策三部分内容，主要作用是调节企业应收账款的水平和质量。">
         <choice>收账政策</choice>
         <choice>信用期限</choice>
         <choice>商业折扣</choice>
@@ -96,13 +96,13 @@
         <choice>５０％</choice>
         <choice>６０％</choice>
     </question>
-    <question title="如果公司的产权比率下降，则其资产负债率发生的变化是" answer="降低" note="">
+    <question title="如果公司的产权比率下降，则其资产负债率发生的变化是" answer="降低" note="公式：产权比率= 负债总额/股东权益×100%">
         <choice>提高</choice>
         <choice>降低</choice>
         <choice>不变</choice>
         <choice>不确定</choice>
     </question>
-    <question title="优先满足公司项目投资所需权益资金的股利政策是" answer="剩余股利政策" note="">
+    <question title="优先满足公司项目投资所需权益资金的股利政策是" answer="剩余股利政策" note="剩余股利政策是指公司生产经营所获得的净收益首先应满足公司的资金需求，如果还有剩余，则派发股利；如果没有剩余，则不派发股利。">
         <choice>剩余股利政策</choice>
         <choice>固定股利政策</choice>
         <choice>固定股利支付率政策</choice>
