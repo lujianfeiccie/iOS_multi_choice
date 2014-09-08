@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "ViewController.h"
 #import "PlatformUtil.h"
+#import "ButtonUtil.h"
 @interface RootViewController ()
 
 @end
@@ -23,7 +24,10 @@
     }
     return self;
 }
-
+-(void) toolBarRight{
+    ViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"about_view"];
+    [[app navController] pushViewController:next animated:YES];
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -44,6 +48,7 @@
     
     [PlatformUtil ResizeUI:m_tableview_list];
     
+    self.navigationItem.rightBarButtonItem = [ButtonUtil createToolBarButton:@"关于" target:self action:@selector(toolBarRight)];
     
     m_tableview_list.delegate = self;
     m_tableview_list.dataSource = self;

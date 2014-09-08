@@ -18,5 +18,5 @@ UITableViewDataSource>
     NSMutableArray* m_datalist;
 }
 
-
+-(void) toolBarRight;
 @end

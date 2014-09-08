@@ -24,7 +24,7 @@
         <choice>递延年金</choice>
         <choice>永续年金</choice>
     </question>
-    <question title="在下列各项资金时间价值系数中，与资本回收系数互为倒数关系的是" answer="年金现值系数" note="年金现值系数＝1／资本回收系数">
+    <question title="在下列各项资金时间价值系数中，与资本回收系数互为倒数关系的是" answer="年金现值系数" note="年金现值系数＝1／资本回收系数&#x000A;普通年金终值系数 X 偿债基金系数 = 1&#x000A;复利终值系数 X 复利现值系数 = 1">
         <choice>复利终值系数</choice>
         <choice>复利现值系数</choice>
         <choice>年金终值系数</choice>

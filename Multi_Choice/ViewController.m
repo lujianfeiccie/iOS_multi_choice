@@ -10,6 +10,7 @@
 #import "NSLogExt.h"
 #import "Util.h"
 #import "PlatformUtil.h"
+
 @interface ViewController ()
 
 @end
@@ -24,7 +25,7 @@
     app = [[UIApplication sharedApplication]delegate];
     
     self.navigationItem.title = m_filename;
-    
+   
     m_xmlHelper = [[XMLHelper alloc]init];
     m_xmlHelper.m_random = YES;
     [m_xmlHelper load:m_filename];

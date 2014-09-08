@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <root>
-    <question title="企业与投资者和受资者之间的财务关系，在性质上是" answer="所有权关系" note="">
+    <question title="企业与投资者和受资者之间的财务关系，在性质上是" answer="所有权关系" note="所有权是所有人依法对自己财产所享有的占有">
         <choice>债权债务关系</choice>
         <choice>所有权关系</choice>
         <choice>资金结算关系</choice>
         <choice>税收法律关系</choice>
     </question>
-    <question title="按照委托代理理论，所有者普遍关注的财务管理目标是" answer="股东财富最大化" note="">
+    <question title="按照委托代理理论，所有者普遍关注的财务管理目标是" answer="股东财富最大化" note="股东财富最大化是指通过财务上的合理经营，为股东带来最多的财富。">
         <choice>经济效益最大化</choice>
         <choice>利润最大化</choice>
         <choice>企业价值最大化</choice>
@@ -18,7 +18,7 @@
         <choice>标准离差率</choice>
         <choice>方差</choice>
     </question>
-    <question title="在利率和计息期相同的条件下，下列表达式正确的是" answer="普通年金终值系数×偿债基金系数=1" note="年金终值系数(S/A, i, n)&#x000A;S=A+Ax(1+i)+...+Ax(1+i)^(n-1)&#x000A;等式两边同乘以(1+i)&#x000A;S(1+i)=A(1+i)+A(1+i)^2+...+A(1+i)^n&#x000A;上式两边相减可得：&#x000A;S(1+i)-S=A(1+i)^n-A&#x000A;S[(1+i)-1]=A[(1+i)^n-1]&#x000A;Sxi=A[(1+i)^n-1]&#x000A;S=A[(1+i)^n-1]/i">
+    <question title="在利率和计息期相同的条件下，下列表达式正确的是" answer="普通年金终值系数×偿债基金系数=1" note="年金终值系数(S/A, i, n)&#x000A;S=A+Ax(1+i)+...+Ax(1+i)^(n-1)&#x000A;等式两边同乘以(1+i)&#x000A;S(1+i)=A(1+i)+A(1+i)^2+...+A(1+i)^n&#x000A;上式两边相减可得：&#x000A;S(1+i)-S=A(1+i)^n-A&#x000A;S[(1+i)-1]=A[(1+i)^n-1]&#x000A;Sxi=A[(1+i)^n-1]&#x000A;S=A[(1+i)^n-1]/i&#x000A;资本回收系数 X 年金现值系数 = 1&#x000A;复利终值系数 X 复利现值系数 = 1">
         <choice>普通年金终值系数×普通年金现值系数=1</choice>
         <choice>普通年金终值系数×偿债基金系数=1</choice>
         <choice>普通年金终值系数×资本回收系数=1</choice>
@@ -61,7 +61,7 @@
         <choice>１００万元</choice>
         <choice>１２０万元</choice>
     </question>
-    <question title="按企业对外投资的方式划分，企业购买其他企业少量股票并短期持有属于" answer="间接投资" note="">
+    <question title="按企业对外投资的方式划分，企业购买其他企业少量股票并短期持有属于" answer="间接投资" note="间接投资是指投资者以其资本购买公司债券、金融债券或公司股票等，各种有价证券，以预期获取一定收益的投资，由于其投资形式主要是购买各种各样的有价证券，因此也被称为证券投资">
         <choice>股权投资</choice>
         <choice>间接投资</choice>
         <choice>直接投资</choice>
@@ -92,7 +92,7 @@
         <choice>１１１０万元</choice>
         <choice>１２００万元</choice>
     </question>
-    <question title="下列各种产品价格中属于按调节方式进行分类的是" answer="国家指导价格" note="">
+    <question title="下列各种产品价格中属于按调节方式进行分类的是" answer="国家指导价格" note="国家指导价，中国实行的由县及县以上各级价格部门、业务主管部门通过规定限价等措施指导生产者、经营者而制定的商品价格和收费标准。">
         <choice>出厂价格</choice>
         <choice>批发价格</choice>
         <choice>零售价格</choice>
