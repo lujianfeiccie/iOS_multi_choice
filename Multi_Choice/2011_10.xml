@@ -90,7 +90,7 @@
         <choice>混合并购</choice>
         <choice>承担债务式并购</choice>
     </question>
-    <question title="能够使灵活性与稳定性较好结合的股利政策是" answer="低正常股利加额外股利政策" note="">
+    <question title="能够使灵活性与稳定性较好结合的股利政策是" answer="低正常股利加额外股利政策" note="举一反三：&#x000D;上市公司采用固定股利支付率政策的主要优点是—-股利支付与公司盈利密切相关">
         <choice>剩余股利政策</choice>
         <choice>固定股利政策</choice>
         <choice>固定股利支付率政策</choice>
@@ -121,4 +121,3 @@
         <choice>财务报表中各期实际数值与历史数值的比率</choice>
     </question>
 </root>
-

@@ -10,6 +10,7 @@
 #import "ViewController.h"
 #import "PlatformUtil.h"
 #import "ButtonUtil.h"
+#import "ModelData.h"
 @interface RootViewController ()
 
 @end
@@ -37,12 +38,40 @@
     self.navigationItem.title = @"财务管理学";
     
     m_datalist = [[NSMutableArray alloc]init];
-    [m_datalist addObject:@"2014_04"];
-    [m_datalist addObject:@"2013_01"];
-    [m_datalist addObject:@"2012_10"];
-    [m_datalist addObject:@"2011_10"];
-    [m_datalist addObject:@"2010_10"];
-    [m_datalist addObject:@"2009_10"];
+    ModelData *model = [[ModelData alloc]init];
+    model.m_text = @"2014年4月真题";
+    model.m_value = @"2014_04";
+    [m_datalist addObject:model];
+    
+    model = [[ModelData alloc]init];
+    model.m_text = @"2013年10月真题";
+    model.m_value = @"2013_10";
+    [m_datalist addObject:model];
+    
+    model = [[ModelData alloc]init];
+    model.m_text = @"2013年1月真题";
+    model.m_value = @"2013_01";
+    [m_datalist addObject:model];
+    
+    model = [[ModelData alloc]init];
+    model.m_text = @"2012年10月真题";
+    model.m_value = @"2012_10";
+    [m_datalist addObject:model];
+    
+    model = [[ModelData alloc]init];
+    model.m_text = @"2011年10月真题";
+    model.m_value = @"2011_10";
+    [m_datalist addObject:model];
+    
+    model = [[ModelData alloc]init];
+    model.m_text = @"2010年10月真题";
+    model.m_value = @"2010_10";
+    [m_datalist addObject:model];
+    
+    model = [[ModelData alloc]init];
+    model.m_text = @"2009年10月真题";
+    model.m_value = @"2009_10";
+    [m_datalist addObject:model];
 
     [m_tableview_list setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height)];
     
@@ -77,7 +106,7 @@
     }
     
     NSUInteger row = [indexPath row];
-    cell.textLabel.text = [m_datalist objectAtIndex:row];
+    cell.textLabel.text = ((ModelData*)[m_datalist objectAtIndex:row]).m_text;
     return cell;
 }
 -(GLfloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -88,7 +117,7 @@
     NSUInteger row = [indexPath row];
     
    ViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"question_view"];
-   next.m_filename = [m_datalist objectAtIndex:row];
+   next.m_filename = ((ModelData*)[m_datalist objectAtIndex:row]).m_value;
    [[app navController] pushViewController:next animated:YES];
 }
 /*

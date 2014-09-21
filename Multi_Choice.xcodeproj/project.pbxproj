@@ -38,6 +38,8 @@
 		18E7B04B19A7770300092469 /* Multi_ChoiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7B04A19A7770300092469 /* Multi_ChoiceTests.m */; };
 		18E7B05719A7794600092469 /* XMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7B05619A7794600092469 /* XMLElement.m */; };
 		18E7B05E19A78E6E00092469 /* 2014_04.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18E7B05D19A78E6E00092469 /* 2014_04.xml */; };
+		18EA970419CF1F43006E60EF /* 2013_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18EA970319CF1F43006E60EF /* 2013_10.xml */; };
+		18EA970819CF224E006E60EF /* ModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA970719CF224E006E60EF /* ModelData.m */; };
 		18F701DC19AA1133005E0361 /* UILabelExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F701DB19AA1133005E0361 /* UILabelExt.m */; };
 		18F701E019AA406E005E0361 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F701DF19AA406E005E0361 /* RootViewController.m */; };
 		18F7744319AB8C2100D5F3FD /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7744219AB8C2100D5F3FD /* Util.m */; };
@@ -95,6 +97,9 @@
 		18E7B05519A7794600092469 /* XMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLElement.h; sourceTree = "<group>"; };
 		18E7B05619A7794600092469 /* XMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLElement.m; sourceTree = "<group>"; };
 		18E7B05D19A78E6E00092469 /* 2014_04.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = 2014_04.xml; path = Multi_Choice/2014_04.xml; sourceTree = "<group>"; };
+		18EA970319CF1F43006E60EF /* 2013_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = 2013_10.xml; path = Multi_Choice/2013_10.xml; sourceTree = "<group>"; };
+		18EA970619CF224E006E60EF /* ModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelData.h; sourceTree = "<group>"; };
+		18EA970719CF224E006E60EF /* ModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelData.m; sourceTree = "<group>"; };
 		18F701DA19AA1133005E0361 /* UILabelExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelExt.h; sourceTree = "<group>"; };
 		18F701DB19AA1133005E0361 /* UILabelExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelExt.m; sourceTree = "<group>"; };
 		18F701DE19AA406E005E0361 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = UI/RootViewController.h; sourceTree = "<group>"; };
@@ -130,6 +135,8 @@
 		18E7B01319A7770300092469 = {
 			isa = PBXGroup;
 			children = (
+				18EA970519CF2218006E60EF /* Model */,
+				18EA970319CF1F43006E60EF /* 2013_10.xml */,
 				18B3BC5A19BDBC9500A4B068 /* me.png */,
 				18B3A7C219BDBA0C00A4B068 /* Default@2x.png */,
 				18B3A7BA19BDB96800A4B068 /* Default.png */,
@@ -236,6 +243,16 @@
 			path = Multi_Choice/Util;
 			sourceTree = "<group>";
 		};
+		18EA970519CF2218006E60EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				18EA970619CF224E006E60EF /* ModelData.h */,
+				18EA970719CF224E006E60EF /* ModelData.m */,
+			);
+			name = Model;
+			path = Multi_Choice/Model;
+			sourceTree = "<group>";
+		};
 		18F701D919AA1106005E0361 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
@@ -337,6 +354,7 @@
 				18E7B05E19A78E6E00092469 /* 2014_04.xml in Resources */,
 				18E0796C19ACCFA60063D15D /* 2012_10.xml in Resources */,
 				18E6701419AE138F009F9B36 /* 2010_10.xml in Resources */,
+				18EA970419CF1F43006E60EF /* 2013_10.xml in Resources */,
 				18E7B02A19A7770300092469 /* InfoPlist.strings in Resources */,
 				18E7B03319A7770300092469 /* Main.storyboard in Resources */,
 				18E6701319AE138F009F9B36 /* 2009_10.xml in Resources */,
@@ -360,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EA970819CF224E006E60EF /* ModelData.m in Sources */,
 				18E0796819ACC74E0063D15D /* PlatformUtil.m in Sources */,
 				18B3BC5D19BDBE2B00A4B068 /* ButtonUtil.m in Sources */,
 				18E7B03619A7770300092469 /* ViewController.m in Sources */,

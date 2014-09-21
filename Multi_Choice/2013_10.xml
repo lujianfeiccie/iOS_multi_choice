@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<root>
+    <question title="下列各项年金中，只有现值没有终值的是" answer="永续年金" note="">
+        <choice>普通年金</choice>
+        <choice>永续年金</choice>
+        <choice>递延年金</choice>
+        <choice>先付年金</choice>
+    </question>
+    <question title="年偿债基金的计算是" answer="后付年金终值的逆运算" note="">
+        <choice>后付年金现值的逆运算</choice>
+        <choice>先付年金现值的逆运算</choice>
+        <choice>后付年金终值的逆运算</choice>
+        <choice>先付年金终值的逆运算</choice>
+    </question>
+    <question title="预期收益率相同的情况下，投资收益率的概率分布越集中，则表示" answer="风险程度越低" note="">
+        <choice>风险程度越高</choice>
+        <choice>风险程度越低</choice>
+        <choice>风险程度不变</choice>
+        <choice>风险程度无法确定</choice>
+    </question>
+    <question title="下列能够降低企业财务风险的筹资方式是" answer="发行股票" note="">
+        <choice>发行债券</choice>
+        <choice>融资租赁</choice>
+        <choice>发行股票</choice>
+        <choice>向银行借款</choice>
+    </question>
+    <question title="下列属于吸收投入资本筹资方式特点的是" answer="资本成本高" note="">
+        <choice>财务风险高</choice>
+        <choice>资本成本高</choice>
+        <choice>还款压力大</choice>
+        <choice>财务杠杆利益大</choice>
+    </question>
+    <question title="普通股股票的账面价值是指" answer="每股净资产价值" note="">
+        <choice>股票面值</choice>
+        <choice>股票市价</choice>
+        <choice>发行价格</choice>
+        <choice>每股净资产价值</choice>
+    </question>
+    <question title="某企业从银行贷款，贷款利率为10%，企业所得税税率为30%，则此贷款的资本成本是" answer="７%" note="">
+        <choice>７%</choice>
+        <choice>１０%</choice>
+        <choice>３０%</choice>
+        <choice>４０%</choice>
+    </question>
+    <question title="下列属于流动资金组成项目的是" answer="应收账款" note="">
+        <choice>机器设备</choice>
+        <choice>无形资产</choice>
+        <choice>应收账款</choice>
+        <choice>对外长期投资</choice>
+    </question>
+    <question title="企业催收应收账款发生的费用属于" answer="管理成本" note="">
+        <choice>机会成本</choice>
+        <choice>管理成本</choice>
+        <choice>坏账成本</choice>
+        <choice>储存成本</choice>
+    </question>
+    <question title="某投资项目年度净利润为14万元，年折旧额30万元，无其他非付现费用，则年营业现金净流量为" answer="４４万元" note="">
+        <choice>１４万元</choice>
+        <choice>１６万元</choice>
+        <choice>３０万元</choice>
+        <choice>４４万元</choice>
+    </question>
+    <question title="下列属于不可辨认无形资产的是" answer="商誉" note="">
+        <choice>商誉</choice>
+        <choice>商标权</choice>
+        <choice>专利权</choice>
+        <choice>土地使用权</choice>
+    </question>
+    <question title="按企业对外投资的回收期限划分，并购投资属于" answer="长期投资" note="">
+        <choice>直接投资</choice>
+        <choice>债权投资</choice>
+        <choice>长期投资</choice>
+        <choice>短期投资</choice>
+    </question>
+    <question title="货币购买力下降引起的企业投资风险称为" answer="通货膨胀风险" note="">
+        <choice>外汇风险</choice>
+        <choice>市场风险</choice>
+        <choice>利率风险</choice>
+        <choice>通货膨胀风险</choice>
+    </question>
+    <question title="计算企业每股收益时，不需要考虑的因素是" answer="普通股股利" note="">
+        <choice>普通股股利</choice>
+        <choice>普通股股数</choice>
+        <choice>优先股股利</choice>
+        <choice>企业净利润</choice>
+    </question>
+    <question title="企业为鼓励客户提前付款，对在规定日期前付款的客户给予一定的价格优惠，此优惠称为" answer="现金折扣" note="">
+        <choice>现金折扣</choice>
+        <choice>商业折扣</choice>
+        <choice>销售折让</choice>
+        <choice>销售费用</choice>
+    </question>
+    <question title="认为投资者更倾向于获得现金股利收入的观点，在股利理论中称为" answer="“一鸟在手”论" note="">
+        <choice>MM理论</choice>
+        <choice>代理成本论</choice>
+        <choice>信息传播论</choice>
+        <choice>“一鸟在手”论</choice>
+    </question>
+    <question title="对于投资机会较多而外部筹资成本又较高的企业，最适合的股利政策是" answer="剩余股利政策" note="">
+        <choice>剩余股利政策</choice>
+        <choice>固定股利政策</choice>
+        <choice>固定股利支付率政策</choice>
+        <choice>低正常股利加额外股利政策</choice>
+    </question>
+    <question title="产权比率的计算公式是" answer="负债总额／所有者权益总额" note="">
+        <choice>负债总额／资产总额</choice>
+        <choice>资产总额／负债总额</choice>
+        <choice>负债总额／所有者权益总额</choice>
+        <choice>所有者权益总额／负债总额</choice>
+    </question>
+    <question title="企业以赊购方式购入一批原材料，会导致" answer="速动比率下降" note="">
+        <choice>速动比率不变</choice>
+        <choice>速动比率上升</choice>
+        <choice>速动比率下降</choice>
+        <choice>速动比率变化不确定</choice>
+    </question>
+    <question title="下列各项中，不影响流动比率的业务是" answer="现金购买短期债券" note="">
+        <choice>现金购买短期债券</choice>
+        <choice>现金购买固定资产</choice>
+        <choice>从银行取得长期借款</choice>
+        <choice>用存货进行对外长期投资</choice>
+    </question>
+</root>

@@ -36,7 +36,7 @@
         <choice>抵押金额的大小</choice>
         <choice>抵押品的担保顺序不同</choice>
     </question>
-    <question title="假设某企业以“1／10，n／30”的信用条件购进一批材料，下列表述正确的是" answer="企业在10天内付款可享受１％的现金折扣" note="">
+    <question title="假设某企业以“1／10，n／30”的信用条件购进一批材料，下列表述正确的是" answer="企业在１０天内付款可享受１％的现金折扣" note="">
         <choice>企业在１０天内付款可享受１％的现金折扣</choice>
         <choice>企业在３０天后付款可享受１％的现金折扣</choice>
         <choice>企业在１０至２０天内付款可享受１％的现金折扣</choice>
@@ -84,7 +84,7 @@
         <choice>投资收益率比较高</choice>
         <choice>无法事先预知投资收益水平</choice>
     </question>
-    <question title="上市公司采用固定股利支付率政策的主要优点是" answer="股利支付与公司盈利密切相关" note="">
+    <question title="上市公司采用固定股利支付率政策的主要优点是" answer="股利支付与公司盈利密切相关" note="举一反三：&#x000D;能够使灵活性与稳定性较好结合的股利政策是—-低正常股利加额外股利政策">
         <choice>有利于公司股票价格的稳定</choice>
         <choice>股利支付与公司盈利密切相关</choice>
         <choice>有利于树立公司的良好形象</choice>
@@ -122,4 +122,3 @@
         <choice>８００００元</choice>
     </question>
 </root>
-
