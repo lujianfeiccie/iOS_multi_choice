@@ -29,6 +29,7 @@
     __weak IBOutlet UIButton *m_btn_next;
 }
 @property(nonatomic,strong) NSString* m_filename;
+@property(nonatomic,strong) NSString* m_title;
 - (IBAction)btnNextClick:(id)sender;
 - (IBAction)btnPrevClick:(id)sender;
 - (void) updateQuestionView;

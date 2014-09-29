@@ -72,6 +72,11 @@
     model.m_text = @"2009年10月真题";
     model.m_value = @"2009_10";
     [m_datalist addObject:model];
+    
+    model = [[ModelData alloc]init];
+    model.m_text = @"综合真题";
+    model.m_value = @"all";
+    [m_datalist addObject:model];
 
     [m_tableview_list setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height)];
     
@@ -118,6 +123,7 @@
     
    ViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"question_view"];
    next.m_filename = ((ModelData*)[m_datalist objectAtIndex:row]).m_value;
+   next.m_title = ((ModelData*)[m_datalist objectAtIndex:row]).m_text;
    [[app navController] pushViewController:next animated:YES];
 }
 /*

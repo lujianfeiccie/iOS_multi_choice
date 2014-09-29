@@ -17,18 +17,27 @@
 
 @implementation ViewController
 @synthesize m_filename;
-
+@synthesize m_title;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     app = [[UIApplication sharedApplication]delegate];
     
-    self.navigationItem.title = m_filename;
+    self.navigationItem.title = m_title;
    
     m_xmlHelper = [[XMLHelper alloc]init];
     m_xmlHelper.m_random = YES;
-    [m_xmlHelper load:m_filename];
+    
+    if([m_filename isEqualToString:@"all"])
+    {
+        [m_xmlHelper loadMultiple:@"2009_10",@"2010_10",nil];
+//        return;
+    }
+    else
+    {
+       [m_xmlHelper load:m_filename];
+    }
     
     m_currentIndex = 0;
     
@@ -107,6 +116,10 @@
 }
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];
+    if([m_filename isEqualToString:@"all"])
+    {
+        return;
+    }
     [PlatformUtil ResizeUIToBottom:m_btn_next parentView:self.view];
     [PlatformUtil ResizeUIToBottom:m_btn_prev parentView:self.view];
     [self updateQuestionView];

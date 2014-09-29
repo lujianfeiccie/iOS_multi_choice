@@ -14,6 +14,7 @@
     self = [super init];
     if (self) {
         self.m_random = NO;
+        m_questions = [[NSMutableArray alloc]init];
     }
     return self;
 }
@@ -62,11 +63,56 @@
 
 }
 
+-(void) loadMultiple:(NSString *)fileName, ...
+{
+    va_list arguments;
+    id eachObject;
+    
+    
+    if (fileName) {
+        NSLogExt(@"%@",fileName);
+        
+        
+        NSString* result = [[NSBundle mainBundle] pathForResource:fileName ofType:@"xml"];
+        NSData *data = [[NSData alloc]initWithContentsOfFile:result];
+        
+        self.parser = [[NSXMLParser alloc]initWithData:data];
+        
+        self.parser.delegate = self;
+        
+        if([self.parser parse]){
+            [m_questions addObjectsFromArray:self.rootElement.m_subElements];
+        }
+        va_start(arguments, fileName);
+       
+        
+       
+        while ((eachObject = va_arg(arguments, id))) {
+            result = [[NSBundle mainBundle] pathForResource:eachObject ofType:@"xml"];
+            data = [[NSData alloc]initWithContentsOfFile:result];
+            
+            self.parser = [[NSXMLParser alloc]initWithData:data];
+            
+            self.parser.delegate = self;
+            
+            if([self.parser parse]){
+                [m_questions addObjectsFromArray:self.rootElement.m_subElements];
+            }
+            NSLogExt(@"%@",eachObject);
+        }
+        
+        va_end(arguments);
+    }
+    // NSLogExt(@"The data is randomed");
+  
+    NSLogExt(@"count=%i",[m_questions count]);
+}
+ 
 // 文档开始
 -(void)parserDidStartDocument:(NSXMLParser *)parser
 
 {
-    
+    NSLogExt(@"parserDidStartDocument");
     self.rootElement = nil;
     
     self.currentElementPointer = nil;
@@ -77,7 +123,7 @@
 -(void)parserDidEndDocument:(NSXMLParser *)parser
 
 {
-    
+    NSLogExt(@"parserDidEndDocument");
     self.currentElementPointer = nil;
     
 }
@@ -122,7 +168,7 @@
     
     self.currentElementPointer = self.currentElementPointer.m_parent;
     
- //   NSLogExt(@"end name:%@" , elementName);
+    //NSLogExt(@"end name:%@" , elementName);
     
 }
 
@@ -138,6 +184,6 @@
         self.currentElementPointer.m_title = string;
     
     
-    NSLogExt(@"string:%@" , string);
+   // NSLogExt(@"string:%@" , string);
 }
 @end
