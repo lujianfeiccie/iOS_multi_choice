@@ -9,9 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "XMLElement.h"
 @interface XMLHelper : NSObject<NSXMLParserDelegate>
-{
-    NSMutableArray *m_questions;
-}
+
 // 解析器对象
 @property (nonatomic,strong) NSXMLParser *parser;
 
@@ -24,6 +22,6 @@
 @property (nonatomic) BOOL m_random;
 
 -(void) load:(NSString*) fileName;
--(void) loadMultiple:(NSString*) fileName,...;
+-(void) loadMultiple:(int) numOfQuestions : (NSString*) fileName,...;
 
 @end

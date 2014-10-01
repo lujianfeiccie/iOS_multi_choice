@@ -31,7 +31,13 @@
     
     if([m_filename isEqualToString:@"all"])
     {
-        [m_xmlHelper loadMultiple:@"2009_10",@"2010_10",nil];
+        [m_xmlHelper loadMultiple:20:@"2009_10",
+                                     @"2010_10",
+                                     @"2011_10",
+                                     @"2012_10",
+                                     @"2013_01",
+                                     @"2013_10",
+                                     @"2014_04",nil];
 //        return;
     }
     else
@@ -118,7 +124,7 @@
     [super viewDidLayoutSubviews];
     if([m_filename isEqualToString:@"all"])
     {
-        return;
+       // return;
     }
     [PlatformUtil ResizeUIToBottom:m_btn_next parentView:self.view];
     [PlatformUtil ResizeUIToBottom:m_btn_prev parentView:self.view];

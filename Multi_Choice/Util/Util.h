@@ -10,4 +10,5 @@
 
 @interface Util : NSObject
 +(void) setLabelToAutoSize:(UILabel*) label;
++(int*) getRandomNumOfOut:(int) numOfOut NumOfIn : (int) numOfIn;
 @end

@@ -8,13 +8,13 @@
 
 #import "XMLHelper.h"
 #import "NSLogExt.h"
+#import "Util.h"
 @implementation XMLHelper
 
 -(id) init{
     self = [super init];
     if (self) {
         self.m_random = NO;
-        m_questions = [[NSMutableArray alloc]init];
     }
     return self;
 }
@@ -28,34 +28,64 @@
     
     self.parser.delegate = self;
     
-    if([self.parser parse]){
+    if([self.parser parse])
+    {
         
       //  NSLogExt(@"The XML is Parsed");
         
-        if (self.m_random == YES) {
-            //srandom(time(NULL));
-                   // NSLogExt(@"The data is randomed");
+        if (self.m_random == YES)
+        {
+       
             NSMutableArray *questions = self.rootElement.m_subElements;
 
             int count_questions = [questions count];
+            
+            //Random the questions
+            NSMutableArray *questions_tmp = [[NSMutableArray alloc]init];
+            int* randnum_question = [Util getRandomNumOfOut:count_questions NumOfIn:count_questions];
+            
             for (int i_q=0; i_q<count_questions; i_q++) {
-                int j_q = arc4random() % (count_questions);
-            //    NSLogExt(@"i=%i,j=%i",i_q,j_q);
-                [questions exchangeObjectAtIndex:i_q withObjectAtIndex:j_q];
-                
-                NSMutableArray *choices = [[questions objectAtIndex:i_q] m_subElements];
-                
-                int count_choices = [choices count];
-                for (int i_c=0; i_c<count_choices; i_c++) {
-                    int j_c = arc4random() % (count_choices);
-                    [choices exchangeObjectAtIndex:i_c withObjectAtIndex:j_c];
-                }
+                [questions_tmp addObject:[questions objectAtIndex:randnum_question[i_q]]];
             }
+            free(randnum_question);
+            randnum_question = nil;
+            [questions removeAllObjects];
+            questions = nil;
+            //Random the choices
+            
+            
+            for (int i_q=0; i_q<count_questions; i_q++)
+            {
+                NSMutableArray *choices = [[questions_tmp objectAtIndex:i_q] m_subElements];
+                
+                NSMutableArray* choices_tmp = [[NSMutableArray alloc]init];
+                
+                NSUInteger count_choices = [choices count];
+               
+               int *randnum_choice = [Util getRandomNumOfOut:count_choices NumOfIn:count_choices];
+                
+               
+             
+                for (int i_c=0; i_c<count_choices; i_c++)
+                {
+                    [choices_tmp addObject:[choices objectAtIndex:randnum_choice[i_c]]];
+                }
+                free(randnum_choice);
+                randnum_choice = nil;
+                [choices removeAllObjects];
+                choices = nil;
+                ((XMLElement*)[questions_tmp objectAtIndex:i_q]).m_subElements = choices_tmp;
+            }
+            
+            self.rootElement.m_subElements = questions_tmp;
+           
         }
-       
         
        
-    }else{
+       
+    }
+    else
+    {
         
         NSLogExt(@"Failed to parse the XML");
         
@@ -63,12 +93,12 @@
 
 }
 
--(void) loadMultiple:(NSString *)fileName, ...
+-(void) loadMultiple:(int) numOfQuestions : (NSString *)fileName, ...
 {
     va_list arguments;
     id eachObject;
     
-    
+     NSMutableArray *questions = [[NSMutableArray alloc] init];
     if (fileName) {
         NSLogExt(@"%@",fileName);
         
@@ -79,9 +109,9 @@
         self.parser = [[NSXMLParser alloc]initWithData:data];
         
         self.parser.delegate = self;
-        
+       
         if([self.parser parse]){
-            [m_questions addObjectsFromArray:self.rootElement.m_subElements];
+            [questions addObjectsFromArray:self.rootElement.m_subElements];
         }
         va_start(arguments, fileName);
        
@@ -96,16 +126,53 @@
             self.parser.delegate = self;
             
             if([self.parser parse]){
-                [m_questions addObjectsFromArray:self.rootElement.m_subElements];
+                [questions addObjectsFromArray:self.rootElement.m_subElements];
             }
             NSLogExt(@"%@",eachObject);
         }
         
         va_end(arguments);
     }
-    // NSLogExt(@"The data is randomed");
-  
-    NSLogExt(@"count=%i",[m_questions count]);
+    
+    NSUInteger count = [questions count];
+    NSMutableArray *questions_tmp = [[NSMutableArray alloc] init];
+    int *randnum_questions= [Util getRandomNumOfOut:numOfQuestions NumOfIn:count];
+ 
+    NSLogExt(@"count=%i",count);
+
+    // Random the questions
+    for (int i=0; i<numOfQuestions; ++i) {
+        [questions_tmp addObject:[questions objectAtIndex:randnum_questions[i]]];
+     
+    }
+    [questions removeAllObjects];
+    free(randnum_questions);
+    randnum_questions = nil;
+    // Random the choices which questions randomed
+
+   
+     for (int i=0; i<numOfQuestions; ++i)
+     {
+        NSMutableArray *choices = [[questions_tmp objectAtIndex:i] m_subElements];
+
+       NSUInteger count_chocies = [choices count];
+
+        int *randnum_choices = [Util getRandomNumOfOut:(count_chocies) NumOfIn:count_chocies];
+         
+        NSMutableArray* choices_tmp = [[NSMutableArray alloc]init];
+         
+        for (int j=0; j<count_chocies; j++)
+        {
+            [choices_tmp addObject:[choices objectAtIndex:randnum_choices[j]]];
+        }
+        free(randnum_choices);
+         randnum_choices = nil;
+        [choices removeAllObjects];
+         ((XMLElement*)[questions_tmp objectAtIndex:i]).m_subElements = choices_tmp;
+    }
+    
+    self.rootElement.m_subElements = questions_tmp;
+    
 }
  
 // 文档开始
