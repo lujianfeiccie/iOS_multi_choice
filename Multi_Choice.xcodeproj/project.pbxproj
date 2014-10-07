@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		180E3B8419E28C9E0028B7A6 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E3B8319E28C9E0028B7A6 /* AbstractViewController.m */; };
+		180E3B8919E292520028B7A6 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 180E3B8619E292520028B7A6 /* SVProgressHUD.bundle */; };
+		180E3B8A19E292520028B7A6 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E3B8819E292520028B7A6 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
+		180E3B8C19E295330028B7A6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180E3B8B19E295330028B7A6 /* QuartzCore.framework */; };
+		180E3B9019E295B80028B7A6 /* HttpRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E3B8F19E295B80028B7A6 /* HttpRequestTool.m */; };
 		188D2DC119DBAF25009D45E2 /* 2009_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBA19DBAF25009D45E2 /* 2009_10.xml */; };
 		188D2DC219DBAF25009D45E2 /* 2010_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBB19DBAF25009D45E2 /* 2010_10.xml */; };
 		188D2DC319DBAF25009D45E2 /* 2011_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBC19DBAF25009D45E2 /* 2011_10.xml */; };
@@ -14,6 +19,7 @@
 		188D2DC519DBAF25009D45E2 /* 2013_01.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBE19DBAF25009D45E2 /* 2013_01.xml */; };
 		188D2DC619DBAF25009D45E2 /* 2013_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBF19DBAF25009D45E2 /* 2013_10.xml */; };
 		188D2DC719DBAF25009D45E2 /* 2014_04.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DC019DBAF25009D45E2 /* 2014_04.xml */; };
+		18A33D9819E254D800F40ADF /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A33D9719E254D800F40ADF /* FeedbackViewController.m */; };
 		18B3A7BE19BDB96800A4B068 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B3A7BA19BDB96800A4B068 /* Default.png */; };
 		18B3A7C019BDB96800A4B068 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B3A7BC19BDB96800A4B068 /* Icon.png */; };
 		18B3A7C119BDB96800A4B068 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B3A7BD19BDB96800A4B068 /* Icon@2x.png */; };
@@ -40,9 +46,11 @@
 		18E7B04B19A7770300092469 /* Multi_ChoiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7B04A19A7770300092469 /* Multi_ChoiceTests.m */; };
 		18E7B05719A7794600092469 /* XMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7B05619A7794600092469 /* XMLElement.m */; };
 		18EA970819CF224E006E60EF /* ModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA970719CF224E006E60EF /* ModelData.m */; };
+		18EC953719E38E79002515DE /* DialogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC953619E38E79002515DE /* DialogUtil.m */; };
 		18F701DC19AA1133005E0361 /* UILabelExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F701DB19AA1133005E0361 /* UILabelExt.m */; };
 		18F701E019AA406E005E0361 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F701DF19AA406E005E0361 /* RootViewController.m */; };
 		18F7744319AB8C2100D5F3FD /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7744219AB8C2100D5F3FD /* Util.m */; };
+		18FE58A919E23A45004A542B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FE58A819E23A45004A542B /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +64,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		180E3B8219E28C9E0028B7A6 /* AbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
+		180E3B8319E28C9E0028B7A6 /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
+		180E3B8619E292520028B7A6 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		180E3B8719E292520028B7A6 /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		180E3B8819E292520028B7A6 /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		180E3B8B19E295330028B7A6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		180E3B8D19E295B80028B7A6 /* ButtonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonUtil.h; sourceTree = "<group>"; };
+		180E3B8E19E295B80028B7A6 /* HttpRequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestTool.h; sourceTree = "<group>"; };
+		180E3B8F19E295B80028B7A6 /* HttpRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestTool.m; sourceTree = "<group>"; };
 		188D2DBA19DBAF25009D45E2 /* 2009_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2009_10.xml; sourceTree = "<group>"; };
 		188D2DBB19DBAF25009D45E2 /* 2010_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2010_10.xml; sourceTree = "<group>"; };
 		188D2DBC19DBAF25009D45E2 /* 2011_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2011_10.xml; sourceTree = "<group>"; };
@@ -63,6 +80,8 @@
 		188D2DBE19DBAF25009D45E2 /* 2013_01.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2013_01.xml; sourceTree = "<group>"; };
 		188D2DBF19DBAF25009D45E2 /* 2013_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2013_10.xml; sourceTree = "<group>"; };
 		188D2DC019DBAF25009D45E2 /* 2014_04.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2014_04.xml; sourceTree = "<group>"; };
+		18A33D9619E254D800F40ADF /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
+		18A33D9719E254D800F40ADF /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 		18B3A7BA19BDB96800A4B068 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Multi_Choice/Default.png; sourceTree = "<group>"; };
 		18B3A7BC19BDB96800A4B068 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = Multi_Choice/Icon.png; sourceTree = "<group>"; };
 		18B3A7BD19BDB96800A4B068 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon@2x.png"; path = "Multi_Choice/Icon@2x.png"; sourceTree = "<group>"; };
@@ -100,12 +119,15 @@
 		18E7B05619A7794600092469 /* XMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLElement.m; sourceTree = "<group>"; };
 		18EA970619CF224E006E60EF /* ModelData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelData.h; sourceTree = "<group>"; };
 		18EA970719CF224E006E60EF /* ModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelData.m; sourceTree = "<group>"; };
+		18EC953519E38E79002515DE /* DialogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogUtil.h; sourceTree = "<group>"; };
+		18EC953619E38E79002515DE /* DialogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialogUtil.m; sourceTree = "<group>"; };
 		18F701DA19AA1133005E0361 /* UILabelExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelExt.h; sourceTree = "<group>"; };
 		18F701DB19AA1133005E0361 /* UILabelExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelExt.m; sourceTree = "<group>"; };
 		18F701DE19AA406E005E0361 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = UI/RootViewController.h; sourceTree = "<group>"; };
 		18F701DF19AA406E005E0361 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = UI/RootViewController.m; sourceTree = "<group>"; };
 		18F7744119AB8C2100D5F3FD /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		18F7744219AB8C2100D5F3FD /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		18FE58A819E23A45004A542B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Multi_Choice/Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +135,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180E3B8C19E295330028B7A6 /* QuartzCore.framework in Frameworks */,
 				18E7B02219A7770300092469 /* CoreGraphics.framework in Frameworks */,
 				18E7B02419A7770300092469 /* UIKit.framework in Frameworks */,
 				18E7B02019A7770300092469 /* Foundation.framework in Frameworks */,
@@ -132,6 +155,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		180E3B8519E292520028B7A6 /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				180E3B8619E292520028B7A6 /* SVProgressHUD.bundle */,
+				180E3B8719E292520028B7A6 /* SVProgressHUD.h */,
+				180E3B8819E292520028B7A6 /* SVProgressHUD.m */,
+			);
+			name = SVProgressHUD;
+			path = Multi_Choice/SVProgressHUD;
+			sourceTree = "<group>";
+		};
 		188D2DB919DBAF25009D45E2 /* Questions */ = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +184,8 @@
 		18E7B01319A7770300092469 = {
 			isa = PBXGroup;
 			children = (
+				180E3B8519E292520028B7A6 /* SVProgressHUD */,
+				18FE58A819E23A45004A542B /* Default-568h@2x.png */,
 				188D2DB919DBAF25009D45E2 /* Questions */,
 				18EA970519CF2218006E60EF /* Model */,
 				18B3BC5A19BDBC9500A4B068 /* me.png */,
@@ -178,6 +214,7 @@
 		18E7B01E19A7770300092469 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				180E3B8B19E295330028B7A6 /* QuartzCore.framework */,
 				18E7B01F19A7770300092469 /* Foundation.framework */,
 				18E7B02119A7770300092469 /* CoreGraphics.framework */,
 				18E7B02319A7770300092469 /* UIKit.framework */,
@@ -200,6 +237,8 @@
 				18E7B02619A7770300092469 /* Supporting Files */,
 				18B3A7C419BDBAB300A4B068 /* AboutDlgViewController.h */,
 				18B3A7C519BDBAB300A4B068 /* AboutDlgViewController.m */,
+				18A33D9619E254D800F40ADF /* FeedbackViewController.h */,
+				18A33D9719E254D800F40ADF /* FeedbackViewController.m */,
 			);
 			path = Multi_Choice;
 			sourceTree = "<group>";
@@ -236,6 +275,11 @@
 		18E7B05419A778A300092469 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				18EC953519E38E79002515DE /* DialogUtil.h */,
+				18EC953619E38E79002515DE /* DialogUtil.m */,
+				180E3B8D19E295B80028B7A6 /* ButtonUtil.h */,
+				180E3B8E19E295B80028B7A6 /* HttpRequestTool.h */,
+				180E3B8F19E295B80028B7A6 /* HttpRequestTool.m */,
 				18B3BC5C19BDBE2B00A4B068 /* ButtonUtil.m */,
 				18E0796619ACC74E0063D15D /* PlatformUtil.h */,
 				18E0796719ACC74E0063D15D /* PlatformUtil.m */,
@@ -267,6 +311,8 @@
 			children = (
 				18F701DA19AA1133005E0361 /* UILabelExt.h */,
 				18F701DB19AA1133005E0361 /* UILabelExt.m */,
+				180E3B8219E28C9E0028B7A6 /* AbstractViewController.h */,
+				180E3B8319E28C9E0028B7A6 /* AbstractViewController.m */,
 			);
 			name = Custom;
 			path = Multi_Choice/Custom;
@@ -356,6 +402,7 @@
 			files = (
 				18B3A7C019BDB96800A4B068 /* Icon.png in Resources */,
 				18B3A7C119BDB96800A4B068 /* Icon@2x.png in Resources */,
+				180E3B8919E292520028B7A6 /* SVProgressHUD.bundle in Resources */,
 				188D2DC319DBAF25009D45E2 /* 2011_10.xml in Resources */,
 				18E7B03819A7770300092469 /* Images.xcassets in Resources */,
 				188D2DC519DBAF25009D45E2 /* 2013_01.xml in Resources */,
@@ -367,6 +414,7 @@
 				18E7B03319A7770300092469 /* Main.storyboard in Resources */,
 				18B3A7BE19BDB96800A4B068 /* Default.png in Resources */,
 				188D2DC719DBAF25009D45E2 /* 2014_04.xml in Resources */,
+				18FE58A919E23A45004A542B /* Default-568h@2x.png in Resources */,
 				18B3BC5B19BDBC9500A4B068 /* me.png in Resources */,
 				188D2DC119DBAF25009D45E2 /* 2009_10.xml in Resources */,
 			);
@@ -390,12 +438,17 @@
 				18EA970819CF224E006E60EF /* ModelData.m in Sources */,
 				18E0796819ACC74E0063D15D /* PlatformUtil.m in Sources */,
 				18B3BC5D19BDBE2B00A4B068 /* ButtonUtil.m in Sources */,
+				18EC953719E38E79002515DE /* DialogUtil.m in Sources */,
+				18A33D9819E254D800F40ADF /* FeedbackViewController.m in Sources */,
 				18E7B03619A7770300092469 /* ViewController.m in Sources */,
 				18E7B03019A7770300092469 /* AppDelegate.m in Sources */,
 				18F701E019AA406E005E0361 /* RootViewController.m in Sources */,
 				18E7B05719A7794600092469 /* XMLElement.m in Sources */,
 				18E7B02C19A7770300092469 /* main.m in Sources */,
+				180E3B8A19E292520028B7A6 /* SVProgressHUD.m in Sources */,
+				180E3B9019E295B80028B7A6 /* HttpRequestTool.m in Sources */,
 				18E1138819A80C1A008F8EFC /* XMLHelper.m in Sources */,
+				180E3B8419E28C9E0028B7A6 /* AbstractViewController.m in Sources */,
 				18F701DC19AA1133005E0361 /* UILabelExt.m in Sources */,
 				18B3A7C619BDBAB300A4B068 /* AboutDlgViewController.m in Sources */,
 				18E1138B19A80E68008F8EFC /* NSLogExt.m in Sources */,
@@ -477,11 +530,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Multi_Choice/Multi_Choice-Prefix.pch";
 				INFOPLIST_FILE = "Multi_Choice/Multi_Choice-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/apple/Desktop/ios_workspace/iphoneYmY/iphoneYmY/Classes/Vendor/lib,
-					/Users/apple/Desktop/ios_workspace/iphoneYmY/iphoneYmY/Classes/Vendor/XMPP/Vendor/libidn,
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -498,11 +548,8 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Multi_Choice/Multi_Choice-Prefix.pch";
 				INFOPLIST_FILE = "Multi_Choice/Multi_Choice-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					/Users/apple/Desktop/ios_workspace/iphoneYmY/iphoneYmY/Classes/Vendor/lib,
-					/Users/apple/Desktop/ios_workspace/iphoneYmY/iphoneYmY/Classes/Vendor/XMPP/Vendor/libidn,
-				);
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;

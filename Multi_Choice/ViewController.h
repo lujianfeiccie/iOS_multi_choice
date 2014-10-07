@@ -10,7 +10,7 @@
 #import "XMLHelper.h"
 #import "UILabelExt.h"
 #import "AppDelegate.h"
-@interface ViewController : UIViewController<UILabelExtDelegate,UIScrollViewDelegate>
+@interface ViewController : AbstractViewController<UILabelExtDelegate,UIScrollViewDelegate>
 {
     UIScrollView *m_scrollview;
      UILabel *m_lbl_title;

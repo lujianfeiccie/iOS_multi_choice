@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
 
-@interface RootViewController : UIViewController<UITableViewDelegate,
+@interface RootViewController : AbstractViewController<UITableViewDelegate,
 UITableViewDataSource>
 
 {

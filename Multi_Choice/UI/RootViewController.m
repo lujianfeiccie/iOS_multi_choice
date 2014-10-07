@@ -8,9 +8,8 @@
 
 #import "RootViewController.h"
 #import "ViewController.h"
-#import "PlatformUtil.h"
-#import "ButtonUtil.h"
 #import "ModelData.h"
+
 @interface RootViewController ()
 
 @end
@@ -35,6 +34,8 @@
     // Do any additional setup after loading the view.
     app = [[UIApplication sharedApplication]delegate];
     
+    m_tableview_list.separatorStyle = UITableViewCellSeparatorStyleNone;
+    m_tableview_list.backgroundColor = GLOBAL_BGColor;
     self.navigationItem.title = @"财务管理学";
     
     m_datalist = [[NSMutableArray alloc]init];
@@ -78,16 +79,27 @@
     model.m_value = @"all";
     [m_datalist addObject:model];
 
-    [m_tableview_list setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height)];
-    
-    [PlatformUtil ResizeUI:m_tableview_list];
-    
+    [m_tableview_list setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height-self.navigationController.navigationBar.frame.size.height)];
+
     self.navigationItem.rightBarButtonItem = [ButtonUtil createToolBarButton:@"关于" target:self action:@selector(toolBarRight)];
     
     m_tableview_list.delegate = self;
     m_tableview_list.dataSource = self;
+     NSLogExt(@"%f %f", [UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height);
 }
 
+-(void) viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    
+}
+-(void)setExtraCellLineHidden: (UITableView *)tableView
+{
+    UIView *view = [UIView new];
+    view.backgroundColor = [UIColor clearColor];
+    [tableView setTableFooterView:view];
+    [view release];
+}
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -97,6 +109,7 @@
 -(NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     //  [self MyLog:[NSString stringWithFormat:@"didReceiveMemoryWarning count=%d",[self.datalist count]]];
     return [m_datalist count];
+//    return 1;
 }
 
 -(UITableViewCell*) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -109,13 +122,14 @@
                 initWithStyle:UITableViewCellStyleDefault
                 reuseIdentifier:TableSampleIdentifier];
     }
-    
+    cell.backgroundColor = GLOBAL_BGColor;
     NSUInteger row = [indexPath row];
     cell.textLabel.text = ((ModelData*)[m_datalist objectAtIndex:row]).m_text;
     return cell;
 }
 -(GLfloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    return 40;
+    GLfloat height = 50.0f;
+    return height;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -125,6 +139,12 @@
    next.m_filename = ((ModelData*)[m_datalist objectAtIndex:row]).m_value;
    next.m_title = ((ModelData*)[m_datalist objectAtIndex:row]).m_text;
    [[app navController] pushViewController:next animated:YES];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+    
+    return 0;
+    
 }
 /*
 #pragma mark - Navigation

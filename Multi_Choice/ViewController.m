@@ -7,9 +7,7 @@
 //
 
 #import "ViewController.h"
-#import "NSLogExt.h"
-#import "Util.h"
-#import "PlatformUtil.h"
+
 
 @interface ViewController ()
 
@@ -53,19 +51,20 @@
  
     m_lbl_title   = [[UILabel alloc]init];
     m_lbl_note = [[UILabelExt alloc]init];
+    m_lbl_choice1 = [[UILabelExt alloc]init];
+    m_lbl_choice2 = [[UILabelExt alloc]init];
+    m_lbl_choice3 = [[UILabelExt alloc]init];
+    m_lbl_choice4 = [[UILabelExt alloc]init];
+    
     [m_lbl_note setHidden:YES];
     //自动折行设置
     [m_lbl_title setFrame:CGRectMake(0, 80,
                                          [UIScreen mainScreen].applicationFrame.size.width-10, 100)];
     
     
-
-
-
-    m_lbl_choice1 = [[UILabelExt alloc]init];
-    m_lbl_choice2 = [[UILabelExt alloc]init];
-    m_lbl_choice3 = [[UILabelExt alloc]init];
-    m_lbl_choice4 = [[UILabelExt alloc]init];
+   
+    [PlatformUtil ResizeUIToTop:m_lbl_title parentView:self.view offSetY:20];
+   
     
     m_lbl_choice1.m_prefix = @"A.";
     m_lbl_choice2.m_prefix = @"B.";
@@ -88,23 +87,23 @@
 
    
     
-    m_scrollview = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-m_btn_next.frame.size.height-20)];
-
+    m_scrollview = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0,
+    self.view.frame.size.width,
+    self.view.frame.size.height-m_btn_next.frame.size.height-self.navigationController.navigationBar.frame.size.height-20)];
 
     m_scrollview.scrollEnabled = YES;
     m_scrollview.bounces = YES;
     m_scrollview.showsVerticalScrollIndicator = NO;
-    
     m_scrollview.showsHorizontalScrollIndicator = NO;
     
     m_scrollview.delegate = self;
     
-    m_scrollview.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height-m_btn_next.frame.size.height-20);
+    m_scrollview.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height-m_btn_next.frame.size.height-self.navigationController.navigationBar.frame.size.height-20);
     
-   // m_scrollview.backgroundColor = [UIColor blueColor];
+    //m_scrollview.backgroundColor = [UIColor blueColor];
   
 
-    
+    //m_btn_next.backgroundColor = [UIColor redColor];
     [m_scrollview addSubview:m_lbl_title];
     [m_scrollview addSubview:m_lbl_choice1];
     [m_scrollview addSubview:m_lbl_choice2];
@@ -139,6 +138,7 @@
 
 
 - (IBAction)btnNextClick:(id)sender {
+    NSLogExt(@"next");
     if (m_currentIndex < m_count-1) {
         ++m_currentIndex;
         [self updateQuestionView];
@@ -147,6 +147,7 @@
 }
 
 - (IBAction)btnPrevClick:(id)sender {
+    NSLogExt(@"previous");
     if (m_currentIndex > 0) {
         --m_currentIndex;
         [self updateQuestionView];

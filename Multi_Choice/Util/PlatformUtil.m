@@ -27,9 +27,24 @@
 
 +(void) ResizeUIToBottom: (UIView*) view parentView :(UIView*) parentView
 {
+    [PlatformUtil ResizeUIToBottom:view parentView:parentView offSetY:0];
+}
++(void) ResizeUIToBottom: (UIView*) view parentView :(UIView*) parentView offSetY :(NSInteger) offsetY
+{
     [view setFrame:CGRectMake(view.frame.origin.x,
-                             parentView.frame.size.height-view.frame.size.height-20,
-                             view.frame.size.width,
+                              parentView.frame.size.height-view.frame.size.height+offsetY,
+                              view.frame.size.width,
+                              view.frame.size.height)];
+}
++(void) ResizeUIToTop:(UIView*) view parentView :(UIView*) parentView
+{
+    [PlatformUtil ResizeUIToTop:view parentView:parentView offSetY:0];
+}
++(void) ResizeUIToTop: (UIView*) view parentView :(UIView*) parentView offSetY :(NSInteger) offsetY
+{
+    [view setFrame:CGRectMake(view.frame.origin.x,
+                              +offsetY,
+                              view.frame.size.width,
                               view.frame.size.height)];
 }
 @end
