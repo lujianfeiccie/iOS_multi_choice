@@ -86,11 +86,15 @@
     m_tableview_list.delegate = self;
     m_tableview_list.dataSource = self;
      NSLogExt(@"%f %f", [UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height);
+    
+    
+  
 }
 
 -(void) viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
+  //  NSLog(@"viewDidLayoutSubviews");
     
 }
 -(void)setExtraCellLineHidden: (UITableView *)tableView
@@ -161,4 +165,11 @@
     UIViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"question_view"];
     [[app navController] pushViewController:next animated:YES];
 }*/
+
+- (void)dealloc {
+    [m_tableview_list release];
+    [m_datalist removeAllObjects];
+    [m_datalist release];
+    [super dealloc];
+}
 @end

@@ -15,12 +15,15 @@
 #import "HttpRequestTool.h"
 #import "SVProgressHUD.h"
 #import "DialogUtil.h"
-
-
+#import "UserInfoTool.h"
+#import "VersionCheckTool.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
      UIStoryboard *storyBoard;
+    
+    VersionCheckTool *m_versionCheckTool;
 }
 @property (strong, nonatomic) UIWindow *window;
 @property (strong, nonatomic) UINavigationController *navController;
+
 @end

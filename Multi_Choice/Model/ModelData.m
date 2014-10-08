@@ -17,7 +17,6 @@
         m_text = @"";
         m_value = @"";
     }
-    NSLog(@"init");
     return self;
 }
 @end

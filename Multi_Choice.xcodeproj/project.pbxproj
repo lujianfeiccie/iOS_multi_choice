@@ -12,6 +12,8 @@
 		180E3B8A19E292520028B7A6 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E3B8819E292520028B7A6 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
 		180E3B8C19E295330028B7A6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 180E3B8B19E295330028B7A6 /* QuartzCore.framework */; };
 		180E3B9019E295B80028B7A6 /* HttpRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E3B8F19E295B80028B7A6 /* HttpRequestTool.m */; };
+		1814AE4219E3CF22004422C3 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE4119E3CF22004422C3 /* UserInfo.m */; };
+		1814AE4519E3D023004422C3 /* UserInfoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE4419E3D023004422C3 /* UserInfoTool.m */; };
 		188D2DC119DBAF25009D45E2 /* 2009_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBA19DBAF25009D45E2 /* 2009_10.xml */; };
 		188D2DC219DBAF25009D45E2 /* 2010_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBB19DBAF25009D45E2 /* 2010_10.xml */; };
 		188D2DC319DBAF25009D45E2 /* 2011_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBC19DBAF25009D45E2 /* 2011_10.xml */; };
@@ -19,6 +21,9 @@
 		188D2DC519DBAF25009D45E2 /* 2013_01.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBE19DBAF25009D45E2 /* 2013_01.xml */; };
 		188D2DC619DBAF25009D45E2 /* 2013_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBF19DBAF25009D45E2 /* 2013_10.xml */; };
 		188D2DC719DBAF25009D45E2 /* 2014_04.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DC019DBAF25009D45E2 /* 2014_04.xml */; };
+		189F11BD19E3F1F600394747 /* Icon-76.png in Resources */ = {isa = PBXBuildFile; fileRef = 189F11BA19E3F1F600394747 /* Icon-76.png */; };
+		189F11BE19E3F1F600394747 /* Icon-120.png in Resources */ = {isa = PBXBuildFile; fileRef = 189F11BB19E3F1F600394747 /* Icon-120.png */; };
+		189F11BF19E3F1F600394747 /* Icon-152.png in Resources */ = {isa = PBXBuildFile; fileRef = 189F11BC19E3F1F600394747 /* Icon-152.png */; };
 		18A33D9819E254D800F40ADF /* FeedbackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A33D9719E254D800F40ADF /* FeedbackViewController.m */; };
 		18B3A7BE19BDB96800A4B068 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B3A7BA19BDB96800A4B068 /* Default.png */; };
 		18B3A7C019BDB96800A4B068 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B3A7BC19BDB96800A4B068 /* Icon.png */; };
@@ -47,6 +52,7 @@
 		18E7B05719A7794600092469 /* XMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7B05619A7794600092469 /* XMLElement.m */; };
 		18EA970819CF224E006E60EF /* ModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA970719CF224E006E60EF /* ModelData.m */; };
 		18EC953719E38E79002515DE /* DialogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC953619E38E79002515DE /* DialogUtil.m */; };
+		18ECDCF619E57F5E00A00BE1 /* VersionCheckTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECDCF519E57F5E00A00BE1 /* VersionCheckTool.m */; };
 		18F701DC19AA1133005E0361 /* UILabelExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F701DB19AA1133005E0361 /* UILabelExt.m */; };
 		18F701E019AA406E005E0361 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F701DF19AA406E005E0361 /* RootViewController.m */; };
 		18F7744319AB8C2100D5F3FD /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7744219AB8C2100D5F3FD /* Util.m */; };
@@ -73,6 +79,10 @@
 		180E3B8D19E295B80028B7A6 /* ButtonUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ButtonUtil.h; sourceTree = "<group>"; };
 		180E3B8E19E295B80028B7A6 /* HttpRequestTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpRequestTool.h; sourceTree = "<group>"; };
 		180E3B8F19E295B80028B7A6 /* HttpRequestTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpRequestTool.m; sourceTree = "<group>"; };
+		1814AE4019E3CF21004422C3 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UserInfo.h; path = ../Custom/UserInfo.h; sourceTree = "<group>"; };
+		1814AE4119E3CF22004422C3 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInfo.m; path = ../Custom/UserInfo.m; sourceTree = "<group>"; };
+		1814AE4319E3D023004422C3 /* UserInfoTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoTool.h; sourceTree = "<group>"; };
+		1814AE4419E3D023004422C3 /* UserInfoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoTool.m; sourceTree = "<group>"; };
 		188D2DBA19DBAF25009D45E2 /* 2009_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2009_10.xml; sourceTree = "<group>"; };
 		188D2DBB19DBAF25009D45E2 /* 2010_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2010_10.xml; sourceTree = "<group>"; };
 		188D2DBC19DBAF25009D45E2 /* 2011_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2011_10.xml; sourceTree = "<group>"; };
@@ -80,6 +90,9 @@
 		188D2DBE19DBAF25009D45E2 /* 2013_01.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2013_01.xml; sourceTree = "<group>"; };
 		188D2DBF19DBAF25009D45E2 /* 2013_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2013_10.xml; sourceTree = "<group>"; };
 		188D2DC019DBAF25009D45E2 /* 2014_04.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2014_04.xml; sourceTree = "<group>"; };
+		189F11BA19E3F1F600394747 /* Icon-76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-76.png"; path = "Multi_Choice/Icon-76.png"; sourceTree = "<group>"; };
+		189F11BB19E3F1F600394747 /* Icon-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-120.png"; path = "Multi_Choice/Icon-120.png"; sourceTree = "<group>"; };
+		189F11BC19E3F1F600394747 /* Icon-152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-152.png"; path = "Multi_Choice/Icon-152.png"; sourceTree = "<group>"; };
 		18A33D9619E254D800F40ADF /* FeedbackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackViewController.h; sourceTree = "<group>"; };
 		18A33D9719E254D800F40ADF /* FeedbackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackViewController.m; sourceTree = "<group>"; };
 		18B3A7BA19BDB96800A4B068 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = Multi_Choice/Default.png; sourceTree = "<group>"; };
@@ -121,6 +134,8 @@
 		18EA970719CF224E006E60EF /* ModelData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelData.m; sourceTree = "<group>"; };
 		18EC953519E38E79002515DE /* DialogUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DialogUtil.h; sourceTree = "<group>"; };
 		18EC953619E38E79002515DE /* DialogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialogUtil.m; sourceTree = "<group>"; };
+		18ECDCF419E57F5E00A00BE1 /* VersionCheckTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionCheckTool.h; sourceTree = "<group>"; };
+		18ECDCF519E57F5E00A00BE1 /* VersionCheckTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionCheckTool.m; sourceTree = "<group>"; };
 		18F701DA19AA1133005E0361 /* UILabelExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelExt.h; sourceTree = "<group>"; };
 		18F701DB19AA1133005E0361 /* UILabelExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelExt.m; sourceTree = "<group>"; };
 		18F701DE19AA406E005E0361 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = UI/RootViewController.h; sourceTree = "<group>"; };
@@ -184,6 +199,9 @@
 		18E7B01319A7770300092469 = {
 			isa = PBXGroup;
 			children = (
+				189F11BA19E3F1F600394747 /* Icon-76.png */,
+				189F11BB19E3F1F600394747 /* Icon-120.png */,
+				189F11BC19E3F1F600394747 /* Icon-152.png */,
 				180E3B8519E292520028B7A6 /* SVProgressHUD */,
 				18FE58A819E23A45004A542B /* Default-568h@2x.png */,
 				188D2DB919DBAF25009D45E2 /* Questions */,
@@ -291,6 +309,10 @@
 				18E1138719A80C1A008F8EFC /* XMLHelper.m */,
 				18F7744119AB8C2100D5F3FD /* Util.h */,
 				18F7744219AB8C2100D5F3FD /* Util.m */,
+				1814AE4319E3D023004422C3 /* UserInfoTool.h */,
+				1814AE4419E3D023004422C3 /* UserInfoTool.m */,
+				18ECDCF419E57F5E00A00BE1 /* VersionCheckTool.h */,
+				18ECDCF519E57F5E00A00BE1 /* VersionCheckTool.m */,
 			);
 			name = Util;
 			path = Multi_Choice/Util;
@@ -299,6 +321,8 @@
 		18EA970519CF2218006E60EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1814AE4019E3CF21004422C3 /* UserInfo.h */,
+				1814AE4119E3CF22004422C3 /* UserInfo.m */,
 				18EA970619CF224E006E60EF /* ModelData.h */,
 				18EA970719CF224E006E60EF /* ModelData.m */,
 			);
@@ -411,12 +435,15 @@
 				18E7B02A19A7770300092469 /* InfoPlist.strings in Resources */,
 				188D2DC219DBAF25009D45E2 /* 2010_10.xml in Resources */,
 				188D2DC419DBAF25009D45E2 /* 2012_10.xml in Resources */,
+				189F11BE19E3F1F600394747 /* Icon-120.png in Resources */,
 				18E7B03319A7770300092469 /* Main.storyboard in Resources */,
+				189F11BF19E3F1F600394747 /* Icon-152.png in Resources */,
 				18B3A7BE19BDB96800A4B068 /* Default.png in Resources */,
 				188D2DC719DBAF25009D45E2 /* 2014_04.xml in Resources */,
 				18FE58A919E23A45004A542B /* Default-568h@2x.png in Resources */,
 				18B3BC5B19BDBC9500A4B068 /* me.png in Resources */,
 				188D2DC119DBAF25009D45E2 /* 2009_10.xml in Resources */,
+				189F11BD19E3F1F600394747 /* Icon-76.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +467,7 @@
 				18B3BC5D19BDBE2B00A4B068 /* ButtonUtil.m in Sources */,
 				18EC953719E38E79002515DE /* DialogUtil.m in Sources */,
 				18A33D9819E254D800F40ADF /* FeedbackViewController.m in Sources */,
+				1814AE4219E3CF22004422C3 /* UserInfo.m in Sources */,
 				18E7B03619A7770300092469 /* ViewController.m in Sources */,
 				18E7B03019A7770300092469 /* AppDelegate.m in Sources */,
 				18F701E019AA406E005E0361 /* RootViewController.m in Sources */,
@@ -452,6 +480,8 @@
 				18F701DC19AA1133005E0361 /* UILabelExt.m in Sources */,
 				18B3A7C619BDBAB300A4B068 /* AboutDlgViewController.m in Sources */,
 				18E1138B19A80E68008F8EFC /* NSLogExt.m in Sources */,
+				1814AE4519E3D023004422C3 /* UserInfoTool.m in Sources */,
+				18ECDCF619E57F5E00A00BE1 /* VersionCheckTool.m in Sources */,
 				18F7744319AB8C2100D5F3FD /* Util.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,15 +555,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: jianfei lu (L7FW62Y4Q4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jianfei lu (L7FW62Y4Q4)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Multi_Choice/Multi_Choice-Prefix.pch";
 				INFOPLIST_FILE = "Multi_Choice/Multi_Choice-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e4b87755-283b-46cf-b433-922e3b1d0935";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -543,15 +573,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: jianfei lu (L7FW62Y4Q4)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jianfei lu (L7FW62Y4Q4)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Multi_Choice/Multi_Choice-Prefix.pch";
 				INFOPLIST_FILE = "Multi_Choice/Multi_Choice-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "e4b87755-283b-46cf-b433-922e3b1d0935";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

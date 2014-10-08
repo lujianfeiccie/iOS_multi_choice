@@ -13,6 +13,7 @@
 //接口定义
 @protocol DialogUtilDelegate <NSObject>
 @required
+#pragma marks -- DialogUtilDelegate --
 -(void) onDialogConfirmClick : (DialogUtil*) dialog;
 -(void) onDialogCancelClick : (DialogUtil*) dialog;
 @end

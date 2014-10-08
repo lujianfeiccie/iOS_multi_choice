@@ -335,4 +335,15 @@
 {
     
 }
+- (void)dealloc {
+    [m_title release];
+    [m_lbl_choice1 release];
+    [m_lbl_choice2 release];
+    [m_lbl_choice3 release];
+    [m_lbl_choice4 release];
+    [m_lbl_note release];
+    [m_btn_prev release];
+    [m_btn_next release];
+    [super dealloc];
+}
 @end

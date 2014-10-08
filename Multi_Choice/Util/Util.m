@@ -61,4 +61,42 @@
 
     return randnum;
 }
+
++(NSString*) getDate
+{
+    //获得系统日期
+    NSDate *  senddate=[NSDate date];
+    
+    NSCalendar  * cal=[NSCalendar  currentCalendar];
+    NSUInteger  unitFlags=NSDayCalendarUnit|NSMonthCalendarUnit|NSYearCalendarUnit;
+    NSDateComponents * conponent= [cal components:unitFlags fromDate:senddate];
+    NSInteger year=[conponent year];
+    NSInteger month=[conponent month];
+    NSInteger day=[conponent day];
+    
+    NSString *  nsDateString= [NSString  stringWithFormat:@"%4ld-%02ld-%02ld",(long)year,(long)month,(long)day];
+    
+    return  nsDateString;
+}
+
++(BOOL) isTimeToCheckVersion
+{
+    //获得系统时间
+    //获得系统日期
+    NSDate *  senddate=[NSDate date];
+    NSCalendar  * cal=[NSCalendar  currentCalendar];
+    NSUInteger  unitFlags=NSDayCalendarUnit|NSMonthCalendarUnit|NSYearCalendarUnit;
+    NSDateComponents * conponent= [cal components:unitFlags fromDate:senddate];
+    NSInteger hour=[conponent hour];
+    NSLog(@"%ld",hour);
+    if (hour > 9 && hour < 18)//working hour
+    {
+        return YES;
+    }
+    else if(hour > 21 && hour < 24)//home hour
+    {
+        return  YES;
+    }
+    return  NO;
+}
 @end

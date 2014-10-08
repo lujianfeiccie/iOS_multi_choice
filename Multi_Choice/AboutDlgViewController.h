@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import "VersionCheckTool.h"
 @interface AboutDlgViewController : AbstractViewController<UITableViewDelegate,
-UITableViewDataSource,HttpRequestToolDelegate,DialogUtilDelegate>
+UITableViewDataSource>
 
 {
          AppDelegate* app;
@@ -18,8 +19,7 @@ UITableViewDataSource,HttpRequestToolDelegate,DialogUtilDelegate>
     IBOutlet UIImageView *m_img_logo;
     IBOutlet UITableView *m_tableview_setting;
     NSMutableArray* m_datalist;
-    HttpRequestTool *http;
-    DialogUtil *m_dialog;
-    NSString *m_trackViewUrl;
+    
+    VersionCheckTool* m_versionCheckTool;
 }
 @end

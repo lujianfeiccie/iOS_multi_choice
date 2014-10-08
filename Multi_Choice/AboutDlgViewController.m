@@ -50,11 +50,10 @@
     m_tableview_setting.bounces = false;
    
      app = [[UIApplication sharedApplication]delegate];
-    m_dialog = [[DialogUtil alloc]init];
-    m_dialog.delegate = self;
-    http = [[HttpRequestTool alloc]init];
-    http.delegate = self;
-}
+    
+    m_versionCheckTool = [[VersionCheckTool alloc]init];
+    m_versionCheckTool.m_app_id = GLOBAL_APP_ID;
+   }
 - (void)viewDidLayoutSubviews
 {
     [PlatformUtil ResizeUIToTop:m_img_logo parentView:self.view offSetY:20];
@@ -132,112 +131,20 @@
         case 1:
         {
            //Go to check the latest version
-            [SVProgressHUD showWithStatus:@"正在检查最新版本"];
-            http.url = @"http://itunes.apple.com/lookup";
-            [http.data removeAllObjects];
-            [http.data setObject:[NSString stringWithFormat:@"%i",GLOBAL_APP_ID] forKey:@"id"];
-            NSThread* myThread = [[NSThread alloc] initWithTarget:http selector:@selector(startGetRequest) object:nil];
-            [myThread start];
+            [m_versionCheckTool request];
+            
         }
             break;
         default:
             break;
     }
 }
--(void) onMsgReceive :(NSData*) msg :(NSInteger) errorCode :(NSInteger) statusCode :(HttpRequestTool*) httpRequestTool;
-{
-    [SVProgressHUD dismiss];
-    
-    NSError *parse_error=Nil;
-    
-    NSLogExt(@"error code = %i statusCode = %i",errorCode,statusCode);
-    switch (errorCode) {
-        case NSURLErrorNotConnectedToInternet://网络断开
-            [SVProgressHUD showErrorWithStatus:@"无法连接到网络!"];
-            return;
-        case NSURLErrorTimedOut://请求超时
-            [SVProgressHUD showErrorWithStatus:@"请求超时!"];
-            return;
-        default:
-            break;
-    }
-    
-    
-    //IOS5自带解析类NSJSONSerialization从response中解析出数据放到字典中
-    NSDictionary *dataDic = [NSJSONSerialization JSONObjectWithData:msg options:NSJSONReadingMutableLeaves error:&parse_error];
-    
-    
-    switch (statusCode) {
-        case 200:
-        {
-            NSDictionary *results =[dataDic objectForKey:@"results"];
-            
-            NSString *latestVersion = @"";
-            NSString *trackViewUrl = @"";
-            NSString *trackName = @"";
-            for (NSDictionary* result in results){
-                latestVersion =[result objectForKey:@"version"];
-                trackViewUrl =[result objectForKey:@"trackViewUrl"];
-                trackName =[result objectForKey:@"trackName"];
-            }
-           
-            NSString *currentVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
-            
-            NSLogExt(@"\nlatestVersion=%@\ntrackViewUrl=%@\ntrackName=%@\ncurrentVersion=%@",
-                     latestVersion,trackViewUrl,trackName,currentVersion);
-         
-          
-            if ([currentVersion isEqualToString:latestVersion])
-            {
-                [SVProgressHUD showSuccessWithStatus:@"已经是最新版本!"];
-               
-            }
-            else
-            {
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    m_trackViewUrl = [[trackViewUrl stringByReplacingOccurrencesOfString:@"https://" withString:@"itms-apps://"] copy];
- //NSLog(@" %@",m_trackViewUrl);
-                    // 更新UI
-                    [m_dialog showDialogTitle:@"提示"
-                                      message: [NSString stringWithFormat:@"最新版本%@,现在去下载?",latestVersion] confirm:@"是的"
-                                       cancel:@"以后再说"];
-                });
-            }
-            //NSLogExt(@"status=%@",status);
-        }
-            break;
-            
-        default:
-            break;
-    }
-
-}
-#pragma marks -- DialogUtilDelegate --
--(void) onDialogConfirmClick : (DialogUtil*) dialog
-{
-    if (dialog == m_dialog) {
-        if(m_trackViewUrl!=nil){
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:m_trackViewUrl]];
-        }
-    }
-}
--(void) onDialogCancelClick : (DialogUtil*) dialog
-{
-    if (dialog == m_dialog) {
-        
-    }
-}
-
 - (void)dealloc {
     [m_lbl_version release];
     [m_lbl_copyright release];
     [m_img_logo release];
     [m_tableview_setting release];
-    [http.data removeAllObjects];
-    [http.data release];
-    [http release];
-    [m_dialog release];
-    [m_trackViewUrl release];
+    [m_versionCheckTool releaseExt];
     [super dealloc];
 }
 @end

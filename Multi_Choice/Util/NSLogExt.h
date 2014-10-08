@@ -9,7 +9,7 @@
 #ifndef aacalc_NSLogExt_h
 #define aacalc_NSLogExt_h
 
-//#define LOG_DEBUG
+#define LOG_DEBUG
 #define NSLogExt(args...)  ExtendNSLog(__FILE__,__LINE__,__PRETTY_FUNCTION__,args);
 void   ExtendNSLog(const char *file, int lineNumber, const char *functionName, NSString *format, ...);
 #endif

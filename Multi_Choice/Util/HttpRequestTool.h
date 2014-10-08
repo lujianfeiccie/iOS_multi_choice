@@ -10,8 +10,10 @@
 
 @class HttpRequestTool;
 //接口定义
+
 @protocol HttpRequestToolDelegate <NSObject>
 @required
+#pragma marks -- HttpRequestToolDelegate --
 -(void) onMsgReceive :(NSData*) msg :(NSInteger) errorCode :(NSInteger) statusCode :(HttpRequestTool*) httpRequestTool;
 @end
 
