@@ -245,7 +245,7 @@
     m_scrollview.contentSize = CGSizeMake(self.view.frame.size.width, m_lbl_choice4.frame.origin.y+m_lbl_choice4.frame.size.height);
     
     NSString* title =[[m_questions objectAtIndex:m_currentIndex] m_title];
-    m_lbl_title.text =[NSString stringWithFormat:@"%@(%i/%i)",title,m_currentIndex+1,m_count];
+    m_lbl_title.text =[NSString stringWithFormat:@"%@(%li/%li)",title,(long)(m_currentIndex+1),(long)m_count];
     
     [Util setLabelToAutoSize:m_lbl_title];
     
@@ -253,7 +253,7 @@
     NSArray *choices = [[m_questions objectAtIndex:m_currentIndex] m_subElements];
     m_str_answer = [[m_questions objectAtIndex:m_currentIndex] m_answer];
     NSInteger selected =[[m_questions objectAtIndex:m_currentIndex] m_selected];
-    int count = [choices count];
+    NSUInteger count = [choices count];
 //    NSLogExt(@"count=%i",count);
     
     

@@ -81,6 +81,8 @@
 
     [m_tableview_list setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height-self.navigationController.navigationBar.frame.size.height)];
 
+  
+    
     self.navigationItem.rightBarButtonItem = [ButtonUtil createToolBarButton:@"关于" target:self action:@selector(toolBarRight)];
     
     m_tableview_list.delegate = self;
@@ -88,7 +90,12 @@
      NSLogExt(@"%f %f", [UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height);
     
     
-  
+    NSLogExt(@"%f %f %f %f",m_tableview_list.frame.origin.x,
+             m_tableview_list.frame.origin.y,
+             m_tableview_list.frame.size.width,
+             m_tableview_list.frame.size.height);
+    
+//    m_tableview_list.backgroundColor = [UIColor redColor];
 }
 
 -(void) viewDidLayoutSubviews
@@ -97,13 +104,7 @@
   //  NSLog(@"viewDidLayoutSubviews");
     
 }
--(void)setExtraCellLineHidden: (UITableView *)tableView
-{
-    UIView *view = [UIView new];
-    view.backgroundColor = [UIColor clearColor];
-    [tableView setTableFooterView:view];
-    [view release];
-}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
@@ -121,18 +122,23 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:
                              TableSampleIdentifier];
-    if (cell == nil) {
+    cell.tag = 1;
+    if (!cell)
+    {
         cell = [[UITableViewCell alloc]
                 initWithStyle:UITableViewCellStyleDefault
                 reuseIdentifier:TableSampleIdentifier];
     }
+    
     cell.backgroundColor = GLOBAL_BGColor;
+//    cell.backgroundColor = [UIColor greenColor];
     NSUInteger row = [indexPath row];
     cell.textLabel.text = ((ModelData*)[m_datalist objectAtIndex:row]).m_text;
+    cell.textLabel.font = [UIFont fontWithName:@"" size:19.0f];
     return cell;
 }
--(GLfloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    GLfloat height = 50.0f;
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    CGFloat height = 50.0f;
     return height;
 }
 

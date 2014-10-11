@@ -11,13 +11,21 @@
 @implementation Util
 +(void) setLabelToAutoSize:(UILabel*) label{
     [label setNumberOfLines:0];
-    label.lineBreakMode = UILineBreakModeWordWrap;
+  //  label.lineBreakMode = UILineBreakModeWordWrap;
     label.textAlignment = NSTextAlignmentLeft;
     
     CGSize maximumSize = CGSizeMake(300, CGFLOAT_MAX); // 第一个参数是label的宽度，第二个参数是固定的宏定义，CGFLOAT_MAX
-    CGSize expectedLabelSize = [label.text sizeWithFont:label.font
+    /*CGSize expectedLabelSize = [label.text sizeWithFont:label.font
                                  constrainedToSize:maximumSize
-                                     lineBreakMode:UILineBreakModeWordWrap];
+                                     lineBreakMode:NSLineBreakByWordWrapping];*/
+    //UILineBreakModeWordWrap
+    
+    CGSize expectedLabelSize = [label.text
+        boundingRectWithSize:maximumSize
+        options:NSStringDrawingUsesLineFragmentOrigin
+        attributes:@{NSFontAttributeName:label.font
+                    }
+        context:nil].size;
     
     CGRect newFrame = label.frame;
     newFrame.size.width = 320;
@@ -26,17 +34,20 @@
     [label sizeToFit];
 }
 
-+(int*) getRandomNumOfOut:(int) numOfOut NumOfIn : (int) numOfIn
++(NSUInteger*) getRandomNumOfOut:(NSUInteger) numOfOut NumOfIn : (NSUInteger) numOfIn
 {
-   // NSLogExt(@"getRandom %i %i",numOfOut,numOfIn);
-    int* randnum = (int*)malloc(sizeof(int)*numOfOut);
-    memset(randnum, -1, sizeof(int)*numOfOut);
+    NSLogExt(@"getRandom %i %i",numOfOut,numOfIn);
+    NSUInteger* randnum = (NSUInteger*)malloc(sizeof(NSUInteger)*numOfOut);
+    memset(randnum, -1, sizeof(NSUInteger)*numOfOut);
+    /*for (NSUInteger i=0; i<numOfOut; i++) {
+        NSLogExt(@"%i %i",i,randnum[i]);
+    }*/
     bool repeat;
     for (int i=0; i<numOfOut; i++)
     {
         repeat = NO;
-        int num = arc4random() % (numOfIn);
-        //NSLogExt(@"num=%i",num);
+        NSUInteger num = arc4random() % (numOfIn);
+       // NSLogExt(@"num=%i",num);
 
         for (int j=0; j<numOfOut; j++)
         {
@@ -51,7 +62,7 @@
         if (repeat==NO)
         {
             randnum[i]=num;
-            //NSLogExt(@"num[%i]=%i",i,num);
+           NSLogExt(@"num[%i]=%i",i,num);
         }
         else
         {
@@ -88,7 +99,7 @@
     NSUInteger  unitFlags=NSDayCalendarUnit|NSMonthCalendarUnit|NSYearCalendarUnit;
     NSDateComponents * conponent= [cal components:unitFlags fromDate:senddate];
     NSInteger hour=[conponent hour];
-    NSLog(@"%ld",hour);
+    
     if (hour > 9 && hour < 18)//working hour
     {
         return YES;

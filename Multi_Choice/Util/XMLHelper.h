@@ -22,6 +22,6 @@
 @property (nonatomic) BOOL m_random;
 
 -(void) load:(NSString*) fileName;
--(void) loadMultiple:(int) numOfQuestions : (NSString*) fileName,...;
+-(void) loadMultiple:(NSUInteger) numOfQuestions : (NSString*) fileName,...;
 
 @end

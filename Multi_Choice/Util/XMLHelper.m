@@ -22,6 +22,7 @@
 -(void) load:(NSString*) fileName
 {
     NSString* result = [[NSBundle mainBundle] pathForResource:fileName ofType:@"xml"];
+    NSLogExt(@"filename=%@",fileName)
     NSData *data = [[NSData alloc]initWithContentsOfFile:result];
     
     self.parser = [[NSXMLParser alloc]initWithData:data];
@@ -38,11 +39,11 @@
        
             NSMutableArray *questions = self.rootElement.m_subElements;
 
-            int count_questions = [questions count];
+            NSUInteger count_questions = [questions count];
             
             //Random the questions
             NSMutableArray *questions_tmp = [[NSMutableArray alloc]init];
-            int* randnum_question = [Util getRandomNumOfOut:count_questions NumOfIn:count_questions];
+            NSUInteger* randnum_question = [Util getRandomNumOfOut:count_questions NumOfIn:count_questions];
             
             for (int i_q=0; i_q<count_questions; i_q++) {
                 [questions_tmp addObject:[questions objectAtIndex:randnum_question[i_q]]];
@@ -62,7 +63,7 @@
                 
                 NSUInteger count_choices = [choices count];
                
-               int *randnum_choice = [Util getRandomNumOfOut:count_choices NumOfIn:count_choices];
+               NSUInteger *randnum_choice = [Util getRandomNumOfOut:count_choices NumOfIn:count_choices];
                 
                
              
@@ -93,7 +94,7 @@
 
 }
 
--(void) loadMultiple:(int) numOfQuestions : (NSString *)fileName, ...
+-(void) loadMultiple:(NSUInteger) numOfQuestions : (NSString *)fileName, ...
 {
     va_list arguments;
     id eachObject;
@@ -136,7 +137,7 @@
     
     NSUInteger count = [questions count];
     NSMutableArray *questions_tmp = [[NSMutableArray alloc] init];
-    int *randnum_questions= [Util getRandomNumOfOut:numOfQuestions NumOfIn:count];
+    NSUInteger *randnum_questions= [Util getRandomNumOfOut:numOfQuestions NumOfIn:count];
  
     NSLogExt(@"count=%i",count);
 
@@ -157,7 +158,7 @@
 
        NSUInteger count_chocies = [choices count];
 
-        int *randnum_choices = [Util getRandomNumOfOut:(count_chocies) NumOfIn:count_chocies];
+        NSUInteger *randnum_choices = [Util getRandomNumOfOut:(count_chocies) NumOfIn:count_chocies];
          
         NSMutableArray* choices_tmp = [[NSMutableArray alloc]init];
          

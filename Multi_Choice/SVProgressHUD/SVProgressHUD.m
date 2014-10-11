@@ -212,7 +212,15 @@ CGFloat SVProgressHUDRingThickness = 6;
     BOOL imageUsed = (self.imageView.image) || (self.imageView.hidden);
     
     if(string) {
-        CGSize stringSize = [string sizeWithFont:self.stringLabel.font constrainedToSize:CGSizeMake(200, 300)];
+       // CGSize stringSize = [string sizeWithFont:self.stringLabel.font constrainedToSize:CGSizeMake(200, 300)];
+        
+        CGSize stringSize = [string
+         boundingRectWithSize:CGSizeMake(200, 300)
+         options:NSStringDrawingUsesLineFragmentOrigin
+         attributes:@{NSFontAttributeName:self.stringLabel.font
+                      }
+         context:nil].size;
+        
         stringWidth = stringSize.width;
         stringHeight = stringSize.height;
         if (imageUsed)
@@ -398,7 +406,7 @@ CGFloat SVProgressHUDRingThickness = 6;
 
 #pragma mark - Master show/dismiss methods
 
-- (void)showProgress:(float)progress status:(NSString*)string maskType:(SVProgressHUDMaskType)hudMaskType {
+- (void)showProgress:(CGFloat)progress status:(NSString*)string maskType:(SVProgressHUDMaskType)hudMaskType {
     
     if(!self.overlayView.superview){
         NSEnumerator *frontToBackWindows = [[[UIApplication sharedApplication]windows]reverseObjectEnumerator];

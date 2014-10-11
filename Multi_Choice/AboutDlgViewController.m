@@ -32,7 +32,7 @@
     m_tableview_setting.delegate = self;
     m_tableview_setting.dataSource = self;
     
-     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
+     NSString *version = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
     
     NSString *appname =  [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
     
@@ -113,8 +113,8 @@
     cell.textLabel.text = [m_datalist objectAtIndex:row];
     return cell;
 }
--(GLfloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-    GLfloat height = 40;
+-(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    CGFloat height = 40;
     return height;
 }
 

@@ -31,11 +31,12 @@
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.extendedLayoutIncludesOpaqueBars = NO;
     [self.view setBackgroundColor:GLOBAL_BGColor];
-    if([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    /*if([[[UIDevice currentDevice] systemVersion] floatValue] >= 7.0)
         
     {
         self.automaticallyAdjustsScrollViewInsets = NO;
-    }
+    }*/
 }
 
 - (void)didReceiveMemoryWarning

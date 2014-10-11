@@ -34,11 +34,7 @@
         <choice>风险程度不变</choice>
         <choice>风险程度无法确定</choice>
     </question>
-    <question title="下列能够降低企业财务风险的筹资方式是" answer="发行股票" note="发行股票的特点：
-        &#x0A;&#x0D;
-        &#x0A;&#x0D;1.降低财务风险
-        &#x0A;&#x0D;&#x0A;&#x0D;2.
-        高融资成本">
+    <question title="下列能够降低企业财务风险的筹资方式是" answer="发行股票" note="发行股票的特点：&#x0A;&#x0D;&#x0A;&#x0D;1.降低财务风险&#x0A;&#x0D;&#x0A;&#x0D;2.高融资成本">
         <choice>发行债券</choice>
         <choice>融资租赁</choice>
         <choice>发行股票</choice>

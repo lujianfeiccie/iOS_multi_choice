@@ -10,7 +10,7 @@
 
 @interface Util : NSObject
 +(void) setLabelToAutoSize:(UILabel*) label;
-+(int*) getRandomNumOfOut:(int) numOfOut NumOfIn : (int) numOfIn;
++(NSUInteger*) getRandomNumOfOut:(NSUInteger) numOfOut NumOfIn : (NSUInteger) numOfIn;
 +(NSString*) getDate;
 +(BOOL) isTimeToCheckVersion;
 @end
