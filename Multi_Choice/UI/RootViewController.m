@@ -9,7 +9,7 @@
 #import "RootViewController.h"
 #import "ViewController.h"
 #import "ModelData.h"
-
+#import "CalcViewController.h"
 @interface RootViewController ()
 
 @end
@@ -25,7 +25,12 @@
     return self;
 }
 -(void) toolBarRight{
-    ViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"about_view"];
+ //   ViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"about_view"];
+    
+    
+    ViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"calc_view"];
+    ((CalcViewController*)next).m_filename=@"2013_10_calc";
+    ((CalcViewController*)next).m_title=@"2013_10_calc";
     [[app navController] pushViewController:next animated:YES];
 }
 - (void)viewDidLoad

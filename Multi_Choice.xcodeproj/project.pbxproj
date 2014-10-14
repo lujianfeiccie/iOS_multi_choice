@@ -14,6 +14,10 @@
 		180E3B9019E295B80028B7A6 /* HttpRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E3B8F19E295B80028B7A6 /* HttpRequestTool.m */; };
 		1814AE4219E3CF22004422C3 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE4119E3CF22004422C3 /* UserInfo.m */; };
 		1814AE4519E3D023004422C3 /* UserInfoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE4419E3D023004422C3 /* UserInfoTool.m */; };
+		182CAB9D19ED679400C02B68 /* 2013_10_calc.xml in Resources */ = {isa = PBXBuildFile; fileRef = 182CAB9C19ED679400C02B68 /* 2013_10_calc.xml */; };
+		182CABA019ED680600C02B68 /* CalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CAB9F19ED680600C02B68 /* CalcViewController.m */; };
+		182CABA319ED695500C02B68 /* XMLCalcHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CABA219ED695500C02B68 /* XMLCalcHelper.m */; };
+		182CABA619ED699200C02B68 /* XMLCalcElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CABA519ED699200C02B68 /* XMLCalcElement.m */; };
 		188D2DC119DBAF25009D45E2 /* 2009_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBA19DBAF25009D45E2 /* 2009_10.xml */; };
 		188D2DC219DBAF25009D45E2 /* 2010_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBB19DBAF25009D45E2 /* 2010_10.xml */; };
 		188D2DC319DBAF25009D45E2 /* 2011_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBC19DBAF25009D45E2 /* 2011_10.xml */; };
@@ -83,6 +87,13 @@
 		1814AE4119E3CF22004422C3 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInfo.m; path = ../Custom/UserInfo.m; sourceTree = "<group>"; };
 		1814AE4319E3D023004422C3 /* UserInfoTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoTool.h; sourceTree = "<group>"; };
 		1814AE4419E3D023004422C3 /* UserInfoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoTool.m; sourceTree = "<group>"; };
+		182CAB9C19ED679400C02B68 /* 2013_10_calc.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2013_10_calc.xml; sourceTree = "<group>"; };
+		182CAB9E19ED680600C02B68 /* CalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcViewController.h; sourceTree = "<group>"; };
+		182CAB9F19ED680600C02B68 /* CalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcViewController.m; sourceTree = "<group>"; };
+		182CABA119ED695500C02B68 /* XMLCalcHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLCalcHelper.h; sourceTree = "<group>"; };
+		182CABA219ED695500C02B68 /* XMLCalcHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLCalcHelper.m; sourceTree = "<group>"; };
+		182CABA419ED699200C02B68 /* XMLCalcElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLCalcElement.h; sourceTree = "<group>"; };
+		182CABA519ED699200C02B68 /* XMLCalcElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLCalcElement.m; sourceTree = "<group>"; };
 		188D2DBA19DBAF25009D45E2 /* 2009_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2009_10.xml; sourceTree = "<group>"; };
 		188D2DBB19DBAF25009D45E2 /* 2010_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2010_10.xml; sourceTree = "<group>"; };
 		188D2DBC19DBAF25009D45E2 /* 2011_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2011_10.xml; sourceTree = "<group>"; };
@@ -184,6 +195,7 @@
 		188D2DB919DBAF25009D45E2 /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				182CAB9C19ED679400C02B68 /* 2013_10_calc.xml */,
 				188D2DBA19DBAF25009D45E2 /* 2009_10.xml */,
 				188D2DBB19DBAF25009D45E2 /* 2010_10.xml */,
 				188D2DBC19DBAF25009D45E2 /* 2011_10.xml */,
@@ -257,6 +269,8 @@
 				18B3A7C519BDBAB300A4B068 /* AboutDlgViewController.m */,
 				18A33D9619E254D800F40ADF /* FeedbackViewController.h */,
 				18A33D9719E254D800F40ADF /* FeedbackViewController.m */,
+				182CAB9E19ED680600C02B68 /* CalcViewController.h */,
+				182CAB9F19ED680600C02B68 /* CalcViewController.m */,
 			);
 			path = Multi_Choice;
 			sourceTree = "<group>";
@@ -313,6 +327,10 @@
 				1814AE4419E3D023004422C3 /* UserInfoTool.m */,
 				18ECDCF419E57F5E00A00BE1 /* VersionCheckTool.h */,
 				18ECDCF519E57F5E00A00BE1 /* VersionCheckTool.m */,
+				182CABA119ED695500C02B68 /* XMLCalcHelper.h */,
+				182CABA219ED695500C02B68 /* XMLCalcHelper.m */,
+				182CABA419ED699200C02B68 /* XMLCalcElement.h */,
+				182CABA519ED699200C02B68 /* XMLCalcElement.m */,
 			);
 			name = Util;
 			path = Multi_Choice/Util;
@@ -444,6 +462,7 @@
 				18B3BC5B19BDBC9500A4B068 /* me.png in Resources */,
 				188D2DC119DBAF25009D45E2 /* 2009_10.xml in Resources */,
 				189F11BD19E3F1F600394747 /* Icon-76.png in Resources */,
+				182CAB9D19ED679400C02B68 /* 2013_10_calc.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,7 +488,9 @@
 				18A33D9819E254D800F40ADF /* FeedbackViewController.m in Sources */,
 				1814AE4219E3CF22004422C3 /* UserInfo.m in Sources */,
 				18E7B03619A7770300092469 /* ViewController.m in Sources */,
+				182CABA319ED695500C02B68 /* XMLCalcHelper.m in Sources */,
 				18E7B03019A7770300092469 /* AppDelegate.m in Sources */,
+				182CABA619ED699200C02B68 /* XMLCalcElement.m in Sources */,
 				18F701E019AA406E005E0361 /* RootViewController.m in Sources */,
 				18E7B05719A7794600092469 /* XMLElement.m in Sources */,
 				18E7B02C19A7770300092469 /* main.m in Sources */,
@@ -477,6 +498,7 @@
 				180E3B9019E295B80028B7A6 /* HttpRequestTool.m in Sources */,
 				18E1138819A80C1A008F8EFC /* XMLHelper.m in Sources */,
 				180E3B8419E28C9E0028B7A6 /* AbstractViewController.m in Sources */,
+				182CABA019ED680600C02B68 /* CalcViewController.m in Sources */,
 				18F701DC19AA1133005E0361 /* UILabelExt.m in Sources */,
 				18B3A7C619BDBAB300A4B068 /* AboutDlgViewController.m in Sources */,
 				18E1138B19A80E68008F8EFC /* NSLogExt.m in Sources */,
