@@ -15,8 +15,46 @@
                     <view key="view" contentMode="scaleToFill" id="hbG-lr-9JS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4GU-VG-1jc">
+                                <rect key="frame" x="7" y="426" width="110" height="50"/>
+                                <state key="normal" title="上一题">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnPrevClick:" destination="Law-yk-r1a" eventType="touchUpInside" id="JzF-uh-6MC"/>
+                                    <action selector="btnPrevClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="V9K-Cl-qSo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fOZ-yc-v8g">
+                                <rect key="frame" x="183" y="426" width="110" height="50"/>
+                                <state key="normal" title="下一题">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNextClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="f5L-Sj-rD4"/>
+                                    <action selector="btnNextClick:" destination="Law-yk-r1a" eventType="touchUpInside" id="pnA-ni-aQT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwX-lv-ABm">
+                                <rect key="frame" x="105" y="426" width="110" height="50"/>
+                                <state key="normal" title="显示答案">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnNextClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="676-f8-msf"/>
+                                    <action selector="btnNextClick:" destination="Law-yk-r1a" eventType="touchUpInside" id="Wy2-Wl-kAe"/>
+                                    <action selector="btnShowAnswerClick:" destination="Law-yk-r1a" eventType="touchUpInside" id="r64-yA-JYn"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="m_btn_next" destination="fOZ-yc-v8g" id="mFq-FI-xDO"/>
+                        <outlet property="m_btn_prev" destination="4GU-VG-1jc" id="Tk7-mT-Dkf"/>
+                        <outlet property="m_btn_showAnswer" destination="xwX-lv-ABm" id="KRt-St-CnN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rqF-p7-F5Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -43,8 +43,48 @@
 +(void) ResizeUIToTop: (UIView*) view parentView :(UIView*) parentView offSetY :(NSInteger) offsetY
 {
     [view setFrame:CGRectMake(view.frame.origin.x,
-                              +offsetY,
+                              offsetY,
                               view.frame.size.width,
                               view.frame.size.height)];
+}
++(void) ResizeUIToBottomCenter: (UIView*) view parentView :(UIView*) parentView offsetY :(NSInteger) offsetY
+{
+    CGFloat x = parentView.frame.size.width / 2.0f - view.frame.size.width / 2.0f ;
+    //NSLog(@"x=%f y=%ld width=%f height%f",x,(long)offsetY,view.frame.size.width,view.frame.size.height);
+    [view setFrame:CGRectMake(x,
+                              parentView.frame.size.height-view.frame.size.height+offsetY,
+                              view.frame.size.width,
+                              view.frame.size.height)];
+
+}
++(void) ResizeUIToBottomCenter: (UIView*) view parentView :(UIView*) parentView
+{
+    [PlatformUtil ResizeUIToBottomCenter:view parentView:parentView offsetY:0];
+}
++(void) ResizeUIToBottomLeft: (UIView*) view parentView :(UIView*) parentView offsetY :(NSInteger) offsetY
+{
+//    NSLog(@"x=%f y=%ld width=%f height%f",x,(long)offsetY,view.frame.size.width,view.frame.size.height);
+    [view setFrame:CGRectMake(0,
+                              parentView.frame.size.height-view.frame.size.height+offsetY,
+                              view.frame.size.width,
+                              view.frame.size.height)];
+}
++(void) ResizeUIToBottomRight: (UIView*) view parentView :(UIView*) parentView offsetY :(NSInteger) offsetY
+{
+    //    NSLog(@"x=%f y=%ld width=%f height%f",x,(long)offsetY,view.frame.size.width,view.frame.size.height);
+    CGFloat x = parentView.frame.size.width - view.frame.size.width ;
+    [view setFrame:CGRectMake(x,
+                              parentView.frame.size.height-view.frame.size.height+offsetY,
+                              view.frame.size.width,
+                              view.frame.size.height)];
+}
+
++(void) ResizeUIToBottomLeft: (UIView*) view parentView :(UIView*) parentView
+{
+    [PlatformUtil ResizeUIToBottomLeft:view parentView:parentView offsetY:0];
+}
++(void) ResizeUIToBottomRight: (UIView*) view parentView :(UIView*) parentView
+{
+    [PlatformUtil ResizeUIToBottomRight:view parentView:parentView offsetY:0];
 }
 @end

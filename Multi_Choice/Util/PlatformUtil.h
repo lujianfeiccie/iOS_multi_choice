@@ -19,5 +19,11 @@
 +(void) ResizeUIToBottom: (UIView*) view parentView :(UIView*) parentView offSetY :(NSInteger) offsetY;
 +(void) ResizeUIToTop: (UIView*) view parentView :(UIView*) parentView;
 +(void) ResizeUIToTop: (UIView*) view parentView :(UIView*) parentView offSetY :(NSInteger) offsetY;
-;
++(void) ResizeUIToBottomCenter: (UIView*) view parentView :(UIView*) parentView;
++(void) ResizeUIToBottomCenter: (UIView*) view parentView :(UIView*) parentView offsetY :(NSInteger) offsetY;
++(void) ResizeUIToBottomLeft: (UIView*) view parentView :(UIView*) parentView offsetY :(NSInteger) offsetY;
++(void) ResizeUIToBottomRight: (UIView*) view parentView :(UIView*) parentView offsetY :(NSInteger) offsetY;
+
++(void) ResizeUIToBottomLeft: (UIView*) view parentView :(UIView*) parentView;
++(void) ResizeUIToBottomRight: (UIView*) view parentView :(UIView*) parentView;
 @end

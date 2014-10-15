@@ -125,8 +125,8 @@
     {
        // return;
     }
-    [PlatformUtil ResizeUIToBottom:m_btn_next parentView:self.view];
-    [PlatformUtil ResizeUIToBottom:m_btn_prev parentView:self.view];
+    [PlatformUtil ResizeUIToBottomRight:m_btn_next parentView:self.view];
+    [PlatformUtil ResizeUIToBottomLeft:m_btn_prev parentView:self.view];
     [self updateQuestionView];
 }
 - (void)didReceiveMemoryWarning
