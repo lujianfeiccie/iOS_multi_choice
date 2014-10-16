@@ -78,16 +78,16 @@
     }
     
     self.currentElementPointer.m_elementName = elementName;
-    if ([self.currentElementPointer.m_elementName isEqual:@"question"])
+    if ([self.currentElementPointer.m_elementName isEqual:@"text"])
     {
-        self.currentElementPointer.m_question = [attributeDict objectForKey:@"text"];
-        self.currentElementPointer.m_image_question = [attributeDict objectForKey:@"image"];
+        self.currentElementPointer.m_tag = [attributeDict objectForKey:@"tag"];
+        self.currentElementPointer.m_value = [attributeDict objectForKey:@"value"];
       //  NSLogExt(@"name:%@" , elementName);
     }
     else
     {
-        self.currentElementPointer.m_answer = [attributeDict objectForKey:@"text"];
-        self.currentElementPointer.m_image_answer = [attributeDict objectForKey:@"image"];
+        self.currentElementPointer.m_tag = [attributeDict objectForKey:@"tag"];
+        self.currentElementPointer.m_value = [attributeDict objectForKey:@"value"];
         
     }
    // NSLogExt(@"name:%@" , elementName);

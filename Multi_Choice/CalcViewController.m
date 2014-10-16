@@ -18,6 +18,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    m_isShowingAnswer = NO;
+
     // Do any additional setup after loading the view.
     app = [[UIApplication sharedApplication]delegate];
 
@@ -32,9 +34,7 @@
 
     m_array_lablel_questions = [[NSMutableArray alloc]init];
     m_array_lablel_answers = [[NSMutableArray alloc]init];
-    
-    NSUInteger count = [m_questions count];
-    m_max_height_question=-1;
+    m_current_index = 0;
     
     m_scrollview = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0,
                                                                  self.view.frame.size.width,
@@ -49,59 +49,74 @@
     
     m_scrollview.contentSize = CGSizeMake(self.view.frame.size.width, self.view.frame.size.height-m_btn_next.frame.size.height-self.navigationController.navigationBar.frame.size.height-20);
     
-    for (NSUInteger i=0; i<count; i++) {
+    NSUInteger count = [m_questions count];
+   // NSLogExt(@"count=%i",count);
+    for (NSUInteger i=0; i<count; i++) //num of questions
+    {
         XMLCalcElement* obj =[m_questions objectAtIndex:i];
-       // NSLogExt(@"Question text=%@ image=%@",obj.m_question,obj.m_image_question);
-        UILabelExt *lbl_title = [[UILabelExt alloc]init];
-        lbl_title.userInteractionEnabled = YES;
-        if (m_max_height_question==-1)
-        {
-          [lbl_title setFrame:CGRectMake(0, 0, 10, 10)];
-        }
-        else
-        {
-          [lbl_title setFrame:CGRectMake(0, m_max_height_question+20, 10, 10)];
-        }
-        lbl_title.text = obj.m_question;
-        [Util setLabelToAutoSize:lbl_title];
-        m_max_height_question = lbl_title.frame.origin.y+lbl_title.frame.size.height;
-        ///////////////////////////////////////////////////////////////////
-        [m_array_lablel_questions addObject:lbl_title];
-        [m_scrollview addSubview:lbl_title];
-        lbl_title.delegateExt = self;
-        /////////////////////////////////////////////////////////////////
-        XMLCalcElement *obj_answer = [[obj m_subElements] objectAtIndex:0];
+        NSUInteger count_items = [obj.m_subElements count];
         
-        UILabel *lbl_answer = [[UILabel alloc]init];
-        [lbl_answer setFrame:CGRectMake(0, 0, 10, 10)];
-        lbl_answer.text = obj_answer.m_answer;
-        [Util setLabelToAutoSize:lbl_answer];
-      //  height_tmp = lbl_answer.frame.origin.y+lbl_answer.frame.size.height;
-        [m_array_lablel_answers addObject:lbl_answer];
-    
-        [lbl_answer setHidden:YES];
-        //NSLogExt(@"Answer text=%@ image=%@",obj_answer.m_answer,obj_answer.m_image_answer);
+        NSMutableArray *question_items = [[NSMutableArray alloc] init];
+        for (NSUInteger j=0; j<count_items; j++)  //num of items in each question
+        {
+            XMLCalcElement* item = [obj.m_subElements objectAtIndex:j];
+           
+            [question_items addObject:item];
+        }
+        [m_array_lablel_questions addObject:question_items];
     }
-    m_max_height_answer = m_max_height_question;
+    [self.view addSubview:m_scrollview];
+    m_scrollview.backgroundColor = [UIColor redColor];
+    [self updateUI];
+}
+-(void) updateUI
+{
+    m_isShowingAnswer = NO;
+    NSMutableArray *question = [m_array_lablel_questions objectAtIndex:m_current_index];
+    [m_array_lablel_answers removeAllObjects];
     
-    for (NSUInteger i=0; i<count; i++) {
-        UILabel* lbl_answer = [m_array_lablel_answers objectAtIndex:i];
-        [lbl_answer setFrame:CGRectMake(lbl_answer.frame.origin.x, m_max_height_answer,
-                                        lbl_answer.frame.size.width ,lbl_answer.frame.size.height)];
+    m_max_height_question = 0 ;
+    for (NSUInteger i=0; i<[question count]; i++)
+    {
+        XMLCalcElement* item = [question objectAtIndex:i];
+        NSLogExt(@"ElementName=%@, tag=%@, value=%@",[item m_elementName],[item m_tag],[item m_value]);
+        UILabel* lbl_item = [[UILabel alloc]init];
+    
         
-        m_max_height_answer = lbl_answer.frame.origin.y + lbl_answer.frame.size.height;
-        [m_scrollview addSubview:lbl_answer];
-    }
-        [self.view addSubview:m_scrollview];
-        m_scrollview.backgroundColor = [UIColor redColor];
-   }
+        
+        if ([[item m_tag] isEqualToString:@"question"])
+        {
+            if ([[item m_elementName] isEqualToString:@"text"])
+            {
+                lbl_item.text = [item m_value];
+                [Util setLabelToAutoSize:lbl_item];
+                [m_scrollview addSubview:lbl_item];
+                
+            }
+            [lbl_item setFrame:CGRectMake(0, m_max_height_question, lbl_item.frame.size.width, lbl_item.frame.size.height)];
+             m_max_height_question = lbl_item.frame.origin.y + lbl_item.frame.size.height;
+        }
+        if ([[item m_tag] isEqualToString:@"answer"])
+        {
+            if ([[item m_elementName] isEqualToString:@"text"])
+            {
+                lbl_item.text = [item m_value];
+                [Util setLabelToAutoSize:lbl_item];
+            }
+            [m_array_lablel_answers addObject:lbl_item];
+        }
+        
+     }
+
+}
 -(void) viewDidLayoutSubviews
 {
     [super viewDidLayoutSubviews];
     [PlatformUtil ResizeUIToBottomLeft:m_btn_prev parentView:self.view];
     [PlatformUtil ResizeUIToBottomRight:m_btn_next parentView:self.view];
     [PlatformUtil ResizeUIToBottomCenter:m_btn_showAnswer parentView:self.view];
-}
+    
+   }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -119,20 +134,7 @@
 -(void) onLabelExtClick:(id)sender
 {
 //    NSLog(@"onLabelExtClick ");
-    /*NSUInteger count = [m_array_lablel_questions count];
-    for (NSUInteger i=0; i<count; i++) {
-        UILabel *lbl_question =[m_array_lablel_questions objectAtIndex:i];
-       if(lbl_question == sender)
-       {
-           NSLogExt(@"onLabelExtClick %i",i);
-           UILabel *lbl_answer = [m_array_lablel_answers objectAtIndex:i];
-          
-           [lbl_answer setHidden:NO];
-           
-           
-       }
-    }
-     */
+    
 }
 
 - (void)dealloc {
@@ -148,13 +150,38 @@
 }
 
 - (IBAction)btnShowAnswerClick:(id)sender {
-    NSUInteger count = [m_array_lablel_answers count];
-     for (NSUInteger i=0; i<count; i++)
-     {
-         UILabel *lbl_answer = [m_array_lablel_answers objectAtIndex:i];
-         [lbl_answer setHidden:NO];
-     }
-     m_scrollview.contentSize = CGSizeMake(self.view.frame.size.width,
-        m_max_height_answer);
+    
+     NSUInteger max_height_answer = m_max_height_question;
+    m_btn_showAnswer.titleLabel.text=@"";
+    if (!m_isShowingAnswer)
+    {
+       
+        NSUInteger count = [m_array_lablel_answers count];
+        //NSLogExt(@"count=%i",count);
+        for (NSUInteger i=0; i<count; i++)
+        {
+            UILabel *answer = [m_array_lablel_answers objectAtIndex:i];
+            [answer setFrame:CGRectMake(0, max_height_answer, answer.frame.size.width, answer.frame.size.height)];
+            max_height_answer = answer.frame.origin.y + answer.frame.size.height;
+            [m_scrollview addSubview:answer];
+        }
+        m_scrollview.contentSize = CGSizeMake(self.view.frame.size.width, max_height_answer);
+        m_isShowingAnswer = YES;
+        [m_btn_showAnswer setTitle:@"隐藏答案" forState:UIControlStateNormal];
+    }
+    else
+    {
+        NSUInteger count = [m_array_lablel_answers count];
+       // NSLogExt(@"count=%i",count);
+        for (NSUInteger i=0; i<count; i++)
+        {
+            UILabel *answer = [m_array_lablel_answers objectAtIndex:i];
+            [answer removeFromSuperview];
+        }
+        m_scrollview.contentSize = CGSizeMake(self.view.frame.size.width, max_height_answer);
+        m_isShowingAnswer = NO;
+   //     m_btn_showAnswer.titleLabel.text=@"显示答案";
+       [m_btn_showAnswer setTitle:@"显示答案" forState:UIControlStateNormal];
+    }
 }
 @end

@@ -20,11 +20,14 @@
     
     IBOutlet UIButton *m_btn_showAnswer;
     NSMutableArray *m_array_lablel_questions;
-    NSMutableArray *m_array_lablel_answers;
+      NSMutableArray *m_array_lablel_answers;
     UIScrollView *m_scrollview;
     
+    NSInteger m_current_index;
+    
     NSUInteger m_max_height_question;
-    NSUInteger m_max_height_answer;
+    
+    BOOL m_isShowingAnswer;
 }
 - (IBAction)btnPrevClick:(id)sender;
 - (IBAction)btnNextClick:(id)sender;

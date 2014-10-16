@@ -10,10 +10,8 @@
 
 @implementation XMLCalcElement
 @synthesize m_elementName;
-@synthesize m_question;
-@synthesize m_image_question;
-@synthesize m_answer;
-@synthesize m_image_answer;
+@synthesize m_tag;
+@synthesize m_value;
 @synthesize m_parent;
 @synthesize m_subElements;
 
