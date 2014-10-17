@@ -95,4 +95,13 @@
 -(void)touchesMoved:(NSSet *)touches withEvent:(UIEvent *)event{
    // NSLogExt(@"touchesMoved");
 }
+-(void) dealloc
+{
+    [m_text release];
+    [m_prefix release];
+    m_text = nil;
+    m_prefix = nil;
+    delegateExt = nil;
+    [super dealloc];
+}
 @end

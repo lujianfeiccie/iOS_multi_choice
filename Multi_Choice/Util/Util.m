@@ -36,7 +36,7 @@
 
 +(NSUInteger*) getRandomNumOfOut:(NSUInteger) numOfOut NumOfIn : (NSUInteger) numOfIn
 {
-    NSLogExt(@"getRandom %i %i",numOfOut,numOfIn);
+    //NSLogExt(@"getRandom %i %i",numOfOut,numOfIn);
     NSUInteger* randnum = (NSUInteger*)malloc(sizeof(NSUInteger)*numOfOut);
     memset(randnum, -1, sizeof(NSUInteger)*numOfOut);
     /*for (NSUInteger i=0; i<numOfOut; i++) {
@@ -62,7 +62,7 @@
         if (repeat==NO)
         {
             randnum[i]=num;
-           NSLogExt(@"num[%i]=%i",i,num);
+       //    NSLogExt(@"num[%i]=%i",i,num);
         }
         else
         {

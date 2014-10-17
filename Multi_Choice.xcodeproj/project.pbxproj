@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1801B24319F0ADD400EDEC03 /* MultiChoiceDlg.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801B24219F0ADD400EDEC03 /* MultiChoiceDlg.m */; };
+		1801B24619F0BB3500EDEC03 /* CalcChoiceDLg.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801B24519F0BB3500EDEC03 /* CalcChoiceDLg.m */; };
 		180E3B8419E28C9E0028B7A6 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E3B8319E28C9E0028B7A6 /* AbstractViewController.m */; };
 		180E3B8919E292520028B7A6 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 180E3B8619E292520028B7A6 /* SVProgressHUD.bundle */; };
 		180E3B8A19E292520028B7A6 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E3B8819E292520028B7A6 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -75,6 +77,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1801B24119F0ADD400EDEC03 /* MultiChoiceDlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiChoiceDlg.h; sourceTree = "<group>"; };
+		1801B24219F0ADD400EDEC03 /* MultiChoiceDlg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiChoiceDlg.m; sourceTree = "<group>"; };
+		1801B24419F0BB3500EDEC03 /* CalcChoiceDLg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcChoiceDLg.h; sourceTree = "<group>"; };
+		1801B24519F0BB3500EDEC03 /* CalcChoiceDLg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcChoiceDLg.m; sourceTree = "<group>"; };
 		180E3B8219E28C9E0028B7A6 /* AbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
 		180E3B8319E28C9E0028B7A6 /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
 		180E3B8619E292520028B7A6 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
@@ -358,6 +364,10 @@
 				18F701DB19AA1133005E0361 /* UILabelExt.m */,
 				180E3B8219E28C9E0028B7A6 /* AbstractViewController.h */,
 				180E3B8319E28C9E0028B7A6 /* AbstractViewController.m */,
+				1801B24119F0ADD400EDEC03 /* MultiChoiceDlg.h */,
+				1801B24219F0ADD400EDEC03 /* MultiChoiceDlg.m */,
+				1801B24419F0BB3500EDEC03 /* CalcChoiceDLg.h */,
+				1801B24519F0BB3500EDEC03 /* CalcChoiceDLg.m */,
 			);
 			name = Custom;
 			path = Multi_Choice/Custom;
@@ -507,8 +517,10 @@
 				18B3A7C619BDBAB300A4B068 /* AboutDlgViewController.m in Sources */,
 				18E1138B19A80E68008F8EFC /* NSLogExt.m in Sources */,
 				1814AE4519E3D023004422C3 /* UserInfoTool.m in Sources */,
+				1801B24319F0ADD400EDEC03 /* MultiChoiceDlg.m in Sources */,
 				18ECDCF619E57F5E00A00BE1 /* VersionCheckTool.m in Sources */,
 				18F7744319AB8C2100D5F3FD /* Util.m in Sources */,
+				1801B24619F0BB3500EDEC03 /* CalcChoiceDLg.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
