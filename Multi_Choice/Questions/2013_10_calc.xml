@@ -1,13 +1,27 @@
 <root>
   <question>
-      <text tag="question" value="某公司准备发行面值为500元、每年年末付息一次、到期还本的债券。该债券票面利率为6％，期限为3年。
+      <text tag="question" value="1.某公司准备发行面值为500元、每年年末付息一次、到期还本的债券。该债券票面利率为6％，期限为3年。
 &#x000A;要求：
 &#x000A;(1)假定该债券发行时的市场利率为5％，计算该债券的发行价格；"></text>
+      <image tag="question" value="2011_10_35_2_320.png"></image>
       <text tag="answer" value="&#x000A;P=债券利息 x 年金现值系数 + 债券面值 x 复利现值系数
 &#x000A;P=A*i*（P/A，i，n) + A*（P/F，i，n)
 &#x000A;= 500 x 6% x PVIFA 5% 3 + 500 x PVIF 5% 3
 &#x000A;= 500 x 6% x 2.723 + 500 x 0.864
 &#x000A;= 81.69 + 432
 &#x000A;= 513.69 (元)"></text>
+      <image tag="answer" value="2011_10_35_2_320.png"></image>
+  </question>
+  <question>
+      <text tag="question" value="2.某公司准备发行面值为500元、每年年末付息一次、到期还本的债券。该债券票面利率为6％，期限为3年。
+          &#x000A;要求：
+          &#x000A;(1)假定该债券发行时的市场利率为5％，计算该债券的发行价格；"></text>
+      <text tag="answer" value="&#x000A;P=债券利息 x 年金现值系数 + 债券面值 x 复利现值系数
+          &#x000A;P=A*i*（P/A，i，n) + A*（P/F，i，n)
+          &#x000A;= 500 x 6% x PVIFA 5% 3 + 500 x PVIF 5% 3
+          &#x000A;= 500 x 6% x 2.723 + 500 x 0.864
+          &#x000A;= 81.69 + 432
+          &#x000A;= 513.69 (元)"></text>
+      <image tag="answer" value="2011_10_35_2_320.png"></image>
   </question>
 </root>

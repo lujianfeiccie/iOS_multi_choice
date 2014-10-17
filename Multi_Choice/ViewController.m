@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "CalcViewController.h"
 
 @interface ViewController ()
 
@@ -16,6 +16,30 @@
 @implementation ViewController
 @synthesize m_filename;
 @synthesize m_title;
+
+-(void) toolBarRight
+{
+
+    NSString *tmp_filename = [NSString stringWithFormat:@"%@_calc",m_filename];
+    NSString *tmp_title = [NSString stringWithFormat:@"%@计算题",m_title];
+    NSString* result = [[NSBundle mainBundle] pathForResource:tmp_filename ofType:@"xml"];
+//    NSLogExt(@"result=%@",result);
+    if (result==nil)
+    {
+        DialogUtil *dialog = [[DialogUtil alloc]init];
+        [dialog showDialogTitle:@"提示" message:@"有待加入" confirm:@"知道了"];
+        [dialog release];
+        dialog = nil;
+    }
+    else
+    {
+        ViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"calc_view"];
+        
+       ((CalcViewController*)next).m_filename=tmp_filename;
+        ((CalcViewController*)next).m_title= tmp_title;
+       [[app navController] pushViewController:next animated:YES];
+    }
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -24,6 +48,8 @@
     
     self.navigationItem.title = m_title;
    
+    self.navigationItem.rightBarButtonItem = [ButtonUtil createToolBarButton:@"计算题" target:self action:@selector(toolBarRight)];
+    
     m_xmlHelper = [[XMLHelper alloc]init];
     m_xmlHelper.m_random = YES;
     

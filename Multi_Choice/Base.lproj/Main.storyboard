@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="84K-cl-1EO">
     <dependencies>
+        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -42,8 +43,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="btnNextClick:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="676-f8-msf"/>
-                                    <action selector="btnNextClick:" destination="Law-yk-r1a" eventType="touchUpInside" id="Wy2-Wl-kAe"/>
                                     <action selector="btnShowAnswerClick:" destination="Law-yk-r1a" eventType="touchUpInside" id="r64-yA-JYn"/>
                                 </connections>
                             </button>

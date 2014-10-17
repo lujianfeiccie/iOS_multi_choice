@@ -10,7 +10,7 @@
 #import "AppDelegate.h"
 #import "XMLCalcHelper.h"
 #import "UILabelExt.h"
-@interface CalcViewController : AbstractViewController<UILabelExtDelegate>
+@interface CalcViewController : AbstractViewController
 {
     AppDelegate *app;
     XMLCalcHelper *m_xmlHelper;
@@ -20,7 +20,7 @@
     
     IBOutlet UIButton *m_btn_showAnswer;
     NSMutableArray *m_array_lablel_questions;
-      NSMutableArray *m_array_lablel_answers;
+    NSMutableArray *m_array_lablel_answers;
     UIScrollView *m_scrollview;
     
     NSInteger m_current_index;

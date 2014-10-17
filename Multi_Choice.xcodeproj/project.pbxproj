@@ -14,6 +14,7 @@
 		180E3B9019E295B80028B7A6 /* HttpRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E3B8F19E295B80028B7A6 /* HttpRequestTool.m */; };
 		1814AE4219E3CF22004422C3 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE4119E3CF22004422C3 /* UserInfo.m */; };
 		1814AE4519E3D023004422C3 /* UserInfoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE4419E3D023004422C3 /* UserInfoTool.m */; };
+		181ACD8B19F0993A00A5EC6A /* 2011_10_35_2_320.png in Resources */ = {isa = PBXBuildFile; fileRef = 181ACD8A19F0993A00A5EC6A /* 2011_10_35_2_320.png */; };
 		182CAB9D19ED679400C02B68 /* 2013_10_calc.xml in Resources */ = {isa = PBXBuildFile; fileRef = 182CAB9C19ED679400C02B68 /* 2013_10_calc.xml */; };
 		182CABA019ED680600C02B68 /* CalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CAB9F19ED680600C02B68 /* CalcViewController.m */; };
 		182CABA319ED695500C02B68 /* XMLCalcHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CABA219ED695500C02B68 /* XMLCalcHelper.m */; };
@@ -87,6 +88,7 @@
 		1814AE4119E3CF22004422C3 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInfo.m; path = ../Custom/UserInfo.m; sourceTree = "<group>"; };
 		1814AE4319E3D023004422C3 /* UserInfoTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoTool.h; sourceTree = "<group>"; };
 		1814AE4419E3D023004422C3 /* UserInfoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoTool.m; sourceTree = "<group>"; };
+		181ACD8A19F0993A00A5EC6A /* 2011_10_35_2_320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2011_10_35_2_320.png; sourceTree = "<group>"; };
 		182CAB9C19ED679400C02B68 /* 2013_10_calc.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2013_10_calc.xml; sourceTree = "<group>"; };
 		182CAB9E19ED680600C02B68 /* CalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcViewController.h; sourceTree = "<group>"; };
 		182CAB9F19ED680600C02B68 /* CalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcViewController.m; sourceTree = "<group>"; };
@@ -195,6 +197,7 @@
 		188D2DB919DBAF25009D45E2 /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				181ACD8A19F0993A00A5EC6A /* 2011_10_35_2_320.png */,
 				182CAB9C19ED679400C02B68 /* 2013_10_calc.xml */,
 				188D2DBA19DBAF25009D45E2 /* 2009_10.xml */,
 				188D2DBB19DBAF25009D45E2 /* 2010_10.xml */,
@@ -455,6 +458,7 @@
 				188D2DC419DBAF25009D45E2 /* 2012_10.xml in Resources */,
 				189F11BE19E3F1F600394747 /* Icon-120.png in Resources */,
 				18E7B03319A7770300092469 /* Main.storyboard in Resources */,
+				181ACD8B19F0993A00A5EC6A /* 2011_10_35_2_320.png in Resources */,
 				189F11BF19E3F1F600394747 /* Icon-152.png in Resources */,
 				18B3A7BE19BDB96800A4B068 /* Default.png in Resources */,
 				188D2DC719DBAF25009D45E2 /* 2014_04.xml in Resources */,

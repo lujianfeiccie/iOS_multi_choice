@@ -14,11 +14,10 @@
 @synthesize m_value;
 @synthesize m_parent;
 @synthesize m_subElements;
-
 -(id)init{
     self = [super init];
-    if (self) {
-        
+    if (self)
+    {
     }
     return self;
 }

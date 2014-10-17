@@ -16,11 +16,16 @@
 @synthesize m_title;
 @synthesize m_filename;
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     m_isShowingAnswer = NO;
 
     // Do any additional setup after loading the view.
+    
+    
+    
     app = [[UIApplication sharedApplication]delegate];
 
     
@@ -66,22 +71,44 @@
         [m_array_lablel_questions addObject:question_items];
     }
     [self.view addSubview:m_scrollview];
-    m_scrollview.backgroundColor = [UIColor redColor];
+   // m_scrollview.backgroundColor = [UIColor redColor];
     [self updateUI];
+}
+-(void) setShowAnswerButton : (BOOL) stateShow
+{
+    if (!stateShow)
+    {
+         [m_btn_showAnswer setTitle:@"显示答案" forState:UIControlStateNormal];
+    }
+    else
+    {
+         [m_btn_showAnswer setTitle:@"隐藏答案" forState:UIControlStateNormal];
+    }
 }
 -(void) updateUI
 {
     m_isShowingAnswer = NO;
+    [self setShowAnswerButton: m_isShowingAnswer];
+    
     NSMutableArray *question = [m_array_lablel_questions objectAtIndex:m_current_index];
     [m_array_lablel_answers removeAllObjects];
     
     m_max_height_question = 0 ;
+    
+    for (id obj in m_scrollview.subviews)
+    {
+        if ([obj viewWithTag:1])
+        {
+            [obj removeFromSuperview];
+        }
+    }
+   
     for (NSUInteger i=0; i<[question count]; i++)
     {
         XMLCalcElement* item = [question objectAtIndex:i];
-        NSLogExt(@"ElementName=%@, tag=%@, value=%@",[item m_elementName],[item m_tag],[item m_value]);
+       // NSLogExt(@"ElementName=%@, tag=%@, value=%@",[item m_elementName],[item m_tag],[item m_value]);
         UILabel* lbl_item = [[UILabel alloc]init];
-    
+        lbl_item.tag = 1;
         
         
         if ([[item m_tag] isEqualToString:@"question"])
@@ -93,6 +120,19 @@
                 [m_scrollview addSubview:lbl_item];
                 
             }
+            else if ([[item m_elementName] isEqualToString:@"image"])
+            {
+                UIImage *itemBgImage = [UIImage imageNamed:[item m_value]];
+                UIColor *color = [UIColor colorWithPatternImage:itemBgImage];
+                [lbl_item setFrame:CGRectMake(0, 0, itemBgImage.size.width, itemBgImage.size.height)];
+                lbl_item.backgroundColor = color;
+                [m_scrollview addSubview:lbl_item];
+            }
+            else
+            {
+              
+                return;
+            }
             [lbl_item setFrame:CGRectMake(0, m_max_height_question, lbl_item.frame.size.width, lbl_item.frame.size.height)];
              m_max_height_question = lbl_item.frame.origin.y + lbl_item.frame.size.height;
         }
@@ -102,6 +142,17 @@
             {
                 lbl_item.text = [item m_value];
                 [Util setLabelToAutoSize:lbl_item];
+            }
+            else if ([[item m_elementName] isEqualToString:@"image"])
+            {
+                UIImage *itemBgImage = [UIImage imageNamed:[item m_value]];
+                UIColor *color = [UIColor colorWithPatternImage:itemBgImage];
+                [lbl_item setFrame:CGRectMake(0, 0, itemBgImage.size.width, itemBgImage.size.height)];
+                lbl_item.backgroundColor = color;
+            }
+            else
+            {
+                return;
             }
             [m_array_lablel_answers addObject:lbl_item];
         }
@@ -122,42 +173,35 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
--(void) onLabelExtClick:(id)sender
+
+
+- (IBAction)btnPrevClick:(id)sender
 {
-//    NSLog(@"onLabelExtClick ");
-    
+    if (m_current_index-1 >= 0)
+    {
+        --m_current_index;
+        [self updateUI];
+    }
 }
 
-- (void)dealloc {
-    [m_btn_prev release];
-    [m_btn_next release];
-    [m_btn_showAnswer release];
-    [super dealloc];
-}
-- (IBAction)btnPrevClick:(id)sender {
-}
-
-- (IBAction)btnNextClick:(id)sender {
+- (IBAction)btnNextClick:(id)sender
+{
+    if (m_current_index+1<[m_array_lablel_questions count])
+    {
+        ++m_current_index;
+        [self updateUI];
+    }
 }
 
 - (IBAction)btnShowAnswerClick:(id)sender {
     
      NSUInteger max_height_answer = m_max_height_question;
-    m_btn_showAnswer.titleLabel.text=@"";
+  
     if (!m_isShowingAnswer)
     {
        
         NSUInteger count = [m_array_lablel_answers count];
-        //NSLogExt(@"count=%i",count);
         for (NSUInteger i=0; i<count; i++)
         {
             UILabel *answer = [m_array_lablel_answers objectAtIndex:i];
@@ -167,7 +211,6 @@
         }
         m_scrollview.contentSize = CGSizeMake(self.view.frame.size.width, max_height_answer);
         m_isShowingAnswer = YES;
-        [m_btn_showAnswer setTitle:@"隐藏答案" forState:UIControlStateNormal];
     }
     else
     {
@@ -180,8 +223,19 @@
         }
         m_scrollview.contentSize = CGSizeMake(self.view.frame.size.width, max_height_answer);
         m_isShowingAnswer = NO;
-   //     m_btn_showAnswer.titleLabel.text=@"显示答案";
-       [m_btn_showAnswer setTitle:@"显示答案" forState:UIControlStateNormal];
     }
+      [self setShowAnswerButton: m_isShowingAnswer];
 }
+
+- (void)dealloc {
+    [m_btn_prev release];
+    [m_btn_next release];
+    [m_btn_showAnswer release];
+    [m_array_lablel_answers removeAllObjects];
+    [m_array_lablel_answers release];
+    [m_array_lablel_questions removeAllObjects];
+    [m_array_lablel_questions release];
+    [super dealloc];
+}
+
 @end
