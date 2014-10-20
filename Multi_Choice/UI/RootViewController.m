@@ -24,15 +24,24 @@
     }
     return self;
 }
+-(void) toolBarLeft
+{
+    [m_dialog_search showDialogWithInputTitle:@"提示" message:@"请输入搜索内容" confirm:@"确定" cancel:@"取消"];
+}
+
 -(void) toolBarRight
 {
     ViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"about_view"];
+    [app.navController pushViewController:next animated:YES];
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     app = [[UIApplication sharedApplication]delegate];
+    
+    m_dialog_search = [[DialogUtil alloc] init];
+    m_dialog_search.delegate = self;
     
     m_tableview_list.separatorStyle = UITableViewCellSeparatorStyleNone;
     m_tableview_list.backgroundColor = GLOBAL_BGColor;
@@ -82,7 +91,7 @@
     [m_tableview_list setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height-self.navigationController.navigationBar.frame.size.height)];
 
   
-    
+    self.navigationItem.leftBarButtonItem = [ButtonUtil createToolBarButton:@"搜索" target:self action:@selector(toolBarLeft)];
     self.navigationItem.rightBarButtonItem = [ButtonUtil createToolBarButton:@"关于" target:self action:@selector(toolBarRight)];
     
     m_tableview_list.delegate = self;
@@ -172,6 +181,52 @@
     [[app navController] pushViewController:next animated:YES];
 }*/
 
+-(void) onDialogConfirmClick : (DialogUtil*) dialog
+{
+    if (m_dialog_search == dialog)
+    {
+      //  NSLogExt(@"onConfirm");
+    }
+}
+-(void) onDialogCancelClick : (DialogUtil*) dialog
+{
+    if (m_dialog_search == dialog)
+    {
+       // NSLogExt(@"onCancel");
+    }
+}
+-(void) onDialogTextReceive : (DialogUtil*) dialog Text:(NSString *)text
+{
+    if (m_dialog_search == dialog)
+    {
+        NSLogExt(@"search text=%@",text);
+        if([text isEqualToString:@""])
+        {
+            DialogUtil *dialog = [[DialogUtil alloc]init];
+            [dialog showDialogTitle:@"提示" message:@"输入不能为空!" confirm:@"知道"];
+            return;
+        }
+        NSThread* myThread = [[NSThread alloc] initWithTarget:self selector:@selector(threadSearch:) object:text];
+        [myThread start];
+    }
+}
+-(void) threadSearch :(NSString*) keywords
+{
+    
+    XMLHelper* xmlHelper2014_04 = [[XMLHelper alloc]init];
+    
+    [xmlHelper2014_04 load:@"2014_04"];
+
+    NSMutableArray* questions = [[xmlHelper2014_04 rootElement] m_subElements];
+    NSMutableArray* results = [[NSMutableArray alloc]init];
+    for (XMLElement* question in questions)
+    {
+        if ([question.m_title containsString:keywords])
+        {
+            NSLogExt(@"keywords=%@ title=%@",keywords,question.m_title);
+        }
+    }
+}
 - (void)dealloc {
     [m_tableview_list release];
     [m_datalist removeAllObjects];

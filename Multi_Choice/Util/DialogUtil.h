@@ -16,6 +16,8 @@
 #pragma marks -- DialogUtilDelegate --
 -(void) onDialogConfirmClick : (DialogUtil*) dialog;
 -(void) onDialogCancelClick : (DialogUtil*) dialog;
+@optional
+-(void) onDialogTextReceive : (DialogUtil*) dialog Text :(NSString*) text;
 @end
 
 @interface DialogUtil : NSObject<UIAlertViewDelegate>
@@ -26,4 +28,5 @@ id<DialogUtilDelegate> delegate;
 
 -(void) showDialogTitle: (NSString *)title message:(NSString *)message confirm :(NSString*) confirm;
 -(void) showDialogTitle: (NSString *)title message:(NSString *)message confirm :(NSString*) confirm cancel :(NSString*) cancel;
+-(void) showDialogWithInputTitle: (NSString *)title message:(NSString *)message confirm :(NSString*) confirm cancel :(NSString*) cancel;
 @end

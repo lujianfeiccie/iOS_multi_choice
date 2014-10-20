@@ -10,15 +10,13 @@
 #import "AppDelegate.h"
 
 @interface RootViewController : AbstractViewController<UITableViewDelegate,
-UITableViewDataSource>
+UITableViewDataSource,UIAlertViewDelegate>
 
 {
     AppDelegate* app;
     __weak IBOutlet UITableView *m_tableview_list;
     NSMutableArray* m_datalist;
     
-    
+    DialogUtil* m_dialog_search;
 }
-
--(void) toolBarRight;
 @end
