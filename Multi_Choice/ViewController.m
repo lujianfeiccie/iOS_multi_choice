@@ -48,7 +48,7 @@
     
     self.navigationItem.title = m_title;
    
-    self.navigationItem.rightBarButtonItem = [ButtonUtil createToolBarButton:@"计算题" target:self action:@selector(toolBarRight)];
+    //self.navigationItem.rightBarButtonItem = [ButtonUtil createToolBarButton:@"计算题" target:self action:@selector(toolBarRight)];
     
     m_dlg = [[ MultiChoiceDlg alloc]initWithView:self.view
     DisplayRect:CGRectMake(0, 0,

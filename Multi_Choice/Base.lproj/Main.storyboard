@@ -206,6 +206,24 @@
             </objects>
             <point key="canvasLocation" x="279" y="3218"/>
         </scene>
+        <!--Search View Controller-->
+        <scene sceneID="ovP-WM-QHz">
+            <objects>
+                <viewController storyboardIdentifier="search_view" id="gnn-24-ihh" customClass="SearchViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dl8-L9-MKM"/>
+                        <viewControllerLayoutGuide type="bottom" id="p2F-fr-KWZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pXJ-qj-t8f">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Fo-Y7-xfP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="627" y="3378"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Icon.png" width="57" height="57"/>

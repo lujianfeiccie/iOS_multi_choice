@@ -39,6 +39,7 @@
 		18B3A7C619BDBAB300A4B068 /* AboutDlgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B3A7C519BDBAB300A4B068 /* AboutDlgViewController.m */; };
 		18B3BC5B19BDBC9500A4B068 /* me.png in Resources */ = {isa = PBXBuildFile; fileRef = 18B3BC5A19BDBC9500A4B068 /* me.png */; };
 		18B3BC5D19BDBE2B00A4B068 /* ButtonUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B3BC5C19BDBE2B00A4B068 /* ButtonUtil.m */; };
+		18E04A0D19F696D800294821 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E04A0C19F696D800294821 /* SearchViewController.m */; };
 		18E0796819ACC74E0063D15D /* PlatformUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E0796719ACC74E0063D15D /* PlatformUtil.m */; };
 		18E1138819A80C1A008F8EFC /* XMLHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1138719A80C1A008F8EFC /* XMLHelper.m */; };
 		18E1138B19A80E68008F8EFC /* NSLogExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E1138A19A80E68008F8EFC /* NSLogExt.m */; };
@@ -122,6 +123,8 @@
 		18B3A7C519BDBAB300A4B068 /* AboutDlgViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutDlgViewController.m; sourceTree = "<group>"; };
 		18B3BC5A19BDBC9500A4B068 /* me.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = me.png; path = Multi_Choice/me.png; sourceTree = "<group>"; };
 		18B3BC5C19BDBE2B00A4B068 /* ButtonUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ButtonUtil.m; sourceTree = "<group>"; };
+		18E04A0B19F696D800294821 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
+		18E04A0C19F696D800294821 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		18E0796619ACC74E0063D15D /* PlatformUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlatformUtil.h; sourceTree = "<group>"; };
 		18E0796719ACC74E0063D15D /* PlatformUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlatformUtil.m; sourceTree = "<group>"; };
 		18E1138619A80C1A008F8EFC /* XMLHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLHelper.h; sourceTree = "<group>"; };
@@ -280,6 +283,8 @@
 				18A33D9719E254D800F40ADF /* FeedbackViewController.m */,
 				182CAB9E19ED680600C02B68 /* CalcViewController.h */,
 				182CAB9F19ED680600C02B68 /* CalcViewController.m */,
+				18E04A0B19F696D800294821 /* SearchViewController.h */,
+				18E04A0C19F696D800294821 /* SearchViewController.m */,
 			);
 			path = Multi_Choice;
 			sourceTree = "<group>";
@@ -499,6 +504,7 @@
 				18E0796819ACC74E0063D15D /* PlatformUtil.m in Sources */,
 				18B3BC5D19BDBE2B00A4B068 /* ButtonUtil.m in Sources */,
 				18EC953719E38E79002515DE /* DialogUtil.m in Sources */,
+				18E04A0D19F696D800294821 /* SearchViewController.m in Sources */,
 				18A33D9819E254D800F40ADF /* FeedbackViewController.m in Sources */,
 				1814AE4219E3CF22004422C3 /* UserInfo.m in Sources */,
 				18E7B03619A7770300092469 /* ViewController.m in Sources */,
@@ -573,8 +579,9 @@
 		18E7B04C19A7770300092469 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: jianfei lu (L7FW62Y4Q4)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "e4b87755-283b-46cf-b433-922e3b1d0935";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};
@@ -583,7 +590,8 @@
 		18E7B04D19A7770300092469 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Developer: jianfei lu (L7FW62Y4Q4)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				PROVISIONING_PROFILE = "e4b87755-283b-46cf-b433-922e3b1d0935";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 			};

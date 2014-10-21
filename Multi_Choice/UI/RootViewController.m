@@ -9,7 +9,7 @@
 #import "RootViewController.h"
 #import "ViewController.h"
 #import "ModelData.h"
-
+#import "SearchViewController.h"
 @interface RootViewController ()
 
 @end
@@ -206,6 +206,7 @@
             [dialog showDialogTitle:@"提示" message:@"输入不能为空!" confirm:@"知道"];
             return;
         }
+        [SVProgressHUD showWithStatus:@"正在搜索"];
         NSThread* myThread = [[NSThread alloc] initWithTarget:self selector:@selector(threadSearch:) object:text];
         [myThread start];
     }
@@ -224,8 +225,20 @@
         if ([question.m_title containsString:keywords])
         {
             NSLogExt(@"keywords=%@ title=%@",keywords,question.m_title);
+            [results addObject:question];
         }
     }
+    [SVProgressHUD dismiss];
+    if ([results count]==0)
+    {
+        [SVProgressHUD showErrorWithStatus:@"没有找到相关内容"];
+        return;
+    }
+    NSMutableArray* results_total = [[NSMutableArray alloc]init];
+    [results_total addObject:results];
+    SearchViewController* search_view =[[self storyboard] instantiateViewControllerWithIdentifier:@"search_view"];
+    search_view.m_array_list = results_total;
+    [[app navController] pushViewController:search_view animated:YES];
 }
 - (void)dealloc {
     [m_tableview_list release];

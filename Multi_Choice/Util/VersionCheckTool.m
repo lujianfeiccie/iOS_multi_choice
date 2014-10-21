@@ -119,7 +119,7 @@
                 trackName =[result objectForKey:@"trackName"];
             }
             
-            NSString *currentVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:(NSString *)kCFBundleVersionKey];
+            NSString *currentVersion = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"];
             
             NSLogExt(@"\nlatestVersion=%@\ntrackViewUrl=%@\ntrackName=%@\ncurrentVersion=%@",
                      latestVersion,trackViewUrl,trackName,currentVersion);
