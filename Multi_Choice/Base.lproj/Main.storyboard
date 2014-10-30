@@ -38,11 +38,8 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xwX-lv-ABm">
                                 <rect key="frame" x="105" y="426" width="110" height="50"/>
-                                <state key="normal" title="显示答案">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
                                 <connections>
-                                    <action selector="btnShowAnswerClick:" destination="Law-yk-r1a" eventType="touchUpInside" id="r64-yA-JYn"/>
+                                    <action selector="btnShowAnswerClick:" destination="Law-yk-r1a" eventType="touchUpInside" id="HWv-IZ-THR"/>
                                 </connections>
                             </button>
                         </subviews>

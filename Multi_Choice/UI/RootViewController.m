@@ -91,7 +91,7 @@
     [m_tableview_list setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height-self.navigationController.navigationBar.frame.size.height)];
 
   
-    self.navigationItem.leftBarButtonItem = [ButtonUtil createToolBarButton:@"搜索" target:self action:@selector(toolBarLeft)];
+   // self.navigationItem.leftBarButtonItem = [ButtonUtil createToolBarButton:@"搜索" target:self action:@selector(toolBarLeft)];
     self.navigationItem.rightBarButtonItem = [ButtonUtil createToolBarButton:@"关于" target:self action:@selector(toolBarRight)];
     
     m_tableview_list.delegate = self;

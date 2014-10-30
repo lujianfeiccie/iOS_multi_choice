@@ -34,18 +34,7 @@
                                                                                  self.view.frame.size.height-m_btn_next.frame.size.height-self.navigationController.navigationBar.frame.size.height-20)
                                         DataFile:m_filename];
     [m_dlg load];
-    
-}
--(void) setShowAnswerButton : (BOOL) stateShow
-{
-    if (!stateShow)
-    {
-         [m_btn_showAnswer setTitle:@"显示答案" forState:UIControlStateNormal];
-    }
-    else
-    {
-         [m_btn_showAnswer setTitle:@"隐藏答案" forState:UIControlStateNormal];
-    }
+    [m_btn_showAnswer setTitle:@"显示/隐藏答案" forState:UIControlStateNormal];
 }
 
 -(void) viewDidLayoutSubviews
@@ -67,11 +56,16 @@
 - (IBAction)btnPrevClick:(id)sender
 {
     [m_dlg prev];
+    m_isShowingAnswer = YES;
+    [self btnShowAnswerClick:nil];
 }
 
 - (IBAction)btnNextClick:(id)sender
 {
     [m_dlg next];
+    
+    m_isShowingAnswer = YES;
+    [self btnShowAnswerClick:nil];
 }
 
 - (IBAction)btnShowAnswerClick:(id)sender {
@@ -83,10 +77,11 @@
     }
     else
     {
-        [m_dlg hideAnswer];
+       [m_dlg hideAnswer];
         m_isShowingAnswer = NO;
     }
-    [self setShowAnswerButton: m_isShowingAnswer];
+ //   NSLogExt(@"btnShowAnswerClick %d",m_isShowingAnswer);
+   // [self setShowAnswerButton: m_isShowingAnswer];
 }
 
 - (void)dealloc {

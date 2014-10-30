@@ -20,8 +20,8 @@
 -(void) toolBarRight
 {
 
-    NSString *tmp_filename = [NSString stringWithFormat:@"%@_calc",m_filename];
-    NSString *tmp_title = [NSString stringWithFormat:@"%@计算题",m_title];
+    NSString *tmp_filename = [NSString stringWithFormat:@"%@_short_answer",m_filename];
+    NSString *tmp_title = [NSString stringWithFormat:@"%@简答题",m_title];
     NSString* result = [[NSBundle mainBundle] pathForResource:tmp_filename ofType:@"xml"];
 //    NSLogExt(@"result=%@",result);
     if (result==nil)
@@ -48,7 +48,7 @@
     
     self.navigationItem.title = m_title;
    
-    //self.navigationItem.rightBarButtonItem = [ButtonUtil createToolBarButton:@"计算题" target:self action:@selector(toolBarRight)];
+    self.navigationItem.rightBarButtonItem = [ButtonUtil createToolBarButton:@"简答题" target:self action:@selector(toolBarRight)];
     
     m_dlg = [[ MultiChoiceDlg alloc]initWithView:self.view
     DisplayRect:CGRectMake(0, 0,

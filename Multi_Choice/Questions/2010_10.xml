@@ -1,126 +1,123 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-    <question title="企业与投资者和受资者之间的财务关系，在性质上是" answer="所有权关系" note="所有权是所有人依法对自己财产所享有的占有">
-        <choice>债权债务关系</choice>
-        <choice>所有权关系</choice>
-        <choice>资金结算关系</choice>
-        <choice>税收法律关系</choice>
-    </question>
-    <question title="按照委托代理理论，所有者普遍关注的财务管理目标是" answer="股东财富最大化" note="股东财富最大化是指通过财务上的合理经营，为股东带来最多的财富。">
-        <choice>经济效益最大化</choice>
-        <choice>利润最大化</choice>
-        <choice>企业价值最大化</choice>
-        <choice>股东财富最大化</choice>
-    </question>
-    <question title="已知甲方案投资收益率的期望值为14%，乙方案投资收益率的期望值为15%，两个方案都存在投资风险，则比较两个方案风险大小的指标是" answer="标准离差率" note="标准离差率＝标准离差／期望值&#x000A;标准差是方差的算术平方根&#x000A;方差=1／n［（x1-x）^2+（x2-x）^2+...（xn-x）^2］">
-        <choice>期望值</choice>
-        <choice>标准离差</choice>
-        <choice>标准离差率</choice>
-        <choice>方差</choice>
-    </question>
-    <question title="在利率和计息期相同的条件下，下列表达式正确的是" answer="普通年金终值系数×偿债基金系数=1" note="年金终值系数(S/A, i, n)&#x000A;S=A+Ax(1+i)+...+Ax(1+i)^(n-1)&#x000A;等式两边同乘以(1+i)&#x000A;S(1+i)=A(1+i)+A(1+i)^2+...+A(1+i)^n&#x000A;上式两边相减可得：&#x000A;S(1+i)-S=A(1+i)^n-A&#x000A;S[(1+i)-1]=A[(1+i)^n-1]&#x000A;Sxi=A[(1+i)^n-1]&#x000A;S=A[(1+i)^n-1]/i&#x000A;资本回收系数 X 年金现值系数 = 1&#x000A;复利终值系数 X 复利现值系数 = 1">
-        <choice>普通年金终值系数×普通年金现值系数=1</choice>
-        <choice>普通年金终值系数×偿债基金系数=1</choice>
-        <choice>普通年金终值系数×资本回收系数=1</choice>
-        <choice>普通年金终值系数×先付年金现值系数=1</choice>
-    </question>
-    <question title="银行借款筹资方式的优点是" answer="筹资成本低" note="银行借款的筹资特点包括：筹资速度快、资本成本较低、筹资弹性较大、限制条款多、筹资数额有限。">
-        <choice>筹资成本低</choice>
-        <choice>限制条件少</choice>
-        <choice>财务风险低</choice>
-        <choice>能提高公司信誉</choice>
-    </question>
-    <question title="一般情况下，采用销售百分比法预测资金需要量时，假定不随销售收入变动的项目是" answer="公司债券" note="">
-        <choice>现金</choice>
-        <choice>存货</choice>
-        <choice>应付账款</choice>
-        <choice>公司债券</choice>
-    </question>
-    <question title="在其他因素不变的情况下，企业采取积极的收账政策可能导致的后果是" answer="收账费用增加" note="">
-        <choice>坏账损失增加</choice>
-        <choice>收账费用增加</choice>
-        <choice>平均付款期延长</choice>
-        <choice>应收账款平均余额增加</choice>
-    </question>
-    <question title="一般情况下，企业持有货币资金的机会成本与相关因素的关系是" answer="与有价证券利率成正比" note="年货币资金持有成本=最佳资金持有量X有价证券的年利率&#x000A;最佳资金持有量=年货币资金持有成本／有价证券的年利率
-        ">
-        <choice>与货币资金持有量成反比</choice>
-        <choice>与货币资金持有时间成反比</choice>
-        <choice>与有价证券利率成正比</choice>
-        <choice>与货币资金持有量无关</choice>
-    </question>
-    <question title="如果甲项目的获利指数为1.06，则下列说法正确的是" answer="甲项目的净现值大于零" note="净现值是指一个项目预期实现的现金流入的现值与实施该项计划的现金支出的差额。净现值为正值的项目可以为股东创造价值，净现值为负值的项目会损害股东价值。">
-        <choice>甲项目的净现值大于零</choice>
-        <choice>甲项目不具备财务可行性</choice>
-        <choice>甲项目投资回收期小于要求的项目回收期</choice>
-        <choice>甲项目投资回收期大于要求的项目回收期</choice>
-    </question>
-    <question title="某投资项目年营业收入180万元，年付现成本60万元，所得税20万元，则该项目年营业净现金流量是" answer="１００万元" note="营业净现金流量＝180—60—20＝100">
-        <choice>６０万元</choice>
-        <choice>８０万元</choice>
-        <choice>１００万元</choice>
-        <choice>１２０万元</choice>
-    </question>
-    <question title="按企业对外投资的方式划分，企业购买其他企业少量股票并短期持有属于" answer="间接投资" note="间接投资是指投资者以其资本购买公司债券、金融债券或公司股票等，各种有价证券，以预期获取一定收益的投资，由于其投资形式主要是购买各种各样的有价证券，因此也被称为证券投资">
-        <choice>股权投资</choice>
-        <choice>间接投资</choice>
-        <choice>直接投资</choice>
-        <choice>短期投资</choice>
-    </question>
-    <question title="与股票投资相比，下列属于企业债券投资特点的是" answer="投资者的权利小" note="">
-        <choice>投资风险大</choice>
-        <choice>投资者的权利小</choice>
-        <choice>收益不稳定</choice>
-        <choice>无固定偿还期限</choice>
-    </question>
-    <question title="按费用与产品产量之间的关系，企业生产产品直接耗费的原材料成本属于" answer="变动费用" note="">
-        <choice>变动费用</choice>
-        <choice>生产成本</choice>
-        <choice>可控费用</choice>
-        <choice>直接费用</choice>
-    </question>
-    <question title="计算保本点销售量的正确公式是" answer="销售量＝固定成本／单位边际贡献" note="就是刚好回本">
-        <choice>销售量＝固定成本／单位变动成本</choice>
-        <choice>销售量＝（固定成本+利润）／（单价-单位变动成本）</choice>
-        <choice>销售量＝利润／单位边际贡献</choice>
-        <choice>销售量＝固定成本／单位边际贡献</choice>
-    </question>
-    <question title="假设某企业1-3月份的销售收入分别为1000万元、1200万元、1100万元，规定的权数分别为0.2、0.3、0.5，用加权移动平均法预测的4月份销售收入是" answer="１１１０万元" note="假设某企业1-3月份的销售收入分别为1000万元、1200万元、1100万元，规定的权数分别为0.2、0.3、0.5，用加权移动平均法预测的4月份销售收入是&#x000A;设：本金A,权重i&#x000A;&#x000A;=∑Axi/∑i&#x000A;=(1000 x 0.2 + 1200 x 0.3 + 1100 x 0.5) / (0.2+0.3+0.5)&#x000A;=(200 + 360 + 550) / 1&#x000A;=1110
-        ">
-        <choice>１０００万元</choice>
-        <choice>１１００万元</choice>
-        <choice>１１１０万元</choice>
-        <choice>１２００万元</choice>
-    </question>
-    <question title="下列各种产品价格中属于按调节方式进行分类的是" answer="国家指导价格" note="国家指导价，中国实行的由县及县以上各级价格部门、业务主管部门通过规定限价等措施指导生产者、经营者而制定的商品价格和收费标准。">
-        <choice>出厂价格</choice>
-        <choice>批发价格</choice>
-        <choice>零售价格</choice>
-        <choice>国家指导价格</choice>
-    </question>
-    <question title="下列关于股份有限公司特点的表述正确的是" answer="易于筹资" note="">
-        <choice>公司是自然人企业</choice>
-        <choice>易于筹资</choice>
-        <choice>公司承担无限责任</choice>
-        <choice>不存在双重纳税问题</choice>
-    </question>
-    <question title="企业并购中对被并购企业资产进行评估时不适用的方法是" answer="清算价格法" note="">
-        <choice>重置成本法</choice>
-        <choice>清算价格法</choice>
-        <choice>市场法</choice>
-        <choice>收益法</choice>
-    </question>
-    <question title="下列指标中，企业短期贷款的提供者最关心的是" answer="速动率" note="速动比率=速动资产/流动负债&#x000A;其中：速动资产=流动资产-存货&#x000A;或：速动资产=流动资产-存货-预付账款-待摊费用">
-        <choice>速动率</choice>
-        <choice>资产净利润率</choice>
-        <choice>市盈率</choice>
-        <choice>总资产周转率</choice>
-    </question>
-    <question title="企业发放现金股利，对其产权比率的影响是" answer="增大" note="支付现金股利会减少所有者权益，&#x000A;产权比率＝负债/所有者权益，&#x000A;分母小了，产权比率这个指标就更大了(即使分子和分母等量减少，结果也是增大)，结论：支付现金股利会提高产权比率">
-        <choice>增大</choice>
-        <choice>减小</choice>
-        <choice>不变</choice>
-        <choice>变化不确定</choice>
-    </question>
+<question title="企业与投资者和受资者之间的财务关系，在性质上是" answer="所有权关系" note="所有权是所有人依法对自己财产所享有的占有">
+<choice>债权债务关系</choice>
+<choice>所有权关系</choice>
+<choice>资金结算关系</choice>
+<choice>税收法律关系</choice>
+</question>
+<question title="按照委托代理理论，所有者普遍关注的财务管理目标是" answer="股东财富最大化" note="股东财富最大化是指通过财务上的合理经营，为股东带来最多的财富。">
+<choice>经济效益最大化</choice>
+<choice>利润最大化</choice>
+<choice>企业价值最大化</choice>
+<choice>股东财富最大化</choice>
+</question>
+<question title="已知甲方案投资收益率的期望值为14%，乙方案投资收益率的期望值为15%，两个方案都存在投资风险，则比较两个方案风险大小的指标是" answer="标准离差率" note="标准离差率＝标准离差／期望值&#x0A;标准差是方差的算术平方根&#x0A;方差=1／n［（x1-x）^2+（x2-x）^2+...（xn-x）^2］">
+<choice>期望值</choice>
+<choice>标准离差</choice>
+<choice>标准离差率</choice>
+<choice>方差</choice>
+</question>
+<question title="在利率和计息期相同的条件下，下列表达式正确的是" answer="普通年金终值系数×偿债基金系数=1" note="年金终值系数(S/A, i, n)&#x0A;S=A+Ax(1+i)+...+Ax(1+i)^(n-1)&#x0A;等式两边同乘以(1+i)&#x0A;S(1+i)=A(1+i)+A(1+i)^2+...+A(1+i)^n&#x0A;上式两边相减可得：&#x0A;S(1+i)-S=A(1+i)^n-A&#x0A;S[(1+i)-1]=A[(1+i)^n-1]&#x0A;Sxi=A[(1+i)^n-1]&#x0A;S=A[(1+i)^n-1]/i&#x0A;&#x0A;举一反三：&#x0A;资本回收系数 X 年金现值系数 = 1&#x0A;复利终值系数 X 复利现值系数 = 1">
+<choice>普通年金终值系数×普通年金现值系数=1</choice>
+<choice>普通年金终值系数×偿债基金系数=1</choice>
+<choice>普通年金终值系数×资本回收系数=1</choice>
+<choice>普通年金终值系数×先付年金现值系数=1</choice>
+</question>
+<question title="银行借款筹资方式的优点是" answer="筹资成本低" note="银行借款的筹资特点包括：筹资速度快、资本成本较低、筹资弹性较大、限制条款多、筹资数额有限。">
+<choice>筹资成本低</choice>
+<choice>限制条件少</choice>
+<choice>财务风险低</choice>
+<choice>能提高公司信誉</choice>
+</question>
+<question title="一般情况下，采用销售百分比法预测资金需要量时，假定不随销售收入变动的项目是" answer="公司债券" note="">
+<choice>现金</choice>
+<choice>存货</choice>
+<choice>应付账款</choice>
+<choice>公司债券</choice>
+</question>
+<question title="在其他因素不变的情况下，企业采取积极的收账政策可能导致的后果是" answer="收账费用增加" note="">
+<choice>坏账损失增加</choice>
+<choice>收账费用增加</choice>
+<choice>平均付款期延长</choice>
+<choice>应收账款平均余额增加</choice>
+</question>
+<question title="一般情况下，企业持有货币资金的机会成本与相关因素的关系是" answer="与有价证券利率成正比" note="年货币资金持有成本=最佳资金持有量X有价证券的年利率&#x0A;最佳资金持有量=年货币资金持有成本／有价证券的年利率&#x0A;">
+<choice>与货币资金持有量成反比</choice>
+<choice>与货币资金持有时间成反比</choice>
+<choice>与有价证券利率成正比</choice>
+<choice>与货币资金持有量无关</choice>
+</question>
+<question title="如果甲项目的获利指数为1.06，则下列说法正确的是" answer="甲项目的净现值大于零" note="净现值是指一个项目预期实现的现金流入的现值与实施该项计划的现金支出的差额。净现值为正值的项目可以为股东创造价值，净现值为负值的项目会损害股东价值。">
+<choice>甲项目的净现值大于零</choice>
+<choice>甲项目不具备财务可行性</choice>
+<choice>甲项目投资回收期小于要求的项目回收期</choice>
+<choice>甲项目投资回收期大于要求的项目回收期</choice>
+</question>
+<question title="某投资项目年营业收入180万元，年付现成本60万元，所得税20万元，则该项目年营业净现金流量是" answer="１００万元" note="营业净现金流量＝年营业收入-年付现成本-所得税&#x0A;=180 - 60 - 20&#x0A;=100">
+<choice>６０万元</choice>
+<choice>８０万元</choice>
+<choice>１００万元</choice>
+<choice>１２０万元</choice>
+</question>
+<question title="按企业对外投资的方式划分，企业购买其他企业少量股票并短期持有属于" answer="间接投资" note="间接投资是指投资者以其资本购买公司债券、金融债券或公司股票等，各种有价证券，以预期获取一定收益的投资，由于其投资形式主要是购买各种各样的有价证券，因此也被称为证券投资">
+<choice>股权投资</choice>
+<choice>间接投资</choice>
+<choice>直接投资</choice>
+<choice>短期投资</choice>
+</question>
+<question title="与股票投资相比，下列属于企业债券投资特点的是" answer="投资者的权利小" note="">
+<choice>投资风险大</choice>
+<choice>投资者的权利小</choice>
+<choice>收益不稳定</choice>
+<choice>无固定偿还期限</choice>
+</question>
+<question title="按费用与产品产量之间的关系，企业生产产品直接耗费的原材料成本属于" answer="变动费用" note="">
+<choice>变动费用</choice>
+<choice>生产成本</choice>
+<choice>可控费用</choice>
+<choice>直接费用</choice>
+</question>
+<question title="计算保本点销售量的正确公式是" answer="销售量＝固定成本／单位边际贡献" note="就是刚好回本">
+<choice>销售量＝固定成本／单位变动成本</choice>
+<choice>销售量＝（固定成本+利润）／（单价-单位变动成本）</choice>
+<choice>销售量＝利润／单位边际贡献</choice>
+<choice>销售量＝固定成本／单位边际贡献</choice>
+</question>
+<question title="假设某企业1-3月份的销售收入分别为1000万元、1200万元、1100万元，规定的权数分别为0.2、0.3、0.5，用加权移动平均法预测的4月份销售收入是" answer="１１１０万元" note="假设某企业1-3月份的销售收入分别为1000万元、1200万元、1100万元，规定的权数分别为0.2、0.3、0.5，用加权移动平均法预测的4月份销售收入是&#x0A;设：本金A,权重i&#x0A;&#x0A;=∑Axi/∑i&#x0A;=(1000 x 0.2 + 1200 x 0.3 + 1100 x 0.5) / (0.2+0.3+0.5)&#x0A;=(200 + 360 + 550) / 1&#x0A;=1110&#x0A;">
+<choice>１０００万元</choice>
+<choice>１１００万元</choice>
+<choice>１１１０万元</choice>
+<choice>１２００万元</choice>
+</question>
+<question title="下列各种产品价格中属于按调节方式进行分类的是" answer="国家指导价格" note="国家指导价，中国实行的由县及县以上各级价格部门、业务主管部门通过规定限价等措施指导生产者、经营者而制定的商品价格和收费标准。">
+<choice>出厂价格</choice>
+<choice>批发价格</choice>
+<choice>零售价格</choice>
+<choice>国家指导价格</choice>
+</question>
+<question title="下列关于股份有限公司特点的表述正确的是" answer="易于筹资" note="">
+<choice>公司是自然人企业</choice>
+<choice>易于筹资</choice>
+<choice>公司承担无限责任</choice>
+<choice>不存在双重纳税问题</choice>
+</question>
+<question title="企业并购中对被并购企业资产进行评估时不适用的方法是" answer="清算价格法" note="">
+<choice>重置成本法</choice>
+<choice>清算价格法</choice>
+<choice>市场法</choice>
+<choice>收益法</choice>
+</question>
+<question title="下列指标中，企业短期贷款的提供者最关心的是" answer="速动率" note="速动比率=速动资产/流动负债&#x0A;&#x0A;其中：速动资产=流动资产-存货&#x0A;&#x0A;或：&#x0A;&#x0A;速动资产=流动资产-存货-预付账款-待摊费用">
+<choice>速动率</choice>
+<choice>资产净利润率</choice>
+<choice>市盈率</choice>
+<choice>总资产周转率</choice>
+</question>
+<question title="企业发放现金股利，对其产权比率的影响是" answer="增大" note="支付现金股利会减少所有者权益，&#x0A;&#x0A;产权比率＝负债/所有者权益，&#x0A;&#x0A;分母小了，产权比率这个指标就更大了&#x0A;(即使分子和分母等量减少，结果也是增大)&#x0A;&#x0A;结论：支付现金股利会提高产权比率">
+<choice>增大</choice>
+<choice>减小</choice>
+<choice>不变</choice>
+<choice>变化不确定</choice>
+</question>
 </root>
-

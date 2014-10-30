@@ -1,156 +1,123 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-    <question title="下列各项资金时间价值指标中，无法计算出确切结果的是" answer="永续年金终值" note="普通年金现值:是一定时期内每期末等额系列收付款项的复利现值之和。即现金流量发生在每期期末，现值发生第一笔现金流量那一期的期初计算
-        &#x0A;&#x0D;&#x0A;&#x0D;
-        先付年金终值：是其最后一期期末时的本利和，相当于各期期初等额收付款项的复利终值之和
-        &#x0A;&#x0D;&#x0A;&#x0D;
-        递延年金又称“延期年金”，是指在最初若干期没有收付款项的情况下，后面若干期等额的系列收付款项
-        
-        &#x0A;&#x0D;&#x0A;&#x0D;永续年金:因为是无限期收付的，所以永续年金没有终值">
-        <choice>普通年金现值</choice>
-        <choice>先付年金终值</choice>
-        <choice>递延年金现值</choice>
-        <choice>永续年金终值</choice>
-    </question>
-    <question title="已知甲方案投资收益率的期望值为16％，乙方案投资收益率的期望值为18％，比较甲、乙两个方案风险大小应采用的指标是" answer="标准离差率" note="标准离差率（又称为：变化系数或标准差系数）记为C.V(Coefficient of Variance)，是以相对数来衡量待决策方案的风险。
-        &#x0A;&#x0D;&#x0A;&#x0D;
-        标准离差率=标准离差/期望值
-        
-        标准离差&#x0A;&#x0D;&#x0A;&#x0D;=sqrt(1/n ∑(xi-μ)^2)&#x0A;&#x0D;&#x0A;&#x0D;标准离差=标准差&#x0A;&#x0D;&#x0A;&#x0D;方差的平方=标准差">
-        <choice>标准离差</choice>
-        <choice>期望值</choice>
-        <choice>净现值</choice>
-        <choice>标准离差率</choice>
-    </question>
-    <question title="在利率为10％的条件下，1至3年期的复利现值系数分别为0.909、0.826、0.751，则3年期的年金现值系数是" answer="2.486" note="3年期的年金现值系数&#x0A;&#x0D;&#x0A;&#x0D;
-        =1至3年期的复利现值系数和&#x0A;&#x0D;
-        &#x0A;&#x0D;=0.9091+0.8264+0.7513
-        &#x0A;&#x0D;&#x0A;&#x0D;=2.4868">
-        <choice>0.751</choice>
-        <choice>1.735</choice>
-        <choice>2.486</choice>
-        <choice>2.735</choice>
-    </question>
-    <question title="企业通过商业信用筹资时，其资金来源是" answer="其他企业资金" note="">
-        <choice>政府财政资金</choice>
-        <choice>银行信贷资金</choice>
-        <choice>企业自留资金</choice>
-        <choice>其他企业资金</choice>
-    </question>
-    <question title="理论上讲，下列筹资方式中资本成本最低的是" answer="发行债券" note="债券成本的计算
-        &#x0A;&#x0D;&#x0A;&#x0D;由于利息费用计入税前的成本费用，可以起到抵减所得税的作用。&#x0A;&#x0D;&#x0A;&#x0D;因此按一次还本、分期付息的借款或券成本的计算公式分别为：&#x0A;&#x0D;&#x0A;&#x0D;
-        Kb=Ib(1-T)/B(1-Fb)&#x0A;&#x0D;&#x0A;&#x0D;
-        式中：Kb----债券资本成本；
-        &#x0A;&#x0D;&#x0A;&#x0D;Ib----债券年利息；
-        &#x0A;&#x0D;&#x0A;&#x0D;T----所得税率；&#x0A;&#x0D;
-        &#x0A;&#x0D;B----债券筹资额;(或称债务本金）
-        &#x0A;&#x0D;&#x0A;&#x0D;Fb----债券筹资费用率(=筹资费用/筹资总额)。&#x0A;&#x0D;&#x0A;&#x0D;
-        或
-        Kb=Rb(1-T)/(1-Fb) (Rb-债券利率)
-        &#x0A;&#x0D;&#x0A;&#x0D;
-        例如，某企业通过发行债券筹集100万元，债券年利率8%，每年付息一次，到期一次还本。筹资费用率为5%，该企业所得税税率为33%。&#x0A;&#x0D;&#x0A;&#x0D;所发行债券的资本成本计算如下：
-        &#x0A;&#x0D;&#x0A;&#x0D;债券资本成本=[100*8%*(1-33%)]/[100*（1-5%）]&#x0A;&#x0D;&#x0A;&#x0D;=5.64%
-        或:&#x0A;&#x0D;&#x0A;&#x0D;
-        债券资本成本=[8%*(1-33%)]/（1-5%）&#x0A;&#x0D;&#x0A;&#x0D;=5.64%">
-        <choice>发行普通股</choice>
-        <choice>留用利润</choice>
-        <choice>发行债券</choice>
-        <choice>发行优先股</choice>
-    </question>
-    <question title="与权益资金筹资方式相比，银行借款筹资的缺点是" answer="财务风险大" note="银行借款必须承担还本付息的义务&#x0A;&#x0D;&#x0A;&#x0D;股票筹资没有还本付息的压力，赚钱就分红，所以说银行借款的缺点是 财务风险大">
-        <choice>资本成本高</choice>
-        <choice>财务风险大</choice>
-        <choice>筹资的弹性差</choice>
-        <choice>分散企业控制权</choice>
-    </question>
-    <question title="企业因预防动机而确定持有的现金余额时，一般不需要考虑的因素是" answer="企业销售水平" note="">
-        <choice>企业销售水平</choice>
-        <choice>企业临时举债能力的强弱</choice>
-        <choice>企业愿意承担风险的程度</choice>
-        <choice>企业对现金收支预测的可靠程度</choice>
-    </question>
-    <question title="在材料分类管理中，需要重点加强控制的是" answer="耗用金额很大、品种数量少的材料" note="">
-        <choice>耗用金额很大、品种数量少的材料</choice>
-        <choice>耗用金额很小、耗用数量少的材料</choice>
-        <choice>耗用金额很小、品种数量少的材料</choice>
-        <choice>耗用金额很小、耗用数量多的材料</choice>
-    </question>
-    <question title="下列各项中，不属于信用政策构成内容的是" answer="商业折扣" note="信用政策主要包括&#x0A;&#x0D;&#x0A;&#x0D;1.信用标准&#x0A;&#x0D;&#x0A;&#x0D;2.信用条件&#x0A;&#x0D;&#x0A;&#x0D;3.收账政策&#x0A;&#x0D;&#x0A;&#x0D;主要作用是调节企业应收账款的水平和质量。">
-        <choice>收账政策</choice>
-        <choice>信用期限</choice>
-        <choice>商业折扣</choice>
-        <choice>信用标准</choice>
-    </question>
-    <question title="某投资项目的初始投资额为100万元，年折旧额为10万元，无其它非付现成本，每年可实现净利润为30万元，则该项目的投资回收期是" answer="２.５年" note="投资回收期＝初始投资/每年NCF&#x0A;&#x0D;&#x0A;&#x0D;
-        =100/（10+30）&#x0A;&#x0D;&#x0A;&#x0D;＝2.5&#x0A;&#x0D;&#x0A;&#x0D;应该把折旧加到利润上，因为每年计提的折旧并没有实际产生现金流出。">
-        <choice>２.５年</choice>
-        <choice>３.３年</choice>
-        <choice>５年</choice>
-        <choice>１０年</choice>
-    </question>
-    <question title="每股收益的计算表达式是" answer="（企业净利润-优先股股利）／普通股股数" note="">
-        <choice>企业营业利润／普通股股数</choice>
-        <choice>（企业净利润-优先股股利）／普通股股数</choice>
-        <choice>企业营业利润／（普通股股数+优先股股数）</choice>
-        <choice>（企业净利润-优先股股利）／（普通股股数+优先股股数）</choice>
-    </question>
-    <question title="某公司股票上年每股现金股利为2元，股利年增长率为5％，投资者预期的投资收益率为10％，该股票的内在价值是" answer="４２元" note="内在价值＝每股股利/（回报率-增长率）
-        &#x0A;&#x0D;&#x0A;&#x0D;＝2*（1+5%）/（10%－5%）&#x0A;&#x0D;&#x0A;&#x0D;＝42&#x0A;&#x0D;&#x0A;&#x0D;（**因为上年的股利是2元，今年的就是2*（1+5%），在公式中要用今年的**）">
-        <choice>２０元</choice>
-        <choice>２１元</choice>
-        <choice>４０元</choice>
-        <choice>４２元</choice>
-    </question>
-    <question title="企业新购一台机器设备，设备原值为20000元，采用年数总和法提取折旧，预计使用年限为5年，预计残值为2000元，则第一年的折旧额为" answer="６０００元" note="年数总和法
-        &#x0A;&#x0D;&#x0A;&#x0D;1+2+3+4+5=15&#x0A;&#x0D;&#x0A;&#x0D;
-        (20000-2000)*5/15=6000——&gt;第一年&#x0A;&#x0D;&#x0A;&#x0D;
-        (20000-2000)*4/15=1280——&gt;第二年
-        ...&#x0A;&#x0D;&#x0A;&#x0D;(20000-2000)*1/15=1200——&gt;第五年">
-        <choice>３６００元</choice>
-        <choice>４８００元</choice>
-        <choice>６０００元</choice>
-        <choice>８０００元</choice>
-    </question>
-    <question title="由于物价上涨使投资者的实际收益相对下降带来损失的风险是" answer="通货膨胀风险" note="">
-        <choice>利率风险</choice>
-        <choice>市场风险</choice>
-        <choice>外汇风险</choice>
-        <choice>通货膨胀风险</choice>
-    </question>
-    <question title="利用相关比率法进行利润预测的计算方法是" answer="预计销售收入×销售收入利润率" note="">
-        <choice>预计销售量×资金利润率</choice>
-        <choice>预计销售收入×销售收入利润率</choice>
-        <choice>预计销售收入×资金利润率</choice>
-        <choice>预计销售量×销售收入利润率</choice>
-    </question>
-    <question title="某产品的变动成本率为60％，则该产品的边际贡献率是" answer="４０％" note="">
-        <choice>３０％</choice>
-        <choice>４０％</choice>
-        <choice>５０％</choice>
-        <choice>６０％</choice>
-    </question>
-    <question title="如果公司的产权比率下降，则其资产负债率发生的变化是" answer="降低" note="公式：产权比率= 负债总额/股东权益×100%">
-        <choice>提高</choice>
-        <choice>降低</choice>
-        <choice>不变</choice>
-        <choice>不确定</choice>
-    </question>
-    <question title="优先满足公司项目投资所需权益资金的股利政策是" answer="剩余股利政策" note="剩余股利政策是指公司生产经营所获得的净收益首先应满足公司的资金需求，如果还有剩余，则派发股利；如果没有剩余，则不派发股利。">
-        <choice>剩余股利政策</choice>
-        <choice>固定股利政策</choice>
-        <choice>固定股利支付率政策</choice>
-        <choice>低正常股利加额外股利政策</choice>
-    </question>
-    <question title="在杜邦财务分析体系中，综合性最强的核心财务指标是" answer="净资产收益率" note="">
-        <choice>销售净利率</choice>
-        <choice>总资产周转率</choice>
-        <choice>权益乘数</choice>
-        <choice>净资产收益率</choice>
-    </question>
-    <question title="ABC公司某年末资产总额为1500万元，所有者权益为900万元，则该企业年末资产负债率是" answer="４０％" note="">
-        <choice>４０％</choice>
-        <choice>５５％</choice>
-        <choice>６０％</choice>
-        <choice>６６％</choice>
-    </question>
+<question title="下列各项资金时间价值指标中，无法计算出确切结果的是" answer="永续年金终值" note="普通年金现值:是一定时期内每期末等额系列收付款项的复利现值之和。即现金流量发生在每期期末，现值发生第一笔现金流量那一期的期初计算&#x0A;&#x0A;先付年金终值：是其最后一期期末时的本利和，相当于各期期初等额收付款项的复利终值之和&#x0A;&#x0A;递延年金又称“延期年金”，是指在最初若干期没有收付款项的情况下，后面若干期等额的系列收付款项&#x0A;&#x0A;永续年金:因为是无限期收付的，所以永续年金没有终值">
+<choice>普通年金现值</choice>
+<choice>先付年金终值</choice>
+<choice>递延年金现值</choice>
+<choice>永续年金终值</choice>
+</question>
+<question title="已知甲方案投资收益率的期望值为16％，乙方案投资收益率的期望值为18％，比较甲、乙两个方案风险大小应采用的指标是" answer="标准离差率" note="标准离差率（又称为：变化系数或标准差系数）记为C.V(Coefficient of Variance)，是以相对数来衡量待决策方案的风险。&#x0A;&#x0A;标准离差率=标准离差/期望值标准离差&#x0A;&#x0A;=sqrt(1/n ∑(xi-μ)^2)&#x0A;&#x0A;标准离差=标准差&#x0A;&#x0A;方差的平方=标准差">
+<choice>标准离差</choice>
+<choice>期望值</choice>
+<choice>净现值</choice>
+<choice>标准离差率</choice>
+</question>
+<question title="在利率为10％的条件下，1至3年期的复利现值系数分别为0.909、0.826、0.751，则3年期的年金现值系数是" answer="2.486" note="3年期的年金现值系数&#x0A;&#x0A;=1至3年期的复利现值系数和&#x0A;&#x0A;=0.9091+0.8264+0.7513&#x0A;&#x0A;=2.4868">
+<choice>0.751</choice>
+<choice>1.735</choice>
+<choice>2.486</choice>
+<choice>2.735</choice>
+</question>
+<question title="企业通过商业信用筹资时，其资金来源是" answer="其他企业资金" note="">
+<choice>政府财政资金</choice>
+<choice>银行信贷资金</choice>
+<choice>企业自留资金</choice>
+<choice>其他企业资金</choice>
+</question>
+<question title="理论上讲，下列筹资方式中资本成本最低的是" answer="发行债券" note="债券成本的计算&#x0A;由于利息费用计入税前的成本费用，可以起到抵减所得税的作用。&#x0A;&#x0A;因此按一次还本、分期付息的借款或券成本的计算公式分别为：&#x0A;&#x0A;&#x0A;Kb=Ib(1-T)/B(1-Fb)&#x0A;&#x0A;&#x0A;式中：Kb----债券资本成本；&#x0A;Ib----债券年利息；&#x0A;T----所得税率；&#x0A;&#x0A;B----债券筹资额;(或称债务本金）&#x0A;Fb----债券筹资费用率(=筹资费用/筹资总额)。&#x0A;&#x0A;或&#x0A;&#x0A;Kb=Rb(1-T)/(1-Fb) (Rb-债券利率)&#x0A;&#x0A;例如，某企业通过发行债券筹集100万元，债券年利率8%，每年付息一次，到期一次还本。筹资费用率为5%，该企业所得税税率为33%。&#x0A;&#x0A;所发行债券的资本成本计算如下：&#x0A;&#x0A;债券资本成本=[100*8%*(1-33%)]/[100*（1-5%）]&#x0A;=5.64%&#x0A;&#x0A;或:&#x0A;&#x0A;债券资本成本=[8%*(1-33%)]/（1-5%）&#x0A;=5.64%">
+<choice>发行普通股</choice>
+<choice>留用利润</choice>
+<choice>发行债券</choice>
+<choice>发行优先股</choice>
+</question>
+<question title="与权益资金筹资方式相比，银行借款筹资的缺点是" answer="财务风险大" note="银行借款必须承担还本付息的义务&#x0A;&#x0A;股票筹资没有还本付息的压力，赚钱就分红，所以说银行借款的缺点是 财务风险大">
+<choice>资本成本高</choice>
+<choice>财务风险大</choice>
+<choice>筹资的弹性差</choice>
+<choice>分散企业控制权</choice>
+</question>
+<question title="企业因预防动机而确定持有的现金余额时，一般不需要考虑的因素是" answer="企业销售水平" note="">
+<choice>企业销售水平</choice>
+<choice>企业临时举债能力的强弱</choice>
+<choice>企业愿意承担风险的程度</choice>
+<choice>企业对现金收支预测的可靠程度</choice>
+</question>
+<question title="在材料分类管理中，需要重点加强控制的是" answer="耗用金额很大、品种数量少的材料" note="">
+<choice>耗用金额很大、品种数量少的材料</choice>
+<choice>耗用金额很小、耗用数量少的材料</choice>
+<choice>耗用金额很小、品种数量少的材料</choice>
+<choice>耗用金额很小、耗用数量多的材料</choice>
+</question>
+<question title="下列各项中，不属于信用政策构成内容的是" answer="商业折扣" note="信用政策主要包括&#x0A;&#x0A;1.信用标准&#x0A;&#x0A;2.信用条件&#x0A;&#x0A;3.收账政策&#x0A;&#x0A;主要作用是调节企业应收账款的水平和质量。">
+<choice>收账政策</choice>
+<choice>信用期限</choice>
+<choice>商业折扣</choice>
+<choice>信用标准</choice>
+</question>
+<question title="某投资项目的初始投资额为100万元，年折旧额为10万元，无其它非付现成本，每年可实现净利润为30万元，则该项目的投资回收期是" answer="２.５年" note="投资回收期＝初始投资/每年NCF&#x0A;&#x0A;=100/（10+30）&#x0A;&#x0A;＝2.5&#x0A;&#x0A;应该把折旧加到利润上，因为每年计提的折旧并没有实际产生现金流出。">
+<choice>２.５年</choice>
+<choice>３.３年</choice>
+<choice>５年</choice>
+<choice>１０年</choice>
+</question>
+<question title="每股收益的计算表达式是" answer="（企业净利润-优先股股利）／普通股股数" note="">
+<choice>企业营业利润／普通股股数</choice>
+<choice>（企业净利润-优先股股利）／普通股股数</choice>
+<choice>企业营业利润／（普通股股数+优先股股数）</choice>
+<choice>（企业净利润-优先股股利）／（普通股股数+优先股股数）</choice>
+</question>
+<question title="某公司股票上年每股现金股利为2元，股利年增长率为5％，投资者预期的投资收益率为10％，该股票的内在价值是" answer="４２元" note="内在价值＝每股股利/（回报率-增长率）&#x0A;&#x0A;＝2*（1+5%）/（10%－5%）&#x0A;&#x0A;＝42&#x0A;&#x0A;（**因为上年的股利是2元，今年的就是2*（1+5%），在公式中要用今年的**）">
+<choice>２０元</choice>
+<choice>２１元</choice>
+<choice>４０元</choice>
+<choice>４２元</choice>
+</question>
+<question title="企业新购一台机器设备，设备原值为20000元，采用年数总和法提取折旧，预计使用年限为5年，预计残值为2000元，则第一年的折旧额为" answer="６０００元" note="年数总和法&#x0A;&#x0A;1+2+3+4+5=15&#x0A;&#x0A;(20000-2000)*5/15=6000——&gt;第一年&#x0A;&#x0A;(20000-2000)*4/15=1280——&gt;第二年...&#x0A;&#x0A;(20000-2000)*1/15=1200——&gt;第五年">
+<choice>３６００元</choice>
+<choice>４８００元</choice>
+<choice>６０００元</choice>
+<choice>８０００元</choice>
+</question>
+<question title="由于物价上涨使投资者的实际收益相对下降带来损失的风险是" answer="通货膨胀风险" note="">
+<choice>利率风险</choice>
+<choice>市场风险</choice>
+<choice>外汇风险</choice>
+<choice>通货膨胀风险</choice>
+</question>
+<question title="利用相关比率法进行利润预测的计算方法是" answer="预计销售收入×销售收入利润率" note="">
+<choice>预计销售量×资金利润率</choice>
+<choice>预计销售收入×销售收入利润率</choice>
+<choice>预计销售收入×资金利润率</choice>
+<choice>预计销售量×销售收入利润率</choice>
+</question>
+<question title="某产品的变动成本率为60％，则该产品的边际贡献率是" answer="４０％" note="">
+<choice>３０％</choice>
+<choice>４０％</choice>
+<choice>５０％</choice>
+<choice>６０％</choice>
+</question>
+<question title="如果公司的产权比率下降，则其资产负债率发生的变化是" answer="降低" note="公式：产权比率= 负债总额/股东权益×100%">
+<choice>提高</choice>
+<choice>降低</choice>
+<choice>不变</choice>
+<choice>不确定</choice>
+</question>
+<question title="优先满足公司项目投资所需权益资金的股利政策是" answer="剩余股利政策" note="剩余股利政策是指公司生产经营所获得的净收益首先应满足公司的资金需求，如果还有剩余，则派发股利；如果没有剩余，则不派发股利。">
+<choice>剩余股利政策</choice>
+<choice>固定股利政策</choice>
+<choice>固定股利支付率政策</choice>
+<choice>低正常股利加额外股利政策</choice>
+</question>
+<question title="在杜邦财务分析体系中，综合性最强的核心财务指标是" answer="净资产收益率" note="">
+<choice>销售净利率</choice>
+<choice>总资产周转率</choice>
+<choice>权益乘数</choice>
+<choice>净资产收益率</choice>
+</question>
+<question title="ABC公司某年末资产总额为1500万元，所有者权益为900万元，则该企业年末资产负债率是" answer="４０％" note="">
+<choice>４０％</choice>
+<choice>５５％</choice>
+<choice>６０％</choice>
+<choice>６６％</choice>
+</question>
 </root>

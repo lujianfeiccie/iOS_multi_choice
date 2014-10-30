@@ -1,135 +1,123 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <root>
-    <question title="下列各项业务中，能够形成本企业与债务人之间财务关系的是" answer="企业购买其他公司发行的债券" note="">
-        <choice>企业赊购产品</choice>
-        <choice>企业归还所欠货款</choice>
-        <choice>企业支付银行利息</choice>
-        <choice>企业购买其他公司发行的债券</choice>
-    </question>
-    <question title="张先生2010年1月1日存入银行20000元，存期两年，单利计息，年利率为4％，则到期所得利息额为" answer="１６００元" note="f(A,i,n) = f(20000,4%,2)&#x0A;&#x0D;&#x0A;&#x0D;= (20000 x 4% ) x 2">
-        <choice>４００元</choice>
-        <choice>８００元</choice>
-        <choice>１６００元</choice>
-        <choice>２０００元</choice>
-    </question>
-    <question title="优先股有固定的股利收入，该收入作为年金来看是" answer="永续年金" note="1.普通年金（Ordinary Annuity）是指每期期末收付款项的年金, 例如采用直线法计提的单项固定资产的折旧（折旧总额会随着固定资产数量的变化而变化，不是年金，但就单项固定资产而言，其使用期内按直线法计提的折旧额是一定的）、一定期间的租金（租金不变期间）、每年员工的社会保险金（按月计算，每年7月1日到次年6月30日不变）、一定期间的贷款利息（即银行存贷款利率不变且存贷金额不变期间，如贷款金额在银行贷款利率不变期间有变化可以视为多笔年金）等。
-        
-        &#x0A;&#x0D;&#x0A;&#x0D;2.先付年金（Annuity Due）是指每期期初收付款项的年金，例如先付钱后用餐的餐厅，每一道菜（包括米饭、面、饺子和馄饨等）分别出来之后都是先付年金。
-        
-        &#x0A;&#x0D; &#x0A;&#x0D;3.递延年金（Deferred Annuity）是指在预备计算时尚未发生收付，但未来一定会发生若干期等额收付得年金， 一般是在金融理财和社保回馈方面会产生递延年金。递延年金在做投资或其他资本预算时具有相当可观的作用。
-        
-        &#x0A;&#x0D; &#x0A;&#x0D;4.永续年金（Perpetual Annuity）即无限期连续收付款的年金， 最典型的就是诺贝尔奖金。">
-        <choice>预付年金</choice>
-        <choice>递延年金</choice>
-        <choice>先付年金</choice>
-        <choice>永续年金</choice>
-    </question>
-    <question title="从风险角度看，下列更接近于确定性投资的是" answer="购买国债" note="">
-        <choice>投资办厂</choice>
-        <choice>购买国债</choice>
-        <choice>购买公司股票</choice>
-        <choice>开发某地的金矿</choice>
-    </question>
-    <question title="下列各项中，导致长期借款资本成本低于普通股的主要原因是" answer="借款利息可在税前扣除" note="">
-        <choice>借款数额有限</choice>
-        <choice>借款筹资费用低</choice>
-        <choice>借款限制条件少</choice>
-        <choice>借款利息可在税前扣除</choice>
-    </question>
-    <question title="将企业抵押债券分为不动产抵押债券、动产抵押债券和证券抵押债券的依据是" answer="担保品的不同" note="">
-        <choice>有无担保</choice>
-        <choice>担保品的不同</choice>
-        <choice>抵押金额的大小</choice>
-        <choice>抵押品的担保顺序不同</choice>
-    </question>
-    <question title="假设某企业以“1／10，n／30”的信用条件购进一批材料，下列表述正确的是" answer="企业在１０天内付款可享受１％的现金折扣" note="">
-        <choice>企业在１０天内付款可享受１％的现金折扣</choice>
-        <choice>企业在３０天后付款可享受１％的现金折扣</choice>
-        <choice>企业在１０至２０天内付款可享受１％的现金折扣</choice>
-        <choice>企业在２０至３０天内付款可享受１％的现金折扣</choice>
-    </question>
-    <question title="企业为正常生产经营需要购买原材料而持有现金的动机属于" answer="支付动机" note="">
-        <choice>支付动机</choice>
-        <choice>投机动机</choice>
-        <choice>预防动机</choice>
-        <choice>保险动机</choice>
-    </question>
-    <question title="下列各项中，不属于企业应收账款成本内容的是" answer="短缺成本" note="应收账款的成本包括&#x0A;&#x0D;&#x0A;&#x0D;机会成本&#x0A;&#x0D;&#x0A;&#x0D;管理成本&#x0A;&#x0D;&#x0A;&#x0D;坏账成本。">
-        <choice>机会成本</choice>
-        <choice>管理成本</choice>
-        <choice>短缺成本</choice>
-        <choice>坏账成本</choice>
-    </question>
-    <question title="甲企业以控股为目的购买乙企业的股票，该投资属于" answer="间接投资" note="">
-        <choice>债权投资</choice>
-        <choice>直接投资</choice>
-        <choice>间接投资</choice>
-        <choice>短期投资</choice>
-    </question>
-    <question title="固定资产原始价值减去已提折旧后的净额称为" answer="固定资产的折余价值" note="">
-        <choice>固定资产的重置价值</choice>
-        <choice>固定资产的清算价值</choice>
-        <choice>固定资产的折余价值</choice>
-        <choice>固定资产的折旧价值</choice>
-    </question>
-    <question title="净现值与获利指数的共同之处是" answer="都必须按预定的贴现率计算现金流量的现值" note="">
-        <choice>都是绝对数指标</choice>
-        <choice>都没有考虑资金的时间价值因素</choice>
-        <choice>都能反映单位投入与产出之间的关系</choice>
-        <choice>都必须按预定的贴现率计算现金流量的现值</choice>
-    </question>
-    <question title="使用“5C”评估法评价客户信用时，需要考虑的首要因素是" answer="品质" note="">
-        <choice>品质</choice>
-        <choice>能力</choice>
-        <choice>资本</choice>
-        <choice>行情</choice>
-    </question>
-    <question title="与股票投资相比，下列属于债券投资特点的是" answer="投资收益相对稳定" note="">
-        <choice>投资风险较大</choice>
-        <choice>投资收益相对稳定</choice>
-        <choice>投资收益率比较高</choice>
-        <choice>无法事先预知投资收益水平</choice>
-    </question>
-    <question title="上市公司采用固定股利支付率政策的主要优点是" answer="股利支付与公司盈利密切相关" note="举一反三：
-        &#x0A;&#x0D;&#x0A;&#x0D;能够使灵活性与稳定性较好结合的股利政策是—-低正常股利加额外股利政策">
-        <choice>有利于公司股票价格的稳定</choice>
-        <choice>股利支付与公司盈利密切相关</choice>
-        <choice>有利于树立公司的良好形象</choice>
-        <choice>有利于投资者安排收入与支出</choice>
-    </question>
-    <question title="下列关于本量利关系的表达式，正确的是" answer="利润=销售收入×边际贡献率—固定成本" note="边际贡献率——边际贡献在销售收入中所占的百分比。
-        
-        边际贡献率的公式为：&#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;边际贡献率=（边际贡献/销售收入）×100%
-        &#x0A;&#x0D;&#x0A;&#x0D;&#x0A;&#x0D;
-        边际贡献是管理会计中一个经常使用的十分重要的概念，它是指销售收入减去变动成本后的余额，不同于毛利.">
-        <choice>利润=销售收入—变动成本</choice>
-        <choice>利润=边际贡献—变动成本</choice>
-        <choice>利润=销售收入×边际贡献率—固定成本</choice>
-        <choice>利润=销售收入×单位边际贡献—变动成本</choice>
-    </question>
-    <question title="下列各项中，属于制定股利政策时应考虑的法律因素是" answer="资本保全约束" note="">
-        <choice>资本保全约束</choice>
-        <choice>现金流量约束</choice>
-        <choice>资本成本约束</choice>
-        <choice>投资机会约束</choice>
-    </question>
-    <question title="企业保持较高的现金比率，会带来的不利影响是" answer="机会成本的增加" note="">
-        <choice>应收账款的增加</choice>
-        <choice>坏账损失的增加</choice>
-        <choice>存货购进的增加</choice>
-        <choice>机会成本的增加</choice>
-    </question>
-    <question title="已获利息倍数计算公式的分子是" answer="息税前利润" note="已获利息倍数，指上市公司息税前利润相对于所需支付债务利息的倍数，可用来分析公司在一定盈利水平下支付债务利息的能力。
-        &#x0A;&#x0D;&#x0A;&#x0D;已获利息倍数＝息税前利润／所需支付债务利息">
-        <choice>净利润</choice>
-        <choice>利润总额</choice>
-        <choice>利息费用</choice>
-        <choice>息税前利润</choice>
-    </question>
-    <question title="某企业本年销售收入净额为20000元，应收账款周转次数为4次，则本年度应收账款平均余额为" answer="５０００元" note="应收账款平均余额 = 年度赊销净额 / 360 * 应收账款平均周转天数&#x0A;&#x0D;&#x0A;&#x0D;年度应收账款平均余额 = 年度赊销净额 / 应收账款平均周转天数">
-        <choice>５０００元</choice>
-        <choice>１００００元</choice>
-        <choice>２００００元</choice>
-        <choice>８００００元</choice>
-    </question>
+<question title="下列各项业务中，能够形成本企业与债务人之间财务关系的是" answer="企业购买其他公司发行的债券" note="">
+<choice>企业赊购产品</choice>
+<choice>企业归还所欠货款</choice>
+<choice>企业支付银行利息</choice>
+<choice>企业购买其他公司发行的债券</choice>
+</question>
+<question title="张先生2010年1月1日存入银行20000元，存期两年，单利计息，年利率为4％，则到期所得利息额为" answer="１６００元" note="f(A,i,n) = f(20000,4%,2)&#x0A;&#x0A;= (20000 x 4% ) x 2">
+<choice>４００元</choice>
+<choice>８００元</choice>
+<choice>１６００元</choice>
+<choice>２０００元</choice>
+</question>
+<question title="优先股有固定的股利收入，该收入作为年金来看是" answer="永续年金" note="1.普通年金（Ordinary Annuity）是指每期期末收付款项的年金, 例如采用直线法计提的单项固定资产的折旧（折旧总额会随着固定资产数量的变化而变化，不是年金，但就单项固定资产而言，其使用期内按直线法计提的折旧额是一定的）、一定期间的租金（租金不变期间）、每年员工的社会保险金（按月计算，每年7月1日到次年6月30日不变）、一定期间的贷款利息（即银行存贷款利率不变且存贷金额不变期间，如贷款金额在银行贷款利率不变期间有变化可以视为多笔年金）等。  &#x0A;&#x0A;2.先付年金（Annuity Due）是指每期期初收付款项的年金，例如先付钱后用餐的餐厅，每一道菜（包括米饭、面、饺子和馄饨等）分别出来之后都是先付年金。 &#x0A; &#x0A;3.递延年金（Deferred Annuity）是指在预备计算时尚未发生收付，但未来一定会发生若干期等额收付得年金， 一般是在金融理财和社保回馈方面会产生递延年金。递延年金在做投资或其他资本预算时具有相当可观的作用。 &#x0A; &#x0A;4.永续年金（Perpetual Annuity）即无限期连续收付款的年金， 最典型的就是诺贝尔奖金。">
+<choice>预付年金</choice>
+<choice>递延年金</choice>
+<choice>先付年金</choice>
+<choice>永续年金</choice>
+</question>
+<question title="从风险角度看，下列更接近于确定性投资的是" answer="购买国债" note="">
+<choice>投资办厂</choice>
+<choice>购买国债</choice>
+<choice>购买公司股票</choice>
+<choice>开发某地的金矿</choice>
+</question>
+<question title="下列各项中，导致长期借款资本成本低于普通股的主要原因是" answer="借款利息可在税前扣除" note="">
+<choice>借款数额有限</choice>
+<choice>借款筹资费用低</choice>
+<choice>借款限制条件少</choice>
+<choice>借款利息可在税前扣除</choice>
+</question>
+<question title="将企业抵押债券分为不动产抵押债券、动产抵押债券和证券抵押债券的依据是" answer="担保品的不同" note="">
+<choice>有无担保</choice>
+<choice>担保品的不同</choice>
+<choice>抵押金额的大小</choice>
+<choice>抵押品的担保顺序不同</choice>
+</question>
+<question title="假设某企业以“1／10，n／30”的信用条件购进一批材料，下列表述正确的是" answer="企业在１０天内付款可享受１％的现金折扣" note="">
+<choice>企业在１０天内付款可享受１％的现金折扣</choice>
+<choice>企业在３０天后付款可享受１％的现金折扣</choice>
+<choice>企业在１０至２０天内付款可享受１％的现金折扣</choice>
+<choice>企业在２０至３０天内付款可享受１％的现金折扣</choice>
+</question>
+<question title="企业为正常生产经营需要购买原材料而持有现金的动机属于" answer="支付动机" note="">
+<choice>支付动机</choice>
+<choice>投机动机</choice>
+<choice>预防动机</choice>
+<choice>保险动机</choice>
+</question>
+<question title="下列各项中，不属于企业应收账款成本内容的是" answer="短缺成本" note="应收账款的成本包括&#x0A;&#x0A;机会成本&#x0A;&#x0A;管理成本&#x0A;&#x0A;坏账成本。">
+<choice>机会成本</choice>
+<choice>管理成本</choice>
+<choice>短缺成本</choice>
+<choice>坏账成本</choice>
+</question>
+<question title="甲企业以控股为目的购买乙企业的股票，该投资属于" answer="间接投资" note="">
+<choice>债权投资</choice>
+<choice>直接投资</choice>
+<choice>间接投资</choice>
+<choice>短期投资</choice>
+</question>
+<question title="固定资产原始价值减去已提折旧后的净额称为" answer="固定资产的折余价值" note="">
+<choice>固定资产的重置价值</choice>
+<choice>固定资产的清算价值</choice>
+<choice>固定资产的折余价值</choice>
+<choice>固定资产的折旧价值</choice>
+</question>
+<question title="净现值与获利指数的共同之处是" answer="都必须按预定的贴现率计算现金流量的现值" note="">
+<choice>都是绝对数指标</choice>
+<choice>都没有考虑资金的时间价值因素</choice>
+<choice>都能反映单位投入与产出之间的关系</choice>
+<choice>都必须按预定的贴现率计算现金流量的现值</choice>
+</question>
+<question title="使用“5C”评估法评价客户信用时，需要考虑的首要因素是" answer="品质" note="">
+<choice>品质</choice>
+<choice>能力</choice>
+<choice>资本</choice>
+<choice>行情</choice>
+</question>
+<question title="与股票投资相比，下列属于债券投资特点的是" answer="投资收益相对稳定" note="">
+<choice>投资风险较大</choice>
+<choice>投资收益相对稳定</choice>
+<choice>投资收益率比较高</choice>
+<choice>无法事先预知投资收益水平</choice>
+</question>
+<question title="上市公司采用固定股利支付率政策的主要优点是" answer="股利支付与公司盈利密切相关" note="举一反三：&#x0A;&#x0A;能够使灵活性与稳定性较好结合的股利政策是—-低正常股利加额外股利政策">
+<choice>有利于公司股票价格的稳定</choice>
+<choice>股利支付与公司盈利密切相关</choice>
+<choice>有利于树立公司的良好形象</choice>
+<choice>有利于投资者安排收入与支出</choice>
+</question>
+<question title="下列关于本量利关系的表达式，正确的是" answer="利润=销售收入×边际贡献率—固定成本" note="边际贡献率——边际贡献在销售收入中所占的百分比。边际贡献率的公式为：&#x0A;&#x0A;边际贡献率=（边际贡献/销售收入）×100% &#x0A;&#x0A;边际贡献是管理会计中一个经常使用的十分重要的概念，它是指销售收入减去变动成本后的余额，不同于毛利.">
+<choice>利润=销售收入—变动成本</choice>
+<choice>利润=边际贡献—变动成本</choice>
+<choice>利润=销售收入×边际贡献率—固定成本</choice>
+<choice>利润=销售收入×单位边际贡献—变动成本</choice>
+</question>
+<question title="下列各项中，属于制定股利政策时应考虑的法律因素是" answer="资本保全约束" note="">
+<choice>资本保全约束</choice>
+<choice>现金流量约束</choice>
+<choice>资本成本约束</choice>
+<choice>投资机会约束</choice>
+</question>
+<question title="企业保持较高的现金比率，会带来的不利影响是" answer="机会成本的增加" note="">
+<choice>应收账款的增加</choice>
+<choice>坏账损失的增加</choice>
+<choice>存货购进的增加</choice>
+<choice>机会成本的增加</choice>
+</question>
+<question title="已获利息倍数计算公式的分子是" answer="息税前利润" note="已获利息倍数，指上市公司息税前利润相对于所需支付债务利息的倍数，可用来分析公司在一定盈利水平下支付债务利息的能力。&#x0A;&#x0A;&#x0A;已获利息倍数＝息税前利润／所需支付债务利息">
+<choice>净利润</choice>
+<choice>利润总额</choice>
+<choice>利息费用</choice>
+<choice>息税前利润</choice>
+</question>
+<question title="某企业本年销售收入净额为20000元，应收账款周转次数为4次，则本年度应收账款平均余额为" answer="５０００元" note="应收账款平均余额 = 年度赊销净额 / 360 * 应收账款平均周转天数&#x0A;&#x0A;年度应收账款平均余额 = 年度赊销净额 / 应收账款平均周转天数">
+<choice>５０００元</choice>
+<choice>１００００元</choice>
+<choice>２００００元</choice>
+<choice>８００００元</choice>
+</question>
 </root>

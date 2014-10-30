@@ -157,7 +157,7 @@
 }
 - (void)showAnswer
 {
-    NSUInteger max_height_answer = m_max_height_question;
+    NSUInteger max_height_answer = m_max_height_question+20;
     
     if (!m_isShowingAnswer)
     {

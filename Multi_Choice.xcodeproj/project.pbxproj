@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		1801B24319F0ADD400EDEC03 /* MultiChoiceDlg.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801B24219F0ADD400EDEC03 /* MultiChoiceDlg.m */; };
 		1801B24619F0BB3500EDEC03 /* CalcChoiceDLg.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801B24519F0BB3500EDEC03 /* CalcChoiceDLg.m */; };
+		180E1CCD1A012F0100C20A80 /* 2009_10_short_answer.xml in Resources */ = {isa = PBXBuildFile; fileRef = 180E1CC61A012F0100C20A80 /* 2009_10_short_answer.xml */; };
+		180E1CCE1A012F0100C20A80 /* 2010_10_short_answer.xml in Resources */ = {isa = PBXBuildFile; fileRef = 180E1CC71A012F0100C20A80 /* 2010_10_short_answer.xml */; };
+		180E1CCF1A012F0100C20A80 /* 2011_10_short_answer.xml in Resources */ = {isa = PBXBuildFile; fileRef = 180E1CC81A012F0100C20A80 /* 2011_10_short_answer.xml */; };
+		180E1CD01A012F0100C20A80 /* 2012_10_short_answer.xml in Resources */ = {isa = PBXBuildFile; fileRef = 180E1CC91A012F0100C20A80 /* 2012_10_short_answer.xml */; };
+		180E1CD11A012F0100C20A80 /* 2013_01_short_answer.xml in Resources */ = {isa = PBXBuildFile; fileRef = 180E1CCA1A012F0100C20A80 /* 2013_01_short_answer.xml */; };
+		180E1CD21A012F0100C20A80 /* 2013_10_short_answer.xml in Resources */ = {isa = PBXBuildFile; fileRef = 180E1CCB1A012F0100C20A80 /* 2013_10_short_answer.xml */; };
+		180E1CD31A012F0100C20A80 /* 2014_04_short_answer.xml in Resources */ = {isa = PBXBuildFile; fileRef = 180E1CCC1A012F0100C20A80 /* 2014_04_short_answer.xml */; };
 		180E3B8419E28C9E0028B7A6 /* AbstractViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E3B8319E28C9E0028B7A6 /* AbstractViewController.m */; };
 		180E3B8919E292520028B7A6 /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 180E3B8619E292520028B7A6 /* SVProgressHUD.bundle */; };
 		180E3B8A19E292520028B7A6 /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E3B8819E292520028B7A6 /* SVProgressHUD.m */; settings = {COMPILER_FLAGS = "-fobjc-arc"; }; };
@@ -61,6 +68,7 @@
 		18EA970819CF224E006E60EF /* ModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA970719CF224E006E60EF /* ModelData.m */; };
 		18EC953719E38E79002515DE /* DialogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC953619E38E79002515DE /* DialogUtil.m */; };
 		18ECDCF619E57F5E00A00BE1 /* VersionCheckTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECDCF519E57F5E00A00BE1 /* VersionCheckTool.m */; };
+		18EE302D1A028265005D1DCA /* UIButtonExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EE302C1A028265005D1DCA /* UIButtonExt.m */; };
 		18F701DC19AA1133005E0361 /* UILabelExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F701DB19AA1133005E0361 /* UILabelExt.m */; };
 		18F701E019AA406E005E0361 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F701DF19AA406E005E0361 /* RootViewController.m */; };
 		18F7744319AB8C2100D5F3FD /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7744219AB8C2100D5F3FD /* Util.m */; };
@@ -82,6 +90,13 @@
 		1801B24219F0ADD400EDEC03 /* MultiChoiceDlg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiChoiceDlg.m; sourceTree = "<group>"; };
 		1801B24419F0BB3500EDEC03 /* CalcChoiceDLg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcChoiceDLg.h; sourceTree = "<group>"; };
 		1801B24519F0BB3500EDEC03 /* CalcChoiceDLg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcChoiceDLg.m; sourceTree = "<group>"; };
+		180E1CC61A012F0100C20A80 /* 2009_10_short_answer.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2009_10_short_answer.xml; sourceTree = "<group>"; };
+		180E1CC71A012F0100C20A80 /* 2010_10_short_answer.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2010_10_short_answer.xml; sourceTree = "<group>"; };
+		180E1CC81A012F0100C20A80 /* 2011_10_short_answer.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2011_10_short_answer.xml; sourceTree = "<group>"; };
+		180E1CC91A012F0100C20A80 /* 2012_10_short_answer.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2012_10_short_answer.xml; sourceTree = "<group>"; };
+		180E1CCA1A012F0100C20A80 /* 2013_01_short_answer.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2013_01_short_answer.xml; sourceTree = "<group>"; };
+		180E1CCB1A012F0100C20A80 /* 2013_10_short_answer.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2013_10_short_answer.xml; sourceTree = "<group>"; };
+		180E1CCC1A012F0100C20A80 /* 2014_04_short_answer.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2014_04_short_answer.xml; sourceTree = "<group>"; };
 		180E3B8219E28C9E0028B7A6 /* AbstractViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractViewController.h; sourceTree = "<group>"; };
 		180E3B8319E28C9E0028B7A6 /* AbstractViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractViewController.m; sourceTree = "<group>"; };
 		180E3B8619E292520028B7A6 /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
@@ -158,6 +173,8 @@
 		18EC953619E38E79002515DE /* DialogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialogUtil.m; sourceTree = "<group>"; };
 		18ECDCF419E57F5E00A00BE1 /* VersionCheckTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionCheckTool.h; sourceTree = "<group>"; };
 		18ECDCF519E57F5E00A00BE1 /* VersionCheckTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionCheckTool.m; sourceTree = "<group>"; };
+		18EE302B1A028265005D1DCA /* UIButtonExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonExt.h; sourceTree = "<group>"; };
+		18EE302C1A028265005D1DCA /* UIButtonExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonExt.m; sourceTree = "<group>"; };
 		18F701DA19AA1133005E0361 /* UILabelExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelExt.h; sourceTree = "<group>"; };
 		18F701DB19AA1133005E0361 /* UILabelExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelExt.m; sourceTree = "<group>"; };
 		18F701DE19AA406E005E0361 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RootViewController.h; path = UI/RootViewController.h; sourceTree = "<group>"; };
@@ -206,6 +223,13 @@
 		188D2DB919DBAF25009D45E2 /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				180E1CC61A012F0100C20A80 /* 2009_10_short_answer.xml */,
+				180E1CC71A012F0100C20A80 /* 2010_10_short_answer.xml */,
+				180E1CC81A012F0100C20A80 /* 2011_10_short_answer.xml */,
+				180E1CC91A012F0100C20A80 /* 2012_10_short_answer.xml */,
+				180E1CCA1A012F0100C20A80 /* 2013_01_short_answer.xml */,
+				180E1CCB1A012F0100C20A80 /* 2013_10_short_answer.xml */,
+				180E1CCC1A012F0100C20A80 /* 2014_04_short_answer.xml */,
 				181ACD8A19F0993A00A5EC6A /* 2011_10_35_2_320.png */,
 				182CAB9C19ED679400C02B68 /* 2013_10_calc.xml */,
 				188D2DBA19DBAF25009D45E2 /* 2009_10.xml */,
@@ -373,6 +397,8 @@
 				1801B24219F0ADD400EDEC03 /* MultiChoiceDlg.m */,
 				1801B24419F0BB3500EDEC03 /* CalcChoiceDLg.h */,
 				1801B24519F0BB3500EDEC03 /* CalcChoiceDLg.m */,
+				18EE302B1A028265005D1DCA /* UIButtonExt.h */,
+				18EE302C1A028265005D1DCA /* UIButtonExt.m */,
 			);
 			name = Custom;
 			path = Multi_Choice/Custom;
@@ -460,17 +486,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				180E1CCE1A012F0100C20A80 /* 2010_10_short_answer.xml in Resources */,
 				18B3A7C019BDB96800A4B068 /* Icon.png in Resources */,
 				18B3A7C119BDB96800A4B068 /* Icon@2x.png in Resources */,
+				180E1CD21A012F0100C20A80 /* 2013_10_short_answer.xml in Resources */,
 				180E3B8919E292520028B7A6 /* SVProgressHUD.bundle in Resources */,
+				180E1CD01A012F0100C20A80 /* 2012_10_short_answer.xml in Resources */,
 				188D2DC319DBAF25009D45E2 /* 2011_10.xml in Resources */,
 				18E7B03819A7770300092469 /* Images.xcassets in Resources */,
 				188D2DC519DBAF25009D45E2 /* 2013_01.xml in Resources */,
+				180E1CCD1A012F0100C20A80 /* 2009_10_short_answer.xml in Resources */,
 				18B3A7C319BDBA0C00A4B068 /* Default@2x.png in Resources */,
 				188D2DC619DBAF25009D45E2 /* 2013_10.xml in Resources */,
 				18E7B02A19A7770300092469 /* InfoPlist.strings in Resources */,
 				188D2DC219DBAF25009D45E2 /* 2010_10.xml in Resources */,
 				188D2DC419DBAF25009D45E2 /* 2012_10.xml in Resources */,
+				180E1CD31A012F0100C20A80 /* 2014_04_short_answer.xml in Resources */,
+				180E1CD11A012F0100C20A80 /* 2013_01_short_answer.xml in Resources */,
+				180E1CCF1A012F0100C20A80 /* 2011_10_short_answer.xml in Resources */,
 				189F11BE19E3F1F600394747 /* Icon-120.png in Resources */,
 				18E7B03319A7770300092469 /* Main.storyboard in Resources */,
 				181ACD8B19F0993A00A5EC6A /* 2011_10_35_2_320.png in Resources */,
@@ -511,6 +544,7 @@
 				182CABA319ED695500C02B68 /* XMLCalcHelper.m in Sources */,
 				18E7B03019A7770300092469 /* AppDelegate.m in Sources */,
 				182CABA619ED699200C02B68 /* XMLCalcElement.m in Sources */,
+				18EE302D1A028265005D1DCA /* UIButtonExt.m in Sources */,
 				18F701E019AA406E005E0361 /* RootViewController.m in Sources */,
 				18E7B05719A7794600092469 /* XMLElement.m in Sources */,
 				18E7B02C19A7770300092469 /* main.m in Sources */,

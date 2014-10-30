@@ -22,7 +22,7 @@
 -(void) load:(NSString*) fileName
 {
     NSString* result = [[NSBundle mainBundle] pathForResource:fileName ofType:@"xml"];
-    NSLogExt(@"filename=%@",fileName)
+  //  NSLogExt(@"filename=%@",fileName)
     NSData *data = [[NSData alloc]initWithContentsOfFile:result];
     
     self.parser = [[NSXMLParser alloc]initWithData:data];
@@ -139,7 +139,7 @@
     NSMutableArray *questions_tmp = [[NSMutableArray alloc] init];
     NSUInteger *randnum_questions= [Util getRandomNumOfOut:numOfQuestions NumOfIn:count];
  
-    NSLogExt(@"count=%i",count);
+   // NSLogExt(@"count=%i",count);
 
     // Random the questions
     for (int i=0; i<numOfQuestions; ++i) {
@@ -180,7 +180,7 @@
 -(void)parserDidStartDocument:(NSXMLParser *)parser
 
 {
-    NSLogExt(@"parserDidStartDocument");
+    //NSLogExt(@"parserDidStartDocument");
     self.rootElement = nil;
     
     self.currentElementPointer = nil;
@@ -191,7 +191,7 @@
 -(void)parserDidEndDocument:(NSXMLParser *)parser
 
 {
-    NSLogExt(@"parserDidEndDocument");
+    //NSLogExt(@"parserDidEndDocument");
     self.currentElementPointer = nil;
     
 }

@@ -20,7 +20,7 @@
         m_prefix=@"";
         m_text = @"";
         m_IsSelected = NO;
-        NSLogExt(@"initWithCoder");
+      //  NSLogExt(@"initWithCoder");
     }
     return self;
 }
