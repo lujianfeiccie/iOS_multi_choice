@@ -57,7 +57,7 @@
 		18E7B02C19A7770300092469 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7B02B19A7770300092469 /* main.m */; };
 		18E7B03019A7770300092469 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7B02F19A7770300092469 /* AppDelegate.m */; };
 		18E7B03319A7770300092469 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18E7B03119A7770300092469 /* Main.storyboard */; };
-		18E7B03619A7770300092469 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7B03519A7770300092469 /* ViewController.m */; };
+		18E7B03619A7770300092469 /* MultiChoiceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18E7B03519A7770300092469 /* MultiChoiceViewController.m */; };
 		18E7B03819A7770300092469 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18E7B03719A7770300092469 /* Images.xcassets */; };
 		18E7B03F19A7770300092469 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E7B03E19A7770300092469 /* XCTest.framework */; };
 		18E7B04019A7770300092469 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18E7B01F19A7770300092469 /* Foundation.framework */; };
@@ -68,6 +68,7 @@
 		18EA970819CF224E006E60EF /* ModelData.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EA970719CF224E006E60EF /* ModelData.m */; };
 		18EC953719E38E79002515DE /* DialogUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EC953619E38E79002515DE /* DialogUtil.m */; };
 		18ECDCF619E57F5E00A00BE1 /* VersionCheckTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18ECDCF519E57F5E00A00BE1 /* VersionCheckTool.m */; };
+		18EDD5C81A0480D0002702BC /* MultChoiceDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EDD5C71A0480D0002702BC /* MultChoiceDetailViewController.m */; };
 		18EE302D1A028265005D1DCA /* UIButtonExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 18EE302C1A028265005D1DCA /* UIButtonExt.m */; };
 		18F701DC19AA1133005E0361 /* UILabelExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F701DB19AA1133005E0361 /* UILabelExt.m */; };
 		18F701E019AA406E005E0361 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F701DF19AA406E005E0361 /* RootViewController.m */; };
@@ -157,8 +158,8 @@
 		18E7B02E19A7770300092469 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18E7B02F19A7770300092469 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		18E7B03219A7770300092469 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		18E7B03419A7770300092469 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		18E7B03519A7770300092469 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		18E7B03419A7770300092469 /* MultiChoiceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MultiChoiceViewController.h; sourceTree = "<group>"; };
+		18E7B03519A7770300092469 /* MultiChoiceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MultiChoiceViewController.m; sourceTree = "<group>"; };
 		18E7B03719A7770300092469 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		18E7B03D19A7770300092469 /* Multi_ChoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Multi_ChoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18E7B03E19A7770300092469 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -173,6 +174,8 @@
 		18EC953619E38E79002515DE /* DialogUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DialogUtil.m; sourceTree = "<group>"; };
 		18ECDCF419E57F5E00A00BE1 /* VersionCheckTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VersionCheckTool.h; sourceTree = "<group>"; };
 		18ECDCF519E57F5E00A00BE1 /* VersionCheckTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VersionCheckTool.m; sourceTree = "<group>"; };
+		18EDD5C61A0480D0002702BC /* MultChoiceDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultChoiceDetailViewController.h; sourceTree = "<group>"; };
+		18EDD5C71A0480D0002702BC /* MultChoiceDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultChoiceDetailViewController.m; sourceTree = "<group>"; };
 		18EE302B1A028265005D1DCA /* UIButtonExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIButtonExt.h; sourceTree = "<group>"; };
 		18EE302C1A028265005D1DCA /* UIButtonExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIButtonExt.m; sourceTree = "<group>"; };
 		18F701DA19AA1133005E0361 /* UILabelExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelExt.h; sourceTree = "<group>"; };
@@ -297,8 +300,8 @@
 				18E7B02E19A7770300092469 /* AppDelegate.h */,
 				18E7B02F19A7770300092469 /* AppDelegate.m */,
 				18E7B03119A7770300092469 /* Main.storyboard */,
-				18E7B03419A7770300092469 /* ViewController.h */,
-				18E7B03519A7770300092469 /* ViewController.m */,
+				18E7B03419A7770300092469 /* MultiChoiceViewController.h */,
+				18E7B03519A7770300092469 /* MultiChoiceViewController.m */,
 				18E7B03719A7770300092469 /* Images.xcassets */,
 				18E7B02619A7770300092469 /* Supporting Files */,
 				18B3A7C419BDBAB300A4B068 /* AboutDlgViewController.h */,
@@ -309,6 +312,8 @@
 				182CAB9F19ED680600C02B68 /* CalcViewController.m */,
 				18E04A0B19F696D800294821 /* SearchViewController.h */,
 				18E04A0C19F696D800294821 /* SearchViewController.m */,
+				18EDD5C61A0480D0002702BC /* MultChoiceDetailViewController.h */,
+				18EDD5C71A0480D0002702BC /* MultChoiceDetailViewController.m */,
 			);
 			path = Multi_Choice;
 			sourceTree = "<group>";
@@ -540,12 +545,13 @@
 				18E04A0D19F696D800294821 /* SearchViewController.m in Sources */,
 				18A33D9819E254D800F40ADF /* FeedbackViewController.m in Sources */,
 				1814AE4219E3CF22004422C3 /* UserInfo.m in Sources */,
-				18E7B03619A7770300092469 /* ViewController.m in Sources */,
+				18E7B03619A7770300092469 /* MultiChoiceViewController.m in Sources */,
 				182CABA319ED695500C02B68 /* XMLCalcHelper.m in Sources */,
 				18E7B03019A7770300092469 /* AppDelegate.m in Sources */,
 				182CABA619ED699200C02B68 /* XMLCalcElement.m in Sources */,
 				18EE302D1A028265005D1DCA /* UIButtonExt.m in Sources */,
 				18F701E019AA406E005E0361 /* RootViewController.m in Sources */,
+				18EDD5C81A0480D0002702BC /* MultChoiceDetailViewController.m in Sources */,
 				18E7B05719A7794600092469 /* XMLElement.m in Sources */,
 				18E7B02C19A7770300092469 /* main.m in Sources */,
 				180E3B8A19E292520028B7A6 /* SVProgressHUD.m in Sources */,

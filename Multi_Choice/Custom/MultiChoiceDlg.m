@@ -10,7 +10,9 @@
 #import "PlatformUtil.h"
 @implementation MultiChoiceDlg
 @synthesize m_title;
-
+@synthesize m_questions;
+@synthesize m_bShowSearchDetail;
+@synthesize m_currentIndex;
 -(id) initWithView : (UIView*) view DisplayRect : (CGRect) rect DataFile : (NSString*) filename
 {
     if (self = [super init])
@@ -18,35 +20,41 @@
         m_view = view;
         m_rect = rect;
         m_filename = filename;
+        m_bShowSearchDetail = NO;
+        m_currentIndex = 0;
     }
     return  self;
 }
 
 -(void) load
 {
-    m_xmlHelper = [[XMLHelper alloc]init];
-    m_xmlHelper.m_random = YES;
-    
-    if([m_filename isEqualToString:@"all"])
+    if(!m_bShowSearchDetail)
     {
-        [m_xmlHelper loadMultiple:20:@"2009_10",
-         @"2010_10",
-         @"2011_10",
-         @"2012_10",
-         @"2013_01",
-         @"2013_10",
-         @"2014_04",nil];
-        //        return;
+        m_xmlHelper = [[XMLHelper alloc]init];
+        m_xmlHelper.m_random = YES;
+        
+        if([m_filename isEqualToString:@"all"])
+        {
+            [m_xmlHelper loadMultiple:20:@"2009_10",
+             @"2010_10",
+             @"2011_10",
+             @"2012_10",
+             @"2013_01",
+             @"2013_10",
+             @"2014_04",nil];
+            //        return;
+        }
+        else
+        {
+            [m_xmlHelper load:m_filename];
+        }
+       
+        m_questions = [[m_xmlHelper rootElement] m_subElements];
     }
-    else
-    {
-        [m_xmlHelper load:m_filename];
-    }
-    
-    m_currentIndex = 0;
-    
-    m_questions = [[m_xmlHelper rootElement] m_subElements];
+ 
     m_count = [m_questions count];
+    
+  
     
     
     m_lbl_title   = [[UILabel alloc]init];
@@ -300,11 +308,39 @@
 }
 -(void) next
 {
+    m_count = [m_questions count];
     if (m_currentIndex < m_count-1)
     {
         ++m_currentIndex;
         [self updateQuestionView];
     }
+}
+-(void) showAnswer
+{
+     m_str_answer = [[m_questions objectAtIndex:m_currentIndex] m_answer];
+    
+    if ([[m_lbl_choice1 getTextExt] isEqualToString:m_str_answer])
+    {
+        [m_lbl_choice1 setRight];
+    }
+    if ([[m_lbl_choice2 getTextExt] isEqualToString:m_str_answer])
+    {
+        [m_lbl_choice2 setRight];
+    }
+    if ([[m_lbl_choice3 getTextExt] isEqualToString:m_str_answer])
+    {
+        [m_lbl_choice3 setRight];
+    }
+    if ([[m_lbl_choice4 getTextExt] isEqualToString:m_str_answer])
+    {
+        [m_lbl_choice4 setRight];
+    }
+   // if([[m_questions objectAtIndex:m_currentIndex] m_selected]!=-1){
+        //Have selected
+    [m_lbl_note setHidden:NO];
+        m_scrollview.contentSize = CGSizeMake(m_view.frame.size.width, m_lbl_note.frame.origin.y+m_lbl_note.frame.size.height);
+        
+  //  }
 }
 - (void)dealloc {
     NSLogExt(@"dealloc");

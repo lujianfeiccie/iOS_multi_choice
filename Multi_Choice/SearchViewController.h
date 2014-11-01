@@ -11,6 +11,7 @@
 @interface SearchViewController : AbstractViewController<UITableViewDataSource,UITableViewDelegate>
 {
     UITableView* m_tableview;
+     AppDelegate* app;
 }
 @property(nonatomic,retain) NSMutableArray* m_array_list;
 @end

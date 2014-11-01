@@ -11,7 +11,7 @@
 #import "UILabelExt.h"*/
 #import "AppDelegate.h"
 #import "MultiChoiceDlg.h"
-@interface ViewController : AbstractViewController
+@interface MultiChoiceViewController : AbstractViewController
 {
     
     AppDelegate *app;

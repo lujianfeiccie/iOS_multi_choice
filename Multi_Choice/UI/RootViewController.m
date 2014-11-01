@@ -7,7 +7,7 @@
 //
 
 #import "RootViewController.h"
-#import "ViewController.h"
+#import "MultiChoiceViewController.h"
 #import "ModelData.h"
 #import "SearchViewController.h"
 @interface RootViewController ()
@@ -31,7 +31,7 @@
 
 -(void) toolBarRight
 {
-    ViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"about_view"];
+    UIViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"about_view"];
     [app.navController pushViewController:next animated:YES];
 }
 - (void)viewDidLoad
@@ -91,7 +91,7 @@
     [m_tableview_list setFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,[UIScreen mainScreen].bounds.size.height-self.navigationController.navigationBar.frame.size.height)];
 
   
-   // self.navigationItem.leftBarButtonItem = [ButtonUtil createToolBarButton:@"搜索" target:self action:@selector(toolBarLeft)];
+    self.navigationItem.leftBarButtonItem = [ButtonUtil createToolBarButton:@"本地搜索" target:self action:@selector(toolBarLeft)];
     self.navigationItem.rightBarButtonItem = [ButtonUtil createToolBarButton:@"关于" target:self action:@selector(toolBarRight)];
     
     m_tableview_list.delegate = self;
@@ -154,7 +154,7 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     NSUInteger row = [indexPath row];
     
-   ViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"question_view"];
+   MultiChoiceViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"question_view"];
    next.m_filename = ((ModelData*)[m_datalist objectAtIndex:row]).m_value;
    next.m_title = ((ModelData*)[m_datalist objectAtIndex:row]).m_text;
    [[app navController] pushViewController:next animated:YES];
@@ -214,20 +214,31 @@
 -(void) threadSearch :(NSString*) keywords
 {
     
-    XMLHelper* xmlHelper2014_04 = [[XMLHelper alloc]init];
+    XMLHelper* xmlHelper = [[XMLHelper alloc]init];
     
-    [xmlHelper2014_04 load:@"2014_04"];
 
-    NSMutableArray* questions = [[xmlHelper2014_04 rootElement] m_subElements];
     NSMutableArray* results = [[NSMutableArray alloc]init];
-    for (XMLElement* question in questions)
+    
+    ///////////////////For 2014////////////////
+    NSArray* mutli_question_filename = [NSArray arrayWithObjects:@"2014_04",
+                         @"2013_10",nil];
+    
+    for (NSString* filename in mutli_question_filename)
     {
-        if ([question.m_title containsString:keywords])
+        [xmlHelper load:filename];
+        NSMutableArray* questions = [[xmlHelper rootElement] m_subElements];
+        
+        for (XMLElement* question in questions)
         {
-            NSLogExt(@"keywords=%@ title=%@",keywords,question.m_title);
-            [results addObject:question];
+            if ([question.m_title containsString:keywords])
+            {
+                //    NSLogExt(@"keywords=%@ title=%@",keywords,question.m_title);
+                [results addObject:question];
+            }
         }
+
     }
+    
     [SVProgressHUD dismiss];
     if ([results count]==0)
     {

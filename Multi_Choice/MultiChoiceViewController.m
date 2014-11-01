@@ -6,14 +6,14 @@
 //  Copyright (c) 2014年 Apple. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "MultiChoiceViewController.h"
 #import "CalcViewController.h"
 
-@interface ViewController ()
+@interface MultiChoiceViewController ()
 
 @end
 
-@implementation ViewController
+@implementation MultiChoiceViewController
 @synthesize m_filename;
 @synthesize m_title;
 
@@ -33,7 +33,7 @@
     }
     else
     {
-        ViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"calc_view"];
+        UIViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"calc_view"];
         
        ((CalcViewController*)next).m_filename=tmp_filename;
         ((CalcViewController*)next).m_title= tmp_title;
@@ -51,12 +51,13 @@
     self.navigationItem.rightBarButtonItem = [ButtonUtil createToolBarButton:@"简答题" target:self action:@selector(toolBarRight)];
     
     m_dlg = [[ MultiChoiceDlg alloc]initWithView:self.view
-    DisplayRect:CGRectMake(0, 0,
-        self.view.frame.size.width,
-        self.view.frame.size.height-m_btn_next.frame.size.height-self.navigationController.navigationBar.frame.size.height-20)
-    DataFile:m_filename];
-
+                                     DisplayRect:CGRectMake(0, 0,
+                                                            self.view.frame.size.width,
+                                                            self.view.frame.size.height-m_btn_next.frame.size.height-self.navigationController.navigationBar.frame.size.height-20)
+                                        DataFile:m_filename];
+    
     [m_dlg load];
+    
 }
 - (void)viewDidLayoutSubviews{
     [super viewDidLayoutSubviews];

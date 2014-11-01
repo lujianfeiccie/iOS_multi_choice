@@ -32,7 +32,7 @@
         m_prefix = @"";
         m_text =@"";
         m_IsSelected = NO;
-        NSLogExt(@"initWithFrame");
+       // NSLogExt(@"initWithFrame");
     }
     return self;
 }

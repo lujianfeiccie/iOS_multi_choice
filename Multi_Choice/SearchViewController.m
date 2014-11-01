@@ -8,6 +8,7 @@
 
 #import "SearchViewController.h"
 #import "XMLElement.h"
+#import "MultChoiceDetailViewController.h"
 @interface SearchViewController ()
 
 @end
@@ -24,6 +25,7 @@
     
     m_tableview.dataSource = self;
     m_tableview.delegate = self;
+     app = [[UIApplication sharedApplication]delegate];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -78,6 +80,33 @@
     CGFloat height = 80.0f;
     return height;
 }
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    NSUInteger section = [indexPath section];
+    NSUInteger row = [indexPath row];
+    
+    NSMutableArray* questions= [m_array_list objectAtIndex:section];
+    
+    switch (section) {
+        case 0:
+        {
+            //Multi Choice
+           //NSString* title = [[questions objectAtIndex:row] m_title];
+           // NSString* answer= [[questions objectAtIndex:row] m_answer];
+        MultChoiceDetailViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"multi_choice_detail"];
+
+            next.m_array_detail = questions;
+            next.m_currentIndex = row;
+            [app.navController pushViewController:next animated:YES];
+        }
+            break;
+            
+        default:
+            break;
+    }
+    NSLogExt(@"section=%i\trow=%i",section,row);
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

@@ -8,6 +8,7 @@
 
 #import "CalcChoiceDLg.h"
 #import "Util.h"
+#import "NSLogExt.h"
 @implementation CalcChoiceDLg
 
 -(id) initWithView : (UIView*) view DisplayRect : (CGRect) rect DataFile : (NSString*) filename
@@ -95,7 +96,7 @@
             {
                 lbl_item.text = [item m_value];
                 [Util setLabelToAutoSize:lbl_item];
-                [m_scrollview addSubview:lbl_item];
+               
                 
             }
             else if ([[item m_elementName] isEqualToString:@"image"])
@@ -104,13 +105,21 @@
                 UIColor *color = [UIColor colorWithPatternImage:itemBgImage];
                 [lbl_item setFrame:CGRectMake(0, 0, itemBgImage.size.width, itemBgImage.size.height)];
                 lbl_item.backgroundColor = color;
-                [m_scrollview addSubview:lbl_item];
+              
             }
             else
             {
                 
                 return;
             }
+            if (i==0) //Show question no
+            {
+                NSString *questionNo = [NSString stringWithFormat:@"(%li/%li)",m_current_index+1,[m_questions count]];
+        //        NSLogExt(questionNo);
+              lbl_item.text = [lbl_item.text stringByAppendingString:questionNo];
+                  [Util setLabelToAutoSize:lbl_item];
+            }
+            [m_scrollview addSubview:lbl_item];
             [lbl_item setFrame:CGRectMake(0, m_max_height_question, lbl_item.frame.size.width, lbl_item.frame.size.height)];
             m_max_height_question = lbl_item.frame.origin.y + lbl_item.frame.size.height;
         }
