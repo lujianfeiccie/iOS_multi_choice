@@ -81,7 +81,7 @@
     NSMutableArray *question = [m_array_lablel_questions objectAtIndex:m_current_index];
     [m_array_lablel_answers removeAllObjects];
     
-    m_max_height_question = 0 ;
+    m_max_height_question = 20 ;
     
     for (id obj in m_scrollview.subviews)
     {
@@ -123,7 +123,7 @@
             }
             if (i==0) //Show question no
             {
-                NSString *questionNo = [NSString stringWithFormat:@"(%i/%li)",m_current_index+1,(unsigned long)[m_questions count]];
+                NSString *questionNo = [NSString stringWithFormat:@"(%li/%li)",m_current_index+1,(unsigned long)[m_questions count]];
         //        NSLogExt(questionNo);
               lbl_item.text = [lbl_item.text stringByAppendingString:questionNo];
                   [Util setLabelToAutoSize:lbl_item];

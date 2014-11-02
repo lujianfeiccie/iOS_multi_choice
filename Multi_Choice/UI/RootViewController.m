@@ -289,9 +289,14 @@
         return;
     }
     NSMutableArray* results_total = [[NSMutableArray alloc]init];
-    [results_total addObject:results_multi_choice];//0 for multi choice
-    [results_total addObject:results_short_answer];//1 for short answer
-   
+    if([results_multi_choice count]!=0)
+    {
+         [results_total addObject:results_multi_choice];//0 for multi choice
+    }
+    if ([results_short_answer count]!=0)
+    {
+         [results_total addObject:results_short_answer];//1 for short answer
+    }
     
     SearchViewController* search_view =[[self storyboard] instantiateViewControllerWithIdentifier:@"search_view"];
     search_view.m_array_list = results_total;

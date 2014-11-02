@@ -54,36 +54,46 @@
                 initWithStyle:UITableViewCellStyleDefault
                 reuseIdentifier:GroupedTableIdentifier];
     }
-    switch (section) {
+    id question = [questions objectAtIndex:row];
+    
+    if ([question isKindOfClass:XMLElement.class])
+    {
+        cell.textLabel.text = ((XMLElement*)[questions objectAtIndex:row]).m_title;
+        cell.textLabel.numberOfLines = 2;
+        NSLogExt(@"Multi choice");
+    }
+    else if ([question isKindOfClass:XMLCalcElement.class])
+    {
+        XMLCalcElement* obj =[questions objectAtIndex:row];
+        NSUInteger count_items = [obj.m_subElements count];
+        NSString* titleForQuestion = @"";
+        for (NSUInteger j=0; j<count_items; j++)  //num of items in each question
+        {
+            XMLCalcElement* item = [obj.m_subElements objectAtIndex:j];
+            if ([item.m_tag isEqualToString:@"question"])
+            {
+                titleForQuestion = [titleForQuestion stringByAppendingString:item.m_value];
+            }
+        }
+        
+        cell.textLabel.text = titleForQuestion;
+        cell.textLabel.numberOfLines = 5;
+
+        NSLogExt(@"Calc");
+    }
+   /* switch (section) {
         case 0:
         {
-         cell.textLabel.text = ((XMLElement*)[questions objectAtIndex:row]).m_title;
-                cell.textLabel.numberOfLines = 2;
-        }
+                 }
             break;
         case 1:
         {
-            XMLCalcElement* obj =[questions objectAtIndex:row];
-            NSUInteger count_items = [obj.m_subElements count];
-            NSString* titleForQuestion = @"";
-            for (NSUInteger j=0; j<count_items; j++)  //num of items in each question
-            {
-                XMLCalcElement* item = [obj.m_subElements objectAtIndex:j];
-                if ([item.m_tag isEqualToString:@"question"])
-                {
-                   titleForQuestion = [titleForQuestion stringByAppendingString:item.m_value];
-                }
-            }
-
-            cell.textLabel.text = titleForQuestion;
-            cell.textLabel.numberOfLines = 5;
-        }
+                    }
             break;
         default:
             break;
     }
-
-
+*/
     cell.backgroundColor = GLOBAL_BGColor;
    
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
@@ -93,20 +103,24 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     NSString *title=@"";
-    switch (section) {
-        case 0:
-            title=@"选择题";
-            break;
-        case 1:
-            title=@"简答题";
-            break;
-        case 2:
-            title=@"计算题";
-            break;
-        default:
-            break;
+    
+    NSMutableArray* questions = [m_array_list objectAtIndex:section];
+    
+    id question=nil;
+    
+    if ([questions count]>0) {
+        question = [questions objectAtIndex:0];
     }
-    return title;
+    
+    if ([question isKindOfClass:XMLElement.class])
+    {
+       title = @"选择题";
+    }
+    else if ([question isKindOfClass:XMLCalcElement.class])
+    {
+       title = @"简答题";
+    }
+     return title;
 }
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -120,35 +134,29 @@
     
     NSMutableArray* questions= [m_array_list objectAtIndex:section];
     
-    switch (section) {
-        case 0:
-        {
-            //Multi Choice
-           //NSString* title = [[questions objectAtIndex:row] m_title];
-           // NSString* answer= [[questions objectAtIndex:row] m_answer];
+    id question = [questions objectAtIndex:row];
+    
+    if ([question isKindOfClass:XMLElement.class])
+    {
         MultChoiceDetailViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"multi_choice_detail"];
+        
+        next.m_array_detail = questions;
+        next.m_currentIndex = row;
+        next.m_title = @"选择题搜索结果";
+        [app.navController pushViewController:next animated:YES];
 
-            next.m_array_detail = questions;
-            next.m_currentIndex = row;
-            next.m_title = @"选择题搜索结果";
-            [app.navController pushViewController:next animated:YES];
-        }
-            break;
-        case 1:
-        {
-            CalcDetailViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"calc_detail_view"];
-            
-            next.m_array_detail = questions;
-            next.m_currentIndex = row;
-            next.m_title = @"简答题搜索结果";
-            [app.navController pushViewController:next animated:YES];
-
-        }
-            break;
-        default:
-            break;
     }
-    NSLogExt(@"section=%i\trow=%i",section,row);
+    else if ([question isKindOfClass:XMLCalcElement.class])
+    {
+        CalcDetailViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"calc_detail_view"];
+        
+        next.m_array_detail = questions;
+        next.m_currentIndex = row;
+        next.m_title = @"简答题搜索结果";
+        [app.navController pushViewController:next animated:YES];
+
+    }
+  //  NSLogExt(@"section=%i\trow=%i",section,row);
 }
 
 
