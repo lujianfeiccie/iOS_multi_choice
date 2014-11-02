@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="84K-cl-1EO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="84K-cl-1EO">
     <dependencies>
-        <deployment defaultVersion="1808" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
@@ -97,6 +96,48 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0Iv-PL-vwy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-242" y="1076"/>
+        </scene>
+        <!--Calc Detail View Controller-->
+        <scene sceneID="0Tz-59-vce">
+            <objects>
+                <viewController storyboardIdentifier="calc_detail_view" id="tPY-Op-bSY" customClass="CalcDetailViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8T5-w8-5O7"/>
+                        <viewControllerLayoutGuide type="bottom" id="RKz-wn-2Ea"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="FLt-bK-79H">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9G0-yH-idY">
+                                <rect key="frame" x="167" y="399" width="110" height="50"/>
+                                <state key="normal" title="下一个">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onNextClick:" destination="tPY-Op-bSY" eventType="touchUpInside" id="dwS-VF-9dJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Pl-el-RFk">
+                                <rect key="frame" x="16" y="399" width="110" height="50"/>
+                                <state key="normal" title="上一个">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="onPrevClick:" destination="tPY-Op-bSY" eventType="touchUpInside" id="5Wu-D6-WTS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="m_btn_next" destination="9G0-yH-idY" id="vJG-8B-Q40"/>
+                        <outlet property="m_btn_prev" destination="2Pl-el-RFk" id="TKr-Q7-yjn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3hh-Zv-nOS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242" y="1716"/>
         </scene>
         <!--Multi Choice View Controller-->
         <scene sceneID="ufC-wZ-h7g">

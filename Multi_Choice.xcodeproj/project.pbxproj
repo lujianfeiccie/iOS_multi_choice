@@ -28,6 +28,7 @@
 		182CABA019ED680600C02B68 /* CalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CAB9F19ED680600C02B68 /* CalcViewController.m */; };
 		182CABA319ED695500C02B68 /* XMLCalcHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CABA219ED695500C02B68 /* XMLCalcHelper.m */; };
 		182CABA619ED699200C02B68 /* XMLCalcElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CABA519ED699200C02B68 /* XMLCalcElement.m */; };
+		182FB8301A05D1B700D9AB07 /* CalcDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182FB82F1A05D1B700D9AB07 /* CalcDetailViewController.m */; };
 		188D2DC119DBAF25009D45E2 /* 2009_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBA19DBAF25009D45E2 /* 2009_10.xml */; };
 		188D2DC219DBAF25009D45E2 /* 2010_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBB19DBAF25009D45E2 /* 2010_10.xml */; };
 		188D2DC319DBAF25009D45E2 /* 2011_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBC19DBAF25009D45E2 /* 2011_10.xml */; };
@@ -119,6 +120,8 @@
 		182CABA219ED695500C02B68 /* XMLCalcHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLCalcHelper.m; sourceTree = "<group>"; };
 		182CABA419ED699200C02B68 /* XMLCalcElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLCalcElement.h; sourceTree = "<group>"; };
 		182CABA519ED699200C02B68 /* XMLCalcElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLCalcElement.m; sourceTree = "<group>"; };
+		182FB82E1A05D1B700D9AB07 /* CalcDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcDetailViewController.h; sourceTree = "<group>"; };
+		182FB82F1A05D1B700D9AB07 /* CalcDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcDetailViewController.m; sourceTree = "<group>"; };
 		188D2DBA19DBAF25009D45E2 /* 2009_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2009_10.xml; sourceTree = "<group>"; };
 		188D2DBB19DBAF25009D45E2 /* 2010_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2010_10.xml; sourceTree = "<group>"; };
 		188D2DBC19DBAF25009D45E2 /* 2011_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2011_10.xml; sourceTree = "<group>"; };
@@ -302,8 +305,6 @@
 				18E7B03119A7770300092469 /* Main.storyboard */,
 				18E7B03419A7770300092469 /* MultiChoiceViewController.h */,
 				18E7B03519A7770300092469 /* MultiChoiceViewController.m */,
-				18E7B03719A7770300092469 /* Images.xcassets */,
-				18E7B02619A7770300092469 /* Supporting Files */,
 				18B3A7C419BDBAB300A4B068 /* AboutDlgViewController.h */,
 				18B3A7C519BDBAB300A4B068 /* AboutDlgViewController.m */,
 				18A33D9619E254D800F40ADF /* FeedbackViewController.h */,
@@ -314,6 +315,10 @@
 				18E04A0C19F696D800294821 /* SearchViewController.m */,
 				18EDD5C61A0480D0002702BC /* MultChoiceDetailViewController.h */,
 				18EDD5C71A0480D0002702BC /* MultChoiceDetailViewController.m */,
+				18E7B03719A7770300092469 /* Images.xcassets */,
+				18E7B02619A7770300092469 /* Supporting Files */,
+				182FB82E1A05D1B700D9AB07 /* CalcDetailViewController.h */,
+				182FB82F1A05D1B700D9AB07 /* CalcDetailViewController.m */,
 			);
 			path = Multi_Choice;
 			sourceTree = "<group>";
@@ -550,6 +555,7 @@
 				18E7B03019A7770300092469 /* AppDelegate.m in Sources */,
 				182CABA619ED699200C02B68 /* XMLCalcElement.m in Sources */,
 				18EE302D1A028265005D1DCA /* UIButtonExt.m in Sources */,
+				182FB8301A05D1B700D9AB07 /* CalcDetailViewController.m in Sources */,
 				18F701E019AA406E005E0361 /* RootViewController.m in Sources */,
 				18EDD5C81A0480D0002702BC /* MultChoiceDetailViewController.m in Sources */,
 				18E7B05719A7794600092469 /* XMLElement.m in Sources */,

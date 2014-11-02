@@ -9,6 +9,7 @@
 #import "SearchViewController.h"
 #import "XMLElement.h"
 #import "MultChoiceDetailViewController.h"
+#import "CalcDetailViewController.h"
 @interface SearchViewController ()
 
 @end
@@ -19,6 +20,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+     self.navigationItem.title = @"搜索结果";
+    
     m_tableview = [[UITableView alloc]init];
     [self.view addSubview:m_tableview];
     [m_tableview setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
@@ -51,10 +54,40 @@
                 initWithStyle:UITableViewCellStyleDefault
                 reuseIdentifier:GroupedTableIdentifier];
     }
+    switch (section) {
+        case 0:
+        {
+         cell.textLabel.text = ((XMLElement*)[questions objectAtIndex:row]).m_title;
+                cell.textLabel.numberOfLines = 2;
+        }
+            break;
+        case 1:
+        {
+            XMLCalcElement* obj =[questions objectAtIndex:row];
+            NSUInteger count_items = [obj.m_subElements count];
+            NSString* titleForQuestion = @"";
+            for (NSUInteger j=0; j<count_items; j++)  //num of items in each question
+            {
+                XMLCalcElement* item = [obj.m_subElements objectAtIndex:j];
+                if ([item.m_tag isEqualToString:@"question"])
+                {
+                   titleForQuestion = [titleForQuestion stringByAppendingString:item.m_value];
+                }
+            }
+
+            cell.textLabel.text = titleForQuestion;
+            cell.textLabel.numberOfLines = 5;
+        }
+            break;
+        default:
+            break;
+    }
+
+
     cell.backgroundColor = GLOBAL_BGColor;
-    cell.textLabel.text = ((XMLElement*)[questions objectAtIndex:row]).m_title;
+   
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
-    cell.textLabel.numberOfLines = 2;
+
     return cell;
 }
 
@@ -97,10 +130,21 @@
 
             next.m_array_detail = questions;
             next.m_currentIndex = row;
+            next.m_title = @"选择题搜索结果";
             [app.navController pushViewController:next animated:YES];
         }
             break;
+        case 1:
+        {
+            CalcDetailViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"calc_detail_view"];
             
+            next.m_array_detail = questions;
+            next.m_currentIndex = row;
+            next.m_title = @"简答题搜索结果";
+            [app.navController pushViewController:next animated:YES];
+
+        }
+            break;
         default:
             break;
     }
@@ -123,4 +167,10 @@
 }
 */
 
+- (void)dealloc {
+    [m_tableview release];
+    [m_array_list removeAllObjects];
+    [m_array_list release];
+    [super dealloc];
+}
 @end

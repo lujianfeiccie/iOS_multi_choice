@@ -28,6 +28,8 @@
     
     self.parser.delegate = self;
     
+    [[self.rootElement m_subElements] removeAllObjects];
+    self.rootElement = nil;
     if([self.parser parse])
     {
         

@@ -730,11 +730,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Multi_Choice/CalcViewController.m"
-            timestampString = "436378153.294705"
+            timestampString = "436593376.243578"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "-btnPrevClick:"
             landmarkType = "5">
          </BreakpointContent>
@@ -746,11 +746,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Multi_Choice/CalcViewController.m"
-            timestampString = "436378153.294705"
+            timestampString = "436593376.243578"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "99"
+            endingLineNumber = "99"
             landmarkName = "-btnNextClick:"
             landmarkType = "5">
          </BreakpointContent>
@@ -810,11 +810,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Multi_Choice/CalcViewController.m"
-            timestampString = "436378153.294705"
+            timestampString = "436593376.243578"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
+            startingLineNumber = "103"
+            endingLineNumber = "103"
             landmarkName = "-btnShowAnswerClick:"
             landmarkType = "5">
          </BreakpointContent>
@@ -890,7 +890,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Multi_Choice/MultChoiceDetailViewController.m"
-            timestampString = "436510464.392841"
+            timestampString = "436592535.937332"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "69"

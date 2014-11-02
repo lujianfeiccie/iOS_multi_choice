@@ -15,8 +15,34 @@
 @implementation CalcViewController
 @synthesize m_title;
 @synthesize m_filename;
-
-
+@synthesize m_bCalcView;
+-(void) toolBarRight
+{
+    
+    NSString *tmp_filename = m_filename;
+    NSString *tmp_title = [NSString stringWithFormat:@"%@计算题",m_title];
+    tmp_filename = [tmp_filename substringToIndex:7];
+    tmp_filename = [NSString stringWithFormat:@"%@_calc",tmp_filename];
+    //NSLogExt(@"filename=%@",tmp_filename);
+    NSString* result = [[NSBundle mainBundle] pathForResource:tmp_filename ofType:@"xml"];
+    //    NSLogExt(@"result=%@",result);
+    if (result==nil)
+    {
+        DialogUtil *dialog = [[DialogUtil alloc]init];
+        [dialog showDialogTitle:@"提示" message:@"有待加入" confirm:@"知道了"];
+        [dialog release];
+        dialog = nil;
+    }
+    else
+    {
+        CalcViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"calc_view"];
+        
+        next.m_filename=tmp_filename;
+        next.m_title= tmp_title;
+        next.m_bCalcView = YES;
+        [[app navController] pushViewController:next animated:YES];
+    }
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -29,6 +55,10 @@
     
     self.navigationItem.title = m_title;
     
+    if(!m_bCalcView)
+    {
+    self.navigationItem.rightBarButtonItem = [ButtonUtil createToolBarButton:@"计算题" target:self action:@selector(toolBarRight)];
+    }
     m_dlg = [[ CalcChoiceDLg alloc] initWithView:self.view DisplayRect:CGRectMake(0, 0,
                                                                                  self.view.frame.size.width,
                                                                                  self.view.frame.size.height-m_btn_next.frame.size.height-self.navigationController.navigationBar.frame.size.height-20)

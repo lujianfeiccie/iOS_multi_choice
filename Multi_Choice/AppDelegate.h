@@ -17,6 +17,7 @@
 #import "DialogUtil.h"
 #import "UserInfoTool.h"
 #import "VersionCheckTool.h"
+#import "XMLCalcHelper.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
      UIStoryboard *storyBoard;

@@ -10,7 +10,9 @@
 #import "Util.h"
 #import "NSLogExt.h"
 @implementation CalcChoiceDLg
-
+@synthesize m_bShowSearchDetail;
+@synthesize m_current_index;
+@synthesize m_questions;
 -(id) initWithView : (UIView*) view DisplayRect : (CGRect) rect DataFile : (NSString*) filename
 {
     if (self = [super init])
@@ -18,20 +20,27 @@
         m_view = view;
         m_rect = rect;
         m_filename = filename;
+        m_bShowSearchDetail = NO;
+        m_isShowingAnswer = NO;
     }
     return  self;
 }
 - (void)load
 {
-    m_xmlHelper = [[XMLCalcHelper alloc]init];
-    
-    [m_xmlHelper load:m_filename];
-    
-    m_questions = [[m_xmlHelper rootElement] m_subElements];
+    if (!m_bShowSearchDetail) {
+
+        m_xmlHelper = [[XMLCalcHelper alloc]init];
+        
+        [m_xmlHelper load:m_filename];
+        
+        m_questions = [[m_xmlHelper rootElement] m_subElements];
+        
+        m_current_index = 0;
+    }
     
     m_array_lablel_questions = [[NSMutableArray alloc]init];
     m_array_lablel_answers = [[NSMutableArray alloc]init];
-    m_current_index = 0;
+
     
     m_scrollview = [[UIScrollView alloc]initWithFrame:m_rect];
     
@@ -203,7 +212,10 @@
 }
 -(void)dealloc
 {
-    [m_xmlHelper release];
+    if (!m_bShowSearchDetail)
+    {
+     [m_xmlHelper release];
+    }
     [m_questions release];
     
     [m_array_lablel_questions release];

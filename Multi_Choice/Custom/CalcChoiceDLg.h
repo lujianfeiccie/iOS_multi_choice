@@ -27,6 +27,9 @@
     
     BOOL m_isShowingAnswer;
 }
+@property(nonatomic) BOOL m_bShowSearchDetail;
+@property(nonatomic,strong) NSMutableArray* m_questions;
+@property(nonatomic) NSInteger m_current_index;
 
 -(id) initWithView : (UIView*) view DisplayRect : (CGRect) rect DataFile : (NSString*) filename;
 - (void)load;

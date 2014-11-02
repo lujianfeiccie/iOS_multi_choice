@@ -217,11 +217,17 @@
     XMLHelper* xmlHelper = [[XMLHelper alloc]init];
     
 
-    NSMutableArray* results = [[NSMutableArray alloc]init];
     
-    ///////////////////For 2014////////////////
+    
+    ///////////////////For multi choice////////////////
+    NSMutableArray* results_multi_choice = [[NSMutableArray alloc]init];
     NSArray* mutli_question_filename = [NSArray arrayWithObjects:@"2014_04",
-                         @"2013_10",nil];
+                         @"2013_10",
+                         @"2013_01",
+                         @"2012_10",
+                         @"2011_10",
+                         @"2010_10",
+                         @"2009_10",nil];
     
     for (NSString* filename in mutli_question_filename)
     {
@@ -233,20 +239,59 @@
             if ([question.m_title containsString:keywords])
             {
                 //    NSLogExt(@"keywords=%@ title=%@",keywords,question.m_title);
-                [results addObject:question];
+                [results_multi_choice addObject:question];
             }
         }
 
     }
+    //////////////////End for Multi choice ///////////////
+    
+    ///////////////////For short answer////////////////
+    XMLCalcHelper* xmlCalcHelper = [[XMLCalcHelper alloc]init];
+    
+    NSMutableArray* results_short_answer = [[NSMutableArray alloc]init];
+    NSArray* mutli_short_answer_filename = [NSArray arrayWithObjects:@"2014_04_short_answer",
+                                        @"2013_10_short_answer",nil];
+    
+    for (NSString* filename in mutli_short_answer_filename)
+    {
+        [xmlCalcHelper load:filename];
+        NSMutableArray *m_questions = [[xmlCalcHelper rootElement] m_subElements];
+        
+        NSUInteger count = [m_questions count];
+        for (NSUInteger i=0; i<count; i++) //num of questions
+        {
+            XMLCalcElement* obj =[m_questions objectAtIndex:i];
+            NSUInteger count_items = [obj.m_subElements count];
+            
+            for (NSUInteger j=0; j<count_items; j++)  //num of items in each question
+            {
+                XMLCalcElement* item = [obj.m_subElements objectAtIndex:j];
+                if ([[item m_tag] isEqualToString:@"question"] &&
+                    [[item m_value] containsString:keywords])
+                {
+                    [results_short_answer addObject:[m_questions objectAtIndex:i]];
+//                    NSLogExt(@"tag=%@,value=%@",item.m_tag,item.m_value);
+                }
+
+            }
+        }
+        
+    }
+    //////////////////End for short answer ///////////////
+
     
     [SVProgressHUD dismiss];
-    if ([results count]==0)
+    if ([results_multi_choice count]==0)
     {
         [SVProgressHUD showErrorWithStatus:@"没有找到相关内容"];
         return;
     }
     NSMutableArray* results_total = [[NSMutableArray alloc]init];
-    [results_total addObject:results];
+    [results_total addObject:results_multi_choice];//0 for multi choice
+    [results_total addObject:results_short_answer];//1 for short answer
+   
+    
     SearchViewController* search_view =[[self storyboard] instantiateViewControllerWithIdentifier:@"search_view"];
     search_view.m_array_list = results_total;
     [[app navController] pushViewController:search_view animated:YES];

@@ -26,5 +26,6 @@
 - (IBAction)btnShowAnswerClick:(id)sender;
 
 @property(nonatomic,strong) NSString* m_title;
+@property(nonatomic) BOOL m_bCalcView;
 @property(nonatomic,strong) NSString* m_filename;
 @end
