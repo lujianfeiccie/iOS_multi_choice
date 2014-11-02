@@ -13,4 +13,5 @@
 +(NSUInteger*) getRandomNumOfOut:(NSUInteger) numOfOut NumOfIn : (NSUInteger) numOfIn;
 +(NSString*) getDate;
 +(BOOL) isTimeToCheckVersion;
++(BOOL) containString : (NSString*) str1 :(NSString*) str2;
 @end

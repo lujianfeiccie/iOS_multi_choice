@@ -110,4 +110,10 @@
     }
     return  NO;
 }
+
++(BOOL) containString : (NSString*) str1 :(NSString*) str2
+{
+    NSRange range = [str1 rangeOfString:str2];
+    return range.length;
+}
 @end

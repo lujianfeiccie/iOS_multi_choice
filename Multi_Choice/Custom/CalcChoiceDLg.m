@@ -123,7 +123,7 @@
             }
             if (i==0) //Show question no
             {
-                NSString *questionNo = [NSString stringWithFormat:@"(%li/%li)",m_current_index+1,[m_questions count]];
+                NSString *questionNo = [NSString stringWithFormat:@"(%i/%li)",m_current_index+1,(unsigned long)[m_questions count]];
         //        NSLogExt(questionNo);
               lbl_item.text = [lbl_item.text stringByAppendingString:questionNo];
                   [Util setLabelToAutoSize:lbl_item];

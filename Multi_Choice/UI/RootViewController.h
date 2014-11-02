@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-
+#import "XMLHelper.h"
+#import "XMLElement.h"
 @interface RootViewController : AbstractViewController<UITableViewDelegate,
 UITableViewDataSource,UIAlertViewDelegate>
 
@@ -18,5 +19,8 @@ UITableViewDataSource,UIAlertViewDelegate>
     NSMutableArray* m_datalist;
     
     DialogUtil* m_dialog_search;
+    
+   
 }
+
 @end

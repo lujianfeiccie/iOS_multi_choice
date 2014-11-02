@@ -10,7 +10,7 @@
 
 @interface XMLElement : NSObject
 @property (nonatomic,strong) NSString *m_elementName;
-@property (nonatomic,strong) NSString *m_title;
+@property (nonatomic,copy) NSString *m_title;
 @property (nonatomic,strong) NSString *m_answer;
 @property (nonatomic,strong) NSString *m_choice;
 @property (nonatomic,strong) NSString *m_note;

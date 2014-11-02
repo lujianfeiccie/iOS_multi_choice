@@ -15,7 +15,6 @@
 @end
 
 @implementation RootViewController
-
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -103,6 +102,7 @@
              m_tableview_list.frame.origin.y,
              m_tableview_list.frame.size.width,
              m_tableview_list.frame.size.height);
+    
     
 //    m_tableview_list.backgroundColor = [UIColor redColor];
 }
@@ -209,12 +209,13 @@
         [SVProgressHUD showWithStatus:@"正在搜索"];
         NSThread* myThread = [[NSThread alloc] initWithTarget:self selector:@selector(threadSearch:) object:text];
         [myThread start];
+        //[self threadSearch:text];
     }
 }
 -(void) threadSearch :(NSString*) keywords
 {
     
-    XMLHelper* xmlHelper = [[XMLHelper alloc]init];
+     XMLHelper* xmlHelper = [[XMLHelper alloc]init];;
     
 
     
@@ -232,11 +233,12 @@
     for (NSString* filename in mutli_question_filename)
     {
         [xmlHelper load:filename];
+       // NSLogExt(@"filename = %@",filename);
         NSMutableArray* questions = [[xmlHelper rootElement] m_subElements];
         
         for (XMLElement* question in questions)
         {
-            if ([question.m_title containsString:keywords])
+            if ([Util containString:question.m_title:keywords])
             {
                 //    NSLogExt(@"keywords=%@ title=%@",keywords,question.m_title);
                 [results_multi_choice addObject:question];
@@ -268,7 +270,7 @@
             {
                 XMLCalcElement* item = [obj.m_subElements objectAtIndex:j];
                 if ([[item m_tag] isEqualToString:@"question"] &&
-                    [[item m_value] containsString:keywords])
+                    [Util containString:item.m_value :keywords])
                 {
                     [results_short_answer addObject:[m_questions objectAtIndex:i]];
 //                    NSLogExt(@"tag=%@,value=%@",item.m_tag,item.m_value);
@@ -280,9 +282,8 @@
     }
     //////////////////End for short answer ///////////////
 
-    
     [SVProgressHUD dismiss];
-    if ([results_multi_choice count]==0)
+    if ([results_multi_choice count]==0 && [results_short_answer count] == 0)
     {
         [SVProgressHUD showErrorWithStatus:@"没有找到相关内容"];
         return;

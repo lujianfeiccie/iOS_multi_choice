@@ -30,8 +30,8 @@
     {
         DialogUtil *dialog = [[DialogUtil alloc]init];
         [dialog showDialogTitle:@"提示" message:@"有待加入" confirm:@"知道了"];
-        [dialog release];
-        dialog = nil;
+       // [dialog release];
+        //dialog = nil;
     }
     else
     {

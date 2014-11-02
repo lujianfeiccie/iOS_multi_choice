@@ -24,8 +24,8 @@
     
     m_tableview = [[UITableView alloc]init];
     [self.view addSubview:m_tableview];
-    [m_tableview setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    
+    [m_tableview setFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height-self.navigationController.navigationBar.frame.size.height)];
+  
     m_tableview.dataSource = self;
     m_tableview.delegate = self;
      app = [[UIApplication sharedApplication]delegate];
