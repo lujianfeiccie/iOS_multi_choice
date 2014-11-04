@@ -1,120 +1,120 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-<question title="一定时期内每期期初发生的等额系列收付款项是" answer="先付年金" note="">
+<question title="1.一定时期内每期期初发生的等额系列收付款项是(2011年10月)" answer="先付年金" note="">
 <choice>先付年金</choice>
 <choice>普通年金</choice>
 <choice>递延年金</choice>
 <choice>永续年金</choice>
 </question>
-<question title="下列关于偿债基金系数的若干表述，正确的是" answer="偿债基金系数与普通年金终值系数互为倒数" note="">
+<question title="2.下列关于偿债基金系数的若干表述，正确的是(2011年10月)" answer="偿债基金系数与普通年金终值系数互为倒数" note="">
 <choice>偿债基金系数与复利终值系数互为倒数</choice>
 <choice>偿债基金系数与复利现值系数互为倒数</choice>
 <choice>偿债基金系数与普通年金终值系数互为倒数</choice>
 <choice>偿债基金系数与普通年金现值系数互为倒数</choice>
 </question>
-<question title="甲方案收益率的标准离差为2.11％，乙方案收益率的标准离差为2.22％，如果甲、乙两个方案预期收益率相同，下列表述正确的是" answer="甲方案的风险低于乙方案的风险" note="">
+<question title="3.甲方案收益率的标准离差为2.11％，乙方案收益率的标准离差为2.22％，如果甲、乙两个方案预期收益率相同，下列表述正确的是(2011年10月)" answer="甲方案的风险低于乙方案的风险" note="">
 <choice>甲、乙两个方案的风险相同</choice>
 <choice>甲方案的风险高于乙方案的风险</choice>
 <choice>甲方案的风险低于乙方案的风险</choice>
 <choice>无法确定甲、乙两个方案风险的高低</choice>
 </question>
-<question title="某项目投资收益率的标准离差为10％，标准离差率为50％，则该项目的预期收益率是" answer="２０％" note="标准离差率=标准差/预期收益率&#x0A;50%=10%/预期收益率&#x0A;预期收益率=10%/50%">
+<question title="4.某项目投资收益率的标准离差为10％，标准离差率为50％，则该项目的预期收益率是(2011年10月)" answer="２０％" note="标准离差率=标准差/预期收益率&#x0A;50%=10%/预期收益率&#x0A;预期收益率=10%/50%">
 <choice>５％</choice>
 <choice>１０％</choice>
 <choice>１２％</choice>
 <choice>２０％</choice>
 </question>
-<question title="从筹资渠道角度看，企业从信托投资公司筹集的资金属于" answer="非银行金融机构资金" note="">
+<question title="5.从筹资渠道角度看，企业从信托投资公司筹集的资金属于(2011年10月)" answer="非银行金融机构资金" note="">
 <choice>民间资金</choice>
 <choice>银行信贷资金</choice>
 <choice>政府财政资金</choice>
 <choice>非银行金融机构资金</choice>
 </question>
-<question title="下列属于企业债务资本筹资方式的是" answer="发行债券" note="">
+<question title="6.下列属于企业债务资本筹资方式的是(2011年10月)" answer="发行债券" note="">
 <choice>发行股票</choice>
 <choice>发行债券</choice>
 <choice>吸收投入资本</choice>
 <choice>企业内部积累</choice>
 </question>
-<question title="甲企业向乙企业赊销了一批材料，购销合同中规定的信用条件是“2／10，n／30”。若乙企业在购货后第19天付款，则乙企业享受的商业信用是" answer="有代价信用" note="">
+<question title="7.甲企业向乙企业赊销了一批材料，购销合同中规定的信用条件是“2／10，n／30”。若乙企业在购货后第19天付款，则乙企业享受的商业信用是(2011年10月)" answer="有代价信用" note="">
 <choice>有代价信用</choice>
 <choice>免息信用</choice>
 <choice>展期信用</choice>
 <choice>免费信用</choice>
 </question>
-<question title="下列各项中，不属于流动资金特点的是" answer="使用中价值的双重存在性" note="">
+<question title="8.下列各项中，不属于流动资金特点的是(2011年10月)" answer="使用中价值的双重存在性" note="">
 <choice>使用中价值的双重存在性</choice>
 <choice>资金占用数量具有波动性</choice>
 <choice>资金占用形态具有变动性</choice>
 <choice>资金循环与生产经营周期的一致</choice>
 </question>
-<question title="下列各项中，与货币资金持有量呈反向变动关系的是" answer="转换成本" note="">
+<question title="9.下列各项中，与货币资金持有量呈反向变动关系的是(2011年10月)" answer="转换成本" note="">
 <choice>机会成本</choice>
 <choice>转换成本</choice>
 <choice>管理成本</choice>
 <choice>持有成本</choice>
 </question>
-<question title="某企业甲材料年需要量为3000件，每批采购费用为2000元，一年内最佳采购批量为500件，则一年内采购费用为" answer="１２０００元" note="">
+<question title="10.某企业甲材料年需要量为3000件，每批采购费用为2000元，一年内最佳采购批量为500件，则一年内采购费用为(2011年10月)" answer="１２０００元" note="">
 <choice>６０００元</choice>
 <choice>８０００元</choice>
 <choice>１００００元</choice>
 <choice>１２０００元</choice>
 </question>
-<question title="在考虑企业所得税的前提下，与平均年限法相比，加速折旧法对项目营业净现金流量的影响是" answer="前期净现金流量减小，后期增大" note="">
+<question title="11.在考虑企业所得税的前提下，与平均年限法相比，加速折旧法对项目营业净现金流量的影响是(2011年10月)" answer="前期净现金流量减小，后期增大" note="">
 <choice>各期净现金流量增大</choice>
 <choice>各期净现金流量减小</choice>
 <choice>前期净现金流量增大，后期减小</choice>
 <choice>前期净现金流量减小，后期增大</choice>
 </question>
-<question title="在项目投资决策指标中，属于非贴现现金流量评价指标的是" answer="平均报酬率" note="">
+<question title="12.在项目投资决策指标中，属于非贴现现金流量评价指标的是(2011年10月)" answer="平均报酬率" note="">
 <choice>平均报酬率</choice>
 <choice>获利指数</choice>
 <choice>净现值率</choice>
 <choice>净现值</choice>
 </question>
-<question title="某项目年营业现金收入为1000万元，年付现成本为600万元，年折旧额为200万元，企业所得税税率为25％，则该项目年营业净现金流量是" answer="３５０万元" note="现金流量=现金流入-现金流出&#x0A;=1000 - [600 + (1000-600-200)*25%]&#x0A;=350">
+<question title="13.某项目年营业现金收入为1000万元，年付现成本为600万元，年折旧额为200万元，企业所得税税率为25％，则该项目年营业净现金流量是(2011年10月)" answer="３５０万元" note="现金流量=现金流入-现金流出&#x0A;=1000 - [600 + (1000-600-200)*25%]&#x0A;=350">
 <choice>１５０万元</choice>
 <choice>３５０万元</choice>
 <choice>４５０万元</choice>
 <choice>５００万元</choice>
 </question>
-<question title="甲公司于2009年3月1日购入乙公司发行的到期一次还本付息的债券，购买价格400万元，并于2010年3月1日以450万元的价格全部售出。甲公司持有期间收益率为" answer="１２．５％" note="">
+<question title="14.甲公司于2009年3月1日购入乙公司发行的到期一次还本付息的债券，购买价格400万元，并于2010年3月1日以450万元的价格全部售出。甲公司持有期间收益率为(2011年10月)" answer="１２．５％" note="">
 <choice>３．７５％</choice>
 <choice>５％</choice>
 <choice>６．２５％</choice>
 <choice>１２．５％</choice>
 </question>
-<question title="按并购双方产品与产业的联系划分，石油企业并购钢铁企业属于" answer="混合并购" note="">
+<question title="15.按并购双方产品与产业的联系划分，石油企业并购钢铁企业属于(2011年10月)" answer="混合并购" note="">
 <choice>横向并购</choice>
 <choice>纵向并购</choice>
 <choice>混合并购</choice>
 <choice>承担债务式并购</choice>
 </question>
-<question title="能够使灵活性与稳定性较好结合的股利政策是" answer="低正常股利加额外股利政策" note="举一反三：上市公司采用固定股利支付率政策的主要优点是—-股利支付与公司盈利密切相关">
+<question title="16.能够使灵活性与稳定性较好结合的股利政策是(2011年10月)" answer="低正常股利加额外股利政策" note="举一反三：上市公司采用固定股利支付率政策的主要优点是—-股利支付与公司盈利密切相关">
 <choice>剩余股利政策</choice>
 <choice>固定股利政策</choice>
 <choice>固定股利支付率政策</choice>
 <choice>低正常股利加额外股利政策</choice>
 </question>
-<question title="反映企业某一特定日期财务状况的报表是" answer="资产负债表" note="">
+<question title="17.反映企业某一特定日期财务状况的报表是(2011年10月)" answer="资产负债表" note="">
 <choice>资产负债表</choice>
 <choice>利润表</choice>
 <choice>利润分配表</choice>
 <choice>现金流量表</choice>
 </question>
-<question title="负债总额与所有者权益的比率所表述的企业偿债能力指标是" answer="产权比率" note="">
+<question title="18.负债总额与所有者权益的比率所表述的企业偿债能力指标是(2011年10月)" answer="产权比率" note="">
 <choice>资产负债率</choice>
 <choice>产权比率</choice>
 <choice>流动比率</choice>
 <choice>有形资产负债率</choice>
 </question>
-<question title="企业收回长期投资、增加银行存款将会产生的结果是" answer="提高机会成本" note="">
+<question title="19.企业收回长期投资、增加银行存款将会产生的结果是(2011年10月)" answer="提高机会成本" note="">
 <choice>降低机会成本</choice>
 <choice>提高机会成本</choice>
 <choice>增加财务风险</choice>
 <choice>提高流动资产的收益率</choice>
 </question>
-<question title="财务分析中的结构比率是" answer="财务报表中个别项目数值与全部项目总和的比率" note="">
+<question title="20.财务分析中的结构比率是(2011年10月)" answer="财务报表中个别项目数值与全部项目总和的比率" note="">
 <choice>同一时期财务报表中两项相关数值的比率</choice>
 <choice>财务报表中个别项目数值与全部项目总和的比率</choice>
 <choice>财务报表中某个项目不同时期两项数值的比率</choice>

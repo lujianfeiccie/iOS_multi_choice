@@ -23,12 +23,11 @@
 		180E3B9019E295B80028B7A6 /* HttpRequestTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E3B8F19E295B80028B7A6 /* HttpRequestTool.m */; };
 		1814AE4219E3CF22004422C3 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE4119E3CF22004422C3 /* UserInfo.m */; };
 		1814AE4519E3D023004422C3 /* UserInfoTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 1814AE4419E3D023004422C3 /* UserInfoTool.m */; };
-		181ACD8B19F0993A00A5EC6A /* 2011_10_35_2_320.png in Resources */ = {isa = PBXBuildFile; fileRef = 181ACD8A19F0993A00A5EC6A /* 2011_10_35_2_320.png */; };
-		182CAB9D19ED679400C02B68 /* 2013_10_calc.xml in Resources */ = {isa = PBXBuildFile; fileRef = 182CAB9C19ED679400C02B68 /* 2013_10_calc.xml */; };
 		182CABA019ED680600C02B68 /* CalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CAB9F19ED680600C02B68 /* CalcViewController.m */; };
 		182CABA319ED695500C02B68 /* XMLCalcHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CABA219ED695500C02B68 /* XMLCalcHelper.m */; };
 		182CABA619ED699200C02B68 /* XMLCalcElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CABA519ED699200C02B68 /* XMLCalcElement.m */; };
 		182FB8301A05D1B700D9AB07 /* CalcDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182FB82F1A05D1B700D9AB07 /* CalcDetailViewController.m */; };
+		1831EF731A090C9000431C5A /* NSMutableArrayExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1831EF721A090C9000431C5A /* NSMutableArrayExt.m */; };
 		188D2DC119DBAF25009D45E2 /* 2009_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBA19DBAF25009D45E2 /* 2009_10.xml */; };
 		188D2DC219DBAF25009D45E2 /* 2010_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBB19DBAF25009D45E2 /* 2010_10.xml */; };
 		188D2DC319DBAF25009D45E2 /* 2011_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBC19DBAF25009D45E2 /* 2011_10.xml */; };
@@ -112,8 +111,6 @@
 		1814AE4119E3CF22004422C3 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UserInfo.m; path = ../Custom/UserInfo.m; sourceTree = "<group>"; };
 		1814AE4319E3D023004422C3 /* UserInfoTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfoTool.h; sourceTree = "<group>"; };
 		1814AE4419E3D023004422C3 /* UserInfoTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfoTool.m; sourceTree = "<group>"; };
-		181ACD8A19F0993A00A5EC6A /* 2011_10_35_2_320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2011_10_35_2_320.png; sourceTree = "<group>"; };
-		182CAB9C19ED679400C02B68 /* 2013_10_calc.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2013_10_calc.xml; sourceTree = "<group>"; };
 		182CAB9E19ED680600C02B68 /* CalcViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcViewController.h; sourceTree = "<group>"; };
 		182CAB9F19ED680600C02B68 /* CalcViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcViewController.m; sourceTree = "<group>"; };
 		182CABA119ED695500C02B68 /* XMLCalcHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLCalcHelper.h; sourceTree = "<group>"; };
@@ -122,6 +119,8 @@
 		182CABA519ED699200C02B68 /* XMLCalcElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLCalcElement.m; sourceTree = "<group>"; };
 		182FB82E1A05D1B700D9AB07 /* CalcDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcDetailViewController.h; sourceTree = "<group>"; };
 		182FB82F1A05D1B700D9AB07 /* CalcDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcDetailViewController.m; sourceTree = "<group>"; };
+		1831EF711A090C9000431C5A /* NSMutableArrayExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArrayExt.h; sourceTree = "<group>"; };
+		1831EF721A090C9000431C5A /* NSMutableArrayExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArrayExt.m; sourceTree = "<group>"; };
 		188D2DBA19DBAF25009D45E2 /* 2009_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2009_10.xml; sourceTree = "<group>"; };
 		188D2DBB19DBAF25009D45E2 /* 2010_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2010_10.xml; sourceTree = "<group>"; };
 		188D2DBC19DBAF25009D45E2 /* 2011_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2011_10.xml; sourceTree = "<group>"; };
@@ -236,8 +235,6 @@
 				180E1CCA1A012F0100C20A80 /* 2013_01_short_answer.xml */,
 				180E1CCB1A012F0100C20A80 /* 2013_10_short_answer.xml */,
 				180E1CCC1A012F0100C20A80 /* 2014_04_short_answer.xml */,
-				181ACD8A19F0993A00A5EC6A /* 2011_10_35_2_320.png */,
-				182CAB9C19ED679400C02B68 /* 2013_10_calc.xml */,
 				188D2DBA19DBAF25009D45E2 /* 2009_10.xml */,
 				188D2DBB19DBAF25009D45E2 /* 2010_10.xml */,
 				188D2DBC19DBAF25009D45E2 /* 2011_10.xml */,
@@ -315,10 +312,10 @@
 				18E04A0C19F696D800294821 /* SearchViewController.m */,
 				18EDD5C61A0480D0002702BC /* MultChoiceDetailViewController.h */,
 				18EDD5C71A0480D0002702BC /* MultChoiceDetailViewController.m */,
-				18E7B03719A7770300092469 /* Images.xcassets */,
-				18E7B02619A7770300092469 /* Supporting Files */,
 				182FB82E1A05D1B700D9AB07 /* CalcDetailViewController.h */,
 				182FB82F1A05D1B700D9AB07 /* CalcDetailViewController.m */,
+				18E7B03719A7770300092469 /* Images.xcassets */,
+				18E7B02619A7770300092469 /* Supporting Files */,
 			);
 			path = Multi_Choice;
 			sourceTree = "<group>";
@@ -409,6 +406,8 @@
 				1801B24519F0BB3500EDEC03 /* CalcChoiceDLg.m */,
 				18EE302B1A028265005D1DCA /* UIButtonExt.h */,
 				18EE302C1A028265005D1DCA /* UIButtonExt.m */,
+				1831EF711A090C9000431C5A /* NSMutableArrayExt.h */,
+				1831EF721A090C9000431C5A /* NSMutableArrayExt.m */,
 			);
 			name = Custom;
 			path = Multi_Choice/Custom;
@@ -516,7 +515,6 @@
 				180E1CCF1A012F0100C20A80 /* 2011_10_short_answer.xml in Resources */,
 				189F11BE19E3F1F600394747 /* Icon-120.png in Resources */,
 				18E7B03319A7770300092469 /* Main.storyboard in Resources */,
-				181ACD8B19F0993A00A5EC6A /* 2011_10_35_2_320.png in Resources */,
 				189F11BF19E3F1F600394747 /* Icon-152.png in Resources */,
 				18B3A7BE19BDB96800A4B068 /* Default.png in Resources */,
 				188D2DC719DBAF25009D45E2 /* 2014_04.xml in Resources */,
@@ -524,7 +522,6 @@
 				18B3BC5B19BDBC9500A4B068 /* me.png in Resources */,
 				188D2DC119DBAF25009D45E2 /* 2009_10.xml in Resources */,
 				189F11BD19E3F1F600394747 /* Icon-76.png in Resources */,
-				182CAB9D19ED679400C02B68 /* 2013_10_calc.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -554,6 +551,7 @@
 				182CABA319ED695500C02B68 /* XMLCalcHelper.m in Sources */,
 				18E7B03019A7770300092469 /* AppDelegate.m in Sources */,
 				182CABA619ED699200C02B68 /* XMLCalcElement.m in Sources */,
+				1831EF731A090C9000431C5A /* NSMutableArrayExt.m in Sources */,
 				18EE302D1A028265005D1DCA /* UIButtonExt.m in Sources */,
 				182FB8301A05D1B700D9AB07 /* CalcDetailViewController.m in Sources */,
 				18F701E019AA406E005E0361 /* RootViewController.m in Sources */,
@@ -625,7 +623,8 @@
 		18E7B04C19A7770300092469 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen OPTechWell Co.,Ltd. (3U5V8P94QW)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "e4b87755-283b-46cf-b433-922e3b1d0935";
 				SDKROOT = iphoneos;
@@ -636,7 +635,8 @@
 		18E7B04D19A7770300092469 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Shenzhen OPTechWell Co.,Ltd. (3U5V8P94QW)";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PROVISIONING_PROFILE = "e4b87755-283b-46cf-b433-922e3b1d0935";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";

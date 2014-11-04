@@ -35,7 +35,8 @@
         
         if([m_filename isEqualToString:@"all"])
         {
-            [m_xmlHelper loadMultiple:20:@"2009_10",
+            [m_xmlHelper loadMultiple:20:
+             @"2009_10",
              @"2010_10",
              @"2011_10",
              @"2012_10",

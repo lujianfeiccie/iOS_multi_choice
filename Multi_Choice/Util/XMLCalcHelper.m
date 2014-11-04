@@ -8,6 +8,7 @@
 
 #import "XMLCalcHelper.h"
 #import "NSLogExt.h"
+#import "Util.h"
 @implementation XMLCalcHelper
 
 -(id) init{
@@ -35,7 +36,68 @@
         
     }
 }
-
+-(void) loadMultiple:(NSUInteger) numOfQuestions : (NSString*) fileName,...
+{
+    va_list arguments;
+    id eachObject;
+    
+    NSMutableArray *questions = [[NSMutableArray alloc] init];
+    if (fileName) {
+        NSLogExt(@"%@",fileName);
+        
+        
+        NSString* result = [[NSBundle mainBundle] pathForResource:fileName ofType:@"xml"];
+        NSData *data = [[NSData alloc]initWithContentsOfFile:result];
+        
+        self.parser = [[NSXMLParser alloc]initWithData:data];
+        
+        self.parser.delegate = self;
+        
+        [[self.rootElement m_subElements] removeAllObjects];
+        self.rootElement = nil;
+        
+        if([self.parser parse]){
+            [questions addObjectsFromArray:self.rootElement.m_subElements];
+        }
+        va_start(arguments, fileName);
+        
+        
+        
+        while ((eachObject = va_arg(arguments, id))) {
+            result = [[NSBundle mainBundle] pathForResource:eachObject ofType:@"xml"];
+            data = [[NSData alloc]initWithContentsOfFile:result];
+            
+            self.parser = [[NSXMLParser alloc]initWithData:data];
+            
+            self.parser.delegate = self;
+            
+            if([self.parser parse])
+            {
+                [questions addObjectsFromArray:self.rootElement.m_subElements];
+            }
+            NSLogExt(@"%@",eachObject);
+        }
+        
+        va_end(arguments);
+    }
+    
+    NSUInteger count = [questions count];
+    NSMutableArray *questions_tmp = [[NSMutableArray alloc] init];
+    NSUInteger *randnum_questions= [Util getRandomNumOfOut:numOfQuestions NumOfIn:count];
+    
+    // NSLogExt(@"count=%i",count);
+    
+    // Random the questions
+    for (int i=0; i<numOfQuestions; ++i) {
+        [questions_tmp addObject:[questions objectAtIndex:randnum_questions[i]]];
+        
+    }
+    [questions removeAllObjects];
+    free(randnum_questions);
+    randnum_questions = nil;
+    
+    self.rootElement.m_subElements = questions_tmp;
+}
 // 文档开始
 -(void)parserDidStartDocument:(NSXMLParser *)parser
 

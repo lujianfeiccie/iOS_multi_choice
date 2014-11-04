@@ -19,6 +19,15 @@
 
 -(void) toolBarRight
 {
+    if ([m_filename isEqualToString:@"all"])
+    {
+        CalcViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"calc_view"];
+        next.m_filename=m_filename;
+        next.m_title= [m_title stringByAppendingString:@"简答题"];
+        next.m_bCalcView = NO;
+        [[app navController] pushViewController:next animated:YES];
+        return;
+    }
 
     NSString *tmp_filename = [NSString stringWithFormat:@"%@_short_answer",m_filename];
     NSString *tmp_title = [NSString stringWithFormat:@"%@简答题",m_title];

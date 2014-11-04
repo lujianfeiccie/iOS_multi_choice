@@ -10,6 +10,7 @@
 #import "XMLElement.h"
 #import "MultChoiceDetailViewController.h"
 #import "CalcDetailViewController.h"
+#import "NSMutableArrayExt.h"
 @interface SearchViewController ()
 
 @end
@@ -43,8 +44,8 @@
     NSUInteger row = [indexPath row];
     
     
-    NSMutableArray* questions = [m_array_list objectAtIndex:section];
-    
+    NSMutableArrayExt* questions = [m_array_list objectAtIndex:section];
+ 
     
     static NSString *GroupedTableIdentifier = @"cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:
@@ -54,15 +55,15 @@
                 initWithStyle:UITableViewCellStyleDefault
                 reuseIdentifier:GroupedTableIdentifier];
     }
-    id question = [questions objectAtIndex:row];
     
-    if ([question isKindOfClass:XMLElement.class])
+    
+    if (questions.m_type == TYPE_Multi_Choice)
     {
         cell.textLabel.text = ((XMLElement*)[questions objectAtIndex:row]).m_title;
         cell.textLabel.numberOfLines = 2;
         NSLogExt(@"Multi choice");
     }
-    else if ([question isKindOfClass:XMLCalcElement.class])
+    else if (questions.m_type == TYPE_Short_Answer)
     {
         XMLCalcElement* obj =[questions objectAtIndex:row];
         NSUInteger count_items = [obj.m_subElements count];
@@ -81,19 +82,7 @@
 
         NSLogExt(@"Calc");
     }
-   /* switch (section) {
-        case 0:
-        {
-                 }
-            break;
-        case 1:
-        {
-                    }
-            break;
-        default:
-            break;
-    }
-*/
+
     cell.backgroundColor = GLOBAL_BGColor;
    
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
@@ -104,19 +93,14 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     NSString *title=@"";
     
-    NSMutableArray* questions = [m_array_list objectAtIndex:section];
+    NSMutableArrayExt* questions = [m_array_list objectAtIndex:section];
+
     
-    id question=nil;
-    
-    if ([questions count]>0) {
-        question = [questions objectAtIndex:0];
-    }
-    
-    if ([question isKindOfClass:XMLElement.class])
+    if (questions.m_type == TYPE_Multi_Choice)
     {
        title = @"选择题";
     }
-    else if ([question isKindOfClass:XMLCalcElement.class])
+    else if (questions.m_type == TYPE_Short_Answer)
     {
        title = @"简答题";
     }

@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
 <question>
-<text tag="question" value="31.简述投资风险收益的计算步骤。"/>
+<text tag="question" value="31.简述投资风险收益的计算步骤。(2010年10月)"/>
 <text tag="answer" value="计算预期收益--计算预期收益的标准离差—标准离差率—应得风险收益率—预测投资收益率，权衡投资方案。 "/>
 </question>
 <question>
-<text tag="question" value="32.简述应收账款功能与成本的内容。"/>
+<text tag="question" value="32.简述应收账款功能与成本的内容。(2010年10月)"/>
 <text tag="answer" value="功能：减少产品销售；减少产品库存&#x0A;&#x0A;应收账款成本包括：&#x0A;&#x0A;机会成本，由于资金投放在应收账款上而放弃投资其他方面的收益，是应收账款的直接成本。&#x0A;&#x0A;管理成本，是应收账款的间接成本，&#x0A;&#x0A;包括：信用调查费用、收集信息费用和催收账款费用等。&#x0A;&#x0A;坏账费用，是应收账款不能及时收回二发生的坏账损失。"/>
 </question>
 <question>
-<text tag="question" value="33.简述固定资产项目投资决策现金流量的含义及构成内容。"/>
+<text tag="question" value="33.简述固定资产项目投资决策现金流量的含义及构成内容。(2010年10月)"/>
 <text tag="answer" value="现金流量&#x0A;      现金流量是指与项目投资决策有关的现金流入量和流出量。是评价固定资产项目投资决策方案是否可行时必须计算的基础性指标。这里的现金是广义的，不仅指货币资金，还指财产物资的变现价值。&#x0A;&#x0A;现金流量的构成（初始现金流量、营业现金流量、终结现金流量）"/>
 </question>
 <question>
-<text tag="question" value="34.简述提高产品功能成本比值的途径。"/>
+<text tag="question" value="34.简述提高产品功能成本比值的途径。(2010年10月)"/>
 <text tag="answer" value="1.保持产品必要功能的前提下，降低产品成本。&#x0A;&#x0A;2.在不增加成本的前提下，提高产品功能。&#x0A;&#x0A;3.提高产品功能，同时降低产品成本&#x0A;&#x0A;4.成本增加不多，而功能有较大提高&#x0A;&#x0A;5.消除剩余功能，而成本有较大降低。 "/>
 </question>
 </root>

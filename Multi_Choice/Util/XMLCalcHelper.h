@@ -19,4 +19,5 @@
 @property (nonatomic,strong) XMLCalcElement *currentElementPointer;
 
 -(void) load:(NSString*) fileName;
+-(void) loadMultiple:(NSUInteger) numOfQuestions : (NSString*) fileName,...;
 @end

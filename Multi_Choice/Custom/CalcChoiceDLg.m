@@ -27,12 +27,27 @@
 }
 - (void)load
 {
-    if (!m_bShowSearchDetail) {
+    if (!m_bShowSearchDetail)
+    {
 
         m_xmlHelper = [[XMLCalcHelper alloc]init];
         
-        [m_xmlHelper load:m_filename];
-        
+        if([m_filename isEqualToString:@"all"])
+        {
+            [m_xmlHelper loadMultiple:4:
+             @"2009_10_short_answer",
+             @"2010_10_short_answer",
+             @"2011_10_short_answer",
+             @"2012_10_short_answer",
+             @"2013_01_short_answer",
+             @"2013_10_short_answer",
+             @"2014_04_short_answer",nil];
+            //        return;
+        }
+        else
+        {
+          [m_xmlHelper load:m_filename];
+        }
         m_questions = [[m_xmlHelper rootElement] m_subElements];
         
         m_current_index = 0;
@@ -123,7 +138,7 @@
             }
             if (i==0) //Show question no
             {
-                NSString *questionNo = [NSString stringWithFormat:@"(%li/%li)",m_current_index+1,(unsigned long)[m_questions count]];
+                NSString *questionNo = [NSString stringWithFormat:@"(%li/%li)",(unsigned long)(m_current_index+1),(unsigned long)[m_questions count]];
         //        NSLogExt(questionNo);
               lbl_item.text = [lbl_item.text stringByAppendingString:questionNo];
                   [Util setLabelToAutoSize:lbl_item];

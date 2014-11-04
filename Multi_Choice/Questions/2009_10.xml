@@ -1,121 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <root>
-<question title="下列各项业务中，能够形成“本企业与债务人之间财务关系”的是" answer="购买丙公司发行的债券" note="">
+<question title="1.下列各项业务中，能够形成“本企业与债务人之间财务关系”的是(2009年10月)" answer="购买丙公司发行的债券" note="">
 <choice>从甲公司赊购产品</choice>
 <choice>向乙公司支付利息</choice>
 <choice>购买丙公司发行的债券</choice>
 <choice>归还所欠丁公司的货款</choice>
 </question>
-<question title="理论上讲，既能够考虑资金的时间价值和投资风险，又有利于克服管理上的片面性 和短期行为的企业财务管理目标是" answer="企业价值最大化" note="企业价值最大化是指通过企业财务上的合理经营，采用最优的财务政策，充分考虑资金的时间价值和风险与报酬的关系，在保证企业长期稳定发展的基础上，使企业总价值达到最大。&#x0A;&#x0A;其基本思想是将企业长期稳定发展摆在首位、强调在企业价值增长中满足各方利益关系。">
+<question title="2.理论上讲，既能够考虑资金的时间价值和投资风险，又有利于克服管理上的片面性 和短期行为的企业财务管理目标是(2009年10月)" answer="企业价值最大化" note="企业价值最大化是指通过企业财务上的合理经营，采用最优的财务政策，充分考虑资金的时间价值和风险与报酬的关系，在保证企业长期稳定发展的基础上，使企业总价值达到最大。&#x0A;&#x0A;其基本思想是将企业长期稳定发展摆在首位、强调在企业价值增长中满足各方利益关系。">
 <choice>利润最大化</choice>
 <choice>企业价值最大化</choice>
 <choice>每股收益最大化</choice>
 <choice>权益资本利润率最大化</choice>
 </question>
-<question title="某种股票的标准离差率为40％，风险价值系数为30％，则该股票的风险收益率为" answer="１２％" note="股票风险收益率＝风险价值系数×标准离差率&#x0A;=30% x 40%&#x0A;=12%">
+<question title="3.某种股票的标准离差率为40％，风险价值系数为30％，则该股票的风险收益率为(2009年10月)" answer="１２％" note="股票风险收益率＝风险价值系数×标准离差率&#x0A;=30% x 40%&#x0A;=12%">
 <choice>６％</choice>
 <choice>１２％</choice>
 <choice>２０％</choice>
 <choice>４０％</choice>
 </question>
-<question title="在下列各项年金中，无法计算出确切终值的是" answer="永续年金" note="">
+<question title="4.在下列各项年金中，无法计算出确切终值的是(2009年10月)" answer="永续年金" note="">
 <choice>后付年金</choice>
 <choice>先付年金</choice>
 <choice>递延年金</choice>
 <choice>永续年金</choice>
 </question>
-<question title="在下列各项资金时间价值系数中，与资本回收系数互为倒数关系的是" answer="年金现值系数" note="年金现值系数＝1／资本回收系数&#x0A;普通年金终值系数 X 偿债基金系数 = 1&#x0A;复利终值系数 X 复利现值系数 = 1">
+<question title="5.在下列各项资金时间价值系数中，与资本回收系数互为倒数关系的是(2009年10月)" answer="年金现值系数" note="年金现值系数＝1／资本回收系数&#x0A;普通年金终值系数 X 偿债基金系数 = 1&#x0A;复利终值系数 X 复利现值系数 = 1">
 <choice>复利终值系数</choice>
 <choice>复利现值系数</choice>
 <choice>年金终值系数</choice>
 <choice>年金现值系数</choice>
 </question>
-<question title="相对于负债融资方式而言，采用吸收投资方式筹措资金的优点是" answer="有利于降低财务风险" note="">
+<question title="6.相对于负债融资方式而言，采用吸收投资方式筹措资金的优点是(2009年10月)" answer="有利于降低财务风险" note="">
 <choice>有利于降低财务风险</choice>
 <choice>有利于集中企业控制权</choice>
 <choice>有利于降低资金成本</choice>
 <choice>有利于发挥财务杠杆作用</choice>
 </question>
-<question title="与发行债券和银行贷款等筹资方式相比，租赁筹资的主要缺点是" answer="资金成本高" note="租赁筹资是指出租人以收取租金为条件，授予承租人在约定的期限内占有和使用财产权利的一种契约性行为。其行为实质是一种借贷属性，不过它直接涉及的是物而不是钱">
+<question title="7.与发行债券和银行贷款等筹资方式相比，租赁筹资的主要缺点是(2009年10月)" answer="资金成本高" note="租赁筹资是指出租人以收取租金为条件，授予承租人在约定的期限内占有和使用财产权利的一种契约性行为。其行为实质是一种借贷属性，不过它直接涉及的是物而不是钱">
 <choice>限制条件多</choice>
 <choice>资金成本高</choice>
 <choice>筹资速度慢</choice>
 <choice>财务风险大</choice>
 </question>
-<question title="某企业按年利率5.8％向银行借款1000万元，银行要求保留15％的补偿性余额，则 这项借款的实际年利率是" answer="６.８２％" note="实际利率=（实际支付的利息）/（实际得到借款）&#x0A;=(1000x5.8%)/[1000x(1-15%)]&#x0A;=58/850&#x0A;≈0.068235&#x0A;≈6.82%">
+<question title="8.某企业按年利率5.8％向银行借款1000万元，银行要求保留15％的补偿性余额，则 这项借款的实际年利率是(2009年10月)" answer="６.８２％" note="实际利率=（实际支付的利息）/（实际得到借款）&#x0A;=(1000x5.8%)/[1000x(1-15%)]&#x0A;=58/850&#x0A;≈0.068235&#x0A;≈6.82%">
 <choice>５.８２％</choice>
 <choice>６.４２％</choice>
 <choice>６.８２％</choice>
 <choice>７.３２％</choice>
 </question>
-<question title="下列各项中，属于应收账款机会成本的是" answer="应收账款占用资金的应计利息" note="">
+<question title="9.下列各项中，属于应收账款机会成本的是(2009年10月)" answer="应收账款占用资金的应计利息" note="">
 <choice>坏账损失</choice>
 <choice>收账费用</choice>
 <choice>客户资信调查费用</choice>
 <choice>应收账款占用资金的应计利息</choice>
 </question>
-<question title="下列各项中，不影响材料经济采购批量的因素是" answer="年均现金流量大于原始投资额" note="">
+<question title="10.下列各项中，不影响材料经济采购批量的因素是(2009年10月)" answer="年均现金流量大于原始投资额" note="">
 <choice>每次采购费用</choice>
 <choice>材料年度采购总量</choice>
 <choice>单位材料储存保管费用</choice>
 <choice>年均现金流量大于原始投资额</choice>
 </question>
-<question title="如果某一投资方案的净现值为正数，则能够得出的确定性结论是" answer="获利指数大于l" note="净现值是指一个项目预期实现的现金流入的现值与实施该项计划的现金支出的差额。&#x0A;净现值为正值的项目可以为股东创造价值，净现值为负值的项目会损害股东价值。&#x0A;获利指数（Pl ）＝投产后各年现金流入量的现值合计／原始投资的现值合计">
+<question title="11.如果某一投资方案的净现值为正数，则能够得出的确定性结论是(2009年10月)" answer="获利指数大于l" note="净现值是指一个项目预期实现的现金流入的现值与实施该项计划的现金支出的差额。&#x0A;净现值为正值的项目可以为股东创造价值，净现值为负值的项目会损害股东价值。&#x0A;获利指数（Pl ）＝投产后各年现金流入量的现值合计／原始投资的现值合计">
 <choice>获利指数大于l</choice>
 <choice>投资回收期在一年以内</choice>
 <choice>平均报酬率高于100％</choice>
 <choice>年均现金流量大于原始投资额</choice>
 </question>
-<question title="按固定资产的经济用途区分，下列属于生产用固定资产的是" answer="生产车间的动力设备" note="">
+<question title="12.按固定资产的经济用途区分，下列属于生产用固定资产的是(2009年10月)" answer="生产车间的动力设备" note="">
 <choice>职工宿舍</choice>
 <choice>附属医院的房屋</choice>
 <choice>生产车间的动力设备</choice>
 <choice>专设科研机构使用的设备</choice>
 </question>
-<question title="相对于股票投资而言，债券投资的特点是" answer="投资收益率的稳定性较强" note="">
+<question title="13.相对于股票投资而言，债券投资的特点是(2009年10月)" answer="投资收益率的稳定性较强" note="">
 <choice>投资风险较大</choice>
 <choice>投资收益率比较高</choice>
 <choice>无法事先预知投资收益水平</choice>
 <choice>投资收益率的稳定性较强</choice>
 </question>
-<question title="按照费用与产品产量之间的关系对费用所作的分类是" answer="变动费用和固定费用" note="">
+<question title="14.按照费用与产品产量之间的关系对费用所作的分类是(2009年10月)" answer="变动费用和固定费用" note="">
 <choice>直接费用和间接费用</choice>
 <choice>变动费用和固定费用</choice>
 <choice>产品成本和期间费用</choice>
 <choice>可控费用和不可控费用</choice>
 </question>
-<question title="下列成本管理活动中，属于成本管理执行阶段的是" answer="成本控制" note="">
+<question title="15.下列成本管理活动中，属于成本管理执行阶段的是(2009年10月)" answer="成本控制" note="">
 <choice>成本控制</choice>
 <choice>成本计划</choice>
 <choice>成本预测</choice>
 <choice>成本分析与评价</choice>
 </question>
-<question title="“在股利收入与股票价格上涨产生的资本利得收益之间，投资者更倾向于前者”， 
-该观点体现的股利理论是" answer="“一鸟在手”理论" note="">
+<question title="16.“在股利收入与股票价格上涨产生的资本利得收益之间，投资者更倾向于前者”， 
+该观点体现的股利理论是(2009年10月)" answer="“一鸟在手”理论" note="">
 <choice>MM理论</choice>
 <choice>代理理论</choice>
 <choice>“一鸟在手”理论</choice>
 <choice>信号传播理论</choice>
 </question>
-<question title="在企业利润分配中，股利支付与企业盈利状况密切相关的股利分配政策是" answer="固定股利支付率政策" note="固定股利支付率政策是指公司先确定一个股利占净利润（公司盈余）的比率，然后每年都按此比率从净利润中向股东发放股利，每年发放的股利额都等于净利润中向股东发放股利，每年发放的股利额都等于净利润乘以固定的股利支付率。这样，净利润多的年份，股东领取的股利就多；净利润少的年份，股东领取的股利就少。也就是说，采用此政策发放股利时，股东每年领取的股利额是变动的，其多少主要取决于公司每年事先的净利润的多少及股利支付率的高低。我国的部分上市公司采用固定股利支付率政策，将员工个人的利益与公司的利益捆在一起，从而充分调动了广大员工的积极性。">
+<question title="17.在企业利润分配中，股利支付与企业盈利状况密切相关的股利分配政策是(2009年10月)" answer="固定股利支付率政策" note="固定股利支付率政策是指公司先确定一个股利占净利润（公司盈余）的比率，然后每年都按此比率从净利润中向股东发放股利，每年发放的股利额都等于净利润中向股东发放股利，每年发放的股利额都等于净利润乘以固定的股利支付率。这样，净利润多的年份，股东领取的股利就多；净利润少的年份，股东领取的股利就少。也就是说，采用此政策发放股利时，股东每年领取的股利额是变动的，其多少主要取决于公司每年事先的净利润的多少及股利支付率的高低。我国的部分上市公司采用固定股利支付率政策，将员工个人的利益与公司的利益捆在一起，从而充分调动了广大员工的积极性。">
 <choice>剩余股利政策</choice>
 <choice>固定股利政策</choice>
 <choice>固定股利支付率政策</choice>
 <choice>低正常股利加额外股利政策</choice>
 </question>
-<question title="企业因违反国家法律、法规被撤销所进行的清算是" answer="行政清算" note="">
+<question title="18.企业因违反国家法律、法规被撤销所进行的清算是(2009年10月)" answer="行政清算" note="">
 <choice>司法清算</choice>
 <choice>行政清算</choice>
 <choice>破产清算</choice>
 <choice>自愿清算</choice>
 </question>
-<question title="企业的清算财产应该优先支付的是" answer="清算费用" note="清算费用是指清算过程中所发生的各项费用支出，包括清算组人员工资、办公费、公告费、差旅费、诉讼费、审计费、公证费、财产估价费和变卖费等。">
+<question title="19.企业的清算财产应该优先支付的是(2009年10月)" answer="清算费用" note="清算费用是指清算过程中所发生的各项费用支出，包括清算组人员工资、办公费、公告费、差旅费、诉讼费、审计费、公证费、财产估价费和变卖费等。">
 <choice>清算费用</choice>
 <choice>应缴未缴的税金</choice>
 <choice>各项无担保的债务</choice>
 <choice>应付未付的职工工资</choice>
 </question>
-<question title="在杜邦财务分析体系中，综合性最强的财务比率是" answer="净资产收益率" note="">
+<question title="20.在杜邦财务分析体系中，综合性最强的财务比率是(2009年10月)" answer="净资产收益率" note="">
 <choice>销售净利率</choice>
 <choice>总资产净利率</choice>
 <choice>总资产周转率</choice>

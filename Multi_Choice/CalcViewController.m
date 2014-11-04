@@ -18,9 +18,12 @@
 @synthesize m_bCalcView;
 -(void) toolBarRight
 {
+    DialogUtil *dialog = [[DialogUtil alloc]init];
+    [dialog showDialogTitle:@"提示" message:@"有待加入" confirm:@"知道了"];
+    return;
     
     NSString *tmp_filename = m_filename;
-    NSString *tmp_title = [NSString stringWithFormat:@"%@计算题",m_title];
+    NSString *tmp_title = [NSString stringWithFormat:@"%@计算题",[m_title substringToIndex:10]];
     tmp_filename = [tmp_filename substringToIndex:7];
     tmp_filename = [NSString stringWithFormat:@"%@_calc",tmp_filename];
     //NSLogExt(@"filename=%@",tmp_filename);

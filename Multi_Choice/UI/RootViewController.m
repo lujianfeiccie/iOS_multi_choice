@@ -10,6 +10,7 @@
 #import "MultiChoiceViewController.h"
 #import "ModelData.h"
 #import "SearchViewController.h"
+#import "NSMutableArrayExt.h"
 @interface RootViewController ()
 
 @end
@@ -217,18 +218,21 @@
     
      XMLHelper* xmlHelper = [[XMLHelper alloc]init];;
     
-
-    
     
     ///////////////////For multi choice////////////////
-    NSMutableArray* results_multi_choice = [[NSMutableArray alloc]init];
-    NSArray* mutli_question_filename = [NSArray arrayWithObjects:@"2014_04",
+    NSMutableArrayExt* results_multi_choice = [[NSMutableArrayExt alloc]init];
+    results_multi_choice.m_type = TYPE_Multi_Choice;
+    
+    NSArray* mutli_question_filename = [NSArray arrayWithObjects:
+                         @"2014_04",
                          @"2013_10",
                          @"2013_01",
                          @"2012_10",
                          @"2011_10",
                          @"2010_10",
                          @"2009_10",nil];
+
+
     
     for (NSString* filename in mutli_question_filename)
     {
@@ -251,9 +255,18 @@
     ///////////////////For short answer////////////////
     XMLCalcHelper* xmlCalcHelper = [[XMLCalcHelper alloc]init];
     
-    NSMutableArray* results_short_answer = [[NSMutableArray alloc]init];
-    NSArray* mutli_short_answer_filename = [NSArray arrayWithObjects:@"2014_04_short_answer",
-                                        @"2013_10_short_answer",nil];
+    NSMutableArrayExt* results_short_answer = [[NSMutableArrayExt alloc]init];
+    results_short_answer.m_type = TYPE_Short_Answer;
+    
+    NSArray* mutli_short_answer_filename = [NSArray arrayWithObjects:
+                                        @"2014_04_short_answer",
+                                        @"2013_10_short_answer",
+                                        @"2013_01_short_answer",
+                                        @"2012_10_short_answer",
+                                        @"2011_10_short_answer",
+                                        @"2010_10_short_answer",
+                                        @"2009_10_short_answer",nil];
+    
     
     for (NSString* filename in mutli_short_answer_filename)
     {
@@ -291,11 +304,11 @@
     NSMutableArray* results_total = [[NSMutableArray alloc]init];
     if([results_multi_choice count]!=0)
     {
-         [results_total addObject:results_multi_choice];//0 for multi choice
+         [results_total addObject:results_multi_choice];
     }
     if ([results_short_answer count]!=0)
     {
-         [results_total addObject:results_short_answer];//1 for short answer
+         [results_total addObject:results_short_answer];
     }
     
     SearchViewController* search_view =[[self storyboard] instantiateViewControllerWithIdentifier:@"search_view"];
