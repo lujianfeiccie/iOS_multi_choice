@@ -20,7 +20,7 @@ UITableViewDataSource,UIAlertViewDelegate>
     
     DialogUtil* m_dialog_search;
     
-   
+   VersionCheckTool *m_versionCheckTool;
 }
 
 @end

@@ -18,9 +18,13 @@
 @synthesize m_bCalcView;
 -(void) toolBarRight
 {
-    DialogUtil *dialog = [[DialogUtil alloc]init];
-    [dialog showDialogTitle:@"提示" message:@"有待加入" confirm:@"知道了"];
-    return;
+    if(![[m_filename substringToIndex:7] isEqualToString:@"2011_10"])
+    {
+        DialogUtil *dialog = [[DialogUtil alloc]init];
+        [dialog showDialogTitle:@"提示" message:@"有待加入" confirm:@"知道了"];
+        return;
+    }
+    
     
     NSString *tmp_filename = m_filename;
     NSString *tmp_title = [NSString stringWithFormat:@"%@计算题",[m_title substringToIndex:10]];
@@ -126,5 +130,6 @@
     m_dlg = nil;
     [super dealloc];
 }
+
 
 @end

@@ -9,6 +9,7 @@
 #import "CalcChoiceDLg.h"
 #import "Util.h"
 #import "NSLogExt.h"
+#import "GGFullScreenImageViewController.h"
 @implementation CalcChoiceDLg
 @synthesize m_bShowSearchDetail;
 @synthesize m_current_index;
@@ -110,9 +111,8 @@
     {
         XMLCalcElement* item = [question objectAtIndex:i];
         // NSLogExt(@"ElementName=%@, tag=%@, value=%@",[item m_elementName],[item m_tag],[item m_value]);
-        UILabel* lbl_item = [[UILabel alloc]init];
+        UILabelImageExt* lbl_item = [[UILabelImageExt alloc]init];
         lbl_item.tag = 1;
-        
         
         if ([[item m_tag] isEqualToString:@"question"])
         {
@@ -120,16 +120,13 @@
             {
                 lbl_item.text = [item m_value];
                 [Util setLabelToAutoSize:lbl_item];
-               
-                
             }
             else if ([[item m_elementName] isEqualToString:@"image"])
             {
-                UIImage *itemBgImage = [UIImage imageNamed:[item m_value]];
-                UIColor *color = [UIColor colorWithPatternImage:itemBgImage];
-                [lbl_item setFrame:CGRectMake(0, 0, itemBgImage.size.width, itemBgImage.size.height)];
-                lbl_item.backgroundColor = color;
-              
+                [lbl_item setImageName:[item m_value]];
+                lbl_item.userInteractionEnabled = YES;
+                lbl_item.delegateExt = self;
+
             }
             else
             {
@@ -151,26 +148,35 @@
         {
             if ([[item m_elementName] isEqualToString:@"text"])
             {
+                if ([m_array_lablel_answers count]==0)//First answer
+                {
+                lbl_item.text = [NSString stringWithFormat:@"答:\n%@",[item m_value]];
+                }
+                else
+                {
                 lbl_item.text = [item m_value];
+                }
                 [Util setLabelToAutoSize:lbl_item];
             }
             else if ([[item m_elementName] isEqualToString:@"image"])
             {
-                UIImage *itemBgImage = [UIImage imageNamed:[item m_value]];
-                UIColor *color = [UIColor colorWithPatternImage:itemBgImage];
-                [lbl_item setFrame:CGRectMake(0, 0, itemBgImage.size.width, itemBgImage.size.height)];
-                lbl_item.backgroundColor = color;
+                [lbl_item setImageName:[item m_value]];
+                lbl_item.userInteractionEnabled = YES;
+                lbl_item.delegateExt = self;
+
             }
             else
             {
                 return;
             }
             [m_array_lablel_answers addObject:lbl_item];
+            
+            
         }
         
     }
 
-    
+     m_scrollview.contentSize = CGSizeMake(m_view.frame.size.width, m_max_height_question);
 }
 - (void)prev
 {
@@ -225,6 +231,21 @@
     }
 
 }
+
+-(void) onLabelImageExtClick:(id)sender
+{
+    UILabelImageExt *obj = (UILabelImageExt*)sender;
+     UIImage *image = [UIImage imageNamed:[obj getImageName]];
+    UIImageView* imageview = [[UIImageView alloc]initWithImage:image];
+    imageview.contentMode = UIViewContentModeScaleAspectFit;
+    GGFullscreenImageViewController *vc = [[GGFullscreenImageViewController alloc] init];
+    vc.liftedImageView = imageview;
+
+    AppDelegate* app = [[UIApplication sharedApplication]delegate];
+    [app.navController presentViewController:vc animated:YES completion:nil];
+    //NSLogExt(@"image clicked %@",[obj getImageName]);
+}
+
 -(void)dealloc
 {
     if (!m_bShowSearchDetail)

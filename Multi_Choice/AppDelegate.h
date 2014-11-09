@@ -18,13 +18,12 @@
 #import "UserInfoTool.h"
 #import "VersionCheckTool.h"
 #import "XMLCalcHelper.h"
+#import "UINavigationControllerExt.h"
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 {
      UIStoryboard *storyBoard;
-    
-    VersionCheckTool *m_versionCheckTool;
 }
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) UINavigationController *navController;
+@property (strong, nonatomic) UINavigationControllerExt *navController;
 
 @end

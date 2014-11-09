@@ -26,8 +26,16 @@
 		182CABA019ED680600C02B68 /* CalcViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CAB9F19ED680600C02B68 /* CalcViewController.m */; };
 		182CABA319ED695500C02B68 /* XMLCalcHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CABA219ED695500C02B68 /* XMLCalcHelper.m */; };
 		182CABA619ED699200C02B68 /* XMLCalcElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 182CABA519ED699200C02B68 /* XMLCalcElement.m */; };
+		182E0A731A0F948000021009 /* UINavigationControllerExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E0A721A0F948000021009 /* UINavigationControllerExt.m */; };
 		182FB8301A05D1B700D9AB07 /* CalcDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182FB82F1A05D1B700D9AB07 /* CalcDetailViewController.m */; };
 		1831EF731A090C9000431C5A /* NSMutableArrayExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1831EF721A090C9000431C5A /* NSMutableArrayExt.m */; };
+		183E8AAF1A0F79D400F22AA2 /* GGFullScreenImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E8AAE1A0F79D400F22AA2 /* GGFullScreenImageViewController.m */; };
+		1865752E1A0F666D0012692C /* 2011_10_35_question.png in Resources */ = {isa = PBXBuildFile; fileRef = 1865752A1A0F666D0012692C /* 2011_10_35_question.png */; };
+		1865752F1A0F666D0012692C /* 2011_10_36_answer.png in Resources */ = {isa = PBXBuildFile; fileRef = 1865752B1A0F666D0012692C /* 2011_10_36_answer.png */; };
+		186575301A0F666D0012692C /* 2011_10_36_question.png in Resources */ = {isa = PBXBuildFile; fileRef = 1865752C1A0F666D0012692C /* 2011_10_36_question.png */; };
+		186575311A0F666D0012692C /* 2011_10_38_question.png in Resources */ = {isa = PBXBuildFile; fileRef = 1865752D1A0F666D0012692C /* 2011_10_38_question.png */; };
+		186575331A0F66750012692C /* 2011_10_calc.xml in Resources */ = {isa = PBXBuildFile; fileRef = 186575321A0F66750012692C /* 2011_10_calc.xml */; };
+		186575361A0F6B4B0012692C /* UILabelImageExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 186575351A0F6B4B0012692C /* UILabelImageExt.m */; };
 		188D2DC119DBAF25009D45E2 /* 2009_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBA19DBAF25009D45E2 /* 2009_10.xml */; };
 		188D2DC219DBAF25009D45E2 /* 2010_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBB19DBAF25009D45E2 /* 2010_10.xml */; };
 		188D2DC319DBAF25009D45E2 /* 2011_10.xml in Resources */ = {isa = PBXBuildFile; fileRef = 188D2DBC19DBAF25009D45E2 /* 2011_10.xml */; };
@@ -117,10 +125,21 @@
 		182CABA219ED695500C02B68 /* XMLCalcHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLCalcHelper.m; sourceTree = "<group>"; };
 		182CABA419ED699200C02B68 /* XMLCalcElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLCalcElement.h; sourceTree = "<group>"; };
 		182CABA519ED699200C02B68 /* XMLCalcElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLCalcElement.m; sourceTree = "<group>"; };
+		182E0A711A0F948000021009 /* UINavigationControllerExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UINavigationControllerExt.h; sourceTree = "<group>"; };
+		182E0A721A0F948000021009 /* UINavigationControllerExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UINavigationControllerExt.m; sourceTree = "<group>"; };
 		182FB82E1A05D1B700D9AB07 /* CalcDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcDetailViewController.h; sourceTree = "<group>"; };
 		182FB82F1A05D1B700D9AB07 /* CalcDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcDetailViewController.m; sourceTree = "<group>"; };
 		1831EF711A090C9000431C5A /* NSMutableArrayExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArrayExt.h; sourceTree = "<group>"; };
 		1831EF721A090C9000431C5A /* NSMutableArrayExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArrayExt.m; sourceTree = "<group>"; };
+		183E8AAD1A0F79D400F22AA2 /* GGFullScreenImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGFullScreenImageViewController.h; sourceTree = "<group>"; };
+		183E8AAE1A0F79D400F22AA2 /* GGFullScreenImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGFullScreenImageViewController.m; sourceTree = "<group>"; };
+		1865752A1A0F666D0012692C /* 2011_10_35_question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2011_10_35_question.png; sourceTree = "<group>"; };
+		1865752B1A0F666D0012692C /* 2011_10_36_answer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2011_10_36_answer.png; sourceTree = "<group>"; };
+		1865752C1A0F666D0012692C /* 2011_10_36_question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2011_10_36_question.png; sourceTree = "<group>"; };
+		1865752D1A0F666D0012692C /* 2011_10_38_question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2011_10_38_question.png; sourceTree = "<group>"; };
+		186575321A0F66750012692C /* 2011_10_calc.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2011_10_calc.xml; sourceTree = "<group>"; };
+		186575341A0F6B4B0012692C /* UILabelImageExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UILabelImageExt.h; sourceTree = "<group>"; };
+		186575351A0F6B4B0012692C /* UILabelImageExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UILabelImageExt.m; sourceTree = "<group>"; };
 		188D2DBA19DBAF25009D45E2 /* 2009_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2009_10.xml; sourceTree = "<group>"; };
 		188D2DBB19DBAF25009D45E2 /* 2010_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2010_10.xml; sourceTree = "<group>"; };
 		188D2DBC19DBAF25009D45E2 /* 2011_10.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2011_10.xml; sourceTree = "<group>"; };
@@ -225,9 +244,22 @@
 			path = Multi_Choice/SVProgressHUD;
 			sourceTree = "<group>";
 		};
+		186575291A0F666D0012692C /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				1865752A1A0F666D0012692C /* 2011_10_35_question.png */,
+				1865752B1A0F666D0012692C /* 2011_10_36_answer.png */,
+				1865752C1A0F666D0012692C /* 2011_10_36_question.png */,
+				1865752D1A0F666D0012692C /* 2011_10_38_question.png */,
+			);
+			name = Images;
+			path = Multi_Choice/Images;
+			sourceTree = "<group>";
+		};
 		188D2DB919DBAF25009D45E2 /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				186575321A0F66750012692C /* 2011_10_calc.xml */,
 				180E1CC61A012F0100C20A80 /* 2009_10_short_answer.xml */,
 				180E1CC71A012F0100C20A80 /* 2010_10_short_answer.xml */,
 				180E1CC81A012F0100C20A80 /* 2011_10_short_answer.xml */,
@@ -250,6 +282,7 @@
 		18E7B01319A7770300092469 = {
 			isa = PBXGroup;
 			children = (
+				186575291A0F666D0012692C /* Images */,
 				189F11BA19E3F1F600394747 /* Icon-76.png */,
 				189F11BB19E3F1F600394747 /* Icon-120.png */,
 				189F11BC19E3F1F600394747 /* Icon-152.png */,
@@ -352,6 +385,8 @@
 		18E7B05419A778A300092469 /* Util */ = {
 			isa = PBXGroup;
 			children = (
+				183E8AAD1A0F79D400F22AA2 /* GGFullScreenImageViewController.h */,
+				183E8AAE1A0F79D400F22AA2 /* GGFullScreenImageViewController.m */,
 				18EC953519E38E79002515DE /* DialogUtil.h */,
 				18EC953619E38E79002515DE /* DialogUtil.m */,
 				180E3B8D19E295B80028B7A6 /* ButtonUtil.h */,
@@ -396,6 +431,8 @@
 		18F701D919AA1106005E0361 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				186575341A0F6B4B0012692C /* UILabelImageExt.h */,
+				186575351A0F6B4B0012692C /* UILabelImageExt.m */,
 				18F701DA19AA1133005E0361 /* UILabelExt.h */,
 				18F701DB19AA1133005E0361 /* UILabelExt.m */,
 				180E3B8219E28C9E0028B7A6 /* AbstractViewController.h */,
@@ -408,6 +445,8 @@
 				18EE302C1A028265005D1DCA /* UIButtonExt.m */,
 				1831EF711A090C9000431C5A /* NSMutableArrayExt.h */,
 				1831EF721A090C9000431C5A /* NSMutableArrayExt.m */,
+				182E0A711A0F948000021009 /* UINavigationControllerExt.h */,
+				182E0A721A0F948000021009 /* UINavigationControllerExt.m */,
 			);
 			name = Custom;
 			path = Multi_Choice/Custom;
@@ -500,9 +539,12 @@
 				18B3A7C119BDB96800A4B068 /* Icon@2x.png in Resources */,
 				180E1CD21A012F0100C20A80 /* 2013_10_short_answer.xml in Resources */,
 				180E3B8919E292520028B7A6 /* SVProgressHUD.bundle in Resources */,
+				186575331A0F66750012692C /* 2011_10_calc.xml in Resources */,
+				186575301A0F666D0012692C /* 2011_10_36_question.png in Resources */,
 				180E1CD01A012F0100C20A80 /* 2012_10_short_answer.xml in Resources */,
 				188D2DC319DBAF25009D45E2 /* 2011_10.xml in Resources */,
 				18E7B03819A7770300092469 /* Images.xcassets in Resources */,
+				1865752E1A0F666D0012692C /* 2011_10_35_question.png in Resources */,
 				188D2DC519DBAF25009D45E2 /* 2013_01.xml in Resources */,
 				180E1CCD1A012F0100C20A80 /* 2009_10_short_answer.xml in Resources */,
 				18B3A7C319BDBA0C00A4B068 /* Default@2x.png in Resources */,
@@ -510,6 +552,7 @@
 				18E7B02A19A7770300092469 /* InfoPlist.strings in Resources */,
 				188D2DC219DBAF25009D45E2 /* 2010_10.xml in Resources */,
 				188D2DC419DBAF25009D45E2 /* 2012_10.xml in Resources */,
+				1865752F1A0F666D0012692C /* 2011_10_36_answer.png in Resources */,
 				180E1CD31A012F0100C20A80 /* 2014_04_short_answer.xml in Resources */,
 				180E1CD11A012F0100C20A80 /* 2013_01_short_answer.xml in Resources */,
 				180E1CCF1A012F0100C20A80 /* 2011_10_short_answer.xml in Resources */,
@@ -521,6 +564,7 @@
 				18FE58A919E23A45004A542B /* Default-568h@2x.png in Resources */,
 				18B3BC5B19BDBC9500A4B068 /* me.png in Resources */,
 				188D2DC119DBAF25009D45E2 /* 2009_10.xml in Resources */,
+				186575311A0F666D0012692C /* 2011_10_38_question.png in Resources */,
 				189F11BD19E3F1F600394747 /* Icon-76.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -570,7 +614,10 @@
 				1801B24319F0ADD400EDEC03 /* MultiChoiceDlg.m in Sources */,
 				18ECDCF619E57F5E00A00BE1 /* VersionCheckTool.m in Sources */,
 				18F7744319AB8C2100D5F3FD /* Util.m in Sources */,
+				186575361A0F6B4B0012692C /* UILabelImageExt.m in Sources */,
+				182E0A731A0F948000021009 /* UINavigationControllerExt.m in Sources */,
 				1801B24619F0BB3500EDEC03 /* CalcChoiceDLg.m in Sources */,
+				183E8AAF1A0F79D400F22AA2 /* GGFullScreenImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

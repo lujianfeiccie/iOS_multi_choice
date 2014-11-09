@@ -32,7 +32,8 @@
 -(void) toolBarRight
 {
     UIViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"about_view"];
-    [app.navController pushViewController:next animated:YES];
+   [app.navController pushViewController:next animated:YES];
+  
 }
 - (void)viewDidLoad
 {
@@ -40,6 +41,7 @@
     // Do any additional setup after loading the view.
     app = [[UIApplication sharedApplication]delegate];
     
+
     m_dialog_search = [[DialogUtil alloc] init];
     m_dialog_search.delegate = self;
     
@@ -104,7 +106,13 @@
              m_tableview_list.frame.size.width,
              m_tableview_list.frame.size.height);
     
-    
+    m_versionCheckTool = [[VersionCheckTool alloc]init];
+    m_versionCheckTool.m_app_id = GLOBAL_APP_ID;
+    m_versionCheckTool.m_isAboutDlg = NO;
+    NSLogExt(@"m_isAboutDlg=%i",m_versionCheckTool.m_isAboutDlg);
+
+    //Check the version
+    [m_versionCheckTool request];
 //    m_tableview_list.backgroundColor = [UIColor redColor];
 }
 
@@ -315,10 +323,18 @@
     search_view.m_array_list = results_total;
     [[app navController] pushViewController:search_view animated:YES];
 }
+
+
+
+
+
+
+
 - (void)dealloc {
     [m_tableview_list release];
     [m_datalist removeAllObjects];
     [m_datalist release];
+    [m_versionCheckTool releaseExt];
     [super dealloc];
 }
 @end

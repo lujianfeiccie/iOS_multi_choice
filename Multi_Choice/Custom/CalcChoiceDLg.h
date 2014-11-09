@@ -8,7 +8,10 @@
 
 #import <Foundation/Foundation.h>
 #import "XMLCalcHelper.h"
-@interface CalcChoiceDLg : NSObject
+#import "UILabelImageExt.h"
+#import "AppDelegate.h"
+@interface CalcChoiceDLg : NSObject<UILabelImageExtDelegate>
+
 {
     XMLCalcHelper *m_xmlHelper;
     NSMutableArray* m_questions;

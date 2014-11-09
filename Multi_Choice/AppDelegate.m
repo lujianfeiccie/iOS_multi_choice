@@ -22,19 +22,14 @@
     //[self MyLog:[NSString stringWithFormat:@"%f",[[[UIDevice currentDevice] systemVersion] floatValue]]];
     
     RootViewController *rootView =  [storyBoard instantiateViewControllerWithIdentifier:@"rootview"];
-    self.navController = [[UINavigationController alloc] init];
+    self.navController = [[UINavigationControllerExt alloc] init];
     [self.navController pushViewController:rootView animated:YES];
     [self.navController setToolbarHidden:YES];//底部隐藏
     
     [self.window addSubview:self.navController.view];
     [self.window makeKeyAndVisible];
     
-   
-    m_versionCheckTool = [[VersionCheckTool alloc]init];
-    m_versionCheckTool.m_app_id = GLOBAL_APP_ID;
-    m_versionCheckTool.m_isAboutDlg = NO;
-    NSLogExt(@"m_isAboutDlg=%i",m_versionCheckTool.m_isAboutDlg);
-    return YES;
+       return YES;
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -55,14 +50,14 @@
 {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
   //  NSLog(@"applicationWillEnterForeground");
+    
 }
 
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      //NSLog(@"applicationDidBecomeActive");
-    //Check the version
-    [m_versionCheckTool request];
+
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
@@ -70,8 +65,9 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
      //NSLog(@"applicationWillTerminate");
 }
+
 - (void)dealloc {
-    [m_versionCheckTool releaseExt];
+  
     [super dealloc];
 }
 
