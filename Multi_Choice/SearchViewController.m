@@ -56,33 +56,61 @@
                 reuseIdentifier:GroupedTableIdentifier];
     }
     
-    
-    if (questions.m_type == TYPE_Multi_Choice)
+    switch (questions.m_type)
     {
-        cell.textLabel.text = ((XMLElement*)[questions objectAtIndex:row]).m_title;
-        cell.textLabel.numberOfLines = 2;
-        NSLogExt(@"Multi choice");
-    }
-    else if (questions.m_type == TYPE_Short_Answer)
-    {
-        XMLCalcElement* obj =[questions objectAtIndex:row];
-        NSUInteger count_items = [obj.m_subElements count];
-        NSString* titleForQuestion = @"";
-        for (NSUInteger j=0; j<count_items; j++)  //num of items in each question
+        case TYPE_Multi_Choice:
         {
-            XMLCalcElement* item = [obj.m_subElements objectAtIndex:j];
-            if ([item.m_tag isEqualToString:@"question"])
-            {
-                titleForQuestion = [titleForQuestion stringByAppendingString:item.m_value];
-            }
+            cell.textLabel.text = ((XMLElement*)[questions objectAtIndex:row]).m_title;
+            cell.textLabel.numberOfLines = 2;
+            NSLogExt(@"Multi choice");
         }
-        
-        cell.textLabel.text = titleForQuestion;
-        cell.textLabel.numberOfLines = 5;
+            break;
+        case TYPE_Short_Answer:
+        {
+            XMLCalcElement* obj =[questions objectAtIndex:row];
+            NSUInteger count_items = [obj.m_subElements count];
+            NSString* titleForQuestion = @"";
+            for (NSUInteger j=0; j<count_items; j++)  //num of items in each question
+            {
+                XMLCalcElement* item = [obj.m_subElements objectAtIndex:j];
+                if ([item.m_tag isEqualToString:@"question"])
+                {
+                    titleForQuestion = [titleForQuestion stringByAppendingString:item.m_value];
+                }
+            }
+            
+            cell.textLabel.text = titleForQuestion;
+            cell.textLabel.numberOfLines = 5;
+            
+            NSLogExt(@"Calc");
+        }
+            break;
+        case TYPE_Calc:
+        {
+            XMLCalcElement* obj =[questions objectAtIndex:row];
+            NSUInteger count_items = [obj.m_subElements count];
+            NSString* titleForQuestion = @"";
+            for (NSUInteger j=0; j<count_items; j++)  //num of items in each question
+            {
+                XMLCalcElement* item = [obj.m_subElements objectAtIndex:j];
+                if ([item.m_tag isEqualToString:@"question"])
+                {
+                    titleForQuestion = [titleForQuestion stringByAppendingString:item.m_value];
+                    break;
+                }
+            }
+            
+            cell.textLabel.text = titleForQuestion;
+            cell.textLabel.numberOfLines = 5;
+            
+            NSLogExt(@"Calc");
 
-        NSLogExt(@"Calc");
+        }
+            break;
+        default:
+            break;
     }
-
+   
     cell.backgroundColor = GLOBAL_BGColor;
    
     cell.textLabel.lineBreakMode = NSLineBreakByWordWrapping;
@@ -94,17 +122,22 @@
     NSString *title=@"";
     
     NSMutableArrayExt* questions = [m_array_list objectAtIndex:section];
-
     
-    if (questions.m_type == TYPE_Multi_Choice)
+    switch (questions.m_type)
     {
-       title = @"选择题";
+        case TYPE_Multi_Choice:
+            title=@"选择题";
+            break;
+        case TYPE_Short_Answer:
+            title=@"简答题";
+            break;
+        case TYPE_Calc:
+            title=@"计算题";
+            break;
+        default:
+            break;
     }
-    else if (questions.m_type == TYPE_Short_Answer)
-    {
-       title = @"简答题";
-    }
-     return title;
+    return title;
 }
 
 -(CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

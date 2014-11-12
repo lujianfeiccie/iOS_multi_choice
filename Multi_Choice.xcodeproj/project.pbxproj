@@ -29,6 +29,8 @@
 		182E0A731A0F948000021009 /* UINavigationControllerExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 182E0A721A0F948000021009 /* UINavigationControllerExt.m */; };
 		182FB8301A05D1B700D9AB07 /* CalcDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 182FB82F1A05D1B700D9AB07 /* CalcDetailViewController.m */; };
 		1831EF731A090C9000431C5A /* NSMutableArrayExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 1831EF721A090C9000431C5A /* NSMutableArrayExt.m */; };
+		1835F0FC1A13A97000A17ED4 /* 2012_10_calc.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1835F0FB1A13A97000A17ED4 /* 2012_10_calc.xml */; };
+		1835F0FE1A13A97800A17ED4 /* 2012_10_35_question.png in Resources */ = {isa = PBXBuildFile; fileRef = 1835F0FD1A13A97800A17ED4 /* 2012_10_35_question.png */; };
 		183E8AAF1A0F79D400F22AA2 /* GGFullScreenImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183E8AAE1A0F79D400F22AA2 /* GGFullScreenImageViewController.m */; };
 		1862A6F51A1113C800C53549 /* 2013_10_35_question.png in Resources */ = {isa = PBXBuildFile; fileRef = 1862A6F31A1113C800C53549 /* 2013_10_35_question.png */; };
 		1862A6F61A1113C800C53549 /* 2013_10_37_question.png in Resources */ = {isa = PBXBuildFile; fileRef = 1862A6F41A1113C800C53549 /* 2013_10_37_question.png */; };
@@ -134,6 +136,8 @@
 		182FB82F1A05D1B700D9AB07 /* CalcDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalcDetailViewController.m; sourceTree = "<group>"; };
 		1831EF711A090C9000431C5A /* NSMutableArrayExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSMutableArrayExt.h; sourceTree = "<group>"; };
 		1831EF721A090C9000431C5A /* NSMutableArrayExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSMutableArrayExt.m; sourceTree = "<group>"; };
+		1835F0FB1A13A97000A17ED4 /* 2012_10_calc.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2012_10_calc.xml; sourceTree = "<group>"; };
+		1835F0FD1A13A97800A17ED4 /* 2012_10_35_question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2012_10_35_question.png; sourceTree = "<group>"; };
 		183E8AAD1A0F79D400F22AA2 /* GGFullScreenImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGFullScreenImageViewController.h; sourceTree = "<group>"; };
 		183E8AAE1A0F79D400F22AA2 /* GGFullScreenImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGFullScreenImageViewController.m; sourceTree = "<group>"; };
 		1862A6F31A1113C800C53549 /* 2013_10_35_question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2013_10_35_question.png; sourceTree = "<group>"; };
@@ -253,6 +257,7 @@
 		186575291A0F666D0012692C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				1835F0FD1A13A97800A17ED4 /* 2012_10_35_question.png */,
 				1862A6F31A1113C800C53549 /* 2013_10_35_question.png */,
 				1862A6F41A1113C800C53549 /* 2013_10_37_question.png */,
 				1865752A1A0F666D0012692C /* 2011_10_35_question.png */,
@@ -267,6 +272,7 @@
 		188D2DB919DBAF25009D45E2 /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				1835F0FB1A13A97000A17ED4 /* 2012_10_calc.xml */,
 				1862A6F71A1113D800C53549 /* 2013_10_calc.xml */,
 				186575321A0F66750012692C /* 2011_10_calc.xml */,
 				180E1CC61A012F0100C20A80 /* 2009_10_short_answer.xml */,
@@ -565,7 +571,9 @@
 				1865752F1A0F666D0012692C /* 2011_10_36_answer.png in Resources */,
 				1862A6F81A1113D800C53549 /* 2013_10_calc.xml in Resources */,
 				180E1CD31A012F0100C20A80 /* 2014_04_short_answer.xml in Resources */,
+				1835F0FC1A13A97000A17ED4 /* 2012_10_calc.xml in Resources */,
 				180E1CD11A012F0100C20A80 /* 2013_01_short_answer.xml in Resources */,
+				1835F0FE1A13A97800A17ED4 /* 2012_10_35_question.png in Resources */,
 				180E1CCF1A012F0100C20A80 /* 2011_10_short_answer.xml in Resources */,
 				189F11BE19E3F1F600394747 /* Icon-120.png in Resources */,
 				18E7B03319A7770300092469 /* Main.storyboard in Resources */,

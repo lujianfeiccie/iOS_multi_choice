@@ -19,7 +19,8 @@
 -(void) toolBarRight
 {
     if(![[m_filename substringToIndex:7] isEqualToString:@"2011_10"]
-       && ![[m_filename substringToIndex:7] isEqualToString:@"2013_10"])
+       && ![[m_filename substringToIndex:7] isEqualToString:@"2013_10"]
+       && ![[m_filename substringToIndex:7] isEqualToString:@"2012_10"])
     {
         DialogUtil *dialog = [[DialogUtil alloc]init];
         [dialog showDialogTitle:@"提示" message:@"有待加入" confirm:@"知道了"];

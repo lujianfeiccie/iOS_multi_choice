@@ -303,8 +303,53 @@
     }
     //////////////////End for short answer ///////////////
 
+    
+    ///////////////////For calc////////////////
+    
+    NSMutableArrayExt* results_calc = [[NSMutableArrayExt alloc]init];
+    results_calc.m_type = TYPE_Calc;
+    
+    NSArray* mutli_calc_filename = [NSArray arrayWithObjects:
+                                          //  @"2014_04_calc",
+                                            @"2013_10_calc",
+                                           // @"2013_01_calc",
+                                            @"2012_10_calc",
+                                            @"2011_10_calc",
+                                            //@"2010_10_calc",
+                                            //@"2009_10_calc",
+                                            nil];
+    
+    
+    for (NSString* filename in mutli_calc_filename)
+    {
+        [xmlCalcHelper load:filename];
+        NSMutableArray *m_questions = [[xmlCalcHelper rootElement] m_subElements];
+        
+        NSUInteger count = [m_questions count];
+        for (NSUInteger i=0; i<count; i++) //num of questions
+        {
+            XMLCalcElement* obj =[m_questions objectAtIndex:i];
+            NSUInteger count_items = [obj.m_subElements count];
+            
+            for (NSUInteger j=0; j<count_items; j++)  //num of items in each question
+            {
+                XMLCalcElement* item = [obj.m_subElements objectAtIndex:j];
+                if ([[item m_tag] isEqualToString:@"question"] &&
+                    [Util containString:item.m_value :keywords])
+                {
+                    [results_calc addObject:[m_questions objectAtIndex:i]];
+                     NSLogExt(@"tag=%@,value=%@",item.m_tag,item.m_value);
+                }
+                
+            }
+        }
+        
+    }
+    //////////////////End for calc ///////////////
     [SVProgressHUD dismiss];
-    if ([results_multi_choice count]==0 && [results_short_answer count] == 0)
+    if ([results_multi_choice count] == 0
+        && [results_short_answer count] == 0
+        && [results_calc count] == 0)
     {
         [SVProgressHUD showErrorWithStatus:@"没有找到相关内容"];
         return;
@@ -318,7 +363,10 @@
     {
          [results_total addObject:results_short_answer];
     }
-    
+    if ([results_calc count]!=0)
+    {
+        [results_total addObject:results_calc];
+    }
     SearchViewController* search_view =[[self storyboard] instantiateViewControllerWithIdentifier:@"search_view"];
     search_view.m_array_list = results_total;
     [[app navController] pushViewController:search_view animated:YES];
