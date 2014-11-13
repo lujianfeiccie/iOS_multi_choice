@@ -18,7 +18,8 @@
 @synthesize m_bCalcView;
 -(void) toolBarRight
 {
-    if(![[m_filename substringToIndex:7] isEqualToString:@"2011_10"]
+    if(![[m_filename substringToIndex:7] isEqualToString:@"2009_10"]
+       && ![[m_filename substringToIndex:7] isEqualToString:@"2011_10"]
        && ![[m_filename substringToIndex:7] isEqualToString:@"2013_10"]
        && ![[m_filename substringToIndex:7] isEqualToString:@"2012_10"])
     {
