@@ -88,6 +88,12 @@
 		18F701DC19AA1133005E0361 /* UILabelExt.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F701DB19AA1133005E0361 /* UILabelExt.m */; };
 		18F701E019AA406E005E0361 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F701DF19AA406E005E0361 /* RootViewController.m */; };
 		18F7744319AB8C2100D5F3FD /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 18F7744219AB8C2100D5F3FD /* Util.m */; };
+		18FC49CA1A184C24000671A4 /* 2010_10_calc.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18FC49C71A184C24000671A4 /* 2010_10_calc.xml */; };
+		18FC49CB1A184C24000671A4 /* 2013_01_calc.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18FC49C81A184C24000671A4 /* 2013_01_calc.xml */; };
+		18FC49CC1A184C24000671A4 /* 2014_04_calc.xml in Resources */ = {isa = PBXBuildFile; fileRef = 18FC49C91A184C24000671A4 /* 2014_04_calc.xml */; };
+		18FC49D01A184C33000671A4 /* 2010_10_38_question.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FC49CD1A184C33000671A4 /* 2010_10_38_question.png */; };
+		18FC49D11A184C33000671A4 /* 2013_01_38_question.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FC49CE1A184C33000671A4 /* 2013_01_38_question.png */; };
+		18FC49D21A184C33000671A4 /* 2014_04_35_question.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FC49CF1A184C33000671A4 /* 2014_04_35_question.png */; };
 		18FE58A919E23A45004A542B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 18FE58A819E23A45004A542B /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
@@ -219,6 +225,12 @@
 		18F701DF19AA406E005E0361 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RootViewController.m; path = UI/RootViewController.m; sourceTree = "<group>"; };
 		18F7744119AB8C2100D5F3FD /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
 		18F7744219AB8C2100D5F3FD /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		18FC49C71A184C24000671A4 /* 2010_10_calc.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2010_10_calc.xml; sourceTree = "<group>"; };
+		18FC49C81A184C24000671A4 /* 2013_01_calc.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2013_01_calc.xml; sourceTree = "<group>"; };
+		18FC49C91A184C24000671A4 /* 2014_04_calc.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 2014_04_calc.xml; sourceTree = "<group>"; };
+		18FC49CD1A184C33000671A4 /* 2010_10_38_question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2010_10_38_question.png; sourceTree = "<group>"; };
+		18FC49CE1A184C33000671A4 /* 2013_01_38_question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2013_01_38_question.png; sourceTree = "<group>"; };
+		18FC49CF1A184C33000671A4 /* 2014_04_35_question.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2014_04_35_question.png; sourceTree = "<group>"; };
 		18FE58A819E23A45004A542B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Multi_Choice/Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,6 +273,9 @@
 		186575291A0F666D0012692C /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				18FC49CD1A184C33000671A4 /* 2010_10_38_question.png */,
+				18FC49CE1A184C33000671A4 /* 2013_01_38_question.png */,
+				18FC49CF1A184C33000671A4 /* 2014_04_35_question.png */,
 				18610E131A15031E003A9E37 /* 2009_10_35_question.png */,
 				1835F0FD1A13A97800A17ED4 /* 2012_10_35_question.png */,
 				1862A6F31A1113C800C53549 /* 2013_10_35_question.png */,
@@ -277,6 +292,9 @@
 		188D2DB919DBAF25009D45E2 /* Questions */ = {
 			isa = PBXGroup;
 			children = (
+				18FC49C71A184C24000671A4 /* 2010_10_calc.xml */,
+				18FC49C81A184C24000671A4 /* 2013_01_calc.xml */,
+				18FC49C91A184C24000671A4 /* 2014_04_calc.xml */,
 				18610E111A150316003A9E37 /* 2009_10_calc.xml */,
 				1835F0FB1A13A97000A17ED4 /* 2012_10_calc.xml */,
 				1862A6F71A1113D800C53549 /* 2013_10_calc.xml */,
@@ -569,12 +587,15 @@
 				18E7B03819A7770300092469 /* Images.xcassets in Resources */,
 				1865752E1A0F666D0012692C /* 2011_10_35_question.png in Resources */,
 				188D2DC519DBAF25009D45E2 /* 2013_01.xml in Resources */,
+				18FC49CB1A184C24000671A4 /* 2013_01_calc.xml in Resources */,
 				18610E141A15031E003A9E37 /* 2009_10_35_question.png in Resources */,
 				180E1CCD1A012F0100C20A80 /* 2009_10_short_answer.xml in Resources */,
 				18B3A7C319BDBA0C00A4B068 /* Default@2x.png in Resources */,
 				188D2DC619DBAF25009D45E2 /* 2013_10.xml in Resources */,
+				18FC49D21A184C33000671A4 /* 2014_04_35_question.png in Resources */,
 				18E7B02A19A7770300092469 /* InfoPlist.strings in Resources */,
 				188D2DC219DBAF25009D45E2 /* 2010_10.xml in Resources */,
+				18FC49D11A184C33000671A4 /* 2013_01_38_question.png in Resources */,
 				188D2DC419DBAF25009D45E2 /* 2012_10.xml in Resources */,
 				1865752F1A0F666D0012692C /* 2011_10_36_answer.png in Resources */,
 				1862A6F81A1113D800C53549 /* 2013_10_calc.xml in Resources */,
@@ -589,9 +610,12 @@
 				18B3A7BE19BDB96800A4B068 /* Default.png in Resources */,
 				188D2DC719DBAF25009D45E2 /* 2014_04.xml in Resources */,
 				18FE58A919E23A45004A542B /* Default-568h@2x.png in Resources */,
+				18FC49CC1A184C24000671A4 /* 2014_04_calc.xml in Resources */,
 				18B3BC5B19BDBC9500A4B068 /* me.png in Resources */,
 				188D2DC119DBAF25009D45E2 /* 2009_10.xml in Resources */,
+				18FC49CA1A184C24000671A4 /* 2010_10_calc.xml in Resources */,
 				186575311A0F666D0012692C /* 2011_10_38_question.png in Resources */,
+				18FC49D01A184C33000671A4 /* 2010_10_38_question.png in Resources */,
 				189F11BD19E3F1F600394747 /* Icon-76.png in Resources */,
 				1862A6F51A1113C800C53549 /* 2013_10_35_question.png in Resources */,
 			);
@@ -723,15 +747,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: jianfei lu (L7FW62Y4Q4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jianfei lu (L7FW62Y4Q4)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Multi_Choice/Multi_Choice-Prefix.pch";
 				INFOPLIST_FILE = "Multi_Choice/Multi_Choice-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "B6AD5444-E072-4F98-B24A-40FF63EC5180";
+				PROVISIONING_PROFILE = "e4b87755-283b-46cf-b433-922e3b1d0935";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -741,15 +765,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: jianfei lu (L7FW62Y4Q4)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: jianfei lu (L7FW62Y4Q4)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Multi_Choice/Multi_Choice-Prefix.pch";
 				INFOPLIST_FILE = "Multi_Choice/Multi_Choice-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "B6AD5444-E072-4F98-B24A-40FF63EC5180";
+				PROVISIONING_PROFILE = "e4b87755-283b-46cf-b433-922e3b1d0935";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

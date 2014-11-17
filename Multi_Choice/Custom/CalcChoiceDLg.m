@@ -45,6 +45,18 @@
              @"2014_04_short_answer",nil];
             //        return;
         }
+        else if([m_filename isEqualToString:@"all_calc"])
+        {
+            [m_xmlHelper loadMultiple:4:
+             @"2009_10_calc",
+             @"2010_10_calc",
+             @"2011_10_calc",
+             @"2012_10_calc",
+             @"2013_01_calc",
+             @"2013_10_calc",
+             @"2014_04_calc",nil];
+            //        return;
+        }
         else
         {
           [m_xmlHelper load:m_filename];

@@ -149,30 +149,40 @@
     NSUInteger section = [indexPath section];
     NSUInteger row = [indexPath row];
     
-    NSMutableArray* questions= [m_array_list objectAtIndex:section];
+    NSMutableArrayExt* questions= [m_array_list objectAtIndex:section];
     
-    id question = [questions objectAtIndex:row];
-    
-    if ([question isKindOfClass:XMLElement.class])
+ 
+    if (questions.m_type == TYPE_Multi_Choice)
     {
         MultChoiceDetailViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"multi_choice_detail"];
         
-        next.m_array_detail = questions;
+        next.m_array_detail = (NSMutableArray*)questions;
         next.m_currentIndex = row;
         next.m_title = @"选择题搜索结果";
         [app.navController pushViewController:next animated:YES];
 
     }
-    else if ([question isKindOfClass:XMLCalcElement.class])
+    else if (questions.m_type == TYPE_Short_Answer)
     {
         CalcDetailViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"calc_detail_view"];
         
-        next.m_array_detail = questions;
+        next.m_array_detail = (NSMutableArray*)questions;
         next.m_currentIndex = row;
         next.m_title = @"简答题搜索结果";
         [app.navController pushViewController:next animated:YES];
 
     }
+    else if (questions.m_type == TYPE_Calc)
+    {
+        CalcDetailViewController *next = [[self storyboard] instantiateViewControllerWithIdentifier:@"calc_detail_view"];
+        
+        next.m_array_detail = (NSMutableArray*)questions;
+        next.m_currentIndex = row;
+        next.m_title = @"计算题搜索结果";
+        [app.navController pushViewController:next animated:YES];
+        
+    }
+
   //  NSLogExt(@"section=%i\trow=%i",section,row);
 }
 

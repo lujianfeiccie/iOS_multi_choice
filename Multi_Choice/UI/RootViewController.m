@@ -310,12 +310,12 @@
     results_calc.m_type = TYPE_Calc;
     
     NSArray* mutli_calc_filename = [NSArray arrayWithObjects:
-                                          //  @"2014_04_calc",
+                                            @"2014_04_calc",
                                             @"2013_10_calc",
-                                           // @"2013_01_calc",
+                                            @"2013_01_calc",
                                             @"2012_10_calc",
                                             @"2011_10_calc",
-                                            //@"2010_10_calc",
+                                            @"2010_10_calc",
                                             @"2009_10_calc",
                                             nil];
     
