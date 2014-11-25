@@ -47,7 +47,7 @@
     
     m_tableview_list.separatorStyle = UITableViewCellSeparatorStyleNone;
     m_tableview_list.backgroundColor = GLOBAL_BGColor;
-    self.navigationItem.title = @"财务管理学";
+    self.navigationItem.title = [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleDisplayName"];
     
     m_datalist = [[NSMutableArray alloc]init];
     ModelData *model = [[ModelData alloc]init];

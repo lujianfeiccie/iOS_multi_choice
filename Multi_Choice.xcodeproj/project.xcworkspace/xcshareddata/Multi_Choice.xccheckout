@@ -14,7 +14,7 @@
 		<string>https://github.com/lujianfeiccie/iOS_multi_choice.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Multi_Choice.xcodeproj/project.xcworkspace</string>
+	<string>Multi_Choice.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>96C4B22F8CC59A1FB079CF30039A9DE2B0AB2469</key>
@@ -34,7 +34,7 @@
 			<key>IDESourceControlWCCIdentifierKey</key>
 			<string>96C4B22F8CC59A1FB079CF30039A9DE2B0AB2469</string>
 			<key>IDESourceControlWCCName</key>
-			<string>Multi_Choice</string>
+			<string>iOS_multi_choice</string>
 		</dict>
 	</array>
 </dict>
