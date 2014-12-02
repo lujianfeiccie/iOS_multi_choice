@@ -50,14 +50,25 @@
             if (delegate!=nil)
             {
                 [delegate onDialogConfirmClick:self];
-                 UITextField *tf=[alertView textFieldAtIndex:0];
-                if (tf!=nil)
+                @try
                 {
-                    tf.keyboardType = UIKeyboardTypeDefault;
-                    [tf becomeFirstResponder];
-                    [delegate onDialogTextReceive:self Text:tf.text];
+                    UITextField *tf=[alertView textFieldAtIndex:0];
+                    if (tf!=nil)
+                    {
+                        tf.keyboardType = UIKeyboardTypeDefault;
+                        [tf becomeFirstResponder];
+                        [delegate onDialogTextReceive:self Text:tf.text];
+                    }
+
                 }
-            }
+                @catch (NSException *exception)
+                {
+                    
+                }
+                @finally
+                {
+                }
+             }
         }
             break;
         case 1:
