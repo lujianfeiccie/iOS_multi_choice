@@ -16,7 +16,6 @@
 @end
 
 @implementation SearchViewController
-@synthesize m_array_list;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -33,10 +32,10 @@
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return [m_array_list count];
+    return [super.m_array_list count];
 }
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    NSMutableArray *questions = [m_array_list objectAtIndex:section];
+    NSMutableArray *questions = [super.m_array_list objectAtIndex:section];
     return [questions count];
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -44,7 +43,7 @@
     NSUInteger row = [indexPath row];
     
     
-    NSMutableArrayExt* questions = [m_array_list objectAtIndex:section];
+    NSMutableArrayExt* questions = [super.m_array_list objectAtIndex:section];
  
     
     static NSString *GroupedTableIdentifier = @"cell";
@@ -121,7 +120,7 @@
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     NSString *title=@"";
     
-    NSMutableArrayExt* questions = [m_array_list objectAtIndex:section];
+    NSMutableArrayExt* questions = [super.m_array_list objectAtIndex:section];
     
     switch (questions.m_type)
     {
@@ -149,7 +148,7 @@
     NSUInteger section = [indexPath section];
     NSUInteger row = [indexPath row];
     
-    NSMutableArrayExt* questions= [m_array_list objectAtIndex:section];
+    NSMutableArrayExt* questions= [super.m_array_list objectAtIndex:section];
     
  
     if (questions.m_type == TYPE_Multi_Choice)
@@ -204,8 +203,6 @@
 
 - (void)dealloc {
     [m_tableview release];
-    [m_array_list removeAllObjects];
-    [m_array_list release];
     [super dealloc];
 }
 @end

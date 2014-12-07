@@ -367,7 +367,7 @@
     {
         [results_total addObject:results_calc];
     }
-    SearchViewController* search_view =[[self storyboard] instantiateViewControllerWithIdentifier:@"search_view"];
+    AbstractSearchViewController* search_view =[ViewControllerFactory getSearchView:self];
     search_view.m_array_list = results_total;
     [[app navController] pushViewController:search_view animated:YES];
 }
