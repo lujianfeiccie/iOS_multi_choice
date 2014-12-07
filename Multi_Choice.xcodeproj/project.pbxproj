@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0479DA911A33FA6B00B54932 /* AbstractDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479DA8C1A33FA6B00B54932 /* AbstractDetailViewController.m */; };
+		0479DA921A33FA6B00B54932 /* AbstractSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479DA8E1A33FA6B00B54932 /* AbstractSearchViewController.m */; };
+		0479DA931A33FA6B00B54932 /* ViewControllerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0479DA901A33FA6B00B54932 /* ViewControllerFactory.m */; };
+		049307411A34027E00046960 /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 049307401A34027E00046960 /* Constant.m */; };
 		1801B24319F0ADD400EDEC03 /* MultiChoiceDlg.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801B24219F0ADD400EDEC03 /* MultiChoiceDlg.m */; };
 		1801B24619F0BB3500EDEC03 /* CalcChoiceDLg.m in Sources */ = {isa = PBXBuildFile; fileRef = 1801B24519F0BB3500EDEC03 /* CalcChoiceDLg.m */; };
 		180E1CCD1A012F0100C20A80 /* 2009_10_short_answer.xml in Resources */ = {isa = PBXBuildFile; fileRef = 180E1CC61A012F0100C20A80 /* 2009_10_short_answer.xml */; };
@@ -108,6 +112,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0479DA8B1A33FA6B00B54932 /* AbstractDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractDetailViewController.h; sourceTree = "<group>"; };
+		0479DA8C1A33FA6B00B54932 /* AbstractDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractDetailViewController.m; sourceTree = "<group>"; };
+		0479DA8D1A33FA6B00B54932 /* AbstractSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AbstractSearchViewController.h; sourceTree = "<group>"; };
+		0479DA8E1A33FA6B00B54932 /* AbstractSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AbstractSearchViewController.m; sourceTree = "<group>"; };
+		0479DA8F1A33FA6B00B54932 /* ViewControllerFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewControllerFactory.h; sourceTree = "<group>"; };
+		0479DA901A33FA6B00B54932 /* ViewControllerFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewControllerFactory.m; sourceTree = "<group>"; };
+		0493073F1A34027E00046960 /* Constant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		049307401A34027E00046960 /* Constant.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
 		1801B24119F0ADD400EDEC03 /* MultiChoiceDlg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiChoiceDlg.h; sourceTree = "<group>"; };
 		1801B24219F0ADD400EDEC03 /* MultiChoiceDlg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiChoiceDlg.m; sourceTree = "<group>"; };
 		1801B24419F0BB3500EDEC03 /* CalcChoiceDLg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalcChoiceDLg.h; sourceTree = "<group>"; };
@@ -367,6 +379,8 @@
 		18E7B02519A7770300092469 /* Multi_Choice */ = {
 			isa = PBXGroup;
 			children = (
+				0493073F1A34027E00046960 /* Constant.h */,
+				049307401A34027E00046960 /* Constant.m */,
 				18F701DE19AA406E005E0361 /* RootViewController.h */,
 				18F701DF19AA406E005E0361 /* RootViewController.m */,
 				18E7B02E19A7770300092469 /* AppDelegate.h */,
@@ -470,6 +484,12 @@
 		18F701D919AA1106005E0361 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
+				0479DA8B1A33FA6B00B54932 /* AbstractDetailViewController.h */,
+				0479DA8C1A33FA6B00B54932 /* AbstractDetailViewController.m */,
+				0479DA8D1A33FA6B00B54932 /* AbstractSearchViewController.h */,
+				0479DA8E1A33FA6B00B54932 /* AbstractSearchViewController.m */,
+				0479DA8F1A33FA6B00B54932 /* ViewControllerFactory.h */,
+				0479DA901A33FA6B00B54932 /* ViewControllerFactory.m */,
 				186575341A0F6B4B0012692C /* UILabelImageExt.h */,
 				186575351A0F6B4B0012692C /* UILabelImageExt.m */,
 				18F701DA19AA1133005E0361 /* UILabelExt.h */,
@@ -645,7 +665,9 @@
 				1814AE4219E3CF22004422C3 /* UserInfo.m in Sources */,
 				18E7B03619A7770300092469 /* MultiChoiceViewController.m in Sources */,
 				182CABA319ED695500C02B68 /* XMLCalcHelper.m in Sources */,
+				049307411A34027E00046960 /* Constant.m in Sources */,
 				18E7B03019A7770300092469 /* AppDelegate.m in Sources */,
+				0479DA911A33FA6B00B54932 /* AbstractDetailViewController.m in Sources */,
 				182CABA619ED699200C02B68 /* XMLCalcElement.m in Sources */,
 				1831EF731A090C9000431C5A /* NSMutableArrayExt.m in Sources */,
 				18EE302D1A028265005D1DCA /* UIButtonExt.m in Sources */,
@@ -653,11 +675,13 @@
 				18F701E019AA406E005E0361 /* RootViewController.m in Sources */,
 				18EDD5C81A0480D0002702BC /* MultChoiceDetailViewController.m in Sources */,
 				18E7B05719A7794600092469 /* XMLElement.m in Sources */,
+				0479DA921A33FA6B00B54932 /* AbstractSearchViewController.m in Sources */,
 				18E7B02C19A7770300092469 /* main.m in Sources */,
 				180E3B8A19E292520028B7A6 /* SVProgressHUD.m in Sources */,
 				180E3B9019E295B80028B7A6 /* HttpRequestTool.m in Sources */,
 				18E1138819A80C1A008F8EFC /* XMLHelper.m in Sources */,
 				180E3B8419E28C9E0028B7A6 /* AbstractViewController.m in Sources */,
+				0479DA931A33FA6B00B54932 /* ViewControllerFactory.m in Sources */,
 				182CABA019ED680600C02B68 /* CalcViewController.m in Sources */,
 				18F701DC19AA1133005E0361 /* UILabelExt.m in Sources */,
 				18B3A7C619BDBAB300A4B068 /* AboutDlgViewController.m in Sources */,
@@ -753,7 +777,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "348d2a4e-e1ae-48b9-8409-b54bddc65977";
+				PROVISIONING_PROFILE = "f093f532-d1d0-442d-8e7d-20969e9075b8";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -771,7 +795,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "348d2a4e-e1ae-48b9-8409-b54bddc65977";
+				PROVISIONING_PROFILE = "f093f532-d1d0-442d-8e7d-20969e9075b8";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
