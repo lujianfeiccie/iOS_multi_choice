@@ -39,7 +39,7 @@
     else
     {
         tmp_filename = super.m_filename;
-        tmp_title = [NSString stringWithFormat:@"%@计算题",[super.m_title substringToIndex:10]];
+        tmp_title = [NSString stringWithFormat:@"%@计算题",[super.m_title substringToIndex:9]];
         tmp_filename = [tmp_filename substringToIndex:7];
         tmp_filename = [NSString stringWithFormat:@"%@_calc",tmp_filename];
         
